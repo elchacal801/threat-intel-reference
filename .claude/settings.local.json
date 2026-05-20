@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:bazaar.abuse.ch)",
+      "WebFetch(domain:docs.virustotal.com)",
+      "WebFetch(domain:malpedia.caad.fkie.fraunhofer.de)",
+      "WebFetch(domain:threatfox-api.abuse.ch)",
+      "WebFetch(domain:malshare.com)",
+      "WebFetch(domain:urlhaus-api.abuse.ch)",
+      "WebFetch(domain:attack.mitre.org)",
+      "WebFetch(domain:otx.alienvault.com)",
+      "WebFetch(domain:virustotal.readme.io)",
+      "WebFetch(domain:threatfox.abuse.ch)",
+      "WebFetch(domain:hybrid-analysis.com)",
+      "WebFetch(domain:any.run)",
+      "WebFetch(domain:labs.inquest.net)",
+      "WebFetch(domain:tria.ge)",
+      "WebFetch(domain:yaraify.abuse.ch)",
+      "WebFetch(domain:maltiverse.com)",
+      "WebFetch(domain:yaraify-api.abuse.ch)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)"
+    ]
+  }
+}
