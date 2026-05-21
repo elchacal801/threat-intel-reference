@@ -1,21 +1,21 @@
 rule_name,author,description,malpedia_family,matching_tlp,sharing_tlp,yarahub_uuid,date
-win_dotnet_vb_stealer_rat,Arrbat,"Detects .NET/VB executables with stealer/RAT capabilities (sockets, HTTP, processes, registry, etc).",,TLP:WHITE,TLP:WHITE,9bdbfd5c-167b-424a-a977-29bd554e8175,2026-04-30
-tarrarat_license_server,Lenny-3BO,TarraRAT Node.js license server -- Telegram HWID bind + /api/validate route,,TLP:WHITE,TLP:WHITE,739584d2-a741-4ac1-a09f-bb8ce6e897ab,2026-04-30
-tarrarat_c2_panel,Lenny-3BO,TarraRAT C2 operator panel -- BankNotifierWindow class + WPF source/PE shape,,TLP:WHITE,TLP:WHITE,04d07d39-ac5d-4191-8ef0-f5cde04ef5d6,2026-05-01
-tarrarat_assembly,Lenny-3BO,TarraRAT (RSquare) .NET RAT client -- assembly + config indicators,,TLP:WHITE,TLP:WHITE,144f59a0-d984-4bf8-b038-9bc181b1a7a5,2026-04-30
-flashakacoder_kit,Lenny-3BO,FLASHAKACODER PHP banking kit -- operator tag + admin chain + Telegram exfil + HTML form-action,,TLP:WHITE,TLP:WHITE,24b498ea-b6b3-4794-9e87-6e784803137f,2026-05-01
-ecliptor_vbs,Lenny-3BO,Ecliptor VBS dropper -- ChrW arithmetic + Year(Now) sentinel + Timer*Rnd noise,,TLP:WHITE,TLP:WHITE,f18a5f8c-5d46-45a7-9711-b909f09342fc,2026-05-01
-Jeevan_Malware_Rewards,ShriTiger,"Detects JeevanReward variants using Technical, Anti-Analysis, and Indian SE keywords",,TLP:WHITE,TLP:WHITE,16e14a3d-6433-4e57-be6a-c71b574fe4ce,2026-04-30
-classified,classified,classified,classified,TLP:RED,TLP:RED,b096becb-8781-4787-b1aa-4e595d5db32f,classified
-Gentlemen_Ransomware_Binary,Bedrock Safeguard Inc.,Detects The Gentlemen ransomware binary (Go/Garble),,TLP:WHITE,TLP:WHITE,2ec57bcd-b8a1-474a-85e2-33b3dbbdd069,2026-04-20
-Win_FakeInstaller_PythonShellcodeLoader_Crepectl_2026,SixHands,"Detects the analyzed fake installer sample using .key config, XOR key, and Python/fiber shellcode loader traits",,TLP:WHITE,TLP:WHITE,3e83ae74-2508-4c27-ab08-24ad44c8133f,2026-04-21
-FakeInstaller_Python_Fiber_MemoryLoader_Hunt,SixHands,Hunting rule for Python-based fake installer loaders that execute shellcode via fibers,,TLP:WHITE,TLP:WHITE,54048355-7629-4243-9c60-7af4b7f99f33,2026-04-21
-FakeInstaller_KeyFile_Crepectl,SixHands,Detects the binary .key config used by the analyzed fake installer family,,TLP:WHITE,TLP:WHITE,85813b75-f2c3-4032-8a79-48d3e205b492,2026-04-21
-shubstealer_wallet_asar,Lenny-3BO,Detects SHubStealer stage-3 trojanized wallet ASAR bundles by injection C2 and build markers,,TLP:WHITE,TLP:WHITE,4b347e79-ee70-4f08-a101-f0ccc8b838d5,2026-04-17
-shubstealer_stage2_applescript,Lenny-3BO,Detects SHubStealer stage-2 AppleScript payload by C2 endpoints and capability markers,,TLP:WHITE,TLP:WHITE,a9003727-8c9c-4e0e-b3a2-3190585a7449,2026-04-17
-shubstealer_loader_zsh,Lenny-3BO,Detects SHubStealer stage-1 zsh loader by shub_* markers and CIS geo-filter pattern,,TLP:WHITE,TLP:WHITE,f425c2dc-6e89-4bbc-8814-7c21a0444466,2026-04-17
-classified,classified,classified,classified,TLP:GREEN,TLP:RED,95b4e189-f112-4221-924f-83f874223161,classified
-classified,classified,classified,classified,TLP:WHITE,TLP:AMBER,db8ac007-03ee-4142-a9a5-4b8f2b80ca11,classified
-classified,classified,classified,classified,TLP:WHITE,TLP:AMBER,f546d8b9-0447-4523-8831-780015f2f226,classified
-classified,classified,classified,classified,TLP:WHITE,TLP:AMBER,2898fea1-5ea1-4ebc-b116-1e781db85ace,classified
-ZKM_Stealer_26_Network,Brian (Omaha) - victim forensic investigation,Detects ZKM Stealer 26.0.0 via network infrastructure indicators,,TLP:WHITE,TLP:WHITE,9c3f5e7a-2b4d-4f8b-a1c5-3e7d2b5f8a1c,2026-04-13
+classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,6447ce42-5626-4e62-813e-05719c45e014,classified
+classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,37809a30-6293-4dd0-8964-5e44bccd2fc2,classified
+classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,58644591-f53d-495e-a5ba-39f7d499d3d9,classified
+classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,a356dfcb-eee9-4d59-b72b-9262ea903045,classified
+classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,a4481c04-bbbb-45b4-8c32-4ca4200ffdbc,classified
+classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,7c6e1c3a-9c3a-4a2a-91c1-9c4f1e7c52af,classified
+classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,c1056ea3-c1a0-4ebd-879e-aa5f5b6462f7,classified
+classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,a2f4f650-02ce-435c-a27a-4aa17afb457e,classified
+classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,882404f2-e440-4c51-8530-69a5d482eddd,classified
+classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,e5d75527-948f-4e4b-9a46-181fa2e2a8ed,classified
+classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,ba2170cb-29c8-4645-996f-9b99425d89d6,classified
+classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,51fde6a6-5c2f-4bdf-84d6-ebca9beafc61,classified
+classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,da199571-fcee-4ef7-9b3f-827a3100b36a,classified
+classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,fc32576c-355e-4044-bbdf-d689eb081b17,classified
+classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,29930789-f37a-469a-aa24-aaa5b0549a46,classified
+Vidar_v1_5_Go,derp.ca,"Submitted Vidar v1.5 Go build and memory/runtime rule with Go build metadata, native API layout, sandbox scoring strings, Telegram/Steam dead drops, multipart exfil fields, botnet ID, and AV process enumeration.",,TLP:WHITE,TLP:WHITE,1d0f5130-065b-41e2-b6c4-3ae5e2e04c6b,2026-05-16
+PoisonX_WindowsTelemetry,derp.ca,"PoisonX WindowsTelemetry case rule for VERSION.dll loader, rolling-XOR cache blobs, decoded BYOVD scheduler, and decoded 10FX RAT core.",,TLP:WHITE,TLP:WHITE,4d836abe-06cf-4256-8e2e-e4145fdddc29,2026-05-19
+Enmity_Stealer_260507,derp.ca,"Submitted Enmity stealer build with Discord token JavaScript, browser credential SQL, wallet collection paths, certificate-store access, clipboard/keylogging imports, and process-memory imports.",,TLP:WHITE,TLP:WHITE,83485cf8-0e48-48a2-bcca-01dbe4df76c1,2026-05-18
+Eimeria_MultiStage_Loader,derp.ca,Eimeria case rule targeting the malicious zlibwapi.dll AES loader and recovered AutoIt RunPE loader with process-hollowing imports.,,TLP:WHITE,TLP:WHITE,41ee8f0e-3835-46fd-b5c6-6321117ba729,2026-05-16
+CrystalX_Go_RAT,derp.ca,"CrystalX submitted loader and recovered Go payload rule targeting RCDATA 970 loader structure, PE-check code, WebSocket path, command vocabulary, and build support markers.",,TLP:WHITE,TLP:WHITE,9b56434e-3bd2-4dfa-80bf-4d7f59c552f9,2026-05-18
