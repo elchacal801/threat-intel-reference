@@ -37,10 +37,12 @@ class Normalizer:
         self._misp_families: dict[str, dict] = {}
         self._mitre_data: dict[str, dict] = {}
         self._mitre_technique_to_families: dict[str, set] = {}
+        self._mitre_technique_details: dict[str, dict] = {}
 
     def run(self):
         self._load_misp_galaxy()
         self._load_mitre_attack()
+        self._load_mitre_techniques()
         self._load_mapping_rules()
 
         samples = self._collect_samples()
@@ -110,6 +112,17 @@ class Normalizer:
                             if tid not in self._mitre_technique_to_families:
                                 self._mitre_technique_to_families[tid] = set()
                             self._mitre_technique_to_families[tid].add(name)
+
+    def _load_mitre_techniques(self):
+        """Load technique ID -> name/tactic lookup from mitre_techniques.csv."""
+        path = os.path.join(self.raw_dir, "mitre_techniques.csv")
+        if not os.path.exists(path):
+            return
+        with open(path, newline="", encoding="utf-8") as f:
+            for row in csv.DictReader(f):
+                tid = row.get("technique_id", "")
+                if tid:
+                    self._mitre_technique_details[tid] = row
 
     def _collect_samples(self):
         """Read malwarebazaar raw CSV, classify, and normalize."""
@@ -232,10 +245,11 @@ class Normalizer:
         """Build techniques output from MITRE ATT&CK data."""
         techniques = []
         for tid, family_set in sorted(self._mitre_technique_to_families.items()):
+            details = self._mitre_technique_details.get(tid, {})
             techniques.append({
                 "technique_id": tid,
-                "technique_name": "",
-                "tactic": "",
+                "technique_name": details.get("technique_name", ""),
+                "tactic": details.get("tactic", ""),
                 "families": "|".join(sorted(family_set)),
             })
         return techniques

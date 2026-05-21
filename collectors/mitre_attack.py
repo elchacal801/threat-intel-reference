@@ -1,4 +1,12 @@
-"""Collector for MITRE ATT&CK enterprise malware and technique relationships."""
+"""Collector for MITRE ATT&CK enterprise malware and technique relationships.
+
+Produces two output files:
+- mitre_attack.csv: malware entries with technique IDs
+- mitre_techniques.csv: technique ID -> name + tactic lookup
+"""
+
+import csv
+import os
 
 from collectors.base import BaseCollector
 
@@ -21,15 +29,44 @@ class MitreAttackCollector(BaseCollector):
 
         objects = bundle.get("objects", [])
 
+        # Build technique metadata: STIX id -> {technique_id, name, tactic}
         pattern_id_map = {}
+        technique_details = {}
         for obj in objects:
             if obj.get("type") == "attack-pattern":
+                if obj.get("x_mitre_deprecated", False):
+                    continue
                 ext_refs = obj.get("external_references", [])
+                technique_id = ""
                 for ref in ext_refs:
                     if ref.get("source_name") == "mitre-attack":
-                        pattern_id_map[obj["id"]] = ref["external_id"]
+                        technique_id = ref["external_id"]
+                        pattern_id_map[obj["id"]] = technique_id
                         break
 
+                # Extract tactics from kill chain phases
+                tactics = []
+                for phase in obj.get("kill_chain_phases", []):
+                    if phase.get("kill_chain_name") == "mitre-attack":
+                        tactics.append(phase["phase_name"])
+
+                if technique_id:
+                    technique_details[technique_id] = {
+                        "technique_id": technique_id,
+                        "technique_name": obj.get("name", ""),
+                        "tactic": "|".join(tactics),
+                    }
+
+        # Write technique lookup file
+        tech_path = os.path.join(self.output_dir, "mitre_techniques.csv")
+        with open(tech_path, "w", newline="", encoding="utf-8") as f:
+            writer = csv.DictWriter(f, fieldnames=["technique_id", "technique_name", "tactic"])
+            writer.writeheader()
+            for td in sorted(technique_details.values(), key=lambda x: x["technique_id"]):
+                writer.writerow(td)
+        print(f"  Wrote {len(technique_details)} techniques to {tech_path}")
+
+        # Build malware entries
         malware_map = {}
         for obj in objects:
             if obj.get("type") != "malware":
