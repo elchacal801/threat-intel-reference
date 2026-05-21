@@ -41,6 +41,8 @@ class URLhausCollector(BaseCollector):
             resp = self.session.get(PAYLOADS_URL, timeout=60)
             resp.raise_for_status()
             result = resp.json()
+            print(f"    Payloads response keys: {list(result.keys())[:5]}")
+            print(f"    Payloads count: {len(result.get('payloads', []))}")
             for payload in result.get("payloads", []):
                 sha256 = payload.get("sha256_hash", "")
                 md5 = payload.get("md5_hash", "")
@@ -70,6 +72,8 @@ class URLhausCollector(BaseCollector):
             resp = self.session.get(URLS_URL, timeout=60)
             resp.raise_for_status()
             result = resp.json()
+            print(f"    URLs response keys: {list(result.keys())[:5]}")
+            print(f"    URLs count: {len(result.get('urls', []))}")
             for url_entry in result.get("urls", []):
                 url = url_entry.get("url", "")
                 host = url_entry.get("host", "") or self._extract_host(url)
