@@ -62,17 +62,34 @@ class ThreatFoxCollector(BaseCollector):
 
             with zf.open(csv_names[0]) as csv_file:
                 text = io.TextIOWrapper(csv_file, encoding="utf-8")
-                # Read all non-comment lines
-                lines = [line for line in text if not line.startswith("#")]
 
-                if not lines:
-                    print("  ThreatFox CSV is empty after filtering comments")
+                # ThreatFox CSV format:
+                # - Multiple comment lines starting with #
+                # - The LAST comment line is the header (e.g., # "first_seen_utc","ioc_id",...)
+                # - Data lines follow without #
+                comment_lines = []
+                data_lines = []
+                for line in text:
+                    if line.startswith("#"):
+                        comment_lines.append(line)
+                    else:
+                        data_lines.append(line)
+
+                if not data_lines:
+                    print("  ThreatFox CSV has no data lines")
                     return rows
 
-                # Strip quotes from the header line so DictReader gets clean keys
-                header = lines[0]
-                clean_header = header.replace('"', '')
-                lines[0] = clean_header
+                # The last comment line is the header row — strip the leading "# "
+                if comment_lines:
+                    header_line = comment_lines[-1].lstrip("#").strip()
+                    # Strip quotes from header names
+                    header_line = header_line.replace('"', '')
+                    # Prepend header to data lines
+                    lines = [header_line + "\n"] + data_lines
+                else:
+                    # No comment lines — first data line is the header
+                    lines = data_lines
+                    lines[0] = lines[0].replace('"', '')
 
                 reader = csv.DictReader(lines)
                 actual_headers = reader.fieldnames

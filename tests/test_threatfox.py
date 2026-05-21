@@ -7,9 +7,12 @@ from unittest.mock import patch, MagicMock
 import pytest
 from collectors.threatfox import ThreatFoxCollector
 
-SAMPLE_CSV = '''"ioc_id","ioc_type","ioc_value","threat_type","malware","malware_alias","malware_printable","confidence_level","first_seen_utc","last_seen_utc","reporter","tags"
-"1","ip:port","1.2.3.4:443","botnet_cc","win.cobalt_strike","CobaltStrike","Cobalt Strike","75","2024-01-01 00:00:00","2024-06-01 00:00:00","abuse_ch","cobalt-strike"
-"2","sha256_hash","aaaa","payload","win.emotet","Emotet,Heodo","Emotet","90","2024-02-01 00:00:00","","reporter2","emotet|heodo"
+# Real ThreatFox format: comment lines starting with #, last comment line is header
+SAMPLE_CSV = '''# ThreatFox IOC Export
+# Generated: 2024-01-01
+# "first_seen_utc","ioc_id","ioc_value","ioc_type","threat_type","malware","malware_alias","malware_printable","confidence_level","last_seen_utc","reporter","tags"
+"2024-01-01 00:00:00","1","1.2.3.4:443","ip:port","botnet_cc","win.cobalt_strike","CobaltStrike","Cobalt Strike","75","2024-06-01 00:00:00","abuse_ch","cobalt-strike"
+"2024-02-01 00:00:00","2","aaaa","sha256_hash","payload","win.emotet","Emotet,Heodo","Emotet","90","","reporter2","emotet|heodo"
 '''
 
 @patch("collectors.threatfox.ThreatFoxCollector.get_api_key", return_value="fake_key")
