@@ -1,7 +1,9 @@
 """Collector for ThreatFox (abuse.ch) full IOC export.
 
-The ThreatFox CSV export has comment lines starting with # and
-all field values (including headers) wrapped in double quotes.
+The ThreatFox CSV export has:
+- Comment lines starting with #
+- One comment line containing the CSV header (quoted, with commas)
+- Data lines with quoted values
 """
 
 import csv
@@ -12,26 +14,6 @@ from collectors.base import BaseCollector
 
 EXPORT_URL = "https://threatfox-api.abuse.ch/v2/files/exports/{api_key}/full.csv.zip"
 ENV_VAR = "THREATFOX_API_KEY"
-
-# Map from raw CSV column names (after stripping quotes) to our output fields
-COLUMN_MAP = {
-    "ioc_id": "ioc_id",
-    "ioc_type": "ioc_type",
-    "ioc_type_desc": None,
-    "ioc": "ioc_value",
-    "ioc_value": "ioc_value",
-    "threat_type": "threat_type",
-    "threat_type_desc": None,
-    "malware_printable": "family",
-    "malware_alias": "family_aliases",
-    "malware": None,
-    "confidence_level": "confidence",
-    "first_seen_utc": "first_seen",
-    "last_seen_utc": "last_seen",
-    "reporter": None,
-    "reference": None,
-    "tags": "tags",
-}
 
 
 class ThreatFoxCollector(BaseCollector):
@@ -46,6 +28,14 @@ class ThreatFoxCollector(BaseCollector):
             "family", "family_aliases", "confidence",
             "first_seen", "last_seen", "tags",
         ]
+
+    def _get_field(self, row, *candidates):
+        """Try multiple column names, return the first non-empty value found."""
+        for key in candidates:
+            val = row.get(key, "")
+            if val:
+                return val.strip().strip('"')
+        return ""
 
     def collect(self):
         api_key = self.get_api_key(ENV_VAR)
@@ -63,10 +53,6 @@ class ThreatFoxCollector(BaseCollector):
             with zf.open(csv_names[0]) as csv_file:
                 text = io.TextIOWrapper(csv_file, encoding="utf-8")
 
-                # ThreatFox CSV format:
-                # - Comment lines starting with #
-                # - One comment line contains the CSV header (has commas and quotes)
-                # - Data lines follow without #
                 comment_lines = []
                 data_lines = []
                 for line in text:
@@ -81,61 +67,47 @@ class ThreatFoxCollector(BaseCollector):
                     print("  ThreatFox CSV has no data lines")
                     return rows
 
-                # Find the header: it's the comment line containing quoted CSV fields
-                # e.g., # "first_seen_utc","ioc_id","ioc_value",...
+                # Find the header: comment line with quoted CSV fields
                 header_line = None
                 for cline in comment_lines:
                     content = cline.lstrip("#").strip()
                     if '"' in content and "," in content:
                         header_line = content
-                        # Don't break — take the last matching line
 
                 if not header_line:
                     print("  Could not find header in ThreatFox comment lines")
-                    print(f"  Comment lines: {[c.strip()[:60] for c in comment_lines]}")
                     return rows
 
-                # Strip quotes from header names
+                # Clean header: strip quotes
                 header_line = header_line.replace('"', '')
                 lines = [header_line + "\n"] + data_lines
 
                 reader = csv.DictReader(lines)
-                actual_headers = reader.fieldnames
-                print(f"    ThreatFox CSV headers: {actual_headers[:8]}...")
+                print(f"    ThreatFox CSV headers: {reader.fieldnames}")
 
                 for row in reader:
-                    # Strip surrounding quotes from all values
-                    cleaned = {k: (v or "").strip('"').strip() for k, v in row.items()}
-
-                    # Map columns using flexible lookup
-                    def get_field(output_name):
-                        """Try to find a value by checking all known source column names."""
-                        for src_col, dst_col in COLUMN_MAP.items():
-                            if dst_col == output_name and src_col in cleaned:
-                                val = cleaned[src_col]
-                                if val:
-                                    return val
-                        return ""
-
-                    rows.append({
-                        "ioc_id": get_field("ioc_id"),
-                        "ioc_type": get_field("ioc_type"),
-                        "ioc_value": get_field("ioc_value"),
-                        "threat_type": get_field("threat_type"),
-                        "family": get_field("family"),
-                        "family_aliases": get_field("family_aliases"),
-                        "confidence": get_field("confidence"),
-                        "first_seen": get_field("first_seen"),
-                        "last_seen": get_field("last_seen"),
-                        "tags": get_field("tags"),
-                    })
+                    parsed = {
+                        "ioc_id": self._get_field(row, "ioc_id"),
+                        "ioc_type": self._get_field(row, "ioc_type"),
+                        "ioc_value": self._get_field(row, "ioc_value", "ioc"),
+                        "threat_type": self._get_field(row, "threat_type"),
+                        "family": self._get_field(row, "malware_printable"),
+                        "family_aliases": self._get_field(row, "malware_alias"),
+                        "confidence": self._get_field(row, "confidence_level"),
+                        "first_seen": self._get_field(row, "first_seen_utc"),
+                        "last_seen": self._get_field(row, "last_seen_utc"),
+                        "tags": self._get_field(row, "tags"),
+                    }
+                    # Only add rows that have at least an IOC value
+                    if parsed["ioc_value"]:
+                        rows.append(parsed)
 
         if rows:
-            # Log a sample row for debugging
             sample = rows[0]
             populated = sum(1 for v in sample.values() if v)
-            print(f"    Sample row has {populated}/{len(sample)} fields populated")
-            if populated == 0:
-                print(f"    WARNING: First row is empty. Raw keys: {list(row.items())[:5]}")
+            print(f"    Sample row: {populated}/{len(sample)} fields populated")
+            print(f"    First IOC: type={sample['ioc_type']} family={sample['family']} conf={sample['confidence']}")
+        else:
+            print("    WARNING: No rows with ioc_value found")
 
         return rows
