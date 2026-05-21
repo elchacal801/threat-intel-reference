@@ -4,7 +4,7 @@ import csv
 import re
 
 
-MAPPING_URL = "https://raw.githubusercontent.com/certtools/malware_name_mapping/main/mapping.csv"
+MAPPING_URL = "https://raw.githubusercontent.com/certtools/malware_name_mapping/master/mapping.csv"
 
 
 class FamilyMapper:
