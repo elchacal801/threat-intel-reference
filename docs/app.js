@@ -1,7 +1,7 @@
 // Configure these after deploying to your GitHub repo
-var REPO_OWNER = 'OWNER';
+var REPO_OWNER = 'elchacal801';
 var REPO_NAME = 'threat-intel-reference';
-var BRANCH = 'main';
+var BRANCH = 'master';
 
 function rawUrl(path) {
     return 'https://raw.githubusercontent.com/' + REPO_OWNER + '/' + REPO_NAME + '/' + BRANCH + '/' + path;

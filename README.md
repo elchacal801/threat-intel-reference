@@ -40,13 +40,13 @@ A GitHub Actions pipeline runs daily at 6 AM UTC:
 Download any CSV directly:
 
 ```bash
-curl -O https://raw.githubusercontent.com/OWNER/threat-intel-reference/main/data/normalized/malware_samples.csv
+curl -O https://raw.githubusercontent.com/elchacal801/threat-intel-reference/main/data/normalized/malware_samples.csv
 ```
 
 ### Run locally
 
 ```bash
-git clone https://github.com/OWNER/threat-intel-reference.git
+git clone https://github.com/elchacal801/threat-intel-reference.git
 cd threat-intel-reference
 pip install -r requirements.txt
 
@@ -81,7 +81,7 @@ Samples are classified using these signals (first match wins):
 
 ## Contributing
 
-See the [About page](https://OWNER.github.io/threat-intel-reference/about.html) for instructions on adding new data sources.
+See the [About page](https://elchacal801.github.io/threat-intel-reference/about.html) for instructions on adding new data sources.
 
 ## License
 
