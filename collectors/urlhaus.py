@@ -42,8 +42,14 @@ class URLhausCollector(BaseCollector):
             resp.raise_for_status()
             result = resp.json()
             print(f"    Payloads response keys: {list(result.keys())[:5]}")
-            print(f"    Payloads count: {len(result.get('payloads', []))}")
-            for payload in result.get("payloads", []):
+            payloads_list = result.get("payloads", [])
+            print(f"    Payloads count: {len(payloads_list)}")
+            if payloads_list:
+                first = payloads_list[0]
+                print(f"    First payload keys: {list(first.keys())}")
+                print(f"    First payload urls key type: {type(first.get('urls'))}")
+                print(f"    sha256_hash present: {'sha256_hash' in first}")
+            for payload in payloads_list:
                 sha256 = payload.get("sha256_hash", "")
                 md5 = payload.get("md5_hash", "")
                 for url_entry in payload.get("urls", []):
@@ -73,8 +79,13 @@ class URLhausCollector(BaseCollector):
             resp.raise_for_status()
             result = resp.json()
             print(f"    URLs response keys: {list(result.keys())[:5]}")
-            print(f"    URLs count: {len(result.get('urls', []))}")
-            for url_entry in result.get("urls", []):
+            urls_list = result.get("urls", [])
+            print(f"    URLs count: {len(urls_list)}")
+            if urls_list:
+                first = urls_list[0]
+                print(f"    First URL keys: {list(first.keys())}")
+                print(f"    First URL payloads type: {type(first.get('payloads'))}")
+            for url_entry in urls_list:
                 url = url_entry.get("url", "")
                 host = url_entry.get("host", "") or self._extract_host(url)
                 tags_list = url_entry.get("tags") or []
