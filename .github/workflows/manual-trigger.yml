@@ -1,0 +1,57 @@
+name: Manual Pipeline Run
+
+on:
+  workflow_dispatch:
+    inputs:
+      collector:
+        description: 'Collector to run (or "all")'
+        required: false
+        default: 'all'
+        type: choice
+        options:
+          - all
+          - malwarebazaar
+          - threatfox
+          - yaraify
+          - mitre_attack
+          - misp_galaxy
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run pipeline
+        env:
+          MALWAREBAZAAR_API_KEY: ${{ secrets.MALWAREBAZAAR_API_KEY }}
+          THREATFOX_API_KEY: ${{ secrets.THREATFOX_API_KEY }}
+          YARAIFY_API_KEY: ${{ secrets.YARAIFY_API_KEY }}
+        run: python run_pipeline.py --collector ${{ inputs.collector }}
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git diff --quiet data/ && echo "changed=false" >> $GITHUB_OUTPUT || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add data/
+          git commit -m "data: manual update $(date -u +%Y-%m-%d) (${{ inputs.collector }})"
+          git push
