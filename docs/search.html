@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search &mdash; Threat Intel Reference</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">Threat Intel Reference</a>
+            <a href="index.html">Dashboard</a>
+            <a href="search.html" class="active">Search</a>
+            <a href="families.html">Families</a>
+            <a href="about.html">About</a>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <h1>Search</h1>
+            <p class="subtitle">Search across all samples by hash, family name, or tag</p>
+
+            <div class="filters">
+                <input type="text" id="search-input" placeholder="SHA256, family name, tag...">
+                <select id="filter-classification">
+                    <option value="">All classifications</option>
+                    <option value="malware">Malware</option>
+                    <option value="pup">PUP</option>
+                    <option value="pua">PUA</option>
+                    <option value="adware">Adware</option>
+                    <option value="riskware">Riskware</option>
+                </select>
+                <select id="filter-source">
+                    <option value="">All sources</option>
+                    <option value="malwarebazaar">MalwareBazaar</option>
+                    <option value="threatfox">ThreatFox</option>
+                </select>
+                <button id="btn-search">Search</button>
+                <button id="btn-download">Download CSV</button>
+            </div>
+
+            <div id="results" class="loading">Enter a search term to begin</div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            Threat Intel Reference &mdash; Open-source threat intelligence aggregator.
+        </div>
+    </footer>
+    <script src="app.js"></script>
+    <script>
+        var allData = [];
+        var filteredData = [];
+        var currentPage = 1;
+        var PAGE_SIZE = 50;
+
+        var headers = [
+            { key: 'sha256', label: 'SHA256' },
+            { key: 'family', label: 'Family' },
+            { key: 'classification', label: 'Classification' },
+            { key: 'tags', label: 'Tags' },
+            { key: 'confidence', label: 'Confidence' },
+            { key: 'first_seen', label: 'First Seen' },
+            { key: 'source', label: 'Source' },
+        ];
+
+        function init() {
+            document.getElementById('results').textContent = 'Loading data...';
+            Promise.all([loadMalwareSamples(), loadPupSamples()]).then(function(results) {
+                allData = (results[0] || []).concat(results[1] || []);
+                document.getElementById('results').textContent = allData.length.toLocaleString() + ' samples loaded. Enter a search term.';
+            });
+
+            document.getElementById('search-input').addEventListener('keydown', function(e) {
+                if (e.key === 'Enter') doSearch();
+            });
+            document.getElementById('btn-search').addEventListener('click', doSearch);
+            document.getElementById('btn-download').addEventListener('click', downloadResults);
+        }
+
+        function doSearch() {
+            var query = document.getElementById('search-input').value.trim().toLowerCase();
+            var classFilter = document.getElementById('filter-classification').value;
+            var sourceFilter = document.getElementById('filter-source').value;
+
+            filteredData = allData.filter(function(row) {
+                if (classFilter && row.classification !== classFilter) return false;
+                if (sourceFilter && row.source !== sourceFilter) return false;
+                if (!query) return true;
+                return (row.sha256 || '').toLowerCase().indexOf(query) !== -1
+                    || (row.md5 || '').toLowerCase().indexOf(query) !== -1
+                    || (row.family || '').toLowerCase().indexOf(query) !== -1
+                    || (row.tags || '').toLowerCase().indexOf(query) !== -1
+                    || (row.clamav_detection || '').toLowerCase().indexOf(query) !== -1;
+            });
+
+            currentPage = 1;
+            renderTable('results', headers, filteredData, currentPage, PAGE_SIZE);
+        }
+
+        window.goToPage = function(page) {
+            currentPage = page;
+            renderTable('results', headers, filteredData, currentPage, PAGE_SIZE);
+        };
+
+        function downloadResults() {
+            if (!filteredData.length) return;
+            downloadCSV(filteredData, headers, 'threat-intel-search-results.csv');
+        }
+
+        init();
+    </script>
+</body>
+</html>

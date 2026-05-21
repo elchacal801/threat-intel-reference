@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Threat Intel Reference</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">Threat Intel Reference</a>
+            <a href="index.html" class="active">Dashboard</a>
+            <a href="search.html">Search</a>
+            <a href="families.html">Families</a>
+            <a href="about.html">About</a>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <h1>Dashboard</h1>
+            <p class="subtitle">Last updated: <span id="last-updated">loading...</span></p>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="label">Total Samples</div>
+                    <div class="value total" id="total-samples">-</div>
+                </div>
+                <div class="stat-card">
+                    <div class="label">Malware</div>
+                    <div class="value malware" id="total-malware">-</div>
+                </div>
+                <div class="stat-card">
+                    <div class="label">PUP / PUA / Adware / Riskware</div>
+                    <div class="value pup" id="total-pup">-</div>
+                </div>
+                <div class="stat-card">
+                    <div class="label">Families</div>
+                    <div class="value families" id="total-families">-</div>
+                </div>
+                <div class="stat-card">
+                    <div class="label">IOCs</div>
+                    <div class="value iocs" id="total-iocs">-</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            Threat Intel Reference &mdash; Open-source threat intelligence aggregator.
+            Data sourced from MalwareBazaar, ThreatFox, YARAify, MITRE ATT&amp;CK, and MISP Galaxy.
+        </div>
+    </footer>
+    <script src="app.js"></script>
+    <script>
+        loadStats().then(function(stats) {
+            if (!stats) return;
+            document.getElementById('last-updated').textContent = stats.last_updated || 'unknown';
+            document.getElementById('total-samples').textContent = (stats.total_samples || 0).toLocaleString();
+            document.getElementById('total-malware').textContent = (stats.total_malware || 0).toLocaleString();
+            document.getElementById('total-pup').textContent = (stats.total_pup_pua || 0).toLocaleString();
+            document.getElementById('total-families').textContent = (stats.total_families || 0).toLocaleString();
+            document.getElementById('total-iocs').textContent = (stats.total_iocs || 0).toLocaleString();
+        });
+    </script>
+</body>
+</html>

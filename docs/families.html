@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Families &mdash; Threat Intel Reference</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">Threat Intel Reference</a>
+            <a href="index.html">Dashboard</a>
+            <a href="search.html">Search</a>
+            <a href="families.html" class="active">Families</a>
+            <a href="about.html">About</a>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <h1>Malware Families</h1>
+            <p class="subtitle">Browse all known malware and PUP/PUA families</p>
+
+            <div class="filters">
+                <input type="text" id="family-search" placeholder="Filter by name or alias...">
+                <select id="family-class-filter">
+                    <option value="">All classifications</option>
+                    <option value="malware">Malware</option>
+                    <option value="pup">PUP</option>
+                    <option value="pua">PUA</option>
+                    <option value="adware">Adware</option>
+                    <option value="riskware">Riskware</option>
+                </select>
+                <button id="btn-filter">Filter</button>
+            </div>
+
+            <div id="families-table" class="loading">Loading families...</div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            Threat Intel Reference &mdash; Open-source threat intelligence aggregator.
+        </div>
+    </footer>
+    <script src="app.js"></script>
+    <script>
+        var allFamilies = [];
+        var filteredFamilies = [];
+        var currentPage = 1;
+        var PAGE_SIZE = 50;
+
+        var headers = [
+            { key: 'canonical_name', label: 'Family' },
+            { key: 'aliases', label: 'Aliases' },
+            { key: 'classification', label: 'Classification' },
+            { key: 'description', label: 'Description' },
+            { key: 'mitre_techniques', label: 'Techniques' },
+            { key: 'sources', label: 'Sources' },
+        ];
+
+        function init() {
+            loadFamilies().then(function(data) {
+                allFamilies = data || [];
+                filteredFamilies = allFamilies;
+                renderTable('families-table', headers, filteredFamilies, currentPage, PAGE_SIZE);
+            });
+
+            document.getElementById('family-search').addEventListener('keydown', function(e) {
+                if (e.key === 'Enter') filterFamilies();
+            });
+            document.getElementById('btn-filter').addEventListener('click', filterFamilies);
+        }
+
+        function filterFamilies() {
+            var query = document.getElementById('family-search').value.trim().toLowerCase();
+            var classFilter = document.getElementById('family-class-filter').value;
+
+            filteredFamilies = allFamilies.filter(function(row) {
+                if (classFilter && row.classification !== classFilter) return false;
+                if (!query) return true;
+                return (row.canonical_name || '').toLowerCase().indexOf(query) !== -1
+                    || (row.aliases || '').toLowerCase().indexOf(query) !== -1;
+            });
+
+            currentPage = 1;
+            renderTable('families-table', headers, filteredFamilies, currentPage, PAGE_SIZE);
+        }
+
+        window.goToPage = function(page) {
+            currentPage = page;
+            renderTable('families-table', headers, filteredFamilies, currentPage, PAGE_SIZE);
+        };
+
+        init();
+    </script>
+</body>
+</html>

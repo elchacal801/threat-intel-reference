@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About &mdash; Threat Intel Reference</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">Threat Intel Reference</a>
+            <a href="index.html">Dashboard</a>
+            <a href="search.html">Search</a>
+            <a href="families.html">Families</a>
+            <a href="about.html" class="active">About</a>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <h1>About</h1>
+
+            <h2>What is this?</h2>
+            <p>An open-source, daily-updated reference database of known malware, PUPs (Potentially Unwanted Programs), and PUAs (Potentially Unwanted Applications). Data is aggregated from multiple free threat intelligence sources into normalized, downloadable CSV and JSON files.</p>
+            <p>Use it as a reference for detection coverage analysis, threat research, or any workflow that needs a comprehensive list of known threats.</p>
+
+            <h2>Data Sources</h2>
+            <table>
+                <thead>
+                    <tr><th>Source</th><th>What We Pull</th><th>Update Frequency</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>MalwareBazaar (abuse.ch)</td><td>Sample hashes, family signatures, ClamAV detections, tags</td><td>Daily</td></tr>
+                    <tr><td>ThreatFox (abuse.ch)</td><td>IOCs with confidence scores, family names</td><td>Daily</td></tr>
+                    <tr><td>YARAify (abuse.ch)</td><td>YARA rule-to-family mappings</td><td>Daily</td></tr>
+                    <tr><td>MITRE ATT&amp;CK</td><td>Technique-to-malware mappings (STIX)</td><td>Daily</td></tr>
+                    <tr><td>MISP Galaxy</td><td>Malware family definitions, aliases, descriptions</td><td>Daily</td></tr>
+                </tbody>
+            </table>
+
+            <h2>Download Data</h2>
+            <p>All data files are in the <code>data/</code> directory of this repository:</p>
+            <ul style="margin:12px 0 12px 24px;">
+                <li><code>data/raw/</code> &mdash; Raw per-source CSVs, as-ingested</li>
+                <li><code>data/normalized/malware_samples.csv</code> &mdash; All malware samples</li>
+                <li><code>data/normalized/pup_pua_samples.csv</code> &mdash; PUP/PUA/adware/riskware samples</li>
+                <li><code>data/normalized/malware_families.csv</code> &mdash; Canonical family list with aliases</li>
+                <li><code>data/normalized/iocs.csv</code> &mdash; IOCs from ThreatFox</li>
+                <li><code>data/normalized/techniques.csv</code> &mdash; MITRE ATT&amp;CK technique mappings</li>
+            </ul>
+
+            <h2>Fork &amp; Use Your Own Keys</h2>
+            <ol style="margin:12px 0 12px 24px;">
+                <li>Fork this repository</li>
+                <li>Register for free API keys at <a href="https://auth.abuse.ch" style="color:var(--accent)">auth.abuse.ch</a></li>
+                <li>Add your keys as GitHub Secrets:
+                    <code>MALWAREBAZAAR_API_KEY</code>, <code>THREATFOX_API_KEY</code>, <code>YARAIFY_API_KEY</code>
+                </li>
+                <li>Enable GitHub Actions on your fork</li>
+                <li>Run the Manual Pipeline workflow to verify, or wait for the daily 6 AM UTC cron</li>
+            </ol>
+
+            <h2>Contributing</h2>
+            <p>Contributions welcome! To add a new data source:</p>
+            <ol style="margin:12px 0 12px 24px;">
+                <li>Create a new collector in <code>collectors/</code> extending <code>BaseCollector</code></li>
+                <li>Add tests in <code>tests/</code></li>
+                <li>Register it in <code>run_pipeline.py</code></li>
+                <li>Update the normalizer if the source provides sample-level data</li>
+                <li>Open a PR</li>
+            </ol>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            Threat Intel Reference &mdash; Open-source threat intelligence aggregator.
+        </div>
+    </footer>
+</body>
+</html>
