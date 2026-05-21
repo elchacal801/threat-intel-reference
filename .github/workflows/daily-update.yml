@@ -49,6 +49,18 @@ jobs:
         run: python run_pipeline.py --collector misp_galaxy --skip-normalize
         continue-on-error: true
 
+      - name: Run URLhaus collector
+        env:
+          URLHAUS_API_KEY: ${{ secrets.URLHAUS_API_KEY }}
+        run: python run_pipeline.py --collector urlhaus --skip-normalize
+        continue-on-error: true
+
+      - name: Run OTX collector
+        env:
+          OTX_API_KEY: ${{ secrets.OTX_API_KEY }}
+        run: python run_pipeline.py --collector otx --skip-normalize
+        continue-on-error: true
+
       - name: Run normalizer
         env:
           MALWAREBAZAAR_API_KEY: ${{ secrets.MALWAREBAZAAR_API_KEY }}

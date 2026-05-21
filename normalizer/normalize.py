@@ -12,6 +12,7 @@ SAMPLE_FIELDNAMES = [
     "sha256", "sha1", "md5", "family", "family_aliases", "classification",
     "tags", "confidence", "clamav_detection", "first_seen", "last_seen",
     "source", "mitre_techniques",
+    "contacted_domains", "contacted_ips", "vt_classification", "vt_detection_rate",
 ]
 
 FAMILY_FIELDNAMES = [
@@ -28,28 +29,39 @@ TECHNIQUE_FIELDNAMES = [
     "technique_id", "technique_name", "tactic", "families",
 ]
 
+BEHAVIORAL_FIELDNAMES = [
+    "sha256", "indicator_type", "indicator_value", "source", "family", "first_seen",
+]
+
 
 class Normalizer:
     def __init__(self, raw_dir: str, output_dir: str):
         self.raw_dir = raw_dir
         self.output_dir = output_dir
         self.mapper = FamilyMapper()
-        self._misp_families: dict[str, dict] = {}  # original case -> row
-        self._misp_families_lower: dict[str, dict] = {}  # lowercased -> row
+        self._misp_families: dict[str, dict] = {}
+        self._misp_families_lower: dict[str, dict] = {}
         self._mitre_data: dict[str, dict] = {}
         self._mitre_technique_to_families: dict[str, set] = {}
         self._mitre_technique_details: dict[str, dict] = {}
+        self._ha_data: dict[str, dict] = {}
+        self._vt_data: dict[str, dict] = {}
+        self._urlhaus_data: dict[str, list[dict]] = {}
 
     def run(self):
         self._load_misp_galaxy()
         self._load_mitre_attack()
         self._load_mitre_techniques()
         self._load_mapping_rules()
+        self._load_hybrid_analysis()
+        self._load_vt_enrichment()
+        self._load_urlhaus()
 
         samples = self._collect_samples()
         iocs = self._collect_iocs()
         families = self._build_family_list(samples)
         techniques = self._build_technique_list()
+        behavioral = self._build_behavioral_indicators(samples)
 
         malware = [s for s in samples if s["classification"] == "malware"]
         pup_pua = [s for s in samples if s["classification"] != "malware"]
@@ -59,6 +71,7 @@ class Normalizer:
         self._write_csv_and_json("malware_families", FAMILY_FIELDNAMES, families)
         self._write_csv_and_json("iocs", IOC_FIELDNAMES, iocs)
         self._write_csv_and_json("techniques", TECHNIQUE_FIELDNAMES, techniques)
+        self._write_csv_and_json("behavioral_indicators", BEHAVIORAL_FIELDNAMES, behavioral)
 
         stats = {
             "total_samples": len(samples),
@@ -66,6 +79,7 @@ class Normalizer:
             "total_pup_pua": len(pup_pua),
             "total_families": len(families),
             "total_iocs": len(iocs),
+            "total_behavioral_indicators": len(behavioral),
             "last_updated": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         }
         stats_path = os.path.join(self.output_dir, "stats.json")
@@ -73,20 +87,19 @@ class Normalizer:
             json.dump(stats, f, indent=2)
 
         print(f"  Normalized: {len(malware)} malware, {len(pup_pua)} PUP/PUA, "
-              f"{len(families)} families, {len(iocs)} IOCs")
+              f"{len(families)} families, {len(iocs)} IOCs, {len(behavioral)} behavioral")
+
+    # --- Loaders ---
 
     def _load_mapping_rules(self):
-        """Try to load malware_name_mapping regexes. Fall back to MISP aliases only."""
         try:
             self.mapper = FamilyMapper.from_url()
         except Exception as e:
             print(f"  Could not load malware_name_mapping: {e}. Using MISP aliases only.")
-
         for name, data in self._misp_families.items():
             aliases_str = data.get("aliases", "")
             if aliases_str:
-                alias_list = aliases_str.split("|")
-                self.mapper.add_aliases(name, alias_list)
+                self.mapper.add_aliases(name, aliases_str.split("|"))
 
     def _load_misp_galaxy(self):
         path = os.path.join(self.raw_dir, "misp_galaxy_families.csv")
@@ -116,7 +129,6 @@ class Normalizer:
                             self._mitre_technique_to_families[tid].add(name)
 
     def _load_mitre_techniques(self):
-        """Load technique ID -> name/tactic lookup from mitre_techniques.csv."""
         path = os.path.join(self.raw_dir, "mitre_techniques.csv")
         if not os.path.exists(path):
             return
@@ -126,10 +138,42 @@ class Normalizer:
                 if tid:
                     self._mitre_technique_details[tid] = row
 
-    def _collect_samples(self):
-        """Read malwarebazaar raw CSV, classify, and normalize."""
-        samples = {}
+    def _load_hybrid_analysis(self):
+        path = os.path.join(self.raw_dir, "hybrid_analysis.csv")
+        if not os.path.exists(path):
+            return
+        with open(path, newline="", encoding="utf-8") as f:
+            for row in csv.DictReader(f):
+                sha256 = row.get("sha256", "").strip()
+                if sha256:
+                    self._ha_data[sha256] = row
 
+    def _load_vt_enrichment(self):
+        path = os.path.join(self.raw_dir, "vt_enrichment.csv")
+        if not os.path.exists(path):
+            return
+        with open(path, newline="", encoding="utf-8") as f:
+            for row in csv.DictReader(f):
+                sha256 = row.get("sha256", "").strip()
+                if sha256:
+                    self._vt_data[sha256] = row
+
+    def _load_urlhaus(self):
+        path = os.path.join(self.raw_dir, "urlhaus.csv")
+        if not os.path.exists(path):
+            return
+        with open(path, newline="", encoding="utf-8") as f:
+            for row in csv.DictReader(f):
+                sha256 = row.get("sha256", "").strip()
+                if sha256:
+                    if sha256 not in self._urlhaus_data:
+                        self._urlhaus_data[sha256] = []
+                    self._urlhaus_data[sha256].append(row)
+
+    # --- Collectors ---
+
+    def _collect_samples(self):
+        samples = {}
         path = os.path.join(self.raw_dir, "malwarebazaar.csv")
         if not os.path.exists(path):
             return list(samples.values())
@@ -145,7 +189,7 @@ class Normalizer:
                 tags = row.get("tags", "")
                 clamav = row.get("clamav_detection", "")
 
-                # Case-insensitive MISP family lookup
+                # MISP family lookup (case-insensitive)
                 misp_class = ""
                 misp_entry = None
                 for lookup_key in [family_raw, family_raw.lower(), family]:
@@ -155,16 +199,40 @@ class Normalizer:
                             misp_class = misp_entry.get("classification", "")
                             break
 
-                classification = classify(clamav=clamav, tags=tags, misp_classification=misp_class)
+                # Enrichment data
+                ha_entry = self._ha_data.get(sha256)
+                vt_entry = self._vt_data.get(sha256)
+                vt_classification = vt_entry.get("vt_classification", "") if vt_entry else ""
+                vt_detection_rate = vt_entry.get("vt_detection_rate", "") if vt_entry else ""
 
-                family_aliases = ""
-                if misp_entry:
-                    family_aliases = misp_entry.get("aliases", "")
+                classification = classify(
+                    clamav=clamav, tags=tags,
+                    misp_classification=misp_class,
+                    vt_classification=vt_classification,
+                )
+
+                family_aliases = misp_entry.get("aliases", "") if misp_entry else ""
 
                 mitre_techniques = ""
                 mitre_entry = self._mitre_data.get(family.lower()) or self._mitre_data.get(family_raw.lower())
                 if mitre_entry:
                     mitre_techniques = mitre_entry.get("techniques", "")
+
+                # Contacted domains from HA + URLhaus
+                contacted_domains = ""
+                contacted_ips = ""
+                if ha_entry:
+                    contacted_domains = ha_entry.get("contacted_domains", "")
+                    contacted_ips = ha_entry.get("contacted_ips", "")
+
+                urlhaus_entries = self._urlhaus_data.get(sha256, [])
+                if urlhaus_entries:
+                    uh_hosts = [e.get("host", "") for e in urlhaus_entries if e.get("host")]
+                    if uh_hosts:
+                        existing = set(contacted_domains.split("|")) if contacted_domains else set()
+                        existing.update(uh_hosts)
+                        existing.discard("")
+                        contacted_domains = "|".join(sorted(existing)[:10])
 
                 samples[sha256] = {
                     "sha256": sha256,
@@ -180,43 +248,79 @@ class Normalizer:
                     "last_seen": row.get("last_seen", ""),
                     "source": "malwarebazaar",
                     "mitre_techniques": mitre_techniques,
+                    "contacted_domains": contacted_domains,
+                    "contacted_ips": contacted_ips,
+                    "vt_classification": vt_classification,
+                    "vt_detection_rate": vt_detection_rate,
                 }
 
         return list(samples.values())
 
     def _collect_iocs(self):
-        """Read threatfox raw CSV and normalize."""
         iocs = []
-        path = os.path.join(self.raw_dir, "threatfox.csv")
-        if not os.path.exists(path):
-            return iocs
 
-        with open(path, newline="", encoding="utf-8") as f:
-            for row in csv.DictReader(f):
-                family_raw = row.get("family", "")
-                family = self.mapper.resolve(family_raw) if family_raw else ""
+        # ThreatFox
+        tf_path = os.path.join(self.raw_dir, "threatfox.csv")
+        if os.path.exists(tf_path):
+            with open(tf_path, newline="", encoding="utf-8") as f:
+                for row in csv.DictReader(f):
+                    family_raw = row.get("family", "")
+                    family = self.mapper.resolve(family_raw) if family_raw else ""
+                    iocs.append({
+                        "ioc_type": row.get("ioc_type", ""),
+                        "ioc_value": row.get("ioc_value", ""),
+                        "family": family or family_raw,
+                        "confidence": row.get("confidence", ""),
+                        "threat_type": row.get("threat_type", ""),
+                        "first_seen": row.get("first_seen", ""),
+                        "last_seen": row.get("last_seen", ""),
+                        "source": "threatfox",
+                    })
 
-                iocs.append({
-                    "ioc_type": row.get("ioc_type", ""),
-                    "ioc_value": row.get("ioc_value", ""),
-                    "family": family or family_raw,
-                    "confidence": row.get("confidence", ""),
-                    "threat_type": row.get("threat_type", ""),
-                    "first_seen": row.get("first_seen", ""),
-                    "last_seen": row.get("last_seen", ""),
-                    "source": "threatfox",
-                })
+        # URLhaus
+        uh_path = os.path.join(self.raw_dir, "urlhaus.csv")
+        if os.path.exists(uh_path):
+            with open(uh_path, newline="", encoding="utf-8") as f:
+                for row in csv.DictReader(f):
+                    family_raw = row.get("signature", "")
+                    family = self.mapper.resolve(family_raw) if family_raw else ""
+                    iocs.append({
+                        "ioc_type": "url",
+                        "ioc_value": row.get("url", ""),
+                        "family": family or family_raw,
+                        "confidence": "",
+                        "threat_type": "payload_delivery",
+                        "first_seen": row.get("first_seen", ""),
+                        "last_seen": "",
+                        "source": "urlhaus",
+                    })
+
+        # OTX
+        otx_path = os.path.join(self.raw_dir, "otx_pulses.csv")
+        if os.path.exists(otx_path):
+            with open(otx_path, newline="", encoding="utf-8") as f:
+                for row in csv.DictReader(f):
+                    family_raw = row.get("family", "")
+                    family = self.mapper.resolve(family_raw) if family_raw else ""
+                    iocs.append({
+                        "ioc_type": row.get("ioc_type", ""),
+                        "ioc_value": row.get("ioc_value", ""),
+                        "family": family or family_raw,
+                        "confidence": "",
+                        "threat_type": "",
+                        "first_seen": row.get("created", ""),
+                        "last_seen": "",
+                        "source": "otx",
+                    })
 
         return iocs
 
     def _build_family_list(self, samples):
-        """Build the malware_families output from MISP Galaxy + observed samples."""
         families = {}
 
         for name, data in self._misp_families.items():
             mitre_entry = self._mitre_data.get(name.lower())
             techniques = mitre_entry.get("techniques", "") if mitre_entry else ""
-
             families[name.lower()] = {
                 "canonical_name": name,
                 "aliases": data.get("aliases", ""),
@@ -248,7 +352,6 @@ class Normalizer:
         return list(families.values())
 
     def _build_technique_list(self):
-        """Build techniques output from MITRE ATT&CK data."""
         techniques = []
         for tid, family_set in sorted(self._mitre_technique_to_families.items()):
             details = self._mitre_technique_details.get(tid, {})
@@ -260,14 +363,55 @@ class Normalizer:
             })
         return techniques
 
+    def _build_behavioral_indicators(self, samples):
+        indicators = []
+        for sample in samples:
+            sha256 = sample.get("sha256", "")
+            family = sample.get("family", "")
+
+            # From Hybrid Analysis
+            ha_entry = self._ha_data.get(sha256)
+            if ha_entry:
+                for domain in (ha_entry.get("contacted_domains", "") or "").split("|"):
+                    if domain:
+                        indicators.append({
+                            "sha256": sha256, "indicator_type": "domain",
+                            "indicator_value": domain, "source": "hybrid_analysis",
+                            "family": family, "first_seen": ha_entry.get("analysis_date", ""),
+                        })
+                for ip in (ha_entry.get("contacted_ips", "") or "").split("|"):
+                    if ip:
+                        indicators.append({
+                            "sha256": sha256, "indicator_type": "ip",
+                            "indicator_value": ip, "source": "hybrid_analysis",
+                            "family": family, "first_seen": ha_entry.get("analysis_date", ""),
+                        })
+
+            # From URLhaus
+            for uh_entry in self._urlhaus_data.get(sha256, []):
+                url = uh_entry.get("url", "")
+                host = uh_entry.get("host", "")
+                if url:
+                    indicators.append({
+                        "sha256": sha256, "indicator_type": "url",
+                        "indicator_value": url, "source": "urlhaus",
+                        "family": family, "first_seen": uh_entry.get("first_seen", ""),
+                    })
+                if host:
+                    indicators.append({
+                        "sha256": sha256, "indicator_type": "domain",
+                        "indicator_value": host, "source": "urlhaus",
+                        "family": family, "first_seen": uh_entry.get("first_seen", ""),
+                    })
+
+        return indicators
+
     def _write_csv_and_json(self, basename, fieldnames, rows):
         csv_path = os.path.join(self.output_dir, f"{basename}.csv")
         json_path = os.path.join(self.output_dir, f"{basename}.json")
-
         with open(csv_path, "w", newline="", encoding="utf-8") as f:
             writer = csv.DictWriter(f, fieldnames=fieldnames, extrasaction="ignore")
             writer.writeheader()
             writer.writerows(rows)
-
         with open(json_path, "w", encoding="utf-8") as f:
             json.dump(rows, f, indent=2, default=str)

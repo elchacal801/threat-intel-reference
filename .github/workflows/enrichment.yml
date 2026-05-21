@@ -1,0 +1,63 @@
+name: Hash Enrichment
+# Runs every 6 hours to enrich samples via Hybrid Analysis and VirusTotal
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  enrich:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run Hybrid Analysis enricher
+        env:
+          HYBRID_ANALYSIS_API_KEY: ${{ secrets.HYBRID_ANALYSIS_API_KEY }}
+        run: python run_pipeline.py --enricher hybrid_analysis --skip-normalize
+        continue-on-error: true
+
+      - name: Run VirusTotal enricher
+        env:
+          VT_API_KEY: ${{ secrets.VT_API_KEY }}
+        run: python run_pipeline.py --enricher virustotal --skip-normalize
+        continue-on-error: true
+
+      - name: Run normalizer
+        env:
+          MALWAREBAZAAR_API_KEY: ${{ secrets.MALWAREBAZAAR_API_KEY }}
+          THREATFOX_API_KEY: ${{ secrets.THREATFOX_API_KEY }}
+          YARAIFY_API_KEY: ${{ secrets.YARAIFY_API_KEY }}
+        run: |
+          python -c "
+          from normalizer.normalize import Normalizer
+          normalizer = Normalizer('data/raw', 'data/normalized')
+          normalizer.run()
+          "
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git diff --quiet data/ && echo "changed=false" >> $GITHUB_OUTPUT || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add data/
+          git commit -m "data: enrichment update $(date -u +%Y-%m-%d-%H%M)"
+          git push

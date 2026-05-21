@@ -153,3 +153,45 @@ def test_stats_json(pipeline_dirs):
     assert "total_families" in stats
     assert "total_pup_pua" in stats
     assert "last_updated" in stats
+
+
+def test_normalizer_produces_behavioral_indicators(pipeline_dirs):
+    raw_dir, norm_dir = pipeline_dirs
+    write_csv(
+        os.path.join(raw_dir, "urlhaus.csv"),
+        ["sha256", "md5", "url", "host", "url_status", "file_type", "signature", "tags", "first_seen"],
+        [{"sha256": "a" * 64, "md5": "c" * 32, "url": "https://evil.com/mal.exe",
+          "host": "evil.com", "url_status": "online", "file_type": "exe",
+          "signature": "AgentTesla", "tags": "", "first_seen": "2024-01-01"}],
+    )
+    write_csv(
+        os.path.join(raw_dir, "hybrid_analysis.csv"),
+        ["sha256", "verdict", "vx_family", "av_detect_pct", "contacted_domains", "contacted_ips", "analysis_date"],
+        [{"sha256": "a" * 64, "verdict": "malicious", "vx_family": "AgentTesla",
+          "av_detect_pct": "75", "contacted_domains": "c2.evil.com|exfil.bad.org",
+          "contacted_ips": "1.2.3.4", "analysis_date": "2024-01-15"}],
+    )
+    normalizer = Normalizer(raw_dir, norm_dir)
+    normalizer.run()
+    bi_path = os.path.join(norm_dir, "behavioral_indicators.csv")
+    assert os.path.exists(bi_path)
+    with open(bi_path, newline="", encoding="utf-8") as f:
+        bi_rows = list(csv.DictReader(f))
+    assert len(bi_rows) >= 3
+
+
+def test_normalizer_adds_vt_columns(pipeline_dirs):
+    raw_dir, norm_dir = pipeline_dirs
+    write_csv(
+        os.path.join(raw_dir, "vt_enrichment.csv"),
+        ["sha256", "vt_classification", "vt_detection_rate", "vt_family", "vt_tags", "enriched_date"],
+        [{"sha256": "a" * 64, "vt_classification": "trojan", "vt_detection_rate": "45/72",
+          "vt_family": "agenttesla", "vt_tags": "pe|trojan", "enriched_date": "2024-01-15"}],
+    )
+    normalizer = Normalizer(raw_dir, norm_dir)
+    normalizer.run()
+    with open(os.path.join(norm_dir, "malware_samples.csv"), newline="", encoding="utf-8") as f:
+        rows = list(csv.DictReader(f))
+    sample = next((r for r in rows if r["sha256"] == "a" * 64), None)
+    assert sample is not None
+    assert sample["vt_detection_rate"] == "45/72"

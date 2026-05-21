@@ -36,3 +36,15 @@ def test_misp_classification_override():
 
 def test_misp_only_used_when_others_empty():
     assert classify(clamav="PUA.Win32.X", tags="", misp_classification="riskware") == "pua"
+
+def test_vt_classification_adware():
+    assert classify(clamav="", tags="", misp_classification="", vt_classification="adware") == "adware"
+
+def test_vt_classification_pup():
+    assert classify(clamav="", tags="", misp_classification="", vt_classification="pup") == "pup"
+
+def test_vt_after_misp():
+    assert classify(clamav="", tags="", misp_classification="riskware", vt_classification="adware") == "riskware"
+
+def test_vt_trojan_stays_malware():
+    assert classify(clamav="", tags="", vt_classification="trojan") == "malware"

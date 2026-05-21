@@ -3,14 +3,18 @@
 Rules applied in priority order. First match wins.
 """
 
+PUP_CATEGORIES = {"adware", "pup", "pua", "riskware"}
 
-def classify(clamav: str = "", tags: str = "", misp_classification: str = "") -> str:
-    """Classify a sample based on ClamAV signature, tags, and MISP type.
+
+def classify(clamav: str = "", tags: str = "", misp_classification: str = "",
+             vt_classification: str = "") -> str:
+    """Classify a sample based on ClamAV signature, tags, MISP type, and VT classification.
 
     Args:
         clamav: ClamAV detection name (e.g., "PUA.Win32.Adware.Foo")
         tags: Pipe-separated tags (e.g., "stealer|adware|packed")
         misp_classification: Classification from MISP Galaxy (e.g., "adware")
+        vt_classification: Classification from VirusTotal popular_threat_classification
 
     Returns:
         One of: "malware", "pup", "pua", "adware", "riskware"
@@ -33,6 +37,8 @@ def classify(clamav: str = "", tags: str = "", misp_classification: str = "") ->
         return "riskware"
     if "bundler" in tag_set:
         return "pua"
-    if misp_classification and misp_classification.lower() in ("adware", "pup", "pua", "riskware"):
+    if misp_classification and misp_classification.lower() in PUP_CATEGORIES:
         return misp_classification.lower()
+    if vt_classification and vt_classification.lower() in PUP_CATEGORIES:
+        return vt_classification.lower()
     return "malware"

@@ -11,6 +11,7 @@ A daily-updated, open-source reference database of known malware, PUPs, PUAs, ad
 | `data/normalized/malware_families.csv` | Canonical family list with aliases and descriptions |
 | `data/normalized/iocs.csv` | IOCs (IPs, domains, URLs, hashes) with confidence scores |
 | `data/normalized/techniques.csv` | MITRE ATT&CK technique-to-family mappings |
+| `data/normalized/behavioral_indicators.csv` | Hash-to-domain/IP associations from sandbox + URLhaus |
 | `data/raw/` | Raw per-source CSVs before normalization |
 
 All files available as both CSV and JSON.
@@ -22,16 +23,20 @@ All files available as both CSV and JSON.
 - **[YARAify](https://yaraify.abuse.ch)** — YARA rule-to-malware-family mappings
 - **[MITRE ATT&CK](https://attack.mitre.org)** — Technique-to-malware relationships
 - **[MISP Galaxy](https://github.com/MISP/misp-galaxy)** — Malware family taxonomy with aliases
+- **[URLhaus](https://urlhaus.abuse.ch)** — Payload hashes linked to malicious URLs/domains
+- **[AlienVault OTX](https://otx.alienvault.com)** — Community pulse IOCs with family associations
+- **[Hybrid Analysis](https://www.hybrid-analysis.com)** — Sandbox behavioral data (contacted domains/IPs)
+- **[VirusTotal](https://www.virustotal.com)** — Multi-AV verdicts and PUP/PUA classification
 
 Family name normalization powered by [malware_name_mapping](https://github.com/certtools/malware_name_mapping).
 
 ## How it works
 
-A GitHub Actions pipeline runs daily at 6 AM UTC:
+Two GitHub Actions pipelines run automatically:
 
-1. **Collectors** pull data from each source into `data/raw/`
-2. **Normalizer** merges, deduplicates, classifies (malware vs PUP/PUA), and resolves family aliases
-3. **Output** is committed as updated CSV/JSON files in `data/normalized/`
+**Daily pipeline** (6 AM UTC): Collectors pull bulk data from all sources into `data/raw/`, normalizer merges and classifies into `data/normalized/`.
+
+**Enrichment pipeline** (every 6 hours): Hybrid Analysis and VirusTotal enrich existing samples with behavioral data and multi-AV verdicts (rate-limited, processes batches).
 
 ## Quick start
 
@@ -61,7 +66,7 @@ python run_pipeline.py
 
 1. Fork this repo
 2. Get free API keys at [auth.abuse.ch](https://auth.abuse.ch)
-3. Add as GitHub Secrets: `MALWAREBAZAAR_API_KEY`, `THREATFOX_API_KEY`, `YARAIFY_API_KEY`
+3. Add as GitHub Secrets: `MALWAREBAZAAR_API_KEY`, `THREATFOX_API_KEY`, `YARAIFY_API_KEY`, `URLHAUS_API_KEY`, `OTX_API_KEY`, `HYBRID_ANALYSIS_API_KEY`, `VT_API_KEY`
 4. Enable Actions — the daily cron will start updating your fork
 
 ## Classification
@@ -77,6 +82,7 @@ Samples are classified using these signals (first match wins):
 | Tags contain `riskware` | riskware |
 | Tags contain `bundler` | pua |
 | MISP Galaxy family type | as labeled |
+| VirusTotal popular_threat_classification | as labeled |
 | Default | malware |
 
 ## Contributing
