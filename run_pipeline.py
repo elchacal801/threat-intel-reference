@@ -62,7 +62,7 @@ def main():
 
     if failed:
         print(f"\n[!] Failed collectors: {', '.join(failed)}", file=sys.stderr)
-        sys.exit(1)
+        # Don't exit 1 — partial data is still valuable
 
 
 if __name__ == "__main__":
