@@ -4,8 +4,8 @@ from urllib.parse import urlparse
 
 from collectors.base import BaseCollector
 
-PAYLOADS_URL = "https://urlhaus-api.abuse.ch/v1/payloads/recent/"
-URLS_URL = "https://urlhaus-api.abuse.ch/v1/urls/recent/"
+PAYLOADS_URL = "https://urlhaus-api.abuse.ch/v1/payloads/recent/limit/1000/"
+URLS_URL = "https://urlhaus-api.abuse.ch/v1/urls/recent/limit/1000/"
 ENV_VAR = "URLHAUS_API_KEY"
 
 
@@ -38,7 +38,7 @@ class URLhausCollector(BaseCollector):
         # 1. Recent payloads with linked URLs
         print("    Fetching recent payloads...")
         try:
-            resp = self.session.post(PAYLOADS_URL, data={"limit": 1000}, timeout=60)
+            resp = self.session.get(PAYLOADS_URL, timeout=60)
             resp.raise_for_status()
             result = resp.json()
             for payload in result.get("payloads", []):
@@ -67,7 +67,7 @@ class URLhausCollector(BaseCollector):
         # 2. Recent URLs with payload hashes
         print("    Fetching recent URLs...")
         try:
-            resp = self.session.get(URLS_URL, params={"limit": 1000}, timeout=60)
+            resp = self.session.get(URLS_URL, timeout=60)
             resp.raise_for_status()
             result = resp.json()
             for url_entry in result.get("urls", []):

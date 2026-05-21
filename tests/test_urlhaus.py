@@ -35,17 +35,17 @@ SAMPLE_URLS_RESPONSE = {
 }
 
 @patch("collectors.urlhaus.URLhausCollector.get_api_key", return_value="fake_key")
-@patch("requests.Session.post")
 @patch("requests.Session.get")
-def test_collect_merges_payloads_and_urls(mock_get, mock_post, mock_key):
-    mock_post_resp = MagicMock()
-    mock_post_resp.status_code = 200
-    mock_post_resp.json.return_value = SAMPLE_PAYLOADS_RESPONSE
-    mock_post.return_value = mock_post_resp
-    mock_get_resp = MagicMock()
-    mock_get_resp.status_code = 200
-    mock_get_resp.json.return_value = SAMPLE_URLS_RESPONSE
-    mock_get.return_value = mock_get_resp
+def test_collect_merges_payloads_and_urls(mock_get, mock_key):
+    def side_effect(url, **kwargs):
+        resp = MagicMock()
+        resp.status_code = 200
+        if "payloads" in url:
+            resp.json.return_value = SAMPLE_PAYLOADS_RESPONSE
+        else:
+            resp.json.return_value = SAMPLE_URLS_RESPONSE
+        return resp
+    mock_get.side_effect = side_effect
 
     with tempfile.TemporaryDirectory() as tmpdir:
         collector = URLhausCollector(tmpdir)
@@ -59,17 +59,17 @@ def test_collect_merges_payloads_and_urls(mock_get, mock_post, mock_key):
     assert "evil.com" in emotet_rows[0]["host"]
 
 @patch("collectors.urlhaus.URLhausCollector.get_api_key", return_value="fake_key")
-@patch("requests.Session.post")
 @patch("requests.Session.get")
-def test_run_writes_csv(mock_get, mock_post, mock_key):
-    mock_post_resp = MagicMock()
-    mock_post_resp.status_code = 200
-    mock_post_resp.json.return_value = SAMPLE_PAYLOADS_RESPONSE
-    mock_post.return_value = mock_post_resp
-    mock_get_resp = MagicMock()
-    mock_get_resp.status_code = 200
-    mock_get_resp.json.return_value = SAMPLE_URLS_RESPONSE
-    mock_get.return_value = mock_get_resp
+def test_run_writes_csv(mock_get, mock_key):
+    def side_effect(url, **kwargs):
+        resp = MagicMock()
+        resp.status_code = 200
+        if "payloads" in url:
+            resp.json.return_value = SAMPLE_PAYLOADS_RESPONSE
+        else:
+            resp.json.return_value = SAMPLE_URLS_RESPONSE
+        return resp
+    mock_get.side_effect = side_effect
 
     with tempfile.TemporaryDirectory() as tmpdir:
         collector = URLhausCollector(tmpdir)

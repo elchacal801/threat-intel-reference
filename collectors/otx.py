@@ -54,7 +54,13 @@ class OTXCollector(BaseCollector):
                 tags = "|".join(tags_list) if isinstance(tags_list, list) else ""
 
                 families = pulse.get("malware_families", [])
-                family = families[0].get("display_name", "") if families else ""
+                family = ""
+                if isinstance(families, list) and families:
+                    first = families[0]
+                    if isinstance(first, dict):
+                        family = first.get("display_name", "")
+                    elif isinstance(first, str):
+                        family = first
 
                 for indicator in pulse.get("indicators", []):
                     ioc_type = indicator.get("type", "")
