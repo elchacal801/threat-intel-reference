@@ -22,7 +22,7 @@ class YARAifyCollector(BaseCollector):
         api_key = self.get_api_key(ENV_VAR)
         self.session.headers["Auth-Key"] = api_key
 
-        resp = self.session.post(API_URL, data={"query": "recent_yararules"})
+        resp = self.session.post(API_URL, json={"query": "recent_yararules"})
         resp.raise_for_status()
         result = resp.json()
 
