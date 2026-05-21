@@ -34,7 +34,8 @@ class Normalizer:
         self.raw_dir = raw_dir
         self.output_dir = output_dir
         self.mapper = FamilyMapper()
-        self._misp_families: dict[str, dict] = {}
+        self._misp_families: dict[str, dict] = {}  # original case -> row
+        self._misp_families_lower: dict[str, dict] = {}  # lowercased -> row
         self._mitre_data: dict[str, dict] = {}
         self._mitre_technique_to_families: dict[str, set] = {}
         self._mitre_technique_details: dict[str, dict] = {}
@@ -96,6 +97,7 @@ class Normalizer:
                 name = row.get("canonical_name", "")
                 if name:
                     self._misp_families[name] = row
+                    self._misp_families_lower[name.lower()] = row
 
     def _load_mitre_attack(self):
         path = os.path.join(self.raw_dir, "mitre_attack.csv")
@@ -143,17 +145,21 @@ class Normalizer:
                 tags = row.get("tags", "")
                 clamav = row.get("clamav_detection", "")
 
+                # Case-insensitive MISP family lookup
                 misp_class = ""
-                if family_raw:
-                    misp_entry = self._misp_families.get(family_raw)
-                    if misp_entry:
-                        misp_class = misp_entry.get("classification", "")
+                misp_entry = None
+                for lookup_key in [family_raw, family_raw.lower(), family]:
+                    if lookup_key:
+                        misp_entry = self._misp_families_lower.get(lookup_key.lower())
+                        if misp_entry:
+                            misp_class = misp_entry.get("classification", "")
+                            break
 
                 classification = classify(clamav=clamav, tags=tags, misp_classification=misp_class)
 
                 family_aliases = ""
-                if family_raw and family_raw in self._misp_families:
-                    family_aliases = self._misp_families[family_raw].get("aliases", "")
+                if misp_entry:
+                    family_aliases = misp_entry.get("aliases", "")
 
                 mitre_techniques = ""
                 mitre_entry = self._mitre_data.get(family.lower()) or self._mitre_data.get(family_raw.lower())

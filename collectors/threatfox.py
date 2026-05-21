@@ -1,9 +1,12 @@
 """Collector for ThreatFox (abuse.ch) full IOC export.
 
-The ThreatFox CSV export has:
+The ThreatFox CSV export format:
 - Comment lines starting with #
-- One comment line containing the CSV header (quoted, with commas)
+- One comment line is the CSV header (quoted fields, 15 columns)
 - Data lines with quoted values
+- Header: first_seen_utc,ioc_id,ioc_value,ioc_type,threat_type,
+          fk_malware,malware_alias,malware_printable,last_seen_utc,
+          confidence_level,is_compromised,reference,tags,anonymous,reporter
 """
 
 import csv
@@ -29,13 +32,11 @@ class ThreatFoxCollector(BaseCollector):
             "first_seen", "last_seen", "tags",
         ]
 
-    def _get_field(self, row, *candidates):
-        """Try multiple column names, return the first non-empty value found."""
-        for key in candidates:
-            val = row.get(key, "")
-            if val:
-                return val.strip().strip('"')
-        return ""
+    def _clean(self, val):
+        """Strip quotes and whitespace from a value."""
+        if not val:
+            return ""
+        return val.strip().strip('"').strip()
 
     def collect(self):
         api_key = self.get_api_key(ENV_VAR)
@@ -78,27 +79,26 @@ class ThreatFoxCollector(BaseCollector):
                     print("  Could not find header in ThreatFox comment lines")
                     return rows
 
-                # Clean header: strip quotes
-                header_line = header_line.replace('"', '')
+                # Keep header WITH quotes so csv.reader handles quoting consistently
                 lines = [header_line + "\n"] + data_lines
 
-                reader = csv.DictReader(lines)
-                print(f"    ThreatFox CSV headers: {reader.fieldnames}")
+                reader = csv.DictReader(lines, quotechar='"', skipinitialspace=True)
+                # DictReader will strip quotes from header names automatically
+                print(f"    ThreatFox CSV headers ({len(reader.fieldnames)}): {reader.fieldnames[:8]}...")
 
                 for row in reader:
                     parsed = {
-                        "ioc_id": self._get_field(row, "ioc_id"),
-                        "ioc_type": self._get_field(row, "ioc_type"),
-                        "ioc_value": self._get_field(row, "ioc_value", "ioc"),
-                        "threat_type": self._get_field(row, "threat_type"),
-                        "family": self._get_field(row, "malware_printable"),
-                        "family_aliases": self._get_field(row, "malware_alias"),
-                        "confidence": self._get_field(row, "confidence_level"),
-                        "first_seen": self._get_field(row, "first_seen_utc"),
-                        "last_seen": self._get_field(row, "last_seen_utc"),
-                        "tags": self._get_field(row, "tags"),
+                        "ioc_id": self._clean(row.get("ioc_id", "")),
+                        "ioc_type": self._clean(row.get("ioc_type", "")),
+                        "ioc_value": self._clean(row.get("ioc_value", "") or row.get("ioc", "")),
+                        "threat_type": self._clean(row.get("threat_type", "")),
+                        "family": self._clean(row.get("malware_printable", "")),
+                        "family_aliases": self._clean(row.get("malware_alias", "")),
+                        "confidence": self._clean(row.get("confidence_level", "")),
+                        "first_seen": self._clean(row.get("first_seen_utc", "")),
+                        "last_seen": self._clean(row.get("last_seen_utc", "")),
+                        "tags": self._clean(row.get("tags", "")),
                     }
-                    # Only add rows that have at least an IOC value
                     if parsed["ioc_value"]:
                         rows.append(parsed)
 
@@ -107,6 +107,14 @@ class ThreatFoxCollector(BaseCollector):
             populated = sum(1 for v in sample.values() if v)
             print(f"    Sample row: {populated}/{len(sample)} fields populated")
             print(f"    First IOC: type={sample['ioc_type']} family={sample['family']} conf={sample['confidence']}")
+            # Validate: check row 30 for column alignment
+            if len(rows) > 30:
+                r30 = rows[30]
+                ls = r30.get("last_seen", "")
+                if ls and not ls[:2].isdigit() and ls != "":
+                    print(f"    WARNING: Column misalignment detected at row 30: last_seen={ls!r}")
+                else:
+                    print(f"    Column alignment check passed (row 30 last_seen={ls!r})")
         else:
             print("    WARNING: No rows with ioc_value found")
 
