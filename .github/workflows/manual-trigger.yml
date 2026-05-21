@@ -15,6 +15,8 @@ on:
           - yaraify
           - mitre_attack
           - misp_galaxy
+          - urlhaus
+          - otx
 
 permissions:
   contents: write
@@ -39,6 +41,8 @@ jobs:
           MALWAREBAZAAR_API_KEY: ${{ secrets.MALWAREBAZAAR_API_KEY }}
           THREATFOX_API_KEY: ${{ secrets.THREATFOX_API_KEY }}
           YARAIFY_API_KEY: ${{ secrets.YARAIFY_API_KEY }}
+          URLHAUS_API_KEY: ${{ secrets.URLHAUS_API_KEY }}
+          OTX_API_KEY: ${{ secrets.OTX_API_KEY }}
         run: python run_pipeline.py --collector ${{ inputs.collector }}
 
       - name: Check for changes
