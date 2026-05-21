@@ -64,8 +64,8 @@ class ThreatFoxCollector(BaseCollector):
                 text = io.TextIOWrapper(csv_file, encoding="utf-8")
 
                 # ThreatFox CSV format:
-                # - Multiple comment lines starting with #
-                # - The LAST comment line is the header (e.g., # "first_seen_utc","ioc_id",...)
+                # - Comment lines starting with #
+                # - One comment line contains the CSV header (has commas and quotes)
                 # - Data lines follow without #
                 comment_lines = []
                 data_lines = []
@@ -73,23 +73,31 @@ class ThreatFoxCollector(BaseCollector):
                     if line.startswith("#"):
                         comment_lines.append(line)
                     else:
-                        data_lines.append(line)
+                        stripped = line.strip()
+                        if stripped:
+                            data_lines.append(line)
 
                 if not data_lines:
                     print("  ThreatFox CSV has no data lines")
                     return rows
 
-                # The last comment line is the header row — strip the leading "# "
-                if comment_lines:
-                    header_line = comment_lines[-1].lstrip("#").strip()
-                    # Strip quotes from header names
-                    header_line = header_line.replace('"', '')
-                    # Prepend header to data lines
-                    lines = [header_line + "\n"] + data_lines
-                else:
-                    # No comment lines — first data line is the header
-                    lines = data_lines
-                    lines[0] = lines[0].replace('"', '')
+                # Find the header: it's the comment line containing quoted CSV fields
+                # e.g., # "first_seen_utc","ioc_id","ioc_value",...
+                header_line = None
+                for cline in comment_lines:
+                    content = cline.lstrip("#").strip()
+                    if '"' in content and "," in content:
+                        header_line = content
+                        # Don't break — take the last matching line
+
+                if not header_line:
+                    print("  Could not find header in ThreatFox comment lines")
+                    print(f"  Comment lines: {[c.strip()[:60] for c in comment_lines]}")
+                    return rows
+
+                # Strip quotes from header names
+                header_line = header_line.replace('"', '')
+                lines = [header_line + "\n"] + data_lines
 
                 reader = csv.DictReader(lines)
                 actual_headers = reader.fieldnames
