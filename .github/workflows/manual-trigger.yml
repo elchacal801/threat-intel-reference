@@ -1,5 +1,5 @@
 name: Manual Pipeline Run
-
+# Trigger manually from the Actions tab
 on:
   workflow_dispatch:
     inputs:

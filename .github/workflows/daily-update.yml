@@ -1,5 +1,5 @@
 name: Daily Threat Intel Update
-
+# Runs daily at 6 AM UTC and supports manual dispatch
 on:
   schedule:
     - cron: '0 6 * * *'
