@@ -11,10 +11,8 @@ SAMPLE_PAYLOADS_RESPONSE = {
         {
             "sha256_hash": "a" * 64, "md5_hash": "b" * 32,
             "file_type": "exe", "signature": "Emotet", "firstseen": "2024-01-15",
-            "urls": [
-                {"url": "https://evil.com/malware.exe", "url_status": "online"},
-                {"url": "https://bad.org/payload.bin", "url_status": "offline"},
-            ],
+            "urlhaus_download": "https://evil.com/malware.exe",
+            "file_size": 12345, "imphash": None, "ssdeep": None, "tlsh": None,
         },
     ],
 }
@@ -23,20 +21,17 @@ SAMPLE_URLS_RESPONSE = {
     "query_status": "ok",
     "urls": [
         {
-            "url": "https://another.net/dropper.js", "host": "another.net",
+            "id": "123", "url": "https://another.net/dropper.js", "host": "another.net",
             "url_status": "online", "threat": "malware_download",
-            "tags": ["js", "dropper"], "dateadded": "2024-02-01",
-            "payloads": [
-                {"sha256_hash": "c" * 64, "md5_hash": "d" * 32,
-                 "file_type": "js", "signature": "SocGholish"},
-            ],
+            "tags": ["js", "dropper"], "date_added": "2024-02-01",
+            "reporter": "abuse_ch", "larted": "true",
         },
     ],
 }
 
 @patch("collectors.urlhaus.URLhausCollector.get_api_key", return_value="fake_key")
 @patch("requests.Session.get")
-def test_collect_merges_payloads_and_urls(mock_get, mock_key):
+def test_collect_gets_payloads_and_urls(mock_get, mock_key):
     def side_effect(url, **kwargs):
         resp = MagicMock()
         resp.status_code = 200
@@ -50,13 +45,15 @@ def test_collect_merges_payloads_and_urls(mock_get, mock_key):
     with tempfile.TemporaryDirectory() as tmpdir:
         collector = URLhausCollector(tmpdir)
         rows = collector.collect()
-    assert len(rows) >= 3
-    hashes = [r["sha256"] for r in rows]
-    assert "a" * 64 in hashes
-    assert "c" * 64 in hashes
-    emotet_rows = [r for r in rows if r["sha256"] == "a" * 64]
-    assert emotet_rows[0]["signature"] == "Emotet"
-    assert "evil.com" in emotet_rows[0]["host"]
+    assert len(rows) == 2
+    # First row is from payloads
+    assert rows[0]["sha256"] == "a" * 64
+    assert rows[0]["signature"] == "Emotet"
+    assert rows[0]["host"] == "evil.com"
+    # Second row is from URLs
+    assert rows[1]["url"] == "https://another.net/dropper.js"
+    assert rows[1]["host"] == "another.net"
+    assert rows[1]["sha256"] == ""  # URLs don't have hashes
 
 @patch("collectors.urlhaus.URLhausCollector.get_api_key", return_value="fake_key")
 @patch("requests.Session.get")
@@ -78,4 +75,4 @@ def test_run_writes_csv(mock_get, mock_key):
         assert os.path.exists(path)
         with open(path, newline="", encoding="utf-8") as f:
             rows = list(csv.DictReader(f))
-        assert len(rows) >= 3
+        assert len(rows) == 2
