@@ -3,7 +3,7 @@ import csv
 import tempfile
 from unittest.mock import patch, MagicMock
 import pytest
-from collectors.hybrid_analysis import HybridAnalysisEnricher
+from collectors.hybrid_analysis import HybridAnalysisEnricher, FEED_URL, SEARCH_URL
 
 SAMPLE_FEED_RESPONSE = {
     "data": [
@@ -27,20 +27,23 @@ SAMPLE_SEARCH_RESPONSE = [
 ]
 
 
-@patch("collectors.hybrid_analysis.HybridAnalysisEnricher.get_api_key", return_value="fake_key")
-@patch("requests.Session.post")
-@patch("requests.Session.get")
-def test_collect_from_feed(mock_get, mock_post, mock_key):
-    mock_resp = MagicMock()
-    mock_resp.status_code = 200
-    mock_resp.json.return_value = SAMPLE_FEED_RESPONSE
-    mock_get.return_value = mock_resp
+def _mock_get_side_effect(feed_data, search_data):
+    """Create a side_effect function that returns different data for feed vs search URLs."""
+    def side_effect(url=None, *args, **kwargs):
+        resp = MagicMock()
+        resp.status_code = 200
+        if url and "search" in url:
+            resp.json.return_value = search_data
+        else:
+            resp.json.return_value = feed_data
+        return resp
+    return side_effect
 
-    # POST for enrichment returns empty (no enrichment data)
-    mock_post_resp = MagicMock()
-    mock_post_resp.status_code = 200
-    mock_post_resp.json.return_value = []
-    mock_post.return_value = mock_post_resp
+
+@patch("collectors.hybrid_analysis.HybridAnalysisEnricher.get_api_key", return_value="fake_key")
+@patch("requests.Session.get")
+def test_collect_from_feed(mock_get, mock_key):
+    mock_get.side_effect = _mock_get_side_effect(SAMPLE_FEED_RESPONSE, [])
 
     with tempfile.TemporaryDirectory() as tmpdir:
         enricher = HybridAnalysisEnricher(tmpdir)
@@ -53,10 +56,8 @@ def test_collect_from_feed(mock_get, mock_post, mock_key):
 
 
 @patch("collectors.hybrid_analysis.HybridAnalysisEnricher.get_api_key", return_value="fake_key")
-@patch("requests.Session.post")
 @patch("requests.Session.get")
-def test_enrich_hash_merges_behavioral_data(mock_get, mock_post, mock_key):
-    # Feed returns hash with empty behavioral data
+def test_enrich_hash_merges_behavioral_data(mock_get, mock_key):
     feed_response = {
         "data": [
             {
@@ -67,15 +68,7 @@ def test_enrich_hash_merges_behavioral_data(mock_get, mock_post, mock_key):
             },
         ],
     }
-    mock_feed_resp = MagicMock()
-    mock_feed_resp.status_code = 200
-    mock_feed_resp.json.return_value = feed_response
-    mock_get.return_value = mock_feed_resp
-
-    # Per-hash search returns full behavioral data
-    mock_search_resp = MagicMock()
-    mock_search_resp.status_code = 200
-    mock_search_resp.json.return_value = [
+    search_response = [
         {
             "sha256": "b" * 64, "verdict": "malicious",
             "vx_family": "AgentTesla", "av_detect": "65%",
@@ -84,7 +77,7 @@ def test_enrich_hash_merges_behavioral_data(mock_get, mock_post, mock_key):
             "hosts": ["10.0.0.1"],
         },
     ]
-    mock_post.return_value = mock_search_resp
+    mock_get.side_effect = _mock_get_side_effect(feed_response, search_response)
 
     with tempfile.TemporaryDirectory() as tmpdir:
         enricher = HybridAnalysisEnricher(tmpdir)
@@ -93,22 +86,17 @@ def test_enrich_hash_merges_behavioral_data(mock_get, mock_post, mock_key):
     assert len(rows) == 1
     row = rows[0]
     assert row["sha256"] == "b" * 64
-    # Behavioral data should be merged from enrichment
     assert row["vx_family"] == "AgentTesla"
     assert "steal.evil.com" in row["contacted_domains"]
     assert "10.0.0.1" in row["contacted_ips"]
 
 
 @patch("collectors.hybrid_analysis.HybridAnalysisEnricher.get_api_key", return_value="fake_key")
-@patch("requests.Session.post")
 @patch("requests.Session.get")
-def test_enrichment_skips_already_enriched(mock_get, mock_post, mock_key):
-    mock_feed_resp = MagicMock()
-    mock_feed_resp.status_code = 200
-    mock_feed_resp.json.return_value = {
-        "data": [{"sha256": "c" * 64, "verdict": 50}],
-    }
-    mock_get.return_value = mock_feed_resp
+def test_enrichment_skips_already_enriched(mock_get, mock_key):
+    mock_get.side_effect = _mock_get_side_effect(
+        {"data": [{"sha256": "c" * 64, "verdict": 50}]}, []
+    )
 
     with tempfile.TemporaryDirectory() as tmpdir:
         # Pre-populate state file
@@ -118,23 +106,14 @@ def test_enrichment_skips_already_enriched(mock_get, mock_post, mock_key):
         enricher = HybridAnalysisEnricher(tmpdir)
         enricher.collect()
 
-    # POST should NOT be called since hash is already enriched
-    mock_post.assert_not_called()
+    # GET should only be called once (for feed), not for search
+    assert mock_get.call_count == 1
 
 
 @patch("collectors.hybrid_analysis.HybridAnalysisEnricher.get_api_key", return_value="fake_key")
-@patch("requests.Session.post")
 @patch("requests.Session.get")
-def test_run_writes_csv(mock_get, mock_post, mock_key):
-    mock_resp = MagicMock()
-    mock_resp.status_code = 200
-    mock_resp.json.return_value = SAMPLE_FEED_RESPONSE
-    mock_get.return_value = mock_resp
-
-    mock_post_resp = MagicMock()
-    mock_post_resp.status_code = 200
-    mock_post_resp.json.return_value = SAMPLE_SEARCH_RESPONSE
-    mock_post.return_value = mock_post_resp
+def test_run_writes_csv(mock_get, mock_key):
+    mock_get.side_effect = _mock_get_side_effect(SAMPLE_FEED_RESPONSE, SAMPLE_SEARCH_RESPONSE)
 
     with tempfile.TemporaryDirectory() as tmpdir:
         enricher = HybridAnalysisEnricher(tmpdir)

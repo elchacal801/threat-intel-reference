@@ -85,8 +85,8 @@ class HybridAnalysisEnricher(BaseCollector):
         }
 
     def _enrich_hash(self, sha256):
-        """Call POST /search/hash for a single hash, return parsed row or None."""
-        resp = self.session.post(SEARCH_URL, data={"hash": sha256}, timeout=30)
+        """Call GET /search/hash for a single hash, return parsed row or None."""
+        resp = self.session.get(SEARCH_URL, params={"hash": sha256}, timeout=30)
         resp.raise_for_status()
         results = resp.json()
         if not results:
