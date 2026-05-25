@@ -1,6 +1,6 @@
 rule_name,author,description,malpedia_family,matching_tlp,sharing_tlp,yarahub_uuid,date
-classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,37809a30-6293-4dd0-8964-5e44bccd2fc2,classified
 classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,6447ce42-5626-4e62-813e-05719c45e014,classified
+classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,37809a30-6293-4dd0-8964-5e44bccd2fc2,classified
 classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,58644591-f53d-495e-a5ba-39f7d499d3d9,classified
 classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,a356dfcb-eee9-4d59-b72b-9262ea903045,classified
 classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,a4481c04-bbbb-45b4-8c32-4ca4200ffdbc,classified
@@ -14,8 +14,8 @@ classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,51fde6a6-5c2f-4b
 classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,da199571-fcee-4ef7-9b3f-827a3100b36a,classified
 classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,fc32576c-355e-4044-bbdf-d689eb081b17,classified
 classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,29930789-f37a-469a-aa24-aaa5b0549a46,classified
+hunting_generic_win_rat,"Ajin Deepak, AD2001",Hunting RATS based on common patterns,,TLP:WHITE,TLP:WHITE,310fdf8f-c66d-4c9c-839d-89bd4d35a441,2026-05-24
 TA_Printables_Cluster,frexna,"Detects Python RAT, Pyramid, Fernet, zlib/base64 and pythonmemorymodule artifacts",,TLP:WHITE,TLP:WHITE,5a4f4c2e-3a1c-4f21-9c61-7bb5f1d00a11,2026-05-22
 Windows_Ransomware_Payload,Dark Atlas; @ELJoOker,Payload ransomware,,TLP:WHITE,TLP:WHITE,101cf420-0e2c-4ba8-9a4d-11363317342c,2026-05-21
 BoryptGrab,Still,attempts to match strings/instructions found in BoryptGrab/BlakcSeeStealer core,,TLP:WHITE,TLP:WHITE,ba41dbec-d318-4959-af74-5e5eaadf621f,2026-05-22
 BoryptGrab_Loader,Still,attempts to match strings/instructions found in BoryptGrab/BlakcSeeStealer loader,,TLP:WHITE,TLP:WHITE,62a32bd9-9883-45cb-8c43-17069ece5b8d,2026-05-22
-MAL_Trigon_Dropper,jaszzz,"Trigon multi-stage malicious dropper - process injection, keylogging, screenshot capture",,TLP:WHITE,TLP:WHITE,2817bfaf-0a3f-4935-946f-1d8b09b63fb6,2026-05-22
