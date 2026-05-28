@@ -152,6 +152,25 @@
     "vt_detection_rate": "23/75"
   },
   {
+    "sha256": "83f87364e05ff509464d246cb7969f7b05e12f4ee4daaf741cc331cb92dc5025",
+    "sha1": "972451660ad0209d5dd31e60d16bcefdb1c4c77e",
+    "md5": "c7b1ccf0e3f102e1567bce0165538b60",
+    "family": "",
+    "family_aliases": "",
+    "classification": "pua",
+    "tags": "apk|signed",
+    "confidence": "",
+    "clamav_detection": "",
+    "first_seen": "2026-04-19 12:23:55",
+    "last_seen": "",
+    "source": "malwarebazaar",
+    "mitre_techniques": "",
+    "contacted_domains": "",
+    "contacted_ips": "",
+    "vt_classification": "pua",
+    "vt_detection_rate": "14/75"
+  },
+  {
     "sha256": "822b541df8d54222c91889c923a65c7aff28ec372f211392213dd93d43d30c2a",
     "sha1": "1632214afa3ab2e17f25d3c46179ad907f6f7489",
     "md5": "73f425ca9b1b9c29fcc61b92e9b149f8",
@@ -167,8 +186,8 @@
     "mitre_techniques": "",
     "contacted_domains": "",
     "contacted_ips": "",
-    "vt_classification": "",
-    "vt_detection_rate": ""
+    "vt_classification": "trojan",
+    "vt_detection_rate": "12/76"
   },
   {
     "sha256": "1ec3da86a88a4037bc288073ea564cab08c4faa903dffe304748ad8054f6fa18",
@@ -186,8 +205,8 @@
     "mitre_techniques": "",
     "contacted_domains": "",
     "contacted_ips": "",
-    "vt_classification": "",
-    "vt_detection_rate": ""
+    "vt_classification": "trojan",
+    "vt_detection_rate": "16/75"
   },
   {
     "sha256": "c6708166e0a6bf3484200fd6dd1569d89e81c36ffd76ff2ab5820b06fd2d5b54",
@@ -205,8 +224,8 @@
     "mitre_techniques": "",
     "contacted_domains": "",
     "contacted_ips": "",
-    "vt_classification": "",
-    "vt_detection_rate": ""
+    "vt_classification": "trojan",
+    "vt_detection_rate": "19/76"
   },
   {
     "sha256": "47ae095fd9e5143798a70805a23eb294fc072170dac19c1fa112beca186d844a",
@@ -224,8 +243,8 @@
     "mitre_techniques": "",
     "contacted_domains": "",
     "contacted_ips": "",
-    "vt_classification": "",
-    "vt_detection_rate": ""
+    "vt_classification": "trojan",
+    "vt_detection_rate": "19/75"
   },
   {
     "sha256": "cb86017411708eb6e5384fc0288b0ec4692ea45ef38586b7c67f99148e1117c3",
@@ -243,8 +262,27 @@
     "mitre_techniques": "",
     "contacted_domains": "",
     "contacted_ips": "",
-    "vt_classification": "",
-    "vt_detection_rate": ""
+    "vt_classification": "trojan",
+    "vt_detection_rate": "19/76"
+  },
+  {
+    "sha256": "079a0c8df2797334c5709679fe2491351478b470ae529365c5287c831cf0bc86",
+    "sha1": "fdca47fd67c65475d06f461e32f0872a974498ff",
+    "md5": "45e3e15ca480c69a0a702de0a8f347d3",
+    "family": "",
+    "family_aliases": "",
+    "classification": "adware",
+    "tags": "apk|signed",
+    "confidence": "",
+    "clamav_detection": "",
+    "first_seen": "2026-03-16 17:23:49",
+    "last_seen": "",
+    "source": "malwarebazaar",
+    "mitre_techniques": "",
+    "contacted_domains": "",
+    "contacted_ips": "",
+    "vt_classification": "adware",
+    "vt_detection_rate": "11/75"
   },
   {
     "sha256": "0628ad6d1fd836b13b22e75fa169502d8ce78b7ad20f0261eb5151da98437bca",
@@ -281,8 +319,8 @@
     "mitre_techniques": "",
     "contacted_domains": "",
     "contacted_ips": "",
-    "vt_classification": "",
-    "vt_detection_rate": ""
+    "vt_classification": "trojan",
+    "vt_detection_rate": "10/75"
   },
   {
     "sha256": "afaab76f446dc734de64c1d94e0dd1ae850a01c69fde12ccb98bacb98df82e9d",
