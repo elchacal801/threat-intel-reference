@@ -338,8 +338,8 @@
     "mitre_techniques": "",
     "contacted_domains": "",
     "contacted_ips": "",
-    "vt_classification": "",
-    "vt_detection_rate": ""
+    "vt_classification": "trojan",
+    "vt_detection_rate": "12/76"
   },
   {
     "sha256": "27b8eeb5d1b46e1afa170b998830fe0958f08a2a9dfe7130df607c86ad42fb33",
@@ -376,8 +376,8 @@
     "mitre_techniques": "",
     "contacted_domains": "",
     "contacted_ips": "",
-    "vt_classification": "",
-    "vt_detection_rate": ""
+    "vt_classification": "trojan",
+    "vt_detection_rate": "23/76"
   },
   {
     "sha256": "4064f42a30b85220545e4a43672e374ba879b36b3d79c4a5e2324a3ca1f6df8a",
@@ -395,8 +395,8 @@
     "mitre_techniques": "",
     "contacted_domains": "",
     "contacted_ips": "",
-    "vt_classification": "",
-    "vt_detection_rate": ""
+    "vt_classification": "trojan",
+    "vt_detection_rate": "21/76"
   },
   {
     "sha256": "5c15f4808ad986ff87797ff8d01120a5016d6182f08788db73072bec43d53814",
@@ -414,8 +414,8 @@
     "mitre_techniques": "",
     "contacted_domains": "",
     "contacted_ips": "",
-    "vt_classification": "",
-    "vt_detection_rate": ""
+    "vt_classification": "trojan",
+    "vt_detection_rate": "22/76"
   },
   {
     "sha256": "1daf7482d700536bc5dfe45c763dad99123e41f0be205415d708b70e6dcbfbb2",
@@ -434,7 +434,7 @@
     "contacted_domains": "",
     "contacted_ips": "",
     "vt_classification": "",
-    "vt_detection_rate": ""
+    "vt_detection_rate": "4/73"
   },
   {
     "sha256": "1a91660cae8d1154e1979f31400b8956ed7e548586f314593e3e0f639838cffb",
@@ -452,8 +452,8 @@
     "mitre_techniques": "",
     "contacted_domains": "",
     "contacted_ips": "",
-    "vt_classification": "",
-    "vt_detection_rate": ""
+    "vt_classification": "trojan",
+    "vt_detection_rate": "21/76"
   },
   {
     "sha256": "db11d9b51d90d23e5769d5f6dd738adad56acff41555698446926804d5396962",
@@ -471,8 +471,65 @@
     "mitre_techniques": "",
     "contacted_domains": "",
     "contacted_ips": "",
-    "vt_classification": "",
-    "vt_detection_rate": ""
+    "vt_classification": "trojan",
+    "vt_detection_rate": "23/75"
+  },
+  {
+    "sha256": "6f5f2fe579dfeee04901aea62e1a167b3399877b74cbee1d291dc94eea696ce9",
+    "sha1": "3936e9d57bfa7f8df008bd7ca33b3b638b0f61ce",
+    "md5": "d097c1f489a9062cdd1d61100c6e6ae8",
+    "family": "",
+    "family_aliases": "",
+    "classification": "adware",
+    "tags": "apk|signed",
+    "confidence": "",
+    "clamav_detection": "",
+    "first_seen": "2026-03-04 11:09:46",
+    "last_seen": "",
+    "source": "malwarebazaar",
+    "mitre_techniques": "",
+    "contacted_domains": "",
+    "contacted_ips": "",
+    "vt_classification": "adware",
+    "vt_detection_rate": "10/75"
+  },
+  {
+    "sha256": "5f897f545d8826862fdfc4cf6cff38c43ce1e13da27d48f276aa497e64959be8",
+    "sha1": "a6381ece72ce192477734fe25fdc0fe085426e92",
+    "md5": "7a50af4cef2ca7a2e8297383d2105440",
+    "family": "",
+    "family_aliases": "",
+    "classification": "pua",
+    "tags": "apk|signed",
+    "confidence": "",
+    "clamav_detection": "",
+    "first_seen": "2026-03-03 09:44:33",
+    "last_seen": "",
+    "source": "malwarebazaar",
+    "mitre_techniques": "",
+    "contacted_domains": "",
+    "contacted_ips": "",
+    "vt_classification": "pua",
+    "vt_detection_rate": "8/76"
+  },
+  {
+    "sha256": "988573180d8f31d221783ee30cf011c099bba0fb8ecc99c00598876703900cb0",
+    "sha1": "d1c59efb694ea3dc3675c2841be6100154112c23",
+    "md5": "e7bedf56407b2a6d0d02f14d855f394f",
+    "family": "",
+    "family_aliases": "",
+    "classification": "adware",
+    "tags": "apk|apt|signed",
+    "confidence": "",
+    "clamav_detection": "",
+    "first_seen": "2026-02-12 17:18:48",
+    "last_seen": "2026-02-12 17:22:40",
+    "source": "malwarebazaar",
+    "mitre_techniques": "",
+    "contacted_domains": "",
+    "contacted_ips": "",
+    "vt_classification": "adware",
+    "vt_detection_rate": "20/76"
   },
   {
     "sha256": "3b1b82025c2ee1548752ef331426d1cd6e0085e99f2ac9141a5b16e95bd51f6f",
@@ -490,8 +547,8 @@
     "mitre_techniques": "",
     "contacted_domains": "",
     "contacted_ips": "",
-    "vt_classification": "",
-    "vt_detection_rate": ""
+    "vt_classification": "trojan",
+    "vt_detection_rate": "15/64"
   },
   {
     "sha256": "b3c86606b1410cc558acef06d55c2a03d41ad85cb2b04e904640f58b23185db3",
@@ -509,8 +566,8 @@
     "mitre_techniques": "",
     "contacted_domains": "",
     "contacted_ips": "",
-    "vt_classification": "",
-    "vt_detection_rate": ""
+    "vt_classification": "pua",
+    "vt_detection_rate": "27/75"
   },
   {
     "sha256": "1e60421e83a317cfbfce980fefa926a847964bcc7b047908db65161148d0f624",
@@ -528,8 +585,8 @@
     "mitre_techniques": "",
     "contacted_domains": "",
     "contacted_ips": "",
-    "vt_classification": "",
-    "vt_detection_rate": ""
+    "vt_classification": "trojan",
+    "vt_detection_rate": "19/76"
   },
   {
     "sha256": "ccbb92e031481b9b731e9b6a7a7b104dbe710c026ab303e89a45b5af201d149c",
@@ -547,8 +604,8 @@
     "mitre_techniques": "",
     "contacted_domains": "",
     "contacted_ips": "",
-    "vt_classification": "",
-    "vt_detection_rate": ""
+    "vt_classification": "trojan",
+    "vt_detection_rate": "21/75"
   },
   {
     "sha256": "68616b00938d79bff9d36527243376478a1573a0526d394b7b637eb8094c77e0",
