@@ -4715,3 +4715,4 @@ fba3d657c87ea72deb88222b1ce8e204b70f651a25d942edddf5f5ce49d0ad2a,,1/75,,detect-d
 541a2aa333d716994951bcfce1d653da1f1e992315387139dbbd98de7d66dc10,trojan,33/75,misc,peexe,2026-06-07T19:16:27Z
 c4f98d80490b1f6da80da88d6a99bfedf324b8ec67bff437f233feb8746a5bcb,trojan,18/75,lnkexec,lnk|long-command-line-arguments|executes-dropped-file|high-entropy,2026-06-08T02:56:05Z
 c2ab5404c2e2e7d15c58a1bbab2a6daa857f43aa4137cce738ed5139e77310ff,trojan,21/75,lnkexec,high-entropy|calls-wmi|executes-dropped-file|long-command-line-arguments|checks-bios|lnk,2026-06-08T10:28:26Z
+bdfbc0a1814e531c201bd7e1ee1aaff3ccad212da81435233adb5becfbac2a57,trojan,27/75,abtrojan,checks-bios|calls-wmi|contains-embedded-js|executes-dropped-file|html,2026-06-08T15:41:03Z
