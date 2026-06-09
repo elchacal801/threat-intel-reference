@@ -14,8 +14,8 @@ classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,51fde6a6-5c2f-4b
 classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,da199571-fcee-4ef7-9b3f-827a3100b36a,classified
 classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,fc32576c-355e-4044-bbdf-d689eb081b17,classified
 classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,29930789-f37a-469a-aa24-aaa5b0549a46,classified
-Detect_Akira_ESXi,Nguyen Thien Long,Detects Akira ESXi Variant,,TLP:WHITE,TLP:WHITE,e81b83f5-fe4b-4914-b3b0-08bc3508d017,2026-06-08
-Emotet_Masquerade_Sysconf,tranquil,Detects Emotet variant masquerading as legitimate Windows Management Service (sysconf.exe),,TLP:WHITE,TLP:WHITE,6cc502fe-84b3-42e7-ae77-fb5598518f5b,2026-06-07
-nix_rust_hunt,,,,TLP:WHITE,TLP:WHITE,cbc5fbde-f0a2-4476-ae6b-9cc155e33c11,2026-06-05
-win_rust_hunt,,,,TLP:WHITE,TLP:WHITE,d7e7ac8b-b3d5-4fd9-9b20-9219fd911928,2026-06-05
-classified,classified,classified,classified,TLP:RED,TLP:RED,0d5c6e85-858a-4546-942f-178bd2b378ca,classified
+MAL_BETRAY_DROPPER_AUG25_adsawdsawdsa,DeTraced Security,MAL_BETRAY_DROPPER_AUG25 - file adsawdsawdsa,,TLP:WHITE,TLP:WHITE,f150198c-e5c0-4566-a961-a3374fcf8074,2025-10-17
+MAL_BETRAY_DROPPER_AUG25_ExecFix_2_RobloxDowngrader_14,DeTraced Security,"MAL_BETRAY_DROPPER_AUG25 - from files ExecFix-2.bat, RobloxDowngrader.bat",,TLP:WHITE,TLP:WHITE,3d9714d4-73b6-40c0-b62d-a9edd4269387,2025-10-17
+MAL_BETRAY_DROPPER_AUG25_built_agbcfdxdfsdf_ExecFix_4_19,DeTraced Security,"MAL_BETRAY_DROPPER_AUG25 - from files built-agbcfdxdfsdf.bat, ExecFix-4.bat",,TLP:WHITE,TLP:WHITE,3aaba4a2-d618-4247-8169-b88d3e417afa,2025-10-17
+MAL_BETRAY_DROPPER_AUG25_asd_installer__installer_10,DeTraced Security,"MAL_BETRAY_DROPPER_AUG25 - from files asd.bat, installer_.bat, installer.bat",,TLP:WHITE,TLP:WHITE,6562379b-6e62-4d75-ba92-f19705f56642,2025-10-17
+EDRChoker_Killer_WMI_QoS_Throttle,Valton Tahiri,EDRChoker - .NET hacktool that abuses WMI NetQoS policies to throttle/bandwidth-limit EDR/security process traffic,,TLP:WHITE,TLP:WHITE,b3c2dda6-a914-4182-988b-f886050bcabe,2026-06-08
