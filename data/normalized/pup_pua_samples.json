@@ -834,5 +834,43 @@
     "contacted_ips": "",
     "vt_classification": "adware",
     "vt_detection_rate": "5/75"
+  },
+  {
+    "sha256": "c5544517f1be9d5a721a951d906b26f9ad11adf4a06c3660a75e89f07dabb8aa",
+    "sha1": "fbf94c214a27b6ddef8e31db0d94cbad03c01432",
+    "md5": "762a1a8cf38447f4950279aed11dc2e7",
+    "family": "",
+    "family_aliases": "",
+    "classification": "riskware",
+    "tags": "android|apk|banker|dropper|malware|RiskWare|signed|Tiktok",
+    "confidence": "",
+    "clamav_detection": "",
+    "first_seen": "2026-06-16 14:33:38",
+    "last_seen": "",
+    "source": "malwarebazaar",
+    "mitre_techniques": "",
+    "contacted_domains": "",
+    "contacted_ips": "",
+    "vt_classification": "",
+    "vt_detection_rate": ""
+  },
+  {
+    "sha256": "7e8693dfed67a88db885ac0ffd94b73351d1f910cafc6425e8f1b4ab0e24c2a8",
+    "sha1": "03858e66e30466445c0c4c7c80855d04ae683513",
+    "md5": "703165a0855852b0eccace0557c7e24b",
+    "family": "",
+    "family_aliases": "",
+    "classification": "riskware",
+    "tags": "android|apk|malware|RiskWare|signed|Tiktok|trojan",
+    "confidence": "",
+    "clamav_detection": "",
+    "first_seen": "2026-06-16 14:29:52",
+    "last_seen": "",
+    "source": "malwarebazaar",
+    "mitre_techniques": "",
+    "contacted_domains": "",
+    "contacted_ips": "",
+    "vt_classification": "",
+    "vt_detection_rate": ""
   }
 ]
