@@ -1,7 +1,7 @@
 rule_name,author,description,malpedia_family,matching_tlp,sharing_tlp,yarahub_uuid,date
 classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,6447ce42-5626-4e62-813e-05719c45e014,classified
-classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,37809a30-6293-4dd0-8964-5e44bccd2fc2,classified
 classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,58644591-f53d-495e-a5ba-39f7d499d3d9,classified
+classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,37809a30-6293-4dd0-8964-5e44bccd2fc2,classified
 classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,a356dfcb-eee9-4d59-b72b-9262ea903045,classified
 classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,a4481c04-bbbb-45b4-8c32-4ca4200ffdbc,classified
 classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,7c6e1c3a-9c3a-4a2a-91c1-9c4f1e7c52af,classified
@@ -11,11 +11,11 @@ classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,882404f2-e440-4c
 classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,e5d75527-948f-4e4b-9a46-181fa2e2a8ed,classified
 classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,ba2170cb-29c8-4645-996f-9b99425d89d6,classified
 classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,51fde6a6-5c2f-4bdf-84d6-ebca9beafc61,classified
-classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,da199571-fcee-4ef7-9b3f-827a3100b36a,classified
 classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,fc32576c-355e-4044-bbdf-d689eb081b17,classified
+classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,da199571-fcee-4ef7-9b3f-827a3100b36a,classified
 classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,29930789-f37a-469a-aa24-aaa5b0549a46,classified
-classified,classified,classified,classified,TLP:WHITE,TLP:RED,9f222673-0361-4e2f-9bc3-a549b150f214,classified
+classified,classified,classified,classified,TLP:RED,TLP:RED,e490d509-b2d5-487b-8f9f-d2de7ebcbc1d,classified
+win_stealc,Bitsight,StealC infostealer: RC4/Base64 C2 and Chrome ABE v20 bypass,,TLP:WHITE,TLP:WHITE,8c3364f2-83af-4ac6-9dc1-ec249b4e732c,2026-05-04
+win_amadey,Bitsight,Detects Amadey v5.55+ payload (x86 and x64): RC4 stream cipher implementation,,TLP:WHITE,TLP:WHITE,f4a2a474-f01a-4841-bdf5-c2106c268439,2026-04-22
 classified,classified,classified,classified,TLP:WHITE,TLP:RED,071bec64-8fbc-4a0a-80c4-4e196f0db2fa,classified
 classified,classified,classified,classified,TLP:WHITE,TLP:RED,4bb3ce02-6bc3-49d0-89fd-ec09426f3eac,classified
-classified,classified,classified,classified,TLP:WHITE,TLP:RED,680bf510-7c33-48e0-9041-797b280e6fc5,classified
-classified,classified,classified,classified,TLP:WHITE,TLP:RED,30b23166-3c4d-42ac-b3c2-91c7391edc0b,classified
