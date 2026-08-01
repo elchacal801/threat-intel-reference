@@ -2,13 +2,13 @@ rule_name,author,description,malpedia_family,matching_tlp,sharing_tlp,yarahub_uu
 classified,classified,classified,classified,TLP:RED,TLP:RED,e490d509-b2d5-487b-8f9f-d2de7ebcbc1d,classified
 win_stealc,Bitsight,StealC infostealer: RC4/Base64 C2 and Chrome ABE v20 bypass,,TLP:WHITE,TLP:WHITE,8c3364f2-83af-4ac6-9dc1-ec249b4e732c,2026-05-04
 win_amadey,Bitsight,Detects Amadey v5.55+ payload (x86 and x64): RC4 stream cipher implementation,,TLP:WHITE,TLP:WHITE,f4a2a474-f01a-4841-bdf5-c2106c268439,2026-04-22
+classified,classified,classified,classified,TLP:WHITE,TLP:RED,9f222673-0361-4e2f-9bc3-a549b150f214,classified
+classified,classified,classified,classified,TLP:WHITE,TLP:RED,7e530251-ada9-47a9-b0e1-a95dc8360259,classified
 classified,classified,classified,classified,TLP:WHITE,TLP:RED,680bf510-7c33-48e0-9041-797b280e6fc5,classified
 classified,classified,classified,classified,TLP:WHITE,TLP:RED,4bb3ce02-6bc3-49d0-89fd-ec09426f3eac,classified
-classified,classified,classified,classified,TLP:WHITE,TLP:RED,9f222673-0361-4e2f-9bc3-a549b150f214,classified
 classified,classified,classified,classified,TLP:WHITE,TLP:RED,071bec64-8fbc-4a0a-80c4-4e196f0db2fa,classified
-classified,classified,classified,classified,TLP:WHITE,TLP:RED,7e530251-ada9-47a9-b0e1-a95dc8360259,classified
-classified,classified,classified,classified,TLP:WHITE,TLP:RED,5b7a8c67-9210-4a57-b966-3f7d2998f900,classified
 classified,classified,classified,classified,TLP:WHITE,TLP:RED,30b23166-3c4d-42ac-b3c2-91c7391edc0b,classified
+classified,classified,classified,classified,TLP:WHITE,TLP:RED,5b7a8c67-9210-4a57-b966-3f7d2998f900,classified
 DeadLock_Ransomware,derp.ca,"Submitted 32-bit Windows DeadLock ransomware build with DeadLock recovery template, .dlock extension handling, Windows disruption API-name clusters, process/service/path exclusion config, and supporting code bytes.",,TLP:WHITE,TLP:WHITE,7b4c7e2b-cc65-4a10-82e2-82143dd34d5d,2026-06-21
 SilverFox_Panasonic_Sauron_Loader,derp.ca,"SilverFox-style Panasonic/Sauron loader chain targeting the staged Panasonic wrapper, image-named Alibaba OSS carriers, UxEnhance side-load bundle, RPC scheduler module, adoresd bridge, Philips D1 cluster, and rundll32.dat Edge/Sauron stage.",,TLP:WHITE,TLP:WHITE,b79241c5-00ed-4202-a361-b4f8d6af1e02,2026-06-21
 AgentTesla_Cs2Hack_Lab02,Francisco,Detecta variante de AgentTesla disfrazada como 'Cs2Hack.exe',,TLP:WHITE,TLP:WHITE,4f2a1e8d-6c3b-4a91-8d4f-2c9b7e1a5f63,2026-06-21
