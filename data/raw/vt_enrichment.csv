@@ -4755,3 +4755,6 @@ db41e0da7ab3305be8d9720769c6950b4dc1c1984ef857d3310eb873a0fc7674,trojan,40/74,fl
 65383fba3d5a283d35ecc21043c127f255d94560a99d090ed0a49b032a1f9ddc,trojan,2/73,msil,png,2026-08-01T13:07:50Z
 f9ff724662898af2d7f86f6cbb6be814bd0b64e91d5b361539860e1e97eb9a9a,trojan,26/73,shell,detect-debug-environment|self-delete|sets-process-name|shell,2026-08-01T13:07:52Z
 eb9842d36389a6e2f6baf9c00c5d0320049f5525e36299b1aeb695d8be93800e,,0/75,,gif,2026-08-01T13:07:59Z
+8f28849296f4c10a3271aec35441bc7421be693be966f749cf50120730adb348,trojan,46/74,msil,assembly|long-sleeps|peexe|detect-debug-environment|executes-dropped-file|persistence,2026-08-01T19:05:00Z
+4cce5aa6c0a0645054efc70da02fc793f7d6ad9ebabc873892867b69f229fa20,trojan,36/75,genericfca,detect-debug-environment|calls-wmi|pedll,2026-08-01T19:05:02Z
+65355d892f4a68a49c34c692568f08a427b823d6b96db00ecfd4a898897b0c5a,trojan,43/74,msil,assembly|idle|pedll,2026-08-01T19:05:04Z
