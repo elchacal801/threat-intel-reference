@@ -4793,3 +4793,5 @@ f668de57394d23a70ea59fcf2039b14ad28a479d59e4dc06ed31c64d740be30c,trojan,41/75,us
 f9fc553f7f916e355f33b47f3bc37080c90703e549019ce635f41bee5f76cc15,trojan,21/75,bash,shell|persistence|detect-debug-environment,2026-08-04T13:58:43Z
 ee03bd0fa17aa2e76bcc9e66415e27e3fda5512933e9a5cd4a54b3e3dfcfbe7d,trojan,21/75,bash,shell|persistence|detect-debug-environment,2026-08-04T19:28:01Z
 203e6d15b332b2254aec08fd2b9e01ab51b3b6eb3f8f272521a19f1d34a0ec2d,ransomware,50/75,locker,overlay|peexe|long-sleeps|checks-disk-space|detect-debug-environment,2026-08-04T19:28:03Z
+c4416abc1c30d3993c025584cf588640f79152bb015dffa51a2c8580f4c4d2db,trojan,30/74,powershell,calls-wmi|long-sleeps|url-pattern|spreader|exe-pattern|detect-debug-environment|powershell,2026-08-05T01:55:43Z
+935e3d35e56fc2b5198b08a3c6da0333584f18a80a3e5673b9f36f1d83ba6c7b,trojan,21/75,bash,shell|persistence|detect-debug-environment,2026-08-05T01:55:45Z
