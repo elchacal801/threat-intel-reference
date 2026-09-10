@@ -1,307 +1,83 @@
 [
   {
-    "sha256": "4de34e22fec36167a9fabbe29b8eb38482ad5d16e59bce2fdd735b7ac15a0a86",
+    "sha256": "bfac121e7e033e06cce614b2fb2927408e7c9c9fe6b4dccc47a73538878e16af",
     "indicator_type": "url",
-    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/4de34e22fec36167a9fabbe29b8eb38482ad5d16e59bce2fdd735b7ac15a0a86/",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-08 08:44:09"
-  },
-  {
-    "sha256": "4de34e22fec36167a9fabbe29b8eb38482ad5d16e59bce2fdd735b7ac15a0a86",
-    "indicator_type": "domain",
-    "indicator_value": "urlhaus-api.abuse.ch",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-08 08:44:09"
-  },
-  {
-    "sha256": "e102ee5bbf9282a4c5f5b38c5554668eefc67a9782004631d1aa837e18dfe159",
-    "indicator_type": "url",
-    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/e102ee5bbf9282a4c5f5b38c5554668eefc67a9782004631d1aa837e18dfe159/",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-08 09:00:11"
-  },
-  {
-    "sha256": "e102ee5bbf9282a4c5f5b38c5554668eefc67a9782004631d1aa837e18dfe159",
-    "indicator_type": "domain",
-    "indicator_value": "urlhaus-api.abuse.ch",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-08 09:00:11"
-  },
-  {
-    "sha256": "dea6d274c1c7c34d160bd12c87a27ef5c5edb1f4934c4557bb54f1857c7be360",
-    "indicator_type": "url",
-    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/dea6d274c1c7c34d160bd12c87a27ef5c5edb1f4934c4557bb54f1857c7be360/",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-08 08:44:10"
-  },
-  {
-    "sha256": "dea6d274c1c7c34d160bd12c87a27ef5c5edb1f4934c4557bb54f1857c7be360",
-    "indicator_type": "domain",
-    "indicator_value": "urlhaus-api.abuse.ch",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-08 08:44:10"
-  },
-  {
-    "sha256": "abc54ab37e423461c6a67b7d65f342451e42fbd93e4ba83fd571c3236cfcfc25",
-    "indicator_type": "url",
-    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/abc54ab37e423461c6a67b7d65f342451e42fbd93e4ba83fd571c3236cfcfc25/",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-08 08:44:07"
-  },
-  {
-    "sha256": "abc54ab37e423461c6a67b7d65f342451e42fbd93e4ba83fd571c3236cfcfc25",
-    "indicator_type": "domain",
-    "indicator_value": "urlhaus-api.abuse.ch",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-08 08:44:07"
-  },
-  {
-    "sha256": "b77142d8fa79f421c402fae649e041589c6e3584e69def5789b704af6b522535",
-    "indicator_type": "url",
-    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/b77142d8fa79f421c402fae649e041589c6e3584e69def5789b704af6b522535/",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-08 08:44:10"
-  },
-  {
-    "sha256": "b77142d8fa79f421c402fae649e041589c6e3584e69def5789b704af6b522535",
-    "indicator_type": "domain",
-    "indicator_value": "urlhaus-api.abuse.ch",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-08 08:44:10"
-  },
-  {
-    "sha256": "b5099a274a6192b76e132488df1a051b2e6ccb68fc916901ddf73ef9d0f01fe2",
-    "indicator_type": "url",
-    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/b5099a274a6192b76e132488df1a051b2e6ccb68fc916901ddf73ef9d0f01fe2/",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-08 08:44:07"
-  },
-  {
-    "sha256": "b5099a274a6192b76e132488df1a051b2e6ccb68fc916901ddf73ef9d0f01fe2",
-    "indicator_type": "domain",
-    "indicator_value": "urlhaus-api.abuse.ch",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-08 08:44:07"
-  },
-  {
-    "sha256": "7b46bce6515f1189593f7fbd7edb24ce2e152e0fbb6b57808515db882b331060",
-    "indicator_type": "url",
-    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/7b46bce6515f1189593f7fbd7edb24ce2e152e0fbb6b57808515db882b331060/",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-08 08:44:14"
-  },
-  {
-    "sha256": "7b46bce6515f1189593f7fbd7edb24ce2e152e0fbb6b57808515db882b331060",
-    "indicator_type": "domain",
-    "indicator_value": "urlhaus-api.abuse.ch",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-08 08:44:14"
-  },
-  {
-    "sha256": "b610ed02b56e1634c71f36076e61e7bf69aca774e745df6c698d5d9f470d48b8",
-    "indicator_type": "url",
-    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/b610ed02b56e1634c71f36076e61e7bf69aca774e745df6c698d5d9f470d48b8/",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-08 08:44:09"
-  },
-  {
-    "sha256": "b610ed02b56e1634c71f36076e61e7bf69aca774e745df6c698d5d9f470d48b8",
-    "indicator_type": "domain",
-    "indicator_value": "urlhaus-api.abuse.ch",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-08 08:44:09"
-  },
-  {
-    "sha256": "60bd242f448228391063d6a1521233087ba3602f5521f526a784d6325ffe8377",
-    "indicator_type": "url",
-    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/60bd242f448228391063d6a1521233087ba3602f5521f526a784d6325ffe8377/",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-08 08:44:09"
-  },
-  {
-    "sha256": "60bd242f448228391063d6a1521233087ba3602f5521f526a784d6325ffe8377",
-    "indicator_type": "domain",
-    "indicator_value": "urlhaus-api.abuse.ch",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-08 08:44:09"
-  },
-  {
-    "sha256": "f37a854fe5bd02a8246633942f4a65c24e9b5de58ae416a1874f21a6a7a3c909",
-    "indicator_type": "url",
-    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/f37a854fe5bd02a8246633942f4a65c24e9b5de58ae416a1874f21a6a7a3c909/",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-08 08:37:22"
-  },
-  {
-    "sha256": "f37a854fe5bd02a8246633942f4a65c24e9b5de58ae416a1874f21a6a7a3c909",
-    "indicator_type": "domain",
-    "indicator_value": "urlhaus-api.abuse.ch",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-08 08:37:22"
-  },
-  {
-    "sha256": "1d59ece40bf5da2e074a91cddac51ff571970db5e7e15d9de544a6b3721a8a01",
-    "indicator_type": "url",
-    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/1d59ece40bf5da2e074a91cddac51ff571970db5e7e15d9de544a6b3721a8a01/",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-08 08:37:22"
-  },
-  {
-    "sha256": "1d59ece40bf5da2e074a91cddac51ff571970db5e7e15d9de544a6b3721a8a01",
-    "indicator_type": "domain",
-    "indicator_value": "urlhaus-api.abuse.ch",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-08 08:37:22"
-  },
-  {
-    "sha256": "3a1d4399d6a48caa8b521dfb3b0d01684d1469cf50e2fb9e5391f8241a86c080",
-    "indicator_type": "url",
-    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/3a1d4399d6a48caa8b521dfb3b0d01684d1469cf50e2fb9e5391f8241a86c080/",
+    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/bfac121e7e033e06cce614b2fb2927408e7c9c9fe6b4dccc47a73538878e16af/",
     "source": "urlhaus",
     "family": "",
-    "first_seen": "2026-09-08 06:36:03"
+    "first_seen": "2026-09-09 14:15:10"
   },
   {
-    "sha256": "3a1d4399d6a48caa8b521dfb3b0d01684d1469cf50e2fb9e5391f8241a86c080",
+    "sha256": "bfac121e7e033e06cce614b2fb2927408e7c9c9fe6b4dccc47a73538878e16af",
     "indicator_type": "domain",
     "indicator_value": "urlhaus-api.abuse.ch",
     "source": "urlhaus",
     "family": "",
-    "first_seen": "2026-09-08 06:36:03"
+    "first_seen": "2026-09-09 14:15:10"
   },
   {
-    "sha256": "52dba06b61623b8256b774370dccce28ead47994ebb5c45f7674ca56f41007af",
+    "sha256": "4df82c03b3280af6c1a60f35353c9b7b5babed4d71a82999659fc3a89ede735a",
     "indicator_type": "url",
-    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/52dba06b61623b8256b774370dccce28ead47994ebb5c45f7674ca56f41007af/",
+    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/4df82c03b3280af6c1a60f35353c9b7b5babed4d71a82999659fc3a89ede735a/",
+    "source": "urlhaus",
+    "family": "mirai",
+    "first_seen": "2026-09-09 14:15:27"
+  },
+  {
+    "sha256": "4df82c03b3280af6c1a60f35353c9b7b5babed4d71a82999659fc3a89ede735a",
+    "indicator_type": "domain",
+    "indicator_value": "urlhaus-api.abuse.ch",
+    "source": "urlhaus",
+    "family": "mirai",
+    "first_seen": "2026-09-09 14:15:27"
+  },
+  {
+    "sha256": "131b30d09a4a5278f91be069a9da9ff02324b6e28443a00690b6f34ca997c8ae",
+    "indicator_type": "url",
+    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/131b30d09a4a5278f91be069a9da9ff02324b6e28443a00690b6f34ca997c8ae/",
+    "source": "urlhaus",
+    "family": "mirai",
+    "first_seen": "2026-09-09 13:35:42"
+  },
+  {
+    "sha256": "131b30d09a4a5278f91be069a9da9ff02324b6e28443a00690b6f34ca997c8ae",
+    "indicator_type": "domain",
+    "indicator_value": "urlhaus-api.abuse.ch",
+    "source": "urlhaus",
+    "family": "mirai",
+    "first_seen": "2026-09-09 13:35:42"
+  },
+  {
+    "sha256": "4f92772728021d870abd4d67b48fd0bfa9ee9fdaa1d5e8c67cc4891c07a01e0d",
+    "indicator_type": "url",
+    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/4f92772728021d870abd4d67b48fd0bfa9ee9fdaa1d5e8c67cc4891c07a01e0d/",
+    "source": "urlhaus",
+    "family": "mirai",
+    "first_seen": "2026-09-09 16:02:08"
+  },
+  {
+    "sha256": "4f92772728021d870abd4d67b48fd0bfa9ee9fdaa1d5e8c67cc4891c07a01e0d",
+    "indicator_type": "domain",
+    "indicator_value": "urlhaus-api.abuse.ch",
+    "source": "urlhaus",
+    "family": "mirai",
+    "first_seen": "2026-09-09 16:02:08"
+  },
+  {
+    "sha256": "eb4c70f6492ea19d7a5c05938532f0d192f50e6959aac154481ba18a85a30b03",
+    "indicator_type": "url",
+    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/eb4c70f6492ea19d7a5c05938532f0d192f50e6959aac154481ba18a85a30b03/",
     "source": "urlhaus",
     "family": "",
-    "first_seen": "2026-09-08 10:00:15"
+    "first_seen": "2026-09-09 15:20:34"
   },
   {
-    "sha256": "52dba06b61623b8256b774370dccce28ead47994ebb5c45f7674ca56f41007af",
+    "sha256": "eb4c70f6492ea19d7a5c05938532f0d192f50e6959aac154481ba18a85a30b03",
     "indicator_type": "domain",
     "indicator_value": "urlhaus-api.abuse.ch",
     "source": "urlhaus",
     "family": "",
-    "first_seen": "2026-09-08 10:00:15"
-  },
-  {
-    "sha256": "ebdf3d10fbbfe32a9bfe484b640519d8f7f22aeadd599d2b2bc140ba250d89d7",
-    "indicator_type": "url",
-    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/ebdf3d10fbbfe32a9bfe484b640519d8f7f22aeadd599d2b2bc140ba250d89d7/",
-    "source": "urlhaus",
-    "family": "",
-    "first_seen": "2026-09-08 09:51:16"
-  },
-  {
-    "sha256": "ebdf3d10fbbfe32a9bfe484b640519d8f7f22aeadd599d2b2bc140ba250d89d7",
-    "indicator_type": "domain",
-    "indicator_value": "urlhaus-api.abuse.ch",
-    "source": "urlhaus",
-    "family": "",
-    "first_seen": "2026-09-08 09:51:16"
-  },
-  {
-    "sha256": "7da6e84d862ac4605e50d4293100aa6bac4d57b104001937a791c03ec76724b0",
-    "indicator_type": "url",
-    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/7da6e84d862ac4605e50d4293100aa6bac4d57b104001937a791c03ec76724b0/",
-    "source": "urlhaus",
-    "family": "",
-    "first_seen": "2026-09-08 09:38:32"
-  },
-  {
-    "sha256": "7da6e84d862ac4605e50d4293100aa6bac4d57b104001937a791c03ec76724b0",
-    "indicator_type": "domain",
-    "indicator_value": "urlhaus-api.abuse.ch",
-    "source": "urlhaus",
-    "family": "",
-    "first_seen": "2026-09-08 09:38:32"
-  },
-  {
-    "sha256": "eef29e6c8fef440dbc54412d0e8ff0b7b595b03a8c6508b8eb15a6ca0cd0e032",
-    "indicator_type": "url",
-    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/eef29e6c8fef440dbc54412d0e8ff0b7b595b03a8c6508b8eb15a6ca0cd0e032/",
-    "source": "urlhaus",
-    "family": "",
-    "first_seen": "2026-09-08 09:44:11"
-  },
-  {
-    "sha256": "eef29e6c8fef440dbc54412d0e8ff0b7b595b03a8c6508b8eb15a6ca0cd0e032",
-    "indicator_type": "domain",
-    "indicator_value": "urlhaus-api.abuse.ch",
-    "source": "urlhaus",
-    "family": "",
-    "first_seen": "2026-09-08 09:44:11"
-  },
-  {
-    "sha256": "5a18581269a2765d6772d1e483bd5abacc1e3112edf53e0be6432981010c33f6",
-    "indicator_type": "url",
-    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/5a18581269a2765d6772d1e483bd5abacc1e3112edf53e0be6432981010c33f6/",
-    "source": "urlhaus",
-    "family": "coinminer",
-    "first_seen": "2026-09-08 09:27:54"
-  },
-  {
-    "sha256": "5a18581269a2765d6772d1e483bd5abacc1e3112edf53e0be6432981010c33f6",
-    "indicator_type": "domain",
-    "indicator_value": "urlhaus-api.abuse.ch",
-    "source": "urlhaus",
-    "family": "coinminer",
-    "first_seen": "2026-09-08 09:27:54"
-  },
-  {
-    "sha256": "26ade03828d1a431ba06917bf46c5f07f0f0fce90cd2a0e0afa7046d4b07e6f7",
-    "indicator_type": "url",
-    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/26ade03828d1a431ba06917bf46c5f07f0f0fce90cd2a0e0afa7046d4b07e6f7/",
-    "source": "urlhaus",
-    "family": "",
-    "first_seen": "2026-09-08 09:12:56"
-  },
-  {
-    "sha256": "26ade03828d1a431ba06917bf46c5f07f0f0fce90cd2a0e0afa7046d4b07e6f7",
-    "indicator_type": "domain",
-    "indicator_value": "urlhaus-api.abuse.ch",
-    "source": "urlhaus",
-    "family": "",
-    "first_seen": "2026-09-08 09:12:56"
-  },
-  {
-    "sha256": "6d3f91553887ae8c7c0f6415913e6c3fc50b48cf79eadde2a7768ca41bbe43e4",
-    "indicator_type": "url",
-    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/6d3f91553887ae8c7c0f6415913e6c3fc50b48cf79eadde2a7768ca41bbe43e4/",
-    "source": "urlhaus",
-    "family": "",
-    "first_seen": "2026-09-08 09:08:30"
-  },
-  {
-    "sha256": "6d3f91553887ae8c7c0f6415913e6c3fc50b48cf79eadde2a7768ca41bbe43e4",
-    "indicator_type": "domain",
-    "indicator_value": "urlhaus-api.abuse.ch",
-    "source": "urlhaus",
-    "family": "",
-    "first_seen": "2026-09-08 09:08:30"
+    "first_seen": "2026-09-09 15:20:34"
   },
   {
     "sha256": "a1ee3d64aaae2a8fbe1c015622a7cf0e842a2ac417df341160163bbe0d1dd652",
@@ -309,7 +85,7 @@
     "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/a1ee3d64aaae2a8fbe1c015622a7cf0e842a2ac417df341160163bbe0d1dd652/",
     "source": "urlhaus",
     "family": "",
-    "first_seen": "2026-09-09 08:08:17"
+    "first_seen": "2026-09-09 18:17:40"
   },
   {
     "sha256": "a1ee3d64aaae2a8fbe1c015622a7cf0e842a2ac417df341160163bbe0d1dd652",
@@ -317,55 +93,7 @@
     "indicator_value": "urlhaus-api.abuse.ch",
     "source": "urlhaus",
     "family": "",
-    "first_seen": "2026-09-09 08:08:17"
-  },
-  {
-    "sha256": "ab2ebd458edb83a34aecfc933c52e8cd2e50792e4f8a9bad38e80d46126940fe",
-    "indicator_type": "url",
-    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/ab2ebd458edb83a34aecfc933c52e8cd2e50792e4f8a9bad38e80d46126940fe/",
-    "source": "urlhaus",
-    "family": "",
-    "first_seen": "2026-09-08 08:56:44"
-  },
-  {
-    "sha256": "ab2ebd458edb83a34aecfc933c52e8cd2e50792e4f8a9bad38e80d46126940fe",
-    "indicator_type": "domain",
-    "indicator_value": "urlhaus-api.abuse.ch",
-    "source": "urlhaus",
-    "family": "",
-    "first_seen": "2026-09-08 08:56:44"
-  },
-  {
-    "sha256": "2722591f976e2f1a23503a58651768767bc41da195bdd2b7de8cc248ad69ff51",
-    "indicator_type": "url",
-    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/2722591f976e2f1a23503a58651768767bc41da195bdd2b7de8cc248ad69ff51/",
-    "source": "urlhaus",
-    "family": "",
-    "first_seen": "2026-09-08 10:51:58"
-  },
-  {
-    "sha256": "2722591f976e2f1a23503a58651768767bc41da195bdd2b7de8cc248ad69ff51",
-    "indicator_type": "domain",
-    "indicator_value": "urlhaus-api.abuse.ch",
-    "source": "urlhaus",
-    "family": "",
-    "first_seen": "2026-09-08 10:51:58"
-  },
-  {
-    "sha256": "0cfef126d2a0df0d4dde9c9a5f5ededf91cf022adee472e38902b0825d37122d",
-    "indicator_type": "url",
-    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/0cfef126d2a0df0d4dde9c9a5f5ededf91cf022adee472e38902b0825d37122d/",
-    "source": "urlhaus",
-    "family": "",
-    "first_seen": "2026-09-08 06:40:04"
-  },
-  {
-    "sha256": "0cfef126d2a0df0d4dde9c9a5f5ededf91cf022adee472e38902b0825d37122d",
-    "indicator_type": "domain",
-    "indicator_value": "urlhaus-api.abuse.ch",
-    "source": "urlhaus",
-    "family": "",
-    "first_seen": "2026-09-08 06:40:04"
+    "first_seen": "2026-09-09 18:17:40"
   },
   {
     "sha256": "18a6fc79bab85bef501f3bbc45adc9f483706a42b1b47f1b4f1a7a4036c20ece",
@@ -816,531 +544,99 @@
     "first_seen": "2026-09-09 08:45:07"
   },
   {
-    "sha256": "fcb77fd480619d6b2b4b95a942b3eaf36c5232dfa72e7934495a1410e37011dc",
+    "sha256": "974962f131e5971d729a166d93f7b720b47724eef1bb6ab20b1145b35f9d4b93",
     "indicator_type": "url",
-    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/fcb77fd480619d6b2b4b95a942b3eaf36c5232dfa72e7934495a1410e37011dc/",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-09 08:44:51"
-  },
-  {
-    "sha256": "fcb77fd480619d6b2b4b95a942b3eaf36c5232dfa72e7934495a1410e37011dc",
-    "indicator_type": "domain",
-    "indicator_value": "urlhaus-api.abuse.ch",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-09 08:44:51"
-  },
-  {
-    "sha256": "1a49a2c9c9a3522d55d2a19a44e7c8c67d8954d27a747ce4841281ab2703277d",
-    "indicator_type": "url",
-    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/1a49a2c9c9a3522d55d2a19a44e7c8c67d8954d27a747ce4841281ab2703277d/",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-09 08:36:07"
-  },
-  {
-    "sha256": "1a49a2c9c9a3522d55d2a19a44e7c8c67d8954d27a747ce4841281ab2703277d",
-    "indicator_type": "domain",
-    "indicator_value": "urlhaus-api.abuse.ch",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-09 08:36:07"
-  },
-  {
-    "sha256": "c1c39007005154132774f01c3e9aeaf7cfdc9005fc71c264e5e9c4c0af0d6759",
-    "indicator_type": "url",
-    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/c1c39007005154132774f01c3e9aeaf7cfdc9005fc71c264e5e9c4c0af0d6759/",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-09 08:36:07"
-  },
-  {
-    "sha256": "c1c39007005154132774f01c3e9aeaf7cfdc9005fc71c264e5e9c4c0af0d6759",
-    "indicator_type": "domain",
-    "indicator_value": "urlhaus-api.abuse.ch",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-09 08:36:07"
-  },
-  {
-    "sha256": "8477a207642a2b276b386dea6651f6a140302853e76b2c8497d120465d0f28e0",
-    "indicator_type": "url",
-    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/8477a207642a2b276b386dea6651f6a140302853e76b2c8497d120465d0f28e0/",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-09 08:36:07"
-  },
-  {
-    "sha256": "8477a207642a2b276b386dea6651f6a140302853e76b2c8497d120465d0f28e0",
-    "indicator_type": "domain",
-    "indicator_value": "urlhaus-api.abuse.ch",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-09 08:36:07"
-  },
-  {
-    "sha256": "4c50e1ec129f04399455f16c965e4701d4d56c7f2d4cbeeae4f7f1392953caba",
-    "indicator_type": "url",
-    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/4c50e1ec129f04399455f16c965e4701d4d56c7f2d4cbeeae4f7f1392953caba/",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-09 08:36:07"
-  },
-  {
-    "sha256": "4c50e1ec129f04399455f16c965e4701d4d56c7f2d4cbeeae4f7f1392953caba",
-    "indicator_type": "domain",
-    "indicator_value": "urlhaus-api.abuse.ch",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-09 08:36:07"
-  },
-  {
-    "sha256": "6369f400768a5d82952aed34894bf1752589665e7efa3b58cd970ad89d361368",
-    "indicator_type": "url",
-    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/6369f400768a5d82952aed34894bf1752589665e7efa3b58cd970ad89d361368/",
+    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/974962f131e5971d729a166d93f7b720b47724eef1bb6ab20b1145b35f9d4b93/",
     "source": "urlhaus",
     "family": "",
-    "first_seen": "2026-09-09 08:06:45"
+    "first_seen": "2026-09-10 10:45:30"
   },
   {
-    "sha256": "6369f400768a5d82952aed34894bf1752589665e7efa3b58cd970ad89d361368",
+    "sha256": "974962f131e5971d729a166d93f7b720b47724eef1bb6ab20b1145b35f9d4b93",
     "indicator_type": "domain",
     "indicator_value": "urlhaus-api.abuse.ch",
     "source": "urlhaus",
     "family": "",
-    "first_seen": "2026-09-09 08:06:45"
+    "first_seen": "2026-09-10 10:45:30"
   },
   {
-    "sha256": "4fc8e91e1f10de64ba2e7567d9c074bff265ee8b0ef1a0bb12e1241b8c9a87cf",
+    "sha256": "5d540352289cbf0c69ba690933f7e2517e2eff2713d1a4f73422a84f94793dcf",
     "indicator_type": "url",
-    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/4fc8e91e1f10de64ba2e7567d9c074bff265ee8b0ef1a0bb12e1241b8c9a87cf/",
+    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/5d540352289cbf0c69ba690933f7e2517e2eff2713d1a4f73422a84f94793dcf/",
+    "source": "urlhaus",
+    "family": "mirai",
+    "first_seen": "2026-09-10 10:44:02"
+  },
+  {
+    "sha256": "5d540352289cbf0c69ba690933f7e2517e2eff2713d1a4f73422a84f94793dcf",
+    "indicator_type": "domain",
+    "indicator_value": "urlhaus-api.abuse.ch",
+    "source": "urlhaus",
+    "family": "mirai",
+    "first_seen": "2026-09-10 10:44:02"
+  },
+  {
+    "sha256": "cd3294de78b0af05f66b9409b22216da9a62692b0ae08db2c5ecad8afe3c35fb",
+    "indicator_type": "url",
+    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/cd3294de78b0af05f66b9409b22216da9a62692b0ae08db2c5ecad8afe3c35fb/",
+    "source": "urlhaus",
+    "family": "mirai",
+    "first_seen": "2026-09-10 10:47:45"
+  },
+  {
+    "sha256": "cd3294de78b0af05f66b9409b22216da9a62692b0ae08db2c5ecad8afe3c35fb",
+    "indicator_type": "domain",
+    "indicator_value": "urlhaus-api.abuse.ch",
+    "source": "urlhaus",
+    "family": "mirai",
+    "first_seen": "2026-09-10 10:47:45"
+  },
+  {
+    "sha256": "cd3294de78b0af05f66b9409b22216da9a62692b0ae08db2c5ecad8afe3c35fb",
+    "indicator_type": "url",
+    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/cd3294de78b0af05f66b9409b22216da9a62692b0ae08db2c5ecad8afe3c35fb/",
+    "source": "urlhaus",
+    "family": "mirai",
+    "first_seen": "2026-09-10 10:37:56"
+  },
+  {
+    "sha256": "cd3294de78b0af05f66b9409b22216da9a62692b0ae08db2c5ecad8afe3c35fb",
+    "indicator_type": "domain",
+    "indicator_value": "urlhaus-api.abuse.ch",
+    "source": "urlhaus",
+    "family": "mirai",
+    "first_seen": "2026-09-10 10:37:56"
+  },
+  {
+    "sha256": "c9a3c3e07c7b0f15e32c7ddf8365e101477549128816ddcacfae447aef81deaa",
+    "indicator_type": "url",
+    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/c9a3c3e07c7b0f15e32c7ddf8365e101477549128816ddcacfae447aef81deaa/",
     "source": "urlhaus",
     "family": "",
-    "first_seen": "2026-09-09 07:45:59"
+    "first_seen": "2026-09-10 10:11:44"
   },
   {
-    "sha256": "4fc8e91e1f10de64ba2e7567d9c074bff265ee8b0ef1a0bb12e1241b8c9a87cf",
+    "sha256": "c9a3c3e07c7b0f15e32c7ddf8365e101477549128816ddcacfae447aef81deaa",
     "indicator_type": "domain",
     "indicator_value": "urlhaus-api.abuse.ch",
     "source": "urlhaus",
     "family": "",
-    "first_seen": "2026-09-09 07:45:59"
+    "first_seen": "2026-09-10 10:11:44"
   },
   {
-    "sha256": "83339d96f6686f582d206d7b8e0e928abde2551e327c20eba693a4d1fbf44178",
+    "sha256": "d64af63b3c818348366ac1148f44ae6125eeb02291c2a236eb839f8b4ba997c3",
     "indicator_type": "url",
-    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/83339d96f6686f582d206d7b8e0e928abde2551e327c20eba693a4d1fbf44178/",
+    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/d64af63b3c818348366ac1148f44ae6125eeb02291c2a236eb839f8b4ba997c3/",
     "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-09 07:18:04"
+    "family": "remcosrat",
+    "first_seen": "2026-09-09 15:21:42"
   },
   {
-    "sha256": "83339d96f6686f582d206d7b8e0e928abde2551e327c20eba693a4d1fbf44178",
+    "sha256": "d64af63b3c818348366ac1148f44ae6125eeb02291c2a236eb839f8b4ba997c3",
     "indicator_type": "domain",
     "indicator_value": "urlhaus-api.abuse.ch",
     "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-09 07:18:04"
-  },
-  {
-    "sha256": "72e8bef36dab789468552a3c55c40a6d836cf152fc292e125b6a5018b823af25",
-    "indicator_type": "url",
-    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/72e8bef36dab789468552a3c55c40a6d836cf152fc292e125b6a5018b823af25/",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-09 07:18:04"
-  },
-  {
-    "sha256": "72e8bef36dab789468552a3c55c40a6d836cf152fc292e125b6a5018b823af25",
-    "indicator_type": "domain",
-    "indicator_value": "urlhaus-api.abuse.ch",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-09 07:18:04"
-  },
-  {
-    "sha256": "83a46b66b31f169e1b25d340330d9191263660b04ef32d337a84977274881503",
-    "indicator_type": "url",
-    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/83a46b66b31f169e1b25d340330d9191263660b04ef32d337a84977274881503/",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-09 07:18:00"
-  },
-  {
-    "sha256": "83a46b66b31f169e1b25d340330d9191263660b04ef32d337a84977274881503",
-    "indicator_type": "domain",
-    "indicator_value": "urlhaus-api.abuse.ch",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-09 07:18:00"
-  },
-  {
-    "sha256": "5f73ce63d8fcbb1a91c784c8a34a901f09a545700297ee73da1404f836d9cb57",
-    "indicator_type": "url",
-    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/5f73ce63d8fcbb1a91c784c8a34a901f09a545700297ee73da1404f836d9cb57/",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-09 07:17:56"
-  },
-  {
-    "sha256": "5f73ce63d8fcbb1a91c784c8a34a901f09a545700297ee73da1404f836d9cb57",
-    "indicator_type": "domain",
-    "indicator_value": "urlhaus-api.abuse.ch",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-09 07:17:56"
-  },
-  {
-    "sha256": "f8903ac2c1129c9168c55c53d4a02fc2fbf20c4eb22ecc479537966d2bfb309c",
-    "indicator_type": "url",
-    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/f8903ac2c1129c9168c55c53d4a02fc2fbf20c4eb22ecc479537966d2bfb309c/",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-09 07:17:54"
-  },
-  {
-    "sha256": "f8903ac2c1129c9168c55c53d4a02fc2fbf20c4eb22ecc479537966d2bfb309c",
-    "indicator_type": "domain",
-    "indicator_value": "urlhaus-api.abuse.ch",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-09 07:17:54"
-  },
-  {
-    "sha256": "d196d4be303ce4745e189f1bf31936ca433a3867d3cad9147070e0f6f6b0ce64",
-    "indicator_type": "url",
-    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/d196d4be303ce4745e189f1bf31936ca433a3867d3cad9147070e0f6f6b0ce64/",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-09 07:17:47"
-  },
-  {
-    "sha256": "d196d4be303ce4745e189f1bf31936ca433a3867d3cad9147070e0f6f6b0ce64",
-    "indicator_type": "domain",
-    "indicator_value": "urlhaus-api.abuse.ch",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-09 07:17:47"
-  },
-  {
-    "sha256": "50f3f828222f260f48f5dd119d1f561ab18f34b117f97e0100a15128f6799c32",
-    "indicator_type": "url",
-    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/50f3f828222f260f48f5dd119d1f561ab18f34b117f97e0100a15128f6799c32/",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-09 07:17:47"
-  },
-  {
-    "sha256": "50f3f828222f260f48f5dd119d1f561ab18f34b117f97e0100a15128f6799c32",
-    "indicator_type": "domain",
-    "indicator_value": "urlhaus-api.abuse.ch",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-09 07:17:47"
-  },
-  {
-    "sha256": "41bb43cc1e4ce0fc1692bd56c945134a7ed9a4e4ee4601130310416640e03351",
-    "indicator_type": "url",
-    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/41bb43cc1e4ce0fc1692bd56c945134a7ed9a4e4ee4601130310416640e03351/",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-09 07:17:46"
-  },
-  {
-    "sha256": "41bb43cc1e4ce0fc1692bd56c945134a7ed9a4e4ee4601130310416640e03351",
-    "indicator_type": "domain",
-    "indicator_value": "urlhaus-api.abuse.ch",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-09 07:17:46"
-  },
-  {
-    "sha256": "7855ec1b0cec3287a126affeb8eb27626e86fb096e354c4d5acca28bae5ea412",
-    "indicator_type": "url",
-    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/7855ec1b0cec3287a126affeb8eb27626e86fb096e354c4d5acca28bae5ea412/",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-09 07:17:45"
-  },
-  {
-    "sha256": "7855ec1b0cec3287a126affeb8eb27626e86fb096e354c4d5acca28bae5ea412",
-    "indicator_type": "domain",
-    "indicator_value": "urlhaus-api.abuse.ch",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-09 07:17:45"
-  },
-  {
-    "sha256": "e56b32c7b18f0a5e8a0308e45a1e11eb642d928f5efd554280b7cdf03babdb13",
-    "indicator_type": "url",
-    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/e56b32c7b18f0a5e8a0308e45a1e11eb642d928f5efd554280b7cdf03babdb13/",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-09 07:17:48"
-  },
-  {
-    "sha256": "e56b32c7b18f0a5e8a0308e45a1e11eb642d928f5efd554280b7cdf03babdb13",
-    "indicator_type": "domain",
-    "indicator_value": "urlhaus-api.abuse.ch",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-09 07:17:48"
-  },
-  {
-    "sha256": "e56b32c7b18f0a5e8a0308e45a1e11eb642d928f5efd554280b7cdf03babdb13",
-    "indicator_type": "url",
-    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/e56b32c7b18f0a5e8a0308e45a1e11eb642d928f5efd554280b7cdf03babdb13/",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-09 07:17:45"
-  },
-  {
-    "sha256": "e56b32c7b18f0a5e8a0308e45a1e11eb642d928f5efd554280b7cdf03babdb13",
-    "indicator_type": "domain",
-    "indicator_value": "urlhaus-api.abuse.ch",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-09 07:17:45"
-  },
-  {
-    "sha256": "a9bf903e992239560febcb0592857b6e5793c16affa0b4abf40e0adf9f5f86f7",
-    "indicator_type": "url",
-    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/a9bf903e992239560febcb0592857b6e5793c16affa0b4abf40e0adf9f5f86f7/",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-09 07:17:45"
-  },
-  {
-    "sha256": "a9bf903e992239560febcb0592857b6e5793c16affa0b4abf40e0adf9f5f86f7",
-    "indicator_type": "domain",
-    "indicator_value": "urlhaus-api.abuse.ch",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-09 07:17:45"
-  },
-  {
-    "sha256": "db8339ec6c48fc10bce1f6422f348e51a5d1159c4a9eacc38ba75bb411e38426",
-    "indicator_type": "url",
-    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/db8339ec6c48fc10bce1f6422f348e51a5d1159c4a9eacc38ba75bb411e38426/",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-09 07:17:44"
-  },
-  {
-    "sha256": "db8339ec6c48fc10bce1f6422f348e51a5d1159c4a9eacc38ba75bb411e38426",
-    "indicator_type": "domain",
-    "indicator_value": "urlhaus-api.abuse.ch",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-09 07:17:44"
-  },
-  {
-    "sha256": "5f73fd2184ffc262f1bdac74b8f15c589f8d5cf986625ff687ecd32928241f80",
-    "indicator_type": "url",
-    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/5f73fd2184ffc262f1bdac74b8f15c589f8d5cf986625ff687ecd32928241f80/",
-    "source": "urlhaus",
-    "family": "akira",
-    "first_seen": "2026-09-09 07:17:44"
-  },
-  {
-    "sha256": "5f73fd2184ffc262f1bdac74b8f15c589f8d5cf986625ff687ecd32928241f80",
-    "indicator_type": "domain",
-    "indicator_value": "urlhaus-api.abuse.ch",
-    "source": "urlhaus",
-    "family": "akira",
-    "first_seen": "2026-09-09 07:17:44"
-  },
-  {
-    "sha256": "1c8f427afe2ba8b0ca2f93ddc389b6d60a83b9d0fbd62c2d5bbfc56ad2960a28",
-    "indicator_type": "url",
-    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/1c8f427afe2ba8b0ca2f93ddc389b6d60a83b9d0fbd62c2d5bbfc56ad2960a28/",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-09 07:17:44"
-  },
-  {
-    "sha256": "1c8f427afe2ba8b0ca2f93ddc389b6d60a83b9d0fbd62c2d5bbfc56ad2960a28",
-    "indicator_type": "domain",
-    "indicator_value": "urlhaus-api.abuse.ch",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-09 07:17:44"
-  },
-  {
-    "sha256": "73a09c0756624ef804228c1b93480be57488ffd7bab7c2e2598ea92cc81cea1d",
-    "indicator_type": "url",
-    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/73a09c0756624ef804228c1b93480be57488ffd7bab7c2e2598ea92cc81cea1d/",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-09 07:17:44"
-  },
-  {
-    "sha256": "73a09c0756624ef804228c1b93480be57488ffd7bab7c2e2598ea92cc81cea1d",
-    "indicator_type": "domain",
-    "indicator_value": "urlhaus-api.abuse.ch",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-09 07:17:44"
-  },
-  {
-    "sha256": "5739430e7a8b3458a9f80a0f37a9eea49d9114ac27082357dacb1185be4adfb4",
-    "indicator_type": "url",
-    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/5739430e7a8b3458a9f80a0f37a9eea49d9114ac27082357dacb1185be4adfb4/",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-09 07:18:06"
-  },
-  {
-    "sha256": "5739430e7a8b3458a9f80a0f37a9eea49d9114ac27082357dacb1185be4adfb4",
-    "indicator_type": "domain",
-    "indicator_value": "urlhaus-api.abuse.ch",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-09 07:18:06"
-  },
-  {
-    "sha256": "5739430e7a8b3458a9f80a0f37a9eea49d9114ac27082357dacb1185be4adfb4",
-    "indicator_type": "url",
-    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/5739430e7a8b3458a9f80a0f37a9eea49d9114ac27082357dacb1185be4adfb4/",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-09 07:17:44"
-  },
-  {
-    "sha256": "5739430e7a8b3458a9f80a0f37a9eea49d9114ac27082357dacb1185be4adfb4",
-    "indicator_type": "domain",
-    "indicator_value": "urlhaus-api.abuse.ch",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-09 07:17:44"
-  },
-  {
-    "sha256": "897bcc1eb8b34a664cfa695d1da43311ad44f38bf9fdf598a74548601b59aeb7",
-    "indicator_type": "url",
-    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/897bcc1eb8b34a664cfa695d1da43311ad44f38bf9fdf598a74548601b59aeb7/",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-09 07:17:44"
-  },
-  {
-    "sha256": "897bcc1eb8b34a664cfa695d1da43311ad44f38bf9fdf598a74548601b59aeb7",
-    "indicator_type": "domain",
-    "indicator_value": "urlhaus-api.abuse.ch",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-09 07:17:44"
-  },
-  {
-    "sha256": "227af7644dd1ae414c0f36e6d137f05fa53bf58d62bdf0da4da3b1487cf53bb0",
-    "indicator_type": "url",
-    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/227af7644dd1ae414c0f36e6d137f05fa53bf58d62bdf0da4da3b1487cf53bb0/",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-09 07:17:47"
-  },
-  {
-    "sha256": "227af7644dd1ae414c0f36e6d137f05fa53bf58d62bdf0da4da3b1487cf53bb0",
-    "indicator_type": "domain",
-    "indicator_value": "urlhaus-api.abuse.ch",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-09 07:17:47"
-  },
-  {
-    "sha256": "227af7644dd1ae414c0f36e6d137f05fa53bf58d62bdf0da4da3b1487cf53bb0",
-    "indicator_type": "url",
-    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/227af7644dd1ae414c0f36e6d137f05fa53bf58d62bdf0da4da3b1487cf53bb0/",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-09 07:17:43"
-  },
-  {
-    "sha256": "227af7644dd1ae414c0f36e6d137f05fa53bf58d62bdf0da4da3b1487cf53bb0",
-    "indicator_type": "domain",
-    "indicator_value": "urlhaus-api.abuse.ch",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-09 07:17:43"
-  },
-  {
-    "sha256": "8b3bd049094bca01aa6519d70757e9880d9cb73bf17a0ee7021ee3a7b621c861",
-    "indicator_type": "url",
-    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/8b3bd049094bca01aa6519d70757e9880d9cb73bf17a0ee7021ee3a7b621c861/",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-09 07:17:40"
-  },
-  {
-    "sha256": "8b3bd049094bca01aa6519d70757e9880d9cb73bf17a0ee7021ee3a7b621c861",
-    "indicator_type": "domain",
-    "indicator_value": "urlhaus-api.abuse.ch",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-09 07:17:40"
-  },
-  {
-    "sha256": "6461c8f43468d6278e74ba5495adbed1f57991ee0d96452c7c7017dc6efcc0a2",
-    "indicator_type": "url",
-    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/6461c8f43468d6278e74ba5495adbed1f57991ee0d96452c7c7017dc6efcc0a2/",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-09 07:17:40"
-  },
-  {
-    "sha256": "6461c8f43468d6278e74ba5495adbed1f57991ee0d96452c7c7017dc6efcc0a2",
-    "indicator_type": "domain",
-    "indicator_value": "urlhaus-api.abuse.ch",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-09 07:17:40"
-  },
-  {
-    "sha256": "9d8aa64b79e871e6af6601a1c65d29dc74ed314294cf4dafc8c3c4ecae44d6cf",
-    "indicator_type": "url",
-    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/9d8aa64b79e871e6af6601a1c65d29dc74ed314294cf4dafc8c3c4ecae44d6cf/",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-09 07:17:40"
-  },
-  {
-    "sha256": "9d8aa64b79e871e6af6601a1c65d29dc74ed314294cf4dafc8c3c4ecae44d6cf",
-    "indicator_type": "domain",
-    "indicator_value": "urlhaus-api.abuse.ch",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-09 07:17:40"
-  },
-  {
-    "sha256": "6e08313bd0b1a42ea306201de99d1bc4d8634d7c75774d8744cb102fcca038a1",
-    "indicator_type": "url",
-    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/6e08313bd0b1a42ea306201de99d1bc4d8634d7c75774d8744cb102fcca038a1/",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-09 07:17:39"
-  },
-  {
-    "sha256": "6e08313bd0b1a42ea306201de99d1bc4d8634d7c75774d8744cb102fcca038a1",
-    "indicator_type": "domain",
-    "indicator_value": "urlhaus-api.abuse.ch",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-09 07:17:39"
-  },
-  {
-    "sha256": "da75a850cc621e0a93db9b156ceae0afa2a3f6581b6f8082682df254cac0ef01",
-    "indicator_type": "url",
-    "indicator_value": "https://urlhaus-api.abuse.ch/v1/download/da75a850cc621e0a93db9b156ceae0afa2a3f6581b6f8082682df254cac0ef01/",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-09 07:17:39"
-  },
-  {
-    "sha256": "da75a850cc621e0a93db9b156ceae0afa2a3f6581b6f8082682df254cac0ef01",
-    "indicator_type": "domain",
-    "indicator_value": "urlhaus-api.abuse.ch",
-    "source": "urlhaus",
-    "family": "mirai",
-    "first_seen": "2026-09-09 07:17:39"
+    "family": "remcosrat",
+    "first_seen": "2026-09-09 15:21:42"
   }
 ]
