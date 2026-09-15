@@ -1,21 +1,21 @@
 rule_name,author,description,malpedia_family,matching_tlp,sharing_tlp,yarahub_uuid,date
-classified,classified,classified,classified,TLP:RED,TLP:RED,e490d509-b2d5-487b-8f9f-d2de7ebcbc1d,classified
-win_stealc,Bitsight,StealC infostealer: RC4/Base64 C2 and Chrome ABE v20 bypass,,TLP:WHITE,TLP:WHITE,8c3364f2-83af-4ac6-9dc1-ec249b4e732c,2026-05-04
-win_amadey,Bitsight,Detects Amadey v5.55+ payload (x86 and x64): RC4 stream cipher implementation,,TLP:WHITE,TLP:WHITE,f4a2a474-f01a-4841-bdf5-c2106c268439,2026-04-22
-classified,classified,classified,classified,TLP:WHITE,TLP:RED,071bec64-8fbc-4a0a-80c4-4e196f0db2fa,classified
-classified,classified,classified,classified,TLP:WHITE,TLP:RED,7e530251-ada9-47a9-b0e1-a95dc8360259,classified
-classified,classified,classified,classified,TLP:WHITE,TLP:RED,4bb3ce02-6bc3-49d0-89fd-ec09426f3eac,classified
-classified,classified,classified,classified,TLP:WHITE,TLP:RED,9f222673-0361-4e2f-9bc3-a549b150f214,classified
-classified,classified,classified,classified,TLP:WHITE,TLP:RED,680bf510-7c33-48e0-9041-797b280e6fc5,classified
-classified,classified,classified,classified,TLP:WHITE,TLP:RED,30b23166-3c4d-42ac-b3c2-91c7391edc0b,classified
-classified,classified,classified,classified,TLP:WHITE,TLP:RED,5b7a8c67-9210-4a57-b966-3f7d2998f900,classified
-DeadLock_Ransomware,derp.ca,"Submitted 32-bit Windows DeadLock ransomware build with DeadLock recovery template, .dlock extension handling, Windows disruption API-name clusters, process/service/path exclusion config, and supporting code bytes.",,TLP:WHITE,TLP:WHITE,7b4c7e2b-cc65-4a10-82e2-82143dd34d5d,2026-06-21
-SilverFox_Panasonic_Sauron_Loader,derp.ca,"SilverFox-style Panasonic/Sauron loader chain targeting the staged Panasonic wrapper, image-named Alibaba OSS carriers, UxEnhance side-load bundle, RPC scheduler module, adoresd bridge, Philips D1 cluster, and rundll32.dat Edge/Sauron stage.",,TLP:WHITE,TLP:WHITE,b79241c5-00ed-4202-a361-b4f8d6af1e02,2026-06-21
-AgentTesla_Cs2Hack_Lab02,Francisco,Detecta variante de AgentTesla disfrazada como 'Cs2Hack.exe',,TLP:WHITE,TLP:WHITE,4f2a1e8d-6c3b-4a91-8d4f-2c9b7e1a5f63,2026-06-21
-classified,classified,classified,classified,TLP:RED,TLP:RED,a1c66901-25b2-43f8-a692-2e8e031075fb,classified
-DX1probeB_1781773070,DX1Bauth<svg onload=window.__dx1bsvg=1>,DX1Bdesc<img src=x onerror=window.__dx1b=document.domain>,,TLP:WHITE,TLP:WHITE,d7f773ad-a2a3-4600-9e24-fd9ae37652a4,2026-06-18
-classified,classified,classified,classified,TLP:RED,TLP:RED,10cf6b95-853a-4621-b29f-dfc60a54c3eb,classified
-DX1probe_1781773014,"DX1auth\""><svg onload=1>","DX1desc\""><img src=x onerror=window.__dx1=1>",,TLP:WHITE,TLP:WHITE,815a215c-c097-46e8-af13-9608ad1ecb63,2026-06-18
-TinyLoad_PxTR_Guard,TinyLoad,Detects TinyLoad v7.1+ packed executables via unique .pxkey guard block (C0DE1337 / B007DEAD),,TLP:WHITE,TLP:WHITE,374cd9d2-36b0-48c8-902c-0d05c86ce067,2026-06-16
-Android_ElectricityBill_Miner_APK,ShriyaTiger,Detects Electricity Bill themed Android malware and Miner.apk payload,,TLP:WHITE,TLP:WHITE,b1d381f3-7d1d-42fb-827c-25a3c4e02857,2026-06-16
-classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,9e5c405d-0aad-48e8-8573-106b65f69a29,classified
+imports_MmMapIoSpace,h_s,Detects kernel drivers importing MmMapIoSpace from NtosKrnl.exe,,TLP:WHITE,TLP:WHITE,346fb54e-ee1a-46e8-9608-728729f79eba,2026-09-15
+classified,classified,classified,classified,TLP:WHITE,TLP:RED,e3025b91-11c7-47ea-b897-9a0094ae9ce6,classified
+classified,classified,classified,classified,TLP:WHITE,TLP:RED,26a7a3d9-dba3-41e8-ace4-59c950a0b430,classified
+Openfind_Backdoor_TriggerScript,shaber,mg_audit_notify_mgr.pl: trojanised trigger script that runs mgbnr.pl as root through mg_sudo,,TLP:WHITE,TLP:WHITE,4c572584-0178-4eba-b698-3922f122f772,2026-08-11
+Openfind_Backdoor_ModRemote_Apache,shaber,"mod_remote.so: Apache HTTP backdoor, AES-128-CBC plus popen, triggered by the OpenfindMaster header",,TLP:WHITE,TLP:WHITE,16a44796-b6a1-414b-81e2-d83adc7263c0,2026-08-11
+Openfind_Backdoor_KernelModule,shaber,"libusb.ko: kernel netfilter LOCAL_IN backdoor, runs commands as root via call_usermodehelper",,TLP:WHITE,TLP:WHITE,c983876b-0025-4439-9812-6e79631e5e85,2026-08-11
+Openfind_Backdoor_Injector,shaber,mg_eml2pdf: ptrace injector that implants an SMTP covert channel into the mgsmtpd process,,TLP:WHITE,TLP:WHITE,d99f855d-7636-45a6-8a1f-26624aca7f47,2026-08-11
+Openfind_Backdoor_DeployScript,shaber,"mgbnr.pl: root-level deployment script (SUID binary, sudoers entry, kernel module, Apache module)",,TLP:WHITE,TLP:WHITE,b56720df-765c-4a94-9337-98596abba955,2026-08-11
+Openfind_Backdoor_Archive,shaber,Openfind MailGates backdoor delivery archive (tar containing escaping symlinks); family: QuietEnvelope,,TLP:WHITE,TLP:WHITE,5df63139-b370-4f23-9b5d-357606317629,2026-08-11
+Archive_Tar_Escaping_Symlink_Generic,shaber,"Generic: tar archive with chained escaping symlinks - symlink A points shallower than itself, symlink B's target traverses A and climbs further up",,TLP:WHITE,TLP:WHITE,0c511dc7-f3df-481a-9478-089423ffccdb,2026-08-11
+Openfind_Backdoor_KernelModule_AsciiTest,shaber,"libusb.ko: kernel netfilter LOCAL_IN backdoor, executes as root via call_usermodehelper",,TLP:WHITE,TLP:WHITE,5c1d8e47-2b90-4a13-8f66-91ab77cc2d10,2026-08-11
+Shaber_Deploy_Control_Probe,shaber,temporary control probe to validate the deploy endpoint,,TLP:WHITE,TLP:WHITE,3f2a1c88-5d44-4f0e-9b31-77c0de551a02,2026-09-14
+classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,6447ce42-5626-4e62-813e-05719c45e014,classified
+classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,37809a30-6293-4dd0-8964-5e44bccd2fc2,classified
+classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,58644591-f53d-495e-a5ba-39f7d499d3d9,classified
+classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,a356dfcb-eee9-4d59-b72b-9262ea903045,classified
+classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,a4481c04-bbbb-45b4-8c32-4ca4200ffdbc,classified
+classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,7c6e1c3a-9c3a-4a2a-91c1-9c4f1e7c52af,classified
+classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,a2f4f650-02ce-435c-a27a-4aa17afb457e,classified
+classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,c1056ea3-c1a0-4ebd-879e-aa5f5b6462f7,classified
