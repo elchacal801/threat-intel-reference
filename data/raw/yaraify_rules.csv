@@ -1,21 +1,21 @@
 rule_name,author,description,malpedia_family,matching_tlp,sharing_tlp,yarahub_uuid,date
-imports_MmMapIoSpace,h_s,Detects kernel drivers importing MmMapIoSpace from NtosKrnl.exe,,TLP:WHITE,TLP:WHITE,346fb54e-ee1a-46e8-9608-728729f79eba,2026-09-15
+classified,classified,classified,classified,TLP:WHITE,TLP:GREEN,97681967-6f75-493a-a25a-147ffd15d844,classified
+classified,classified,classified,classified,TLP:WHITE,TLP:AMBER,346fb54e-ee1a-46e8-9608-728729f79eba,classified
+JAR_Network_Indicators_Detection,TheKn0ck0ut,Detects JAR file info by hash,,TLP:WHITE,TLP:WHITE,d107043d-e6de-48e4-96fe-353b39ef633d,2026-09-15
+Malware_PE_NET_KoiLoader,Serhii Kocherhan,"Detects Koi Loader .NET executables packed with Confuser featuring specific mutex, assembly metadata, and unmanaged DLL imports",,TLP:WHITE,TLP:WHITE,64ecb175-947d-4639-b3d5-943086cebcab,2026-09-13
+JS_Obfuscation_Base256_Decoder,Serhii Kocherhan,Detects JavaScript phishlets using base-256 integer array decoding to hide payload,,TLP:WHITE,TLP:WHITE,88bdd1e5-9e61-4879-a99b-eb5a06747417,2026-09-10
+Hunt_LNK_EpochTimestamp_StrippedMetadata,Serhii Kocherhan,"Detects LNK files with timestamps reset to Jan 1, 1970 and stripped MAC/NetBIOS metadata",,TLP:WHITE,TLP:WHITE,5a26e50e-55a7-4544-bef4-bbe3c538f8db,2026-08-17
+LNK_Timestomped_Hex_SelfSeeker_Payload,Serhii Kocherhan,Detects timestomped LNK files using hex-encoded PowerShell to read/xor payload data appended to the LNK file,,TLP:WHITE,TLP:WHITE,005716a2-6d97-4c54-a0db-c49a61c42db0,2026-09-06
+Android_Spyware_OceanLotus_PhantomLance,Serhii Kocherhan,Detects OceanLotus (APT32) PhantomLance Android spyware APK files based on C2 domains and specific internal DEX framework invocations,,TLP:WHITE,TLP:WHITE,4eca4c72-2e84-465f-ab25-7874b4e8b586,2026-09-06
+Hunt_KiraAsciiObfuscator,Serhii Kocherhan,Detects files and scripts obfuscated using KiraAsciiObfuscator patterns and structural artifacts,,TLP:WHITE,TLP:WHITE,e6390a0c-4332-4a62-82a6-61572362b42e,2026-09-04
+Hunt_ManageEngine_UEMS_Agent_Bundle,Serhii Kocherhan,"Detects archives, installers, or files containing ManageEngine UEMS Agent and Remote Control bundled components",,TLP:WHITE,TLP:WHITE,428f029a-e4e6-43bc-9630-29599f78252a,2026-09-05
+LNK_Timestomped_PowerShell_Obfuscated,Serhii Kocherhan,"Detects timestomped LNK files with 1970 timestamps, zeroed volume serial, msedge icon, and obfuscated PowerShell arguments",,TLP:WHITE,TLP:WHITE,53fa78e8-1e68-4127-8aee-525676d1d0f3,2026-09-03
+PDF_Fake_Japanese_PurchaseOrder_Lure,Serhii Kocherhan,Detects fake Japanese purchase order PDF lure files containing specific localized title bar strings and Adobe Acrobat update errors,,TLP:WHITE,TLP:WHITE,23288f42-77da-4374-9d9b-2707714d505e,2026-09-03
+ELF_x86_Mirai_SaturnBotnet_Variant,Serhii Kocherhan,"Detects Mirai-derived SaturnBotnet variant targeting Linux x86 devices via Huawei, GPON, and JAWS RCE exploits",,TLP:WHITE,TLP:WHITE,2d8f1594-c263-4615-9d5e-d1a9399d6372,2026-09-02
+Cling_Ngioweb_IoT_Proxy_bot,eFeSpain,"Cling/Ngioweb IoT bot (residential proxy, C2 disguised as STUN)",,TLP:WHITE,TLP:WHITE,6ed570ab-af37-4f3f-8938-e7a7e9c83497,2026-09-04
 classified,classified,classified,classified,TLP:WHITE,TLP:RED,e3025b91-11c7-47ea-b897-9a0094ae9ce6,classified
 classified,classified,classified,classified,TLP:WHITE,TLP:RED,26a7a3d9-dba3-41e8-ace4-59c950a0b430,classified
 Openfind_Backdoor_TriggerScript,shaber,mg_audit_notify_mgr.pl: trojanised trigger script that runs mgbnr.pl as root through mg_sudo,,TLP:WHITE,TLP:WHITE,4c572584-0178-4eba-b698-3922f122f772,2026-08-11
 Openfind_Backdoor_ModRemote_Apache,shaber,"mod_remote.so: Apache HTTP backdoor, AES-128-CBC plus popen, triggered by the OpenfindMaster header",,TLP:WHITE,TLP:WHITE,16a44796-b6a1-414b-81e2-d83adc7263c0,2026-08-11
 Openfind_Backdoor_KernelModule,shaber,"libusb.ko: kernel netfilter LOCAL_IN backdoor, runs commands as root via call_usermodehelper",,TLP:WHITE,TLP:WHITE,c983876b-0025-4439-9812-6e79631e5e85,2026-08-11
 Openfind_Backdoor_Injector,shaber,mg_eml2pdf: ptrace injector that implants an SMTP covert channel into the mgsmtpd process,,TLP:WHITE,TLP:WHITE,d99f855d-7636-45a6-8a1f-26624aca7f47,2026-08-11
-Openfind_Backdoor_DeployScript,shaber,"mgbnr.pl: root-level deployment script (SUID binary, sudoers entry, kernel module, Apache module)",,TLP:WHITE,TLP:WHITE,b56720df-765c-4a94-9337-98596abba955,2026-08-11
-Openfind_Backdoor_Archive,shaber,Openfind MailGates backdoor delivery archive (tar containing escaping symlinks); family: QuietEnvelope,,TLP:WHITE,TLP:WHITE,5df63139-b370-4f23-9b5d-357606317629,2026-08-11
-Archive_Tar_Escaping_Symlink_Generic,shaber,"Generic: tar archive with chained escaping symlinks - symlink A points shallower than itself, symlink B's target traverses A and climbs further up",,TLP:WHITE,TLP:WHITE,0c511dc7-f3df-481a-9478-089423ffccdb,2026-08-11
-Openfind_Backdoor_KernelModule_AsciiTest,shaber,"libusb.ko: kernel netfilter LOCAL_IN backdoor, executes as root via call_usermodehelper",,TLP:WHITE,TLP:WHITE,5c1d8e47-2b90-4a13-8f66-91ab77cc2d10,2026-08-11
-Shaber_Deploy_Control_Probe,shaber,temporary control probe to validate the deploy endpoint,,TLP:WHITE,TLP:WHITE,3f2a1c88-5d44-4f0e-9b31-77c0de551a02,2026-09-14
-classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,6447ce42-5626-4e62-813e-05719c45e014,classified
-classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,37809a30-6293-4dd0-8964-5e44bccd2fc2,classified
-classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,58644591-f53d-495e-a5ba-39f7d499d3d9,classified
-classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,a356dfcb-eee9-4d59-b72b-9262ea903045,classified
-classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,a4481c04-bbbb-45b4-8c32-4ca4200ffdbc,classified
-classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,7c6e1c3a-9c3a-4a2a-91c1-9c4f1e7c52af,classified
-classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,a2f4f650-02ce-435c-a27a-4aa17afb457e,classified
-classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,c1056ea3-c1a0-4ebd-879e-aa5f5b6462f7,classified
