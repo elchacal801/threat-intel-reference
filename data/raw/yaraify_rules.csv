@@ -1,21 +1,21 @@
 rule_name,author,description,malpedia_family,matching_tlp,sharing_tlp,yarahub_uuid,date
-Win32_PE_Systex_Payload,Serhii Kocherhan,"Detects Systex PE executable based on unique network C2 domains, targeted Windows service manipulation, and process control Native APIs.",,TLP:WHITE,TLP:WHITE,9032629f-19d6-4a2a-8d25-ceda936ff0ae,2026-09-16
-Hunt_JavaInjection_JNDI_ExploitToolkit,Serhii Kocherhan,"Detects Java-injection C2 infrastructure scripts, JNDI/LDAP exploitation tools, and probing scripts",,TLP:WHITE,TLP:WHITE,9c0e43f0-575d-4cab-b00f-8cf13e522e13,2026-09-16
-Linux_Backdoor_BeaconV9_SysstatJava,Serhii Kocherhan,"Detects Beacon v9 Linux dropper leveraging JVM attachment, sysstat-masquerading relays, and systemd persistence",,TLP:WHITE,TLP:WHITE,a949e6f1-6e73-4c0c-9bb3-30e3135c1b7f,2026-09-16
-Linux_Backdoor_BeaconV9_Artifacts,Serhii Kocherhan,"Detects Beacon v9 persistence and staging artifacts including sysstat masquerading, systemd units, and Java IPC paths",,TLP:WHITE,TLP:WHITE,e02de9f0-baa4-4209-a4d1-78ea63d06e49,2026-09-16
-classified,classified,classified,classified,TLP:WHITE,TLP:GREEN,97681967-6f75-493a-a25a-147ffd15d844,classified
-classified,classified,classified,classified,TLP:WHITE,TLP:AMBER,346fb54e-ee1a-46e8-9608-728729f79eba,classified
-JAR_Network_Indicators_Detection,TheKn0ck0ut,Detects JAR file info by hash,,TLP:WHITE,TLP:WHITE,d107043d-e6de-48e4-96fe-353b39ef633d,2026-09-15
-Malware_PE_NET_KoiLoader,Serhii Kocherhan,"Detects Koi Loader .NET executables packed with Confuser featuring specific mutex, assembly metadata, and unmanaged DLL imports",,TLP:WHITE,TLP:WHITE,64ecb175-947d-4639-b3d5-943086cebcab,2026-09-13
-JS_Obfuscation_Base256_Decoder,Serhii Kocherhan,Detects JavaScript phishlets using base-256 integer array decoding to hide payload,,TLP:WHITE,TLP:WHITE,88bdd1e5-9e61-4879-a99b-eb5a06747417,2026-09-10
-Hunt_LNK_EpochTimestamp_StrippedMetadata,Serhii Kocherhan,"Detects LNK files with timestamps reset to Jan 1, 1970 and stripped MAC/NetBIOS metadata",,TLP:WHITE,TLP:WHITE,5a26e50e-55a7-4544-bef4-bbe3c538f8db,2026-08-17
-LNK_Timestomped_Hex_SelfSeeker_Payload,Serhii Kocherhan,Detects timestomped LNK files using hex-encoded PowerShell to read/xor payload data appended to the LNK file,,TLP:WHITE,TLP:WHITE,005716a2-6d97-4c54-a0db-c49a61c42db0,2026-09-06
-Android_Spyware_OceanLotus_PhantomLance,Serhii Kocherhan,Detects OceanLotus (APT32) PhantomLance Android spyware APK files based on C2 domains and specific internal DEX framework invocations,,TLP:WHITE,TLP:WHITE,4eca4c72-2e84-465f-ab25-7874b4e8b586,2026-09-06
-Hunt_KiraAsciiObfuscator,Serhii Kocherhan,Detects files and scripts obfuscated using KiraAsciiObfuscator patterns and structural artifacts,,TLP:WHITE,TLP:WHITE,e6390a0c-4332-4a62-82a6-61572362b42e,2026-09-04
-Hunt_ManageEngine_UEMS_Agent_Bundle,Serhii Kocherhan,"Detects archives, installers, or files containing ManageEngine UEMS Agent and Remote Control bundled components",,TLP:WHITE,TLP:WHITE,428f029a-e4e6-43bc-9630-29599f78252a,2026-09-05
-LNK_Timestomped_PowerShell_Obfuscated,Serhii Kocherhan,"Detects timestomped LNK files with 1970 timestamps, zeroed volume serial, msedge icon, and obfuscated PowerShell arguments",,TLP:WHITE,TLP:WHITE,53fa78e8-1e68-4127-8aee-525676d1d0f3,2026-09-03
-PDF_Fake_Japanese_PurchaseOrder_Lure,Serhii Kocherhan,Detects fake Japanese purchase order PDF lure files containing specific localized title bar strings and Adobe Acrobat update errors,,TLP:WHITE,TLP:WHITE,23288f42-77da-4374-9d9b-2707714d505e,2026-09-03
-ELF_x86_Mirai_SaturnBotnet_Variant,Serhii Kocherhan,"Detects Mirai-derived SaturnBotnet variant targeting Linux x86 devices via Huawei, GPON, and JAWS RCE exploits",,TLP:WHITE,TLP:WHITE,2d8f1594-c263-4615-9d5e-d1a9399d6372,2026-09-02
-Cling_Ngioweb_IoT_Proxy_bot,eFeSpain,"Cling/Ngioweb IoT bot (residential proxy, C2 disguised as STUN)",,TLP:WHITE,TLP:WHITE,6ed570ab-af37-4f3f-8938-e7a7e9c83497,2026-09-04
-classified,classified,classified,classified,TLP:WHITE,TLP:RED,e3025b91-11c7-47ea-b897-9a0094ae9ce6,classified
-classified,classified,classified,classified,TLP:WHITE,TLP:RED,26a7a3d9-dba3-41e8-ace4-59c950a0b430,classified
+classified,classified,classified,classified,TLP:WHITE,TLP:RED,233a3463-2949-4a8b-9aef-54b728658a0f,classified
+classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,250f73f6-1faf-463c-a01e-d3b311b31eca,classified
+Foxveil_Loader_B64_Variant,,"Foxveil macOS loader, 2026-09-18 apph4 repackaging: no dlsym and no ad-hoc setup- identity, symbols resolved by walking loaded images via __dyld_image_count/__dyld_get_image_header/__dyld_get_image_vmaddr_slide, payload stored as a long base64 chunk array",,TLP:WHITE,TLP:WHITE,e45d39f8-9368-4cec-9e82-1c8b160a1788,2026-09-18
+classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,d67554f1-d841-43fc-a271-e087f74898bc,classified
+MULTI_Dropper_Unknown_GitHubObfuscated_JAR,Marjoriefort,JAR dropper : classes obfusquees a noms random sous com/github/ (densite >= 4) - famille du resolver GitHub,,TLP:WHITE,TLP:WHITE,da27cd92-1eea-418a-b11f-071574c5258a,2026-09-17
+SCRIPT_Sample_Unique_fc339692,Marjoriefort,Specimen unique (soumission Bazaar) - strings distinctifs propres au sample,,TLP:WHITE,TLP:WHITE,bce84eb9-b317-4dbd-9b58-41b8c722a45a,2026-09-18
+SCRIPT_Sample_Unique_fab631b0,Marjoriefort,Specimen unique (soumission Bazaar) - strings distinctifs propres au sample,,TLP:WHITE,TLP:WHITE,878cd507-8cd0-4bec-8494-eef678682e29,2026-09-17
+SCRIPT_Sample_Unique_e7d617e3,Marjoriefort,Specimen unique (soumission Bazaar) - strings distinctifs propres au sample,,TLP:WHITE,TLP:WHITE,eb4e0dbd-c995-4473-b28a-ff7e3ef4d277,2026-09-18
+SCRIPT_Sample_Unique_d3d877e5,Marjoriefort,Specimen unique (soumission Bazaar) - strings distinctifs propres au sample,,TLP:WHITE,TLP:WHITE,1dd93c03-a68d-4614-bbc7-d5e59a0a7566,2026-09-17
+SCRIPT_Sample_Unique_d1a6f93b,Marjoriefort,Specimen unique (soumission Bazaar) - strings distinctifs propres au sample,,TLP:WHITE,TLP:WHITE,c09903bf-acd2-42d7-be7b-3535c7852715,2026-09-18
+SCRIPT_Sample_Unique_b82d28bb,Marjoriefort,Specimen unique (soumission Bazaar) - strings distinctifs propres au sample,,TLP:WHITE,TLP:WHITE,0bb4361f-5df8-4986-91e0-0a2fb0166029,2026-09-17
+SCRIPT_Sample_Unique_b56cdf8e,Marjoriefort,Specimen unique (soumission Bazaar) - strings distinctifs propres au sample,,TLP:WHITE,TLP:WHITE,93c0a67d-2818-4722-8e83-fe1febbdfee9,2026-09-18
+SCRIPT_Sample_Unique_ac0f07e7,Marjoriefort,Specimen unique (soumission Bazaar) - strings distinctifs propres au sample,,TLP:WHITE,TLP:WHITE,a944e28d-144a-4c94-9e16-8d0a9d978203,2026-09-18
+SCRIPT_Sample_Unique_a5941df2,Marjoriefort,Specimen unique (soumission Bazaar) - strings distinctifs propres au sample,,TLP:WHITE,TLP:WHITE,7bb0ffaa-4a3a-47dd-bd37-528b9821dc7d,2026-09-18
+SCRIPT_Sample_Unique_a2172f40,Marjoriefort,Specimen unique (soumission Bazaar) - strings distinctifs propres au sample,,TLP:WHITE,TLP:WHITE,67e8f7f8-f8d0-434c-bdf9-7cfc88c03c4d,2026-09-18
+SCRIPT_Sample_Unique_9ec39f33,Marjoriefort,Specimen unique (soumission Bazaar) - strings distinctifs propres au sample,,TLP:WHITE,TLP:WHITE,434d2846-b3f4-439f-987f-7f0277b4e7cb,2026-09-18
+SCRIPT_Sample_Unique_9d673b14,Marjoriefort,Specimen unique (soumission Bazaar) - strings distinctifs propres au sample,,TLP:WHITE,TLP:WHITE,43bace85-579e-421a-ba10-46eff3b6b629,2026-09-18
+SCRIPT_Sample_Unique_9be70fef,Marjoriefort,Specimen unique (soumission Bazaar) - strings distinctifs propres au sample,,TLP:WHITE,TLP:WHITE,520d3456-f931-4071-a507-b855eed02715,2026-09-17
+SCRIPT_Sample_Unique_92aa0e8f,Marjoriefort,Specimen unique (soumission Bazaar) - strings distinctifs propres au sample,,TLP:WHITE,TLP:WHITE,396ddc68-5180-49ea-9d74-c247ea75298b,2026-09-18
+SCRIPT_Sample_Unique_8f2c29c1,Marjoriefort,Specimen unique (soumission Bazaar) - strings distinctifs propres au sample,,TLP:WHITE,TLP:WHITE,274395d7-daa2-4f98-a736-2c2b775218cf,2026-09-17
