@@ -1,21 +1,21 @@
 rule_name,author,description,malpedia_family,matching_tlp,sharing_tlp,yarahub_uuid,date
-Foxveil_AMOS_CompiledAppleScript,,"Foxveil AMOS stealer payload as compiled AppleScript (FasdUAS): UTF-16BE victim-data paths, the fixed Chrome wallet-extension ID table, and stable FasdUAS opcode runs",,TLP:WHITE,TLP:WHITE,820f7a63-fa3e-462e-8d35-07502368273a,2026-09-20
+MULTI_Malware_AgentTesla_ForgeAuto_ed343f78_Extrait,Marjoriefort,"Detects AgentTesla (inconnu, etat extrait)",,TLP:WHITE,TLP:WHITE,061a15a4-d633-4f77-b869-5004e8457be7,2026-09-21
+MULTI_Malware_RemcosRAT_ForgeAuto_fe5777b5,Marjoriefort,"Detects RemcosRAT (inconnu, etat binaire)",,TLP:WHITE,TLP:WHITE,90a30ef7-4168-460d-a64f-bbbb9e27b243,2026-09-21
+MULTI_Malware_RemcosRAT_ForgeAuto_b2cd4b50,Marjoriefort,"Detects RemcosRAT (inconnu, etat binaire)",,TLP:WHITE,TLP:WHITE,82bc2176-49d5-4db2-9a62-b599aaaf2906,2026-09-21
+MULTI_Malware_MassLogger_ForgeAuto_885f4a8f,Marjoriefort,"Detects MassLogger (inconnu, etat binaire)",,TLP:WHITE,TLP:WHITE,4390708d-7658-4cd6-b798-8207b6289673,2026-09-21
+MULTI_Malware_RemcosRAT_ForgeAuto_832f4c6c,Marjoriefort,"Detects RemcosRAT (inconnu, etat binaire)",,TLP:WHITE,TLP:WHITE,d17b33b7-f137-4fbf-8d72-70d6e8e07f9e,2026-09-21
+LIN_Malware_Mirai_ForgeAuto_757a51e4,Marjoriefort,"Detects Mirai (elf, etat binaire)",,TLP:WHITE,TLP:WHITE,daf4af66-d45c-455a-bff5-4f0d0c79062c,2026-09-22
+LIN_Malware_Mirai_ForgeAuto_69249a91,Marjoriefort,"Detects Mirai (elf, etat binaire)",,TLP:WHITE,TLP:WHITE,31e22757-9c4d-4342-9ab1-4acf8929fa47,2026-09-22
+WIN_Sample_RemcosRAT_3d57334d_Extrait,Marjoriefort,"Detects RemcosRAT (pe, etat extrait)",,TLP:WHITE,TLP:WHITE,249fdcf0-cb50-409f-85c0-2616eef5e054,2026-09-21
+MULTI_Malware_RemcosRAT_ForgeAuto_30dfd6f7,Marjoriefort,"Detects RemcosRAT (inconnu, etat binaire)",,TLP:WHITE,TLP:WHITE,1f55866c-1ab4-449c-a0c9-8f3b8a927451,2026-09-21
+MULTI_Malware_AgentTesla_ForgeAuto_2b5d2991,Marjoriefort,"Detects AgentTesla (inconnu, etat binaire)",,TLP:WHITE,TLP:WHITE,f6587e7a-e3ac-4c06-9781-f0bdb8c824b4,2026-09-21
+LIN_Malware_Mirai_ForgeAuto_063c765c,Marjoriefort,"Detects Mirai (elf, etat binaire)",,TLP:WHITE,TLP:WHITE,fdd32b78-1bb7-4d3f-9e30-ac8790b91f00,2026-09-22
+JAVA_Malware_SilentNet_ForgeAuto_cb879ecb_Extrait,Marjoriefort,"Detects SilentNet (class, etat extrait)",,TLP:WHITE,TLP:WHITE,5995c9f6-dfe6-48fd-9744-0d60f9dcb11f,2026-09-21
+JAVA_Malware_SilentNet_ForgeAuto_9343a597_Extrait,Marjoriefort,"Detects SilentNet (class, etat extrait)",,TLP:WHITE,TLP:WHITE,2dc7ad17-5e0a-4cde-8363-ba60783fb11d,2026-09-21
+MULTI_Malware_DonutLoader_ForgeAuto_3cb1feed_Extrait,Marjoriefort,"Detects DonutLoader (archive, etat extrait)",,TLP:WHITE,TLP:WHITE,dc9e196f-d729-445a-ae71-96379f16b955,2026-09-21
+MULTI_Sample_CoinMiner_1ad8694c_Extrait,Marjoriefort,"Detects CoinMiner (inconnu, etat extrait)",,TLP:WHITE,TLP:WHITE,96e4fde9-388a-419d-a97b-965392fcd2e5,2026-09-21
+WIN_Malware_DCRat_ForgeAuto_184b82f5_Extrait,Marjoriefort,"Detects DCRat (pe, etat extrait)",,TLP:WHITE,TLP:WHITE,eb4b5577-7002-4f48-a213-8b625b7c5df8,2026-09-21
+MULTI_Malware_PureLogsStealer_ForgeAuto_0cd320ac,Marjoriefort,"Detects PureLogsStealer (inconnu, etat binaire)",,TLP:WHITE,TLP:WHITE,367f803d-6392-482d-82a7-eab88804d120,2026-09-21
+MULTI_Sample_Unique_f656b47e_Extrait,Marjoriefort,"Detects Unknown (inconnu, etat extrait)",,TLP:WHITE,TLP:WHITE,01d1dbc3-ff4c-4f37-a94f-fed8456fec69,2026-09-21
 JAVA_Malware_Unknown_ForgeAuto_9fd94dc6_Extrait,Marjoriefort,"Detects Unknown (class, etat extrait)",,TLP:WHITE,TLP:WHITE,536e7892-2213-4a7a-a6e3-a4267d43a7d7,2026-09-20
-LNK_Kimsuky_PowerShell_Payload_Dropper,Serhii Kocherhan,Detects Kimsuky LNK files containing obfuscated PowerShell byte-array decoding routines and payload drop/execution logic.,,TLP:WHITE,TLP:WHITE,791d0c0e-2f66-4595-8c1c-60fcbbd1d9b6,2026-09-20
-Web_Generic_Binary_URL_Download,Serhii Kocherhan,Detects files containing HTTP or HTTPS links pointing directly to .bin payload extensions.,,TLP:WHITE,TLP:WHITE,9e9960fa-1f18-463f-8ed6-9c26cd8622d9,2026-09-20
-Seedhook_Wallet_ExfilPage,,"Seedhook/MacSync fake wallet-recovery page (HTML/JS, standalone or inside app.asar): 64-hex campaign token then targetUrl = https://<host>/modules/wallets POSTed as JSON, plus the page's own DOM wiring (several listeners and element lookups) so that notes or tools merely quoting the handler do not match",,TLP:WHITE,TLP:WHITE,34bba3ad-1ba4-426d-9593-726150af750a,2026-09-19
-Seedhook_Wallet_Asar_RecoveryStep,,"Seedhook/MacSync trojanized Ledger/Trezor Electron app.asar: injected recovery-step page loaded by the main process, seed phrase POSTed to <host>/modules/wallets with a 64-hex token",,TLP:WHITE,TLP:WHITE,b3d2adf1-9df4-46b1-9f81-483785a80045,2026-09-19
-Seedhook_Stage3_AppleScript_Full,,Seedhook/MacSync stage-3 AppleScript 'full' build: Ledger/Trezor app.asar swap block (LEDGER* variables) and/or com.apple.<8hex>.hcpi LaunchAgent + /loader/agent/ backdoor install block,,TLP:WHITE,TLP:WHITE,67347a7c-8aab-4c3c-a864-2ecbbe2ac22b,2026-09-19
-Seedhook_Stage3_AppleScript_Pipeline,,"Seedhook/MacSync stage-3 AppleScript stealer: /pipeline/event telemetry fields, fromCodes() ASCII-array string builder, AMOS-derived handler names",,TLP:WHITE,TLP:WHITE,98f82c16-4299-4e91-8b33-c941ecdc7df1,2026-09-19
-Web_Phishing_ClickFix_AntiAnalysis_Script,Serhii Kocherhan,"Detects ClickFix social engineering script payloads using environment checks (isHeadless, isLocalhost) and anti-analysis console messages.",,TLP:WHITE,TLP:WHITE,0858aab6-6169-400e-9b8e-b159d6590090,2026-09-19
-ELF_DDoS_Bot_RedKill,Serhii Kocherhan,"Detects RedKill Linux DDoS botnet ELF executables based on persistence file paths, bot identifiers, systemd service details, and network artifacts.",,TLP:WHITE,TLP:WHITE,5e864da3-2afa-48dc-977b-c00ef1ca73ce,2026-09-19
-DIICOT_2026_p2p_bot_memory,eFeSpain,"DIICOT/Mexals 2026 P2P bot - process memory (mesh, leader election, Telegram C2)",,TLP:WHITE,TLP:WHITE,bc58b493-0f05-4230-b00e-be969e8fe5de,2026-09-19
-DIICOT_2026_kit_garble,eFeSpain,DIICOT/Mexals 2026 kit - garble package names shared by the bot and the loader,,TLP:WHITE,TLP:WHITE,65dc87ef-4d6c-4d2a-b25e-3fc52bbc263f,2026-09-19
-classified,classified,classified,classified,TLP:GREEN,TLP:GREEN,54b1537f-24c8-4873-8386-2b7873053c22,classified
-WIN_Miner_DotNet_Stratum_KrigFamily,Marjoriefort,"Mineur .NET moderne Stratum (ConnectAndAuthorize/RunStratumAsync) - famille krig/lpminer, pool kryptex",,TLP:WHITE,TLP:WHITE,f7612d59-334f-40fa-b8ec-9ea8f2d153da,2026-09-19
-WIN_VBS_Downloader_ERA_Desk_ArrayMap_MsiExec,Marjoriefort,"VBS downloader genere par ERA DESK - obfuscation array-map, elevation UAC, MSI silencieux depuis le cloud",,TLP:WHITE,TLP:WHITE,1228c860-38a1-4cd0-9ea2-2f247377a5b3,2026-09-19
-LIN_Downloader_Botnet_KernelNames_MultiArch,Marjoriefort,"Downloader botnet ELF multi-archi - binaires deguises en taches kernel Linux, C2 IP en clair",,TLP:WHITE,TLP:WHITE,608fc3a7-ad45-4e38-92eb-ebfab884429b,2026-09-19
-MAC_Dropper_Shell_CacheMaintenance_AES_CTR,Marjoriefort,"macOS fake cache-maintenance dropper - payload AES-128-CTR via openssl, noms de commandes fragmentes",,TLP:WHITE,TLP:WHITE,8f362e43-92fb-4307-b27c-34050fca1dc7,2026-09-19
-MULTI_Obfuscation_Pyobfuscate_Watermark,Marjoriefort,Payload Python obfusque par pyobfuscate.com : filigrane __obfuscated_by__ en base64 dans le CLIENT_CODE,,TLP:WHITE,TLP:WHITE,357deea3-10ec-4d40-9324-735ed5b44798,2026-09-19
-MULTI_RAT_Python_Aiohttp_Base64Stub,Marjoriefort,"RAT Python asynchrone aiohttp embarque dans un stub base64 : CLIENT_CODE/EXECUTABLE_PATH, commandes shell_command/file_data",,TLP:WHITE,TLP:WHITE,e74c2d2e-42e1-4abc-a104-780b0d53b864,2026-09-19
-WIN_BAT_Installer_MsiQuiet_SelfElevate_PdfLeurre,Marjoriefort,BAT d'installation MSI silencieuse avec auto-elevation UAC et ouverture d'un PDF leurre,,TLP:WHITE,TLP:WHITE,c6a30268-6399-4f94-be21-42b7318f3c09,2026-09-19
+MULTI_Malware_Unknown_ForgeAuto_5bae7e99_Extrait,Marjoriefort,"Detects Unknown (inconnu, etat extrait)",,TLP:WHITE,TLP:WHITE,35ccf7eb-947a-4689-96c7-1ec7604e9d94,2026-09-21
