@@ -1,4 +1,14 @@
 rule_name,author,description,malpedia_family,matching_tlp,sharing_tlp,yarahub_uuid,date
+Malware_Campaign_MASTER5,MyNickname,Detect MASTER5 Campaign,,TLP:WHITE,TLP:WHITE,edcd403d-cc08-4aa0-b74d-620a35690623,2026-09-24
+classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,c6581da7-841d-446a-8fec-bec5fc5e4261,classified
+classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,c441e3e6-d60c-4617-9f6d-0305da43acdf,classified
+WEBSHELL_PHP_adminlin_dropper,Efrain Gutierrez,"CMSmap WordPress admin-account dropper. Bootstraps WordPress via wp-blog-header.php, inserts an administrator named adminlin directly into the users table with a hardcoded MD5 password, escalates it with set_role, and echoes the site URL back to the operator. Distributed as a one-file plugin archive with a randomised seven-letter name.",,TLP:WHITE,TLP:WHITE,5edc9700-05be-4027-a299-727fac4509ae,2026-09-23
+Foxveil_Loader_PadSeg_Variant,,"Foxveil macOS loader (ClickFix -> AMOS), apph4/cc2 packer generation, 2026-09-23 wrapper: fat x86_64+arm64 linking CoreFoundation+libSystem+libc++, plus one randomly-named section-less LC_SEGMENT_64 per slice with zero vmsize and zero filesize whose vmaddr, small fileoff, prot (0/1) and flags (0/8) are randomised per slice",,TLP:WHITE,TLP:WHITE,1811de0f-6657-4acc-9655-4263f724178d,2026-09-23
+classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,c31a233d-e30e-426a-9f60-5e1ea6dd3780,classified
+classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,995bb21f-2da8-4237-a858-3aa3d255cb4c,classified
+classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,bc125a3b-e11a-4d97-9131-1dc83c95e132,classified
+Win_Clipboard_Clipper_Thengavar,Thengavar,Detects malware manipulating the Windows clipboard for clipping or crypto stealing attacks,,TLP:WHITE,TLP:WHITE,ec698240-465a-4306-a6f9-bbf31280566f,2026-09-23
+WEBSHELL_PHP_byte_bunk_shell,Efrain Gutierrez,"BYTE_BUNK Shell v4.0 - PHP webshell with OS command execution, MySQL access and a reverse-shell socket, distributed as the root index.php of a repackaged copy of the legitimate WordPress plugin Protect Uploads (Alticreation). Probes for a surviving exec function and clears open_basedir, disable_functions, safe_mode and suhosin.executor.disable_eval.",,TLP:WHITE,TLP:WHITE,80b4b091-ffb9-401c-8df3-5405b99315c7,2026-09-23
 Web_PHP_WP_FleetSync_EtherHiding,Serhii Kocherhan,"WordPress fleet implant: fake helper plugin, persistence inventory, BNB-chain C2 resolver, remote file write/eval tasks.",,TLP:WHITE,TLP:WHITE,7ab2e39d-5389-4c18-bd2a-d6e720366872,2026-09-23
 Web_PHP_WP_FleetSync_EtherHiding_wave_202609,Serhii Kocherhan,Current-wave strings for WP FleetSync implant. Expect rotation.,,TLP:WHITE,TLP:WHITE,e8614680-729e-49d9-acb1-d03b0e985a2f,2026-09-23
 WEBSHELL_PHP_dark_websocket_filemanager,Efrain Gutierrez,"Dark WEBSOCKET File Manager - unauthenticated PHP webshell giving full filesystem control, distributed as the root index.php of a repackaged copy of the legitimate WordPress plugin Protect Uploads (Alticreation). Clears open_basedir and disable_functions on load to escape shared-hosting restrictions.",,TLP:WHITE,TLP:WHITE,5be8fffa-685b-4127-afa2-0410285b6d5b,2026-09-22
@@ -9,13 +19,3 @@ Foxveil_Loader_EmptySeg_Variant,,"Foxveil macOS loader (ClickFix -> AMOS), apph4
 classified,classified,classified,classified,TLP:WHITE,TLP:GREEN,14059089-9ecc-431f-a14b-6f056e62e1d2,classified
 classified,classified,classified,classified,TLP:WHITE,TLP:GREEN,42b3739e-bf06-4372-882a-1637544c8810,classified
 classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,e7b1b68b-38ed-42bc-8a0b-426fd23df284,classified
-MULTI_Malware_AgentTesla_ForgeAuto_ed343f78_Extrait,Marjoriefort,"Detects AgentTesla (inconnu, etat extrait)",,TLP:WHITE,TLP:WHITE,061a15a4-d633-4f77-b869-5004e8457be7,2026-09-21
-MULTI_Malware_RemcosRAT_ForgeAuto_fe5777b5,Marjoriefort,"Detects RemcosRAT (inconnu, etat binaire)",,TLP:WHITE,TLP:WHITE,90a30ef7-4168-460d-a64f-bbbb9e27b243,2026-09-21
-MULTI_Malware_RemcosRAT_ForgeAuto_b2cd4b50,Marjoriefort,"Detects RemcosRAT (inconnu, etat binaire)",,TLP:WHITE,TLP:WHITE,82bc2176-49d5-4db2-9a62-b599aaaf2906,2026-09-21
-MULTI_Malware_MassLogger_ForgeAuto_885f4a8f,Marjoriefort,"Detects MassLogger (inconnu, etat binaire)",,TLP:WHITE,TLP:WHITE,4390708d-7658-4cd6-b798-8207b6289673,2026-09-21
-MULTI_Malware_RemcosRAT_ForgeAuto_832f4c6c,Marjoriefort,"Detects RemcosRAT (inconnu, etat binaire)",,TLP:WHITE,TLP:WHITE,d17b33b7-f137-4fbf-8d72-70d6e8e07f9e,2026-09-21
-LIN_Malware_Mirai_ForgeAuto_757a51e4,Marjoriefort,"Detects Mirai (elf, etat binaire)",,TLP:WHITE,TLP:WHITE,daf4af66-d45c-455a-bff5-4f0d0c79062c,2026-09-22
-LIN_Malware_Mirai_ForgeAuto_69249a91,Marjoriefort,"Detects Mirai (elf, etat binaire)",,TLP:WHITE,TLP:WHITE,31e22757-9c4d-4342-9ab1-4acf8929fa47,2026-09-22
-WIN_Sample_RemcosRAT_3d57334d_Extrait,Marjoriefort,"Detects RemcosRAT (pe, etat extrait)",,TLP:WHITE,TLP:WHITE,249fdcf0-cb50-409f-85c0-2616eef5e054,2026-09-21
-MULTI_Malware_RemcosRAT_ForgeAuto_30dfd6f7,Marjoriefort,"Detects RemcosRAT (inconnu, etat binaire)",,TLP:WHITE,TLP:WHITE,1f55866c-1ab4-449c-a0c9-8f3b8a927451,2026-09-21
-MULTI_Malware_AgentTesla_ForgeAuto_2b5d2991,Marjoriefort,"Detects AgentTesla (inconnu, etat binaire)",,TLP:WHITE,TLP:WHITE,f6587e7a-e3ac-4c06-9781-f0bdb8c824b4,2026-09-21
