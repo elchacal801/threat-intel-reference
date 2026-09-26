@@ -1,21 +1,21 @@
 rule_name,author,description,malpedia_family,matching_tlp,sharing_tlp,yarahub_uuid,date
-Win32_Trojan_Gh0st_360Masking,Serhii Kocherhan,Detects Gh0st RAT variants masking as 360 Safe Browser containing specific Windows service manipulation strings and C2 domain artifacts.,,TLP:WHITE,TLP:WHITE,28afa615-73de-4b3e-8bbc-e1ec3794a099,2026-09-25
-Web_Phishing_Mitsubishi_UFJ_Nicos,Serhii Kocherhan,Detects phishing pages impersonating the Mitsubishi UFJ NICOS card brand selection and login portal.,,TLP:WHITE,TLP:WHITE,92daf7b5-28d5-4621-b763-c7bf7367ffc5,2026-09-24
-classified,classified,classified,classified,TLP:WHITE,TLP:GREEN,bef3fbf3-2aec-4d82-a859-9da947da11c9,classified
-classified,classified,classified,classified,TLP:WHITE,TLP:GREEN,045e09c2-c7a7-4a78-ba42-b99c231a4f44,classified
-classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,9ecda94c-bf49-4edf-8f59-9d8c3bf26491,classified
-classified,classified,classified,classified,TLP:WHITE,TLP:GREEN,1581a522-a31f-412f-8777-3eeed8d99008,classified
-classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,9ef31613-98af-4f4b-ab65-f0f5a53beb17,classified
-classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,e91813f6-c254-430c-8a5c-883707363448,classified
-classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,b70e83bf-6ae1-434e-a8a6-3f4ef31f05b7,classified
-classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,3977ff1e-ab9c-4553-86e3-d1d72afedeec,classified
-classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,12e1af82-74b9-47c9-bb7a-db42769edbd2,classified
-classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,c441e3e6-d60c-4617-9f6d-0305da43acdf,classified
-classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,c6581da7-841d-446a-8fec-bec5fc5e4261,classified
-WEBSHELL_PHP_adminlin_dropper,Efrain Gutierrez,"CMSmap WordPress admin-account dropper. Bootstraps WordPress via wp-blog-header.php, inserts an administrator named adminlin directly into the users table with a hardcoded MD5 password, escalates it with set_role, and echoes the site URL back to the operator. Distributed as a one-file plugin archive with a randomised seven-letter name.",,TLP:WHITE,TLP:WHITE,5edc9700-05be-4027-a299-727fac4509ae,2026-09-23
-Foxveil_Loader_PadSeg_Variant,,"Foxveil macOS loader (ClickFix -> AMOS), apph4/cc2 packer generation, 2026-09-23 wrapper: fat x86_64+arm64 linking CoreFoundation+libSystem+libc++, plus one randomly-named section-less LC_SEGMENT_64 per slice with zero vmsize and zero filesize whose vmaddr, small fileoff, prot (0/1) and flags (0/8) are randomised per slice",,TLP:WHITE,TLP:WHITE,1811de0f-6657-4acc-9655-4263f724178d,2026-09-23
-classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,c31a233d-e30e-426a-9f60-5e1ea6dd3780,classified
-classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,bc125a3b-e11a-4d97-9131-1dc83c95e132,classified
-classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,995bb21f-2da8-4237-a858-3aa3d255cb4c,classified
-Win_Clipboard_Clipper_Thengavar,Thengavar,Detects malware manipulating the Windows clipboard for clipping or crypto stealing attacks,,TLP:WHITE,TLP:WHITE,ec698240-465a-4306-a6f9-bbf31280566f,2026-09-23
-WEBSHELL_PHP_byte_bunk_shell,Efrain Gutierrez,"BYTE_BUNK Shell v4.0 - PHP webshell with OS command execution, MySQL access and a reverse-shell socket, distributed as the root index.php of a repackaged copy of the legitimate WordPress plugin Protect Uploads (Alticreation). Probes for a surviving exec function and clears open_basedir, disable_functions, safe_mode and suhosin.executor.disable_eval.",,TLP:WHITE,TLP:WHITE,80b4b091-ffb9-401c-8df3-5405b99315c7,2026-09-23
+JAVA_Malware_Unknown_ForgeAuto_fffbff25,Marjoriefort,"Detects Unknown (class, etat binaire)",,TLP:WHITE,TLP:WHITE,d8026142-0763-4028-8921-69352bde48a5,2026-09-25
+JAVA_Malware_Unknown_ForgeAuto_fce1b10d,Marjoriefort,"Detects Unknown (class, etat binaire)",,TLP:WHITE,TLP:WHITE,1122470a-66ce-41f4-868d-d02a62b26dcd,2026-09-25
+JAVA_Malware_Unknown_ForgeAuto_fca51a02,Marjoriefort,"Detects Unknown (class, etat binaire)",,TLP:WHITE,TLP:WHITE,c9b45930-d618-4b1f-ae6a-40b22cd592d8,2026-09-25
+JAVA_Malware_Unknown_ForgeAuto_fabb6432,Marjoriefort,"Detects Unknown (class, etat binaire)",,TLP:WHITE,TLP:WHITE,a5cce854-5d9b-45de-9d16-3dc496de8649,2026-09-25
+JAVA_Malware_Unknown_ForgeAuto_faadfb1c,Marjoriefort,"Detects Unknown (class, etat binaire)",,TLP:WHITE,TLP:WHITE,d9593db1-84e6-431b-9b93-23b6d3900fd7,2026-09-25
+JAVA_Malware_Unknown_ForgeAuto_f9815677,Marjoriefort,"Detects Unknown (class, etat binaire)",,TLP:WHITE,TLP:WHITE,fbc6d5c9-1e98-40c9-97d9-4e42aa7bc690,2026-09-25
+JAVA_Malware_Unknown_ForgeAuto_f926585a,Marjoriefort,"Detects Unknown (class, etat binaire)",,TLP:WHITE,TLP:WHITE,cd0924d1-58de-443f-9388-428fad290d87,2026-09-25
+MULTI_Sample_XWorm_f79aad81,Marjoriefort,"Detects XWorm (inconnu, etat binaire)",,TLP:WHITE,TLP:WHITE,373d5134-6a48-4332-98a3-22734c1fef86,2026-09-25
+JAVA_Malware_Unknown_ForgeAuto_f7877f02,Marjoriefort,"Detects Unknown (class, etat binaire)",,TLP:WHITE,TLP:WHITE,8f01d41e-6139-4b3c-88d4-cb7ea011478d,2026-09-25
+JAVA_Malware_Unknown_ForgeAuto_f762c41f,Marjoriefort,"Detects Unknown (class, etat binaire)",,TLP:WHITE,TLP:WHITE,0042bbc8-b1f9-4de7-a496-c2e5ab519c0d,2026-09-25
+JAVA_Sample_Unique_f43c1057,Marjoriefort,"Detects Unknown (class, etat binaire)",,TLP:WHITE,TLP:WHITE,98c8672b-62ad-4802-ad59-68aa6dbaa57a,2026-09-25
+JAVA_Sample_Unique_f370c5c0,Marjoriefort,"Detects Unknown (class, etat binaire)",,TLP:WHITE,TLP:WHITE,9c4bc444-616b-4972-bd23-8df6b4080d45,2026-09-25
+JAVA_Sample_Unique_f35d7502,Marjoriefort,"Detects Unknown (class, etat binaire)",,TLP:WHITE,TLP:WHITE,730c1417-913d-4b8a-9849-f07f03e530c7,2026-09-25
+JAVA_Malware_Unknown_ForgeAuto_f29bab2a,Marjoriefort,"Detects Unknown (class, etat binaire)",,TLP:WHITE,TLP:WHITE,7fc327d2-d240-4cdd-954b-14e7b7516d7e,2026-09-25
+JAVA_Malware_Unknown_ForgeAuto_f291aa0a,Marjoriefort,"Detects Unknown (class, etat binaire)",,TLP:WHITE,TLP:WHITE,589e1a8f-a179-420c-a70e-ff1616d7a7f1,2026-09-25
+JAVA_Malware_Unknown_ForgeAuto_f26e0fa0,Marjoriefort,"Detects Unknown (class, etat binaire)",,TLP:WHITE,TLP:WHITE,37483c97-3d7b-461f-b50a-d170970be546,2026-09-25
+JAVA_Malware_Unknown_ForgeAuto_f1bff940,Marjoriefort,"Detects Unknown (class, etat binaire)",,TLP:WHITE,TLP:WHITE,7c274c0e-913a-4090-a342-14c1923efffc,2026-09-25
+JAVA_Malware_Unknown_ForgeAuto_f1a7ff7c,Marjoriefort,"Detects Unknown (class, etat binaire)",,TLP:WHITE,TLP:WHITE,26766901-780e-4c21-adef-ee7d3a2c1e0f,2026-09-25
+JAVA_Malware_Unknown_ForgeAuto_f1745319,Marjoriefort,"Detects Unknown (class, etat binaire)",,TLP:WHITE,TLP:WHITE,ff5f61d4-8461-4351-a54f-66c7d9501eae,2026-09-25
+JAVA_Sample_Unique_f02eed5d,Marjoriefort,"Detects Unknown (class, etat binaire)",,TLP:WHITE,TLP:WHITE,d4e6db87-e3bb-409a-a5e8-8bc84f94a1dc,2026-09-25
