@@ -1,4 +1,11 @@
 rule_name,author,description,malpedia_family,matching_tlp,sharing_tlp,yarahub_uuid,date
+classified,classified,classified,classified,TLP:WHITE,TLP:GREEN,a2707f2d-8ba0-429e-8ea9-6e7dc69ea852,classified
+classified,classified,classified,classified,TLP:WHITE,TLP:GREEN,a0434fa7-10bb-4af9-8e1c-b1473b3343df,classified
+classified,classified,classified,classified,TLP:WHITE,TLP:GREEN,6b00d0d4-8db5-4c2c-8f40-f6adbe146477,classified
+asyncrat_test,Trezzza,asyncrat test v1,,TLP:WHITE,TLP:WHITE,ea50f07f-1427-40c0-bff4-17668bfcc610,2026-09-27
+HUNT_NET_Loader_BitmapStego_LateBindingInvoke,Anish Bogati,"Hunting: .NET loader reading pixel data from a resource Bitmap, loading an assembly and invoking its first exported method via VB LateBinding",,TLP:WHITE,TLP:WHITE,63128581-e56c-4884-bd5f-b109299f8eac,2026-09-26
+Gibberdrop_AMOS_ConfigRolXor,,"AMOS macOS stealer (mainline panel builds) - rolling-key XOR decrypt loop of the embedded __data config (key rotated right by 1 per byte), arm64 and x86_64",,TLP:WHITE,TLP:WHITE,6bba38ab-fefb-4c20-85c7-08f8e9be66e4,2026-09-27
+PhantomStealerV4,nsquar3,Detects PhantomStealerV4 samples,,TLP:WHITE,TLP:WHITE,23255f48-dfd8-47a4-bec3-8ccf5a0c66ba,2026-09-26
 JAVA_Malware_Unknown_ForgeAuto_fffbff25,Marjoriefort,"Detects Unknown (class, etat binaire)",,TLP:WHITE,TLP:WHITE,d8026142-0763-4028-8921-69352bde48a5,2026-09-25
 JAVA_Malware_Unknown_ForgeAuto_fce1b10d,Marjoriefort,"Detects Unknown (class, etat binaire)",,TLP:WHITE,TLP:WHITE,1122470a-66ce-41f4-868d-d02a62b26dcd,2026-09-25
 JAVA_Malware_Unknown_ForgeAuto_fca51a02,Marjoriefort,"Detects Unknown (class, etat binaire)",,TLP:WHITE,TLP:WHITE,c9b45930-d618-4b1f-ae6a-40b22cd592d8,2026-09-25
@@ -12,10 +19,3 @@ JAVA_Malware_Unknown_ForgeAuto_f762c41f,Marjoriefort,"Detects Unknown (class, et
 JAVA_Sample_Unique_f43c1057,Marjoriefort,"Detects Unknown (class, etat binaire)",,TLP:WHITE,TLP:WHITE,98c8672b-62ad-4802-ad59-68aa6dbaa57a,2026-09-25
 JAVA_Sample_Unique_f370c5c0,Marjoriefort,"Detects Unknown (class, etat binaire)",,TLP:WHITE,TLP:WHITE,9c4bc444-616b-4972-bd23-8df6b4080d45,2026-09-25
 JAVA_Sample_Unique_f35d7502,Marjoriefort,"Detects Unknown (class, etat binaire)",,TLP:WHITE,TLP:WHITE,730c1417-913d-4b8a-9849-f07f03e530c7,2026-09-25
-JAVA_Malware_Unknown_ForgeAuto_f29bab2a,Marjoriefort,"Detects Unknown (class, etat binaire)",,TLP:WHITE,TLP:WHITE,7fc327d2-d240-4cdd-954b-14e7b7516d7e,2026-09-25
-JAVA_Malware_Unknown_ForgeAuto_f291aa0a,Marjoriefort,"Detects Unknown (class, etat binaire)",,TLP:WHITE,TLP:WHITE,589e1a8f-a179-420c-a70e-ff1616d7a7f1,2026-09-25
-JAVA_Malware_Unknown_ForgeAuto_f26e0fa0,Marjoriefort,"Detects Unknown (class, etat binaire)",,TLP:WHITE,TLP:WHITE,37483c97-3d7b-461f-b50a-d170970be546,2026-09-25
-JAVA_Malware_Unknown_ForgeAuto_f1bff940,Marjoriefort,"Detects Unknown (class, etat binaire)",,TLP:WHITE,TLP:WHITE,7c274c0e-913a-4090-a342-14c1923efffc,2026-09-25
-JAVA_Malware_Unknown_ForgeAuto_f1a7ff7c,Marjoriefort,"Detects Unknown (class, etat binaire)",,TLP:WHITE,TLP:WHITE,26766901-780e-4c21-adef-ee7d3a2c1e0f,2026-09-25
-JAVA_Malware_Unknown_ForgeAuto_f1745319,Marjoriefort,"Detects Unknown (class, etat binaire)",,TLP:WHITE,TLP:WHITE,ff5f61d4-8461-4351-a54f-66c7d9501eae,2026-09-25
-JAVA_Sample_Unique_f02eed5d,Marjoriefort,"Detects Unknown (class, etat binaire)",,TLP:WHITE,TLP:WHITE,d4e6db87-e3bb-409a-a5e8-8bc84f94a1dc,2026-09-25
