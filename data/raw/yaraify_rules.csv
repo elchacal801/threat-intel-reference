@@ -1,8 +1,14 @@
 rule_name,author,description,malpedia_family,matching_tlp,sharing_tlp,yarahub_uuid,date
+DotNet_BitmapAssemblyLoader_KWBORU_Family,ShadowOpCode,Detects the outer .NET loader template that reconstructs a managed assembly from bitmap RGB data and invokes it reflectively,,TLP:WHITE,TLP:WHITE,b9e4efc9-38a7-4004-9605-f306b21b4038,2026-09-28
+classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,c441e3e6-d60c-4617-9f6d-0305da43acdf,classified
+BOTCFG_Embedded_Config_Structure,ShadowOpCode,"Detects the embedded BOTCFG configuration structure independently of C2 addresses, port, campaign tag and process name",,TLP:WHITE,TLP:WHITE,6139626f-9fbb-4771-989b-fa8a5d0f2901,2026-09-20
+BOTCFG_Native_RAT_Code_Cluster,ShadowOpCode,"Detects a native x64 RAT code cluster associated with the BOTCFG configuration format; descriptive detection, no family attribution",,TLP:WHITE,TLP:WHITE,83b29f0b-b72b-4979-9783-2840a9cdcf6b,2026-09-20
+Web_Malicious_JS_Web3_Contract_Includer,Serhii Kocherhan,"Detects malicious JavaScript injection loaders utilizing Web3 / Ethereum blockchain providers (Base network) to fetch, decrypt, and render dynamic phishing payloads or overlay frames.",,TLP:WHITE,TLP:WHITE,4507849d-931f-466b-bf45-f725b91c8a0b,2026-09-27
+Foxveil_Loader_CtorCfg_Variant,,"Foxveil macOS loader (ClickFix -> AMOS), quill generation without the padding segment: fat x86_64+arm64 linking CoreFoundation+libSystem+libc++ but importing nothing from CoreFoundation, with the loader's fixed import core (task_info/mach_task_self_ resolver, open/write/unlink/setenv/unsetenv run-time config file) in both slices inside a per-build random libc decoy import set",,TLP:WHITE,TLP:WHITE,9267bdb4-03d1-4513-a84b-5754f7763802,2026-09-27
+Asyncrat_V3,Trezzza,Detects Asyncrat,,TLP:WHITE,TLP:WHITE,2b4f3651-345a-49bc-a3e1-70ac7cc4401c,2026-09-27
 classified,classified,classified,classified,TLP:WHITE,TLP:GREEN,a2707f2d-8ba0-429e-8ea9-6e7dc69ea852,classified
 classified,classified,classified,classified,TLP:WHITE,TLP:GREEN,a0434fa7-10bb-4af9-8e1c-b1473b3343df,classified
 classified,classified,classified,classified,TLP:WHITE,TLP:GREEN,6b00d0d4-8db5-4c2c-8f40-f6adbe146477,classified
-asyncrat_test,Trezzza,asyncrat test v1,,TLP:WHITE,TLP:WHITE,ea50f07f-1427-40c0-bff4-17668bfcc610,2026-09-27
 HUNT_NET_Loader_BitmapStego_LateBindingInvoke,Anish Bogati,"Hunting: .NET loader reading pixel data from a resource Bitmap, loading an assembly and invoking its first exported method via VB LateBinding",,TLP:WHITE,TLP:WHITE,63128581-e56c-4884-bd5f-b109299f8eac,2026-09-26
 Gibberdrop_AMOS_ConfigRolXor,,"AMOS macOS stealer (mainline panel builds) - rolling-key XOR decrypt loop of the embedded __data config (key rotated right by 1 per byte), arm64 and x86_64",,TLP:WHITE,TLP:WHITE,6bba38ab-fefb-4c20-85c7-08f8e9be66e4,2026-09-27
 PhantomStealerV4,nsquar3,Detects PhantomStealerV4 samples,,TLP:WHITE,TLP:WHITE,23255f48-dfd8-47a4-bec3-8ccf5a0c66ba,2026-09-26
@@ -13,9 +19,3 @@ JAVA_Malware_Unknown_ForgeAuto_fabb6432,Marjoriefort,"Detects Unknown (class, et
 JAVA_Malware_Unknown_ForgeAuto_faadfb1c,Marjoriefort,"Detects Unknown (class, etat binaire)",,TLP:WHITE,TLP:WHITE,d9593db1-84e6-431b-9b93-23b6d3900fd7,2026-09-25
 JAVA_Malware_Unknown_ForgeAuto_f9815677,Marjoriefort,"Detects Unknown (class, etat binaire)",,TLP:WHITE,TLP:WHITE,fbc6d5c9-1e98-40c9-97d9-4e42aa7bc690,2026-09-25
 JAVA_Malware_Unknown_ForgeAuto_f926585a,Marjoriefort,"Detects Unknown (class, etat binaire)",,TLP:WHITE,TLP:WHITE,cd0924d1-58de-443f-9388-428fad290d87,2026-09-25
-MULTI_Sample_XWorm_f79aad81,Marjoriefort,"Detects XWorm (inconnu, etat binaire)",,TLP:WHITE,TLP:WHITE,373d5134-6a48-4332-98a3-22734c1fef86,2026-09-25
-JAVA_Malware_Unknown_ForgeAuto_f7877f02,Marjoriefort,"Detects Unknown (class, etat binaire)",,TLP:WHITE,TLP:WHITE,8f01d41e-6139-4b3c-88d4-cb7ea011478d,2026-09-25
-JAVA_Malware_Unknown_ForgeAuto_f762c41f,Marjoriefort,"Detects Unknown (class, etat binaire)",,TLP:WHITE,TLP:WHITE,0042bbc8-b1f9-4de7-a496-c2e5ab519c0d,2026-09-25
-JAVA_Sample_Unique_f43c1057,Marjoriefort,"Detects Unknown (class, etat binaire)",,TLP:WHITE,TLP:WHITE,98c8672b-62ad-4802-ad59-68aa6dbaa57a,2026-09-25
-JAVA_Sample_Unique_f370c5c0,Marjoriefort,"Detects Unknown (class, etat binaire)",,TLP:WHITE,TLP:WHITE,9c4bc444-616b-4972-bd23-8df6b4080d45,2026-09-25
-JAVA_Sample_Unique_f35d7502,Marjoriefort,"Detects Unknown (class, etat binaire)",,TLP:WHITE,TLP:WHITE,730c1417-913d-4b8a-9849-f07f03e530c7,2026-09-25
