@@ -1,4 +1,7 @@
 rule_name,author,description,malpedia_family,matching_tlp,sharing_tlp,yarahub_uuid,date
+HUNT_NET_Loader_ImagePixel_To_AssemblyLoad,Anish Bogati,"Hunting: .NET loader that reads pixel data from an embedded image, loads it as a .NET assembly, and runs it via reflection or late binding. Catches bitmap-steganography loaders.",,TLP:WHITE,TLP:WHITE,8c39b999-e13a-4507-b89d-1ab5c54438ce,2026-09-29
+Windows_Ransomware_OK75_r543t_AutoIt,ShadowOpCode,Detects the r543t/OK75 AutoIt ransomware lineage; includes a packed fingerprint for relfixed3.exe and family indicators for decoded/tokenized AutoIt script content,,TLP:WHITE,TLP:WHITE,ac35edf4-d1ba-485b-91b6-34adc66a714c,2026-09-28
+PhantomStealerV4,nsquar3,Detects PhantomStealerV4 samples,,TLP:WHITE,TLP:WHITE,23255f48-dfd8-47a4-bec3-8ccf5a0c66ba,2026-09-26
 DotNet_BitmapAssemblyLoader_KWBORU_Family,ShadowOpCode,Detects the outer .NET loader template that reconstructs a managed assembly from bitmap RGB data and invokes it reflectively,,TLP:WHITE,TLP:WHITE,b9e4efc9-38a7-4004-9605-f306b21b4038,2026-09-28
 classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,c441e3e6-d60c-4617-9f6d-0305da43acdf,classified
 BOTCFG_Embedded_Config_Structure,ShadowOpCode,"Detects the embedded BOTCFG configuration structure independently of C2 addresses, port, campaign tag and process name",,TLP:WHITE,TLP:WHITE,6139626f-9fbb-4771-989b-fa8a5d0f2901,2026-09-20
@@ -9,13 +12,10 @@ Asyncrat_V3,Trezzza,Detects Asyncrat,,TLP:WHITE,TLP:WHITE,2b4f3651-345a-49bc-a3e
 classified,classified,classified,classified,TLP:WHITE,TLP:GREEN,a2707f2d-8ba0-429e-8ea9-6e7dc69ea852,classified
 classified,classified,classified,classified,TLP:WHITE,TLP:GREEN,a0434fa7-10bb-4af9-8e1c-b1473b3343df,classified
 classified,classified,classified,classified,TLP:WHITE,TLP:GREEN,6b00d0d4-8db5-4c2c-8f40-f6adbe146477,classified
-HUNT_NET_Loader_BitmapStego_LateBindingInvoke,Anish Bogati,"Hunting: .NET loader reading pixel data from a resource Bitmap, loading an assembly and invoking its first exported method via VB LateBinding",,TLP:WHITE,TLP:WHITE,63128581-e56c-4884-bd5f-b109299f8eac,2026-09-26
 Gibberdrop_AMOS_ConfigRolXor,,"AMOS macOS stealer (mainline panel builds) - rolling-key XOR decrypt loop of the embedded __data config (key rotated right by 1 per byte), arm64 and x86_64",,TLP:WHITE,TLP:WHITE,6bba38ab-fefb-4c20-85c7-08f8e9be66e4,2026-09-27
-PhantomStealerV4,nsquar3,Detects PhantomStealerV4 samples,,TLP:WHITE,TLP:WHITE,23255f48-dfd8-47a4-bec3-8ccf5a0c66ba,2026-09-26
 JAVA_Malware_Unknown_ForgeAuto_fffbff25,Marjoriefort,"Detects Unknown (class, etat binaire)",,TLP:WHITE,TLP:WHITE,d8026142-0763-4028-8921-69352bde48a5,2026-09-25
 JAVA_Malware_Unknown_ForgeAuto_fce1b10d,Marjoriefort,"Detects Unknown (class, etat binaire)",,TLP:WHITE,TLP:WHITE,1122470a-66ce-41f4-868d-d02a62b26dcd,2026-09-25
 JAVA_Malware_Unknown_ForgeAuto_fca51a02,Marjoriefort,"Detects Unknown (class, etat binaire)",,TLP:WHITE,TLP:WHITE,c9b45930-d618-4b1f-ae6a-40b22cd592d8,2026-09-25
 JAVA_Malware_Unknown_ForgeAuto_fabb6432,Marjoriefort,"Detects Unknown (class, etat binaire)",,TLP:WHITE,TLP:WHITE,a5cce854-5d9b-45de-9d16-3dc496de8649,2026-09-25
 JAVA_Malware_Unknown_ForgeAuto_faadfb1c,Marjoriefort,"Detects Unknown (class, etat binaire)",,TLP:WHITE,TLP:WHITE,d9593db1-84e6-431b-9b93-23b6d3900fd7,2026-09-25
 JAVA_Malware_Unknown_ForgeAuto_f9815677,Marjoriefort,"Detects Unknown (class, etat binaire)",,TLP:WHITE,TLP:WHITE,fbc6d5c9-1e98-40c9-97d9-4e42aa7bc690,2026-09-25
-JAVA_Malware_Unknown_ForgeAuto_f926585a,Marjoriefort,"Detects Unknown (class, etat binaire)",,TLP:WHITE,TLP:WHITE,cd0924d1-58de-443f-9388-428fad290d87,2026-09-25
