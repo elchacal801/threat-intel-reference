@@ -1,4 +1,8 @@
 rule_name,author,description,malpedia_family,matching_tlp,sharing_tlp,yarahub_uuid,date
+classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,ce451d22-fa36-472f-af17-f55602d5a95e,classified
+classified,classified,classified,classified,TLP:WHITE,TLP:GREEN,0abd8a4c-482c-4119-a852-007b10ef676c,classified
+classified,classified,classified,classified,TLP:WHITE,TLP:GREEN,9bd1630a-baa4-4872-9592-206468542632,classified
+gafgyt_langflow_sbox_cipher,Nokia Deepfield ERT,"Customized Gafgyt/BASHLITE DDoS bot delivered via Langflow CVE-2025-3248; identifies the actor's embedded affine S-box, 16-byte magic key, and LCG-driven stream cipher used for the encrypted C2 protocol",,TLP:WHITE,TLP:WHITE,3fc6d7a0-c14d-425a-9af5-f2992632320f,2026-07-15
 Seedhook_Stage1_Zsh_B64Gzip_Eval,,Seedhook/MacSync ClickFix stage-1 zsh: gzip+base64 heredoc with randomised PAYLOAD_m delimiter decoded into a $d<digits> variable and eval'd,,TLP:WHITE,TLP:WHITE,e99e5f5c-57bd-44c2-867b-7243420f7fb8,2026-09-30
 classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,51c77a81-084e-4414-b79d-0dcfb6aa87ae,classified
 classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,b31085c6-9304-45a0-9904-cc7586a402ad,classified
@@ -15,7 +19,3 @@ PhantomStealerV4,nsquar3,Detects PhantomStealerV4 samples,,TLP:WHITE,TLP:WHITE,2
 DotNet_BitmapAssemblyLoader_KWBORU_Family,ShadowOpCode,Detects the outer .NET loader template that reconstructs a managed assembly from bitmap RGB data and invokes it reflectively,,TLP:WHITE,TLP:WHITE,b9e4efc9-38a7-4004-9605-f306b21b4038,2026-09-28
 classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,c441e3e6-d60c-4617-9f6d-0305da43acdf,classified
 BOTCFG_Embedded_Config_Structure,ShadowOpCode,"Detects the embedded BOTCFG configuration structure independently of C2 addresses, port, campaign tag and process name",,TLP:WHITE,TLP:WHITE,6139626f-9fbb-4771-989b-fa8a5d0f2901,2026-09-20
-BOTCFG_Native_RAT_Code_Cluster,ShadowOpCode,"Detects a native x64 RAT code cluster associated with the BOTCFG configuration format; descriptive detection, no family attribution",,TLP:WHITE,TLP:WHITE,83b29f0b-b72b-4979-9783-2840a9cdcf6b,2026-09-20
-Web_Malicious_JS_Web3_Contract_Includer,Serhii Kocherhan,"Detects malicious JavaScript injection loaders utilizing Web3 / Ethereum blockchain providers (Base network) to fetch, decrypt, and render dynamic phishing payloads or overlay frames.",,TLP:WHITE,TLP:WHITE,4507849d-931f-466b-bf45-f725b91c8a0b,2026-09-27
-Foxveil_Loader_CtorCfg_Variant,,"Foxveil macOS loader (ClickFix -> AMOS), quill generation without the padding segment: fat x86_64+arm64 linking CoreFoundation+libSystem+libc++ but importing nothing from CoreFoundation, with the loader's fixed import core (task_info/mach_task_self_ resolver, open/write/unlink/setenv/unsetenv run-time config file) in both slices inside a per-build random libc decoy import set",,TLP:WHITE,TLP:WHITE,9267bdb4-03d1-4513-a84b-5754f7763802,2026-09-27
-Asyncrat_V3,Trezzza,Detects Asyncrat,,TLP:WHITE,TLP:WHITE,2b4f3651-345a-49bc-a3e1-70ac7cc4401c,2026-09-27
