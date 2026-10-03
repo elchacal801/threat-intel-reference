@@ -1,21 +1,21 @@
 rule_name,author,description,malpedia_family,matching_tlp,sharing_tlp,yarahub_uuid,date
-SCRIPT_Dropper_Formbook_ForgeAuto_a070f81e_Script,Marjoriefort,"Detects Formbook (script_js, etat script)",,TLP:WHITE,TLP:WHITE,66acba18-61ae-4a3a-a2a0-8b14de5de1b4,2026-10-02
-WIN_Malware_ValleyRAT_ForgeAuto_9ddd32f3,Marjoriefort,"Detects ValleyRAT (pe, etat binaire)",,TLP:WHITE,TLP:WHITE,8fbed3e0-0e84-4733-8b75-af4a30691a38,2026-10-01
-MULTI_Sample_EtherRAT_9da8a219_Extrait,Marjoriefort,"Detects EtherRAT (inconnu, etat extrait)",,TLP:WHITE,TLP:WHITE,973b83f0-6ffb-4a50-9038-d02d655bc839,2026-10-01
-MULTI_Sample_Unique_9cb3b72c,Marjoriefort,"Detects Unknown (inconnu, etat binaire)",,TLP:WHITE,TLP:WHITE,fb4695aa-da79-49ba-a0f8-937f0299cd26,2026-10-01
-MULTI_Malware_Unknown_ForgeAuto_9c694c2d_Extrait,Marjoriefort,"Detects Unknown (inconnu, etat extrait)",,TLP:WHITE,TLP:WHITE,127a36b3-3685-40ab-bccb-a9f320212cf1,2026-10-02
-WIN_Malware_BlakcSeeStealer_ForgeAuto_9b0a0e39_Extrait,Marjoriefort,"Detects BlakcSeeStealer (pe, etat extrait)",,TLP:WHITE,TLP:WHITE,45760dd0-54d9-45da-bd5e-54dfac87dec3,2026-10-01
-SCRIPT_Dropper_Unknown_ForgeAuto_990bfd2e,Marjoriefort,"Detects Unknown (script_js, etat binaire)",,TLP:WHITE,TLP:WHITE,83449088-10e8-468e-9b08-2b8c97388494,2026-10-01
-MULTI_Malware_Unknown_ForgeAuto_98738d43,Marjoriefort,"Detects Unknown (inconnu, etat binaire)",,TLP:WHITE,TLP:WHITE,20855214-b5bc-4f21-8520-6ad4863c59fc,2026-10-02
-SCRIPT_Dropper_FlyLegitBot_ForgeAuto_96707f44,Marjoriefort,"Detects FlyLegitBot (script_sh, etat binaire)",,TLP:WHITE,TLP:WHITE,d96227b1-ff7d-4c41-a49d-ba0e2ee8c41a,2026-10-01
-MULTI_Malware_Unknown_ForgeAuto_952aaf0c,Marjoriefort,"Detects Unknown (inconnu, etat binaire)",,TLP:WHITE,TLP:WHITE,b206e70e-156f-4ef1-8e9d-bca0c0c3d8c9,2026-10-01
-SCRIPT_Sample_Unique_9522e6bf,Marjoriefort,"Detects Unknown (script_sh, etat binaire)",,TLP:WHITE,TLP:WHITE,202874d4-893a-4b38-9077-3e97d3ecae78,2026-10-01
-MULTI_Sample_RemcosRAT_94933b78,Marjoriefort,"Detects RemcosRAT (inconnu, etat binaire)",,TLP:WHITE,TLP:WHITE,60286fca-138b-4545-ba15-7c142f564323,2026-10-01
-SCRIPT_Dropper_CoinMiner_ForgeAuto_92973661,Marjoriefort,"Detects CoinMiner (script_sh, etat binaire)",,TLP:WHITE,TLP:WHITE,39786892-76a7-4643-b567-5426ca9e22af,2026-10-01
-SCRIPT_Dropper_Unknown_ForgeAuto_90c930f7,Marjoriefort,"Detects Unknown (script_sh, etat binaire)",,TLP:WHITE,TLP:WHITE,7dc54ed9-832f-44c8-8f35-f6c8d10d8222,2026-10-01
-WIN_Malware_Unknown_ForgeAuto_9045187c,Marjoriefort,"Detects Unknown (pe, etat binaire)",,TLP:WHITE,TLP:WHITE,827cc3f8-114f-4de0-863d-796439c11c58,2026-10-01
-WIN_Malware_Ceber_ForgeAuto_8b9c7147_Extrait,Marjoriefort,"Detects Ceber (pe, etat extrait)",,TLP:WHITE,TLP:WHITE,cb9a13ae-62d0-4e98-add1-b9b16986ae6d,2026-10-01
-WIN_Malware_CoinMiner_ForgeAuto_882cd879,Marjoriefort,"Detects CoinMiner (pe, etat binaire)",,TLP:WHITE,TLP:WHITE,d6a68429-8004-40dc-9b42-b727f3d454f2,2026-10-01
-SCRIPT_Dropper_Unknown_ForgeAuto_87740a04,Marjoriefort,"Detects Unknown (script_sh, etat binaire)",,TLP:WHITE,TLP:WHITE,efc33337-46b2-4a69-a2de-c8d66c8a06a1,2026-10-01
-MULTI_Malware_Unknown_ForgeAuto_83c2e1c6,Marjoriefort,"Detects Unknown (inconnu, etat binaire)",,TLP:WHITE,TLP:WHITE,942a8d03-4d44-4dfe-9d5c-2402f42234ba,2026-10-02
-MULTI_Famille_837ffd60,Marjoriefort,Famille MULTI_Famille_837ffd60 - noyau stable de 3 membre(s) ; identifiants randomises exclus (synthese v1.9.2),,TLP:WHITE,TLP:WHITE,ac7485d2-8a38-490b-b1b5-465a260e1f56,2026-10-02
+SolarisLoader_concatenated_api_dynamic_resolution,Aldair Maihuiri,Detects SolarisLoader via concatenated API resolution table and hardcoded campaign identifier,,TLP:WHITE,TLP:WHITE,c5d35710-ab0a-4b30-9cc5-afa97365fdbc,2026-08-08
+LockBit_mw_resolve_api_call_pattern,Aldair Maihuiri,Detects LockBit sample via repeated mw_resolve_api call pattern (PUSH 4 + PUSH 0x439c7e33),,TLP:WHITE,TLP:WHITE,c4e4f132-881e-4f7f-87ba-fd20f20e0ae9,2026-08-06
+classified,classified,classified,classified,TLP:WHITE,TLP:GREEN,384923b6-5e68-4217-9b60-f10cdb7f4cf4,classified
+classified,classified,classified,classified,TLP:WHITE,TLP:GREEN,034fd256-f6b0-4841-b8a4-0a90da424612,classified
+classified,classified,classified,classified,TLP:WHITE,TLP:GREEN,363b585a-175d-49da-9062-b5092a6465a7,classified
+classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,8e22772e-fd4e-4991-82a7-cb8659f54bf7,classified
+RWX_S_Signed_Search,Bill Demirkapi,rwx-s binaries,,TLP:RED,TLP:WHITE,5040ff31-2a3f-48c8-a7f4-983a0a8ddd73,2026-10-02
+classified,classified,classified,classified,TLP:WHITE,TLP:GREEN,7c2fafff-70c1-4d78-b489-af6f32ce5ee2,classified
+classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,ce451d22-fa36-472f-af17-f55602d5a95e,classified
+classified,classified,classified,classified,TLP:WHITE,TLP:GREEN,f4ed02f3-5c7c-49e0-9059-c7f42d5275ce,classified
+classified,classified,classified,classified,TLP:WHITE,TLP:GREEN,63b792a8-a242-4b4b-8166-36919c9aab8c,classified
+classified,classified,classified,classified,TLP:WHITE,TLP:GREEN,6a9dd76e-3539-49ef-ae39-6792c1408fd2,classified
+classified,classified,classified,classified,TLP:WHITE,TLP:GREEN,17361039-798a-4d45-8d16-8a1e9aae7a1c,classified
+classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,c441e3e6-d60c-4617-9f6d-0305da43acdf,classified
+MULTI_Malware_Unknown_ForgeAuto_fb8491f3_Extrait,Marjoriefort,"Detects Unknown (inconnu, etat extrait)",,TLP:WHITE,TLP:WHITE,269225b1-1e3b-430b-8deb-c3c2e4ae2403,2026-10-02
+MULTI_Malware_Koadic_ForgeAuto_f8858159,Marjoriefort,"Detects Koadic (inconnu, etat binaire)",,TLP:WHITE,TLP:WHITE,e170ddc3-b0bf-4d31-b388-dd187e1de02e,2026-10-02
+WIN_Malware_Unknown_ForgeAuto_f5d58a9e_Extrait,Marjoriefort,"Detects Unknown (pe, etat extrait)",,TLP:WHITE,TLP:WHITE,b8212e08-1e59-46f0-b477-a0b077d1020d,2026-10-02
+MULTI_Malware_RemcosRAT_ForgeAuto_f384332b,Marjoriefort,"Detects RemcosRAT (inconnu, etat binaire)",,TLP:WHITE,TLP:WHITE,b0321519-2d87-4ed6-a6c2-30e2fd7fc342,2026-10-02
+WIN_Malware_Unknown_ForgeAuto_f1079127,Marjoriefort,"Detects Unknown (pe, etat binaire)",,TLP:WHITE,TLP:WHITE,d54e9f7a-fd27-4348-96ca-c1d178ef08d5,2026-10-02
+MULTI_Sample_ConnectWise_efc18c75,Marjoriefort,"Detects ConnectWise (inconnu, etat binaire)",,TLP:WHITE,TLP:WHITE,83c3efed-054a-46ae-a164-01b85f8919de,2026-10-02
