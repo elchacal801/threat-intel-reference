@@ -1,4 +1,7 @@
 rule_name,author,description,malpedia_family,matching_tlp,sharing_tlp,yarahub_uuid,date
+Web_Phishing_Evitree_Google_Docs_Captcha,Serhii Kocherhan,Detects phishing pages associated with the Evitree / Paperless Post phishing campaign,,TLP:WHITE,TLP:WHITE,8f80134b-ff9f-4976-ae8d-6dcaf0797c83,2026-10-04
+SH_Downloader_Vcimanagement_Observed,Aldair Maihuiri,Matches the observed vcimanagement shell downloader,,TLP:WHITE,TLP:WHITE,1826d2cc-671e-43dd-9ae0-dc0b1e21be64,2026-10-03
+SH_Downloader_MultiArch_Svc_Hunt,Aldair Maihuiri,Hunts multi-architecture shell downloaders using .svc,,TLP:WHITE,TLP:WHITE,228bceef-f5f7-4810-9e7b-56748ea7e320,2026-10-03
 SolarisLoader_concatenated_api_dynamic_resolution,Aldair Maihuiri,Detects SolarisLoader via concatenated API resolution table and hardcoded campaign identifier,,TLP:WHITE,TLP:WHITE,c5d35710-ab0a-4b30-9cc5-afa97365fdbc,2026-08-08
 LockBit_mw_resolve_api_call_pattern,Aldair Maihuiri,Detects LockBit sample via repeated mw_resolve_api call pattern (PUSH 4 + PUSH 0x439c7e33),,TLP:WHITE,TLP:WHITE,c4e4f132-881e-4f7f-87ba-fd20f20e0ae9,2026-08-06
 classified,classified,classified,classified,TLP:WHITE,TLP:GREEN,384923b6-5e68-4217-9b60-f10cdb7f4cf4,classified
@@ -16,6 +19,3 @@ classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,c441e3e6-d60c-46
 MULTI_Malware_Unknown_ForgeAuto_fb8491f3_Extrait,Marjoriefort,"Detects Unknown (inconnu, etat extrait)",,TLP:WHITE,TLP:WHITE,269225b1-1e3b-430b-8deb-c3c2e4ae2403,2026-10-02
 MULTI_Malware_Koadic_ForgeAuto_f8858159,Marjoriefort,"Detects Koadic (inconnu, etat binaire)",,TLP:WHITE,TLP:WHITE,e170ddc3-b0bf-4d31-b388-dd187e1de02e,2026-10-02
 WIN_Malware_Unknown_ForgeAuto_f5d58a9e_Extrait,Marjoriefort,"Detects Unknown (pe, etat extrait)",,TLP:WHITE,TLP:WHITE,b8212e08-1e59-46f0-b477-a0b077d1020d,2026-10-02
-MULTI_Malware_RemcosRAT_ForgeAuto_f384332b,Marjoriefort,"Detects RemcosRAT (inconnu, etat binaire)",,TLP:WHITE,TLP:WHITE,b0321519-2d87-4ed6-a6c2-30e2fd7fc342,2026-10-02
-WIN_Malware_Unknown_ForgeAuto_f1079127,Marjoriefort,"Detects Unknown (pe, etat binaire)",,TLP:WHITE,TLP:WHITE,d54e9f7a-fd27-4348-96ca-c1d178ef08d5,2026-10-02
-MULTI_Sample_ConnectWise_efc18c75,Marjoriefort,"Detects ConnectWise (inconnu, etat binaire)",,TLP:WHITE,TLP:WHITE,83c3efed-054a-46ae-a164-01b85f8919de,2026-10-02
