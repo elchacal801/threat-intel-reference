@@ -1,21 +1,21 @@
 rule_name,author,description,malpedia_family,matching_tlp,sharing_tlp,yarahub_uuid,date
+ConfigurableLoaderInfostealer_custom_decoder_embedded_dll,Aldair Maihuiri,Detects configurable loader/infostealer through custom decoder alphabet and embedded DLL blob,,TLP:WHITE,TLP:WHITE,22048145-8160-4ece-99db-e7867cd18c0d,2026-10-04
+SolarisLoader_concatenated_api_dynamic_resolution,Aldair Maihuiri,Detects SolarisLoader via concatenated API resolution table and hardcoded campaign identifier,,TLP:WHITE,TLP:WHITE,c5d35710-ab0a-4b30-9cc5-afa97365fdbc,2026-08-08
+classified,classified,classified,classified,TLP:WHITE,TLP:AMBER,5ce8a611-ebd3-44dc-a630-b54b9bb3cc71,classified
+classified,classified,classified,classified,TLP:WHITE,TLP:AMBER,24b42937-50ed-4afc-b43c-3598526bb4f6,classified
+classified,classified,classified,classified,TLP:WHITE,TLP:AMBER,4a3373ee-4c69-4fec-a3ee-0c62f7a4b425,classified
+classified,classified,classified,classified,TLP:WHITE,TLP:AMBER,63e14b70-b4c5-4a19-ae1b-58249920f3e6,classified
+classified,classified,classified,classified,TLP:WHITE,TLP:AMBER,229e2cbc-57d2-420f-a714-40abccf979a8,classified
+classified,classified,classified,classified,TLP:WHITE,TLP:AMBER,62bde1eb-c701-45ac-bb33-13723ee7a639,classified
+classified,classified,classified,classified,TLP:WHITE,TLP:AMBER,7750699b-aa03-49bb-ace5-6552d6470a0e,classified
+classified,classified,classified,classified,TLP:WHITE,TLP:AMBER,a2707f2d-8ba0-429e-8ea9-6e7dc69ea852,classified
+classified,classified,classified,classified,TLP:WHITE,TLP:AMBER,6b00d0d4-8db5-4c2c-8f40-f6adbe146477,classified
+classified,classified,classified,classified,TLP:WHITE,TLP:AMBER,0abd8a4c-482c-4119-a852-007b10ef676c,classified
 Web_Phishing_Evitree_Google_Docs_Captcha,Serhii Kocherhan,Detects phishing pages associated with the Evitree / Paperless Post phishing campaign,,TLP:WHITE,TLP:WHITE,8f80134b-ff9f-4976-ae8d-6dcaf0797c83,2026-10-04
 SH_Downloader_Vcimanagement_Observed,Aldair Maihuiri,Matches the observed vcimanagement shell downloader,,TLP:WHITE,TLP:WHITE,1826d2cc-671e-43dd-9ae0-dc0b1e21be64,2026-10-03
 SH_Downloader_MultiArch_Svc_Hunt,Aldair Maihuiri,Hunts multi-architecture shell downloaders using .svc,,TLP:WHITE,TLP:WHITE,228bceef-f5f7-4810-9e7b-56748ea7e320,2026-10-03
-SolarisLoader_concatenated_api_dynamic_resolution,Aldair Maihuiri,Detects SolarisLoader via concatenated API resolution table and hardcoded campaign identifier,,TLP:WHITE,TLP:WHITE,c5d35710-ab0a-4b30-9cc5-afa97365fdbc,2026-08-08
 LockBit_mw_resolve_api_call_pattern,Aldair Maihuiri,Detects LockBit sample via repeated mw_resolve_api call pattern (PUSH 4 + PUSH 0x439c7e33),,TLP:WHITE,TLP:WHITE,c4e4f132-881e-4f7f-87ba-fd20f20e0ae9,2026-08-06
 classified,classified,classified,classified,TLP:WHITE,TLP:GREEN,384923b6-5e68-4217-9b60-f10cdb7f4cf4,classified
 classified,classified,classified,classified,TLP:WHITE,TLP:GREEN,034fd256-f6b0-4841-b8a4-0a90da424612,classified
 classified,classified,classified,classified,TLP:WHITE,TLP:GREEN,363b585a-175d-49da-9062-b5092a6465a7,classified
 classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,8e22772e-fd4e-4991-82a7-cb8659f54bf7,classified
-RWX_S_Signed_Search,Bill Demirkapi,rwx-s binaries,,TLP:RED,TLP:WHITE,5040ff31-2a3f-48c8-a7f4-983a0a8ddd73,2026-10-02
-classified,classified,classified,classified,TLP:WHITE,TLP:GREEN,7c2fafff-70c1-4d78-b489-af6f32ce5ee2,classified
-classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,ce451d22-fa36-472f-af17-f55602d5a95e,classified
-classified,classified,classified,classified,TLP:WHITE,TLP:GREEN,f4ed02f3-5c7c-49e0-9059-c7f42d5275ce,classified
-classified,classified,classified,classified,TLP:WHITE,TLP:GREEN,63b792a8-a242-4b4b-8166-36919c9aab8c,classified
-classified,classified,classified,classified,TLP:WHITE,TLP:GREEN,6a9dd76e-3539-49ef-ae39-6792c1408fd2,classified
-classified,classified,classified,classified,TLP:WHITE,TLP:GREEN,17361039-798a-4d45-8d16-8a1e9aae7a1c,classified
-classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,c441e3e6-d60c-4617-9f6d-0305da43acdf,classified
-MULTI_Malware_Unknown_ForgeAuto_fb8491f3_Extrait,Marjoriefort,"Detects Unknown (inconnu, etat extrait)",,TLP:WHITE,TLP:WHITE,269225b1-1e3b-430b-8deb-c3c2e4ae2403,2026-10-02
-MULTI_Malware_Koadic_ForgeAuto_f8858159,Marjoriefort,"Detects Koadic (inconnu, etat binaire)",,TLP:WHITE,TLP:WHITE,e170ddc3-b0bf-4d31-b388-dd187e1de02e,2026-10-02
-WIN_Malware_Unknown_ForgeAuto_f5d58a9e_Extrait,Marjoriefort,"Detects Unknown (pe, etat extrait)",,TLP:WHITE,TLP:WHITE,b8212e08-1e59-46f0-b477-a0b077d1020d,2026-10-02
