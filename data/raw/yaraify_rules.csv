@@ -1,4 +1,14 @@
 rule_name,author,description,malpedia_family,matching_tlp,sharing_tlp,yarahub_uuid,date
+PHP_E75_Packed_Strict,Aldair Maihuiri,Specific self-extracting PHP wrapper observed around a WSO-derived webshell,,TLP:WHITE,TLP:WHITE,35f7326b-58fe-41da-918d-6aae702c7d8d,2026-10-08
+PHP_WSO_MultiCapability_Decoded,Aldair Maihuiri,"Decoded WSO-derived PHP webshell with command execution, POST eval and multiple action handlers",,TLP:WHITE,TLP:WHITE,77642993-8483-4a78-8390-686366c59123,2026-10-08
+classified,classified,classified,classified,TLP:WHITE,TLP:GREEN,184e9a99-cd6a-4030-bba3-58345e7dfb0b,classified
+classified,classified,classified,classified,TLP:WHITE,TLP:GREEN,3b7a9e02-5d46-4c81-a0f7-e19c2d84b6a3,classified
+classified,classified,classified,classified,TLP:WHITE,TLP:GREEN,d83e5c19-47a2-4b06-8f3d-91c0a6e2b7f5,classified
+classified,classified,classified,classified,TLP:WHITE,TLP:GREEN,a2d94b70-8c15-4f3e-b6a9-2e5f1d7c9b42,classified
+classified,classified,classified,classified,TLP:WHITE,TLP:GREEN,6f1c2a4e-3b7d-4e58-9a21-c4d8e7b05a11,classified
+PHP_SelfExtracting_Marker_Zlib_Webshell_Strict,Aldair Maihuiri,Strict detection of the observed self-extracting PHP loader using marker restoration and zlib decompression,,TLP:WHITE,TLP:WHITE,d496a4b0-d1a2-4303-a609-7a6fe3d67b15,2026-10-08
+PHP_SelfExtracting_Marker_Zlib_Webshell_Hunting,Aldair Maihuiri,Hunting rule for PHP self-extracting loaders that restore custom markers before zlib decompression,,TLP:WHITE,TLP:WHITE,f2e197ea-3a60-4c43-94f2-b4d13e59c7a0,2026-10-08
+PHP_Obfuscated_Multicapability_Webshell_Decoded,Aldair Maihuiri,"Hunting rule for the decoded PHP web shell stage with OS command execution, CMS account manipulation and mass defacement capability",,TLP:WHITE,TLP:WHITE,969b5e25-6c2e-4e25-bb5e-607d780d8f11,2026-10-08
 CobaltStrike_PS_AMSI_Reflection_Obfuscated,Aldair Maihuiri,Obfuscated PowerShell loader that reflectively disables AMSI and invokes AmsiUtils.ScanContent,,TLP:WHITE,TLP:WHITE,f6c0a596-ae2a-43c1-96bd-c05bb94273dc,2026-10-08
 CobaltStrike_PS_Decimal_Base64_XOR_Loader,Aldair Maihuiri,"PowerShell loader that reconstructs a decimal byte array, Base64-decodes it, XOR-decrypts it and executes it with IEX",,TLP:WHITE,TLP:WHITE,64cc4afd-6a10-4406-bd5f-2c130ec081db,2026-10-08
 CobaltStrike_PS_Obfuscated_Memory_PE_Loader,Aldair Maihuiri,High-confidence obfuscated PowerShell memory PE loader with reflective AMSI bypass and decimal Base64 XOR stage,,TLP:WHITE,TLP:WHITE,40732b9e-274f-4cb3-91cf-b842e1745617,2026-10-08
@@ -9,13 +19,3 @@ BatchPS_Base64_XOR_GZip_Stage_a85fc7e,Aldair Maihuiri,"Detects the observed stag
 AgentTesla_PowerShell_AESManaged_InMemory_Loader,Aldair Maihuiri,Detects a PowerShell AES-CBC in-memory loader through its managed cryptography and execution chain,,TLP:WHITE,TLP:WHITE,dea29397-9057-4d77-ac95-53ee8c1a3b72,2026-10-08
 AgentTesla_PS_SecureLoader_Config_84de969f,Aldair Maihuiri,Strict detection for the observed PS Secure Loader AES key and IV configuration,,TLP:WHITE,TLP:WHITE,b0794214-21a1-4bfb-b2b1-874b54534c62,2026-10-08
 AgentTesla_PowerShell_Base64_AES_Wrapper,Aldair Maihuiri,Detects the observed PowerShell Base64 normalization and AES wrapper used before in-memory execution,,TLP:WHITE,TLP:WHITE,24b84df8-5f2a-48b6-b1f0-dad9d57ce4a3,2026-10-08
-Web_Phishing_ClickFix_Terminal_Dropper,Serhii Kocherhan,"Detects 'ClickFix' social engineering phishing landing pages that instruct macOS users to execute a malicious terminal command via Spotlight copy-paste injection, leveraging base64-encoded curl payloads.",,TLP:WHITE,TLP:WHITE,0849d0de-dba1-498a-a958-10c8b95f1616,2026-10-08
-JS_WSH_SRWDNQEVXCMRPCBL_Strict_Variant,Aldair Maihuiri,Detects the cacb33f852ed WSH stager variant by its generated symbol namespace and COM dropper API set,,TLP:WHITE,TLP:WHITE,2a9cd571-22c4-4b9d-b79b-1e8a818b1d3f,2026-10-08
-JS_WSH_Unicode2603_COM_Dropper_cacb33f8,Aldair Maihuiri,Detects the cacb33f852ed WSH COM dropper construction using snowman Unicode padding,,TLP:WHITE,TLP:WHITE,76dc5601-779e-4928-a72b-cd4f27a66884,2026-10-08
-JS_WSH_OMCABJPEHNLUOYSR_Strict_Variant,Aldair Maihuiri,Detects the 8315f56af982 WSH stager variant by its generated symbol namespace and hidden execution chain,,TLP:WHITE,TLP:WHITE,7857fe41-6ff7-4c0c-8647-bd5901a070f3,2026-10-08
-JS_WSH_Unicode2600_Hidden_Execution_8315f56a,Aldair Maihuiri,"Detects the 8315f56af982 WSH dropper chain using sun Unicode padding, COM file writing and hidden Run execution",,TLP:WHITE,TLP:WHITE,c1d5fa0b-31d4-41e0-9bc1-aaf2f7e622d2,2026-10-08
-JS_ToyCipher_Base161_Crypto_Stager_37200092,Aldair Maihuiri,Detects the custom base-161 and ToyCipher cryptographic stager in the WSH PurgeRoster loader,,TLP:WHITE,TLP:WHITE,7d641e7e-5894-4658-829d-57db0ec84a5a,2026-10-08
-JS_PurgeRoster_Scheduled_Task_Persistence_37200092,Aldair Maihuiri,Detects the PurgeRoster scheduled-task persistence component in a WSH PowerShell loader,,TLP:WHITE,TLP:WHITE,6d91f738-1e70-4103-b92c-31c3c60b9abf,2026-10-08
-JS_WSH_PurgeRoster_PowerShell_Loader_37200092,Aldair Maihuiri,Detects a Source Filmmaker-decoy WSH backdoor that persists as PurgeRoster and launches an obfuscated PowerShell payload,,TLP:WHITE,TLP:WHITE,e447d7fe-885d-4313-833c-061ba3451bc1,2026-10-08
-PS_Adobe_AES_Staged_Downloader_b3fc3415,Aldair Maihuiri,Detects the Adobe-directory AES staged PowerShell downloader,,TLP:WHITE,TLP:WHITE,0a623460-9668-485c-958a-ed0dd0a20e91,2026-10-08
-PS_XOR_Embedded_DotNet_Loader_1590912d,Aldair Maihuiri,Detects PowerShell loader that XOR-decrypts and reflection-loads an embedded .NET PE,,TLP:WHITE,TLP:WHITE,f57bd082-0d85-437c-b09a-b728cf441434,2026-10-08
