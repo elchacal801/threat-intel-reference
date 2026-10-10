@@ -1,4 +1,9 @@
 rule_name,author,description,malpedia_family,matching_tlp,sharing_tlp,yarahub_uuid,date
+MAL_JAVA_JAR_RuneLure_Stealer_Clipper,,"RuneLure downloader, credential collector, and clipboard clipper combination",,TLP:WHITE,TLP:WHITE,0f2c6628-e230-48c5-8079-687a1f0816d1,2026-10-09
+MAL_JAVA_JAR_RuneLure_Credential_PIN_Bank,,RuneLure credential/PIN and bank-report plugin package combination,,TLP:WHITE,TLP:WHITE,c5cc128b-cd0a-4661-800b-2ac4cc9d6f59,2026-10-09
+MAL_JAVA_Class_RuneLure_Stealer_Downloader,,"RuneLure text-file archive theft, screenshot upload, Startup persistence, and token collection methods",,TLP:WHITE,TLP:WHITE,91481485-b341-43cf-a07e-6e3ba45fce9a,2026-10-09
+MAL_JAVA_Class_RuneLure_Credential_PIN_Stealer,,RuneLure launcher session collection plus credential/PIN sender methods and login key dispatcher,,TLP:WHITE,TLP:WHITE,f3ddcb68-63dc-426d-90f4-b8c5d847cbd0,2026-10-09
+classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,ebbd15cb-ca5c-445f-a9a2-242fc6e23dd2,classified
 PHP_E75_Packed_Strict,Aldair Maihuiri,Specific self-extracting PHP wrapper observed around a WSO-derived webshell,,TLP:WHITE,TLP:WHITE,35f7326b-58fe-41da-918d-6aae702c7d8d,2026-10-08
 PHP_WSO_MultiCapability_Decoded,Aldair Maihuiri,"Decoded WSO-derived PHP webshell with command execution, POST eval and multiple action handlers",,TLP:WHITE,TLP:WHITE,77642993-8483-4a78-8390-686366c59123,2026-10-08
 classified,classified,classified,classified,TLP:WHITE,TLP:GREEN,184e9a99-cd6a-4030-bba3-58345e7dfb0b,classified
@@ -14,8 +19,3 @@ CobaltStrike_PS_Decimal_Base64_XOR_Loader,Aldair Maihuiri,"PowerShell loader tha
 CobaltStrike_PS_Obfuscated_Memory_PE_Loader,Aldair Maihuiri,High-confidence obfuscated PowerShell memory PE loader with reflective AMSI bypass and decimal Base64 XOR stage,,TLP:WHITE,TLP:WHITE,40732b9e-274f-4cb3-91cf-b842e1745617,2026-10-08
 OSX_Malware_Osascript_Base64_Dropper,Serhii Kocherhan,Detects macOS script files or payloads utilizing osascript to decode and execute base64-encoded command strings (ClickFix / dropper vector).,,TLP:WHITE,TLP:WHITE,433d9dad-f802-4d0d-a665-81898b385f29,2026-10-08
 Hybrid_BatchPS_Hex59_Strict_a85fc7e,Aldair Maihuiri,Detects the observed a85fc7e hybrid Batch/PowerShell loader using NVUNPF hex decoding and dynamic ScriptBlock execution,,TLP:WHITE,TLP:WHITE,3dfc34fd-1c5b-4dcb-a60a-4f9fb0a9b55a,2026-10-08
-BatchPS_SelfRead_HexScriptBlock_a85fc7e,Aldair Maihuiri,Detects self-reading Batch/PowerShell loaders that reconstruct a ScriptBlock from a byte-shifted hexadecimal payload,,TLP:WHITE,TLP:WHITE,735799a2-cf57-4d76-96d7-f2c299c502dc,2026-10-08
-BatchPS_Base64_XOR_GZip_Stage_a85fc7e,Aldair Maihuiri,"Detects the observed staged Batch/PowerShell loader container that leads to Base64, XOR and GZip in-memory execution",,TLP:WHITE,TLP:WHITE,a2aa3b3e-d878-46e3-80c2-3d456111e07f,2026-10-08
-AgentTesla_PowerShell_AESManaged_InMemory_Loader,Aldair Maihuiri,Detects a PowerShell AES-CBC in-memory loader through its managed cryptography and execution chain,,TLP:WHITE,TLP:WHITE,dea29397-9057-4d77-ac95-53ee8c1a3b72,2026-10-08
-AgentTesla_PS_SecureLoader_Config_84de969f,Aldair Maihuiri,Strict detection for the observed PS Secure Loader AES key and IV configuration,,TLP:WHITE,TLP:WHITE,b0794214-21a1-4bfb-b2b1-874b54534c62,2026-10-08
-AgentTesla_PowerShell_Base64_AES_Wrapper,Aldair Maihuiri,Detects the observed PowerShell Base64 normalization and AES wrapper used before in-memory execution,,TLP:WHITE,TLP:WHITE,24b84df8-5f2a-48b6-b1f0-dad9d57ce4a3,2026-10-08
