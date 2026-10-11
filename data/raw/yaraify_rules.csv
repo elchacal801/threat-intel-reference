@@ -1,4 +1,13 @@
 rule_name,author,description,malpedia_family,matching_tlp,sharing_tlp,yarahub_uuid,date
+SeroRAT_ABE_Helper_DLL,Daydream,"SeroRAT helper DLL that runs inside chrome.exe, brave.exe or msedge.exe and asks the browser elevation service (COM DecryptData) to decrypt the App-Bound Encryption key, returning it over a named pipe whose name is derived from the process ID",,TLP:WHITE,TLP:WHITE,8f88ccb4-747d-4faa-bff9-28c47f210eaa,2026-10-11
+VShell_Windows_Stager_HashedAPI,Daydream,"VShell Windows stager (x86/x64, tcp and ws variants): resolves APIs by ROR-13 hash, checks %TEMP%\\log_de.log, downloads a stage and XOR 0x99 decodes it in memory",,TLP:WHITE,TLP:WHITE,17feb2aa-e2b6-4f40-9c73-93b7467d6657,2026-10-10
+VShell_Windows_Stage_MZER_GoLoader,Daydream,VShell 4.x Windows stage after XOR 0x99 decoding: Go loader with an MZER self-loading header that carries the implant DLL as a gzip asset,,TLP:WHITE,TLP:WHITE,2edf2aeb-d710-4fc9-907a-12b8861c12f4,2026-10-10
+VShell_Windows_Implant_4x_DLL,Daydream,"VShell 4.x Windows implant DLL (Go, scrambled symbols) as unpacked from its stage: marker file names and config structure fields",,TLP:WHITE,TLP:WHITE,60052629-0138-481f-a650-4e250be67cea,2026-10-10
+VShell_Linux_Shell_Dropper,Daydream,"Shell dropper for the VShell Linux implant: probes writable system directories with a 'writeablex' file, downloads a per-architecture stage (stage=true&k=) and starts it with nohup",,TLP:WHITE,TLP:WHITE,82b25885-bba0-4169-ac25-5c3e14875349,2026-10-10
+VShell_Implant_VSHCFG_Markers,Daydream,"VShell implant, newer generation (seen as Go 1.26 Linux ELF): VSHCFG config markers, stage marker, key-derivation label and config field tags",,TLP:WHITE,TLP:WHITE,54c6e5fb-c740-458f-941e-756dfc981d01,2026-10-10
+Linux_Akuma_Bot,KSI Digital,akuma IoT bot ELF (Mirai-based): plain-text persistence strings for its systemd-network-helper service and init scripts,,TLP:WHITE,TLP:WHITE,307564ea-4fab-48bd-81d3-ae84b836d0a4,2026-10-11
+Akuma_Wget_Loader,KSI Digital,akuma kit loader script (wget.sh) that picks and runs an akuma_<arch> bot from /bins/telnet/,,TLP:WHITE,TLP:WHITE,ec8c9e51-bb28-45af-948e-988fc577daac,2026-10-11
+classified,classified,classified,classified,TLP:WHITE,TLP:GREEN,ed680781-14cd-436c-829d-5df44dcede1b,classified
 MAL_JAVA_JAR_RuneLure_Stealer_Clipper,,"RuneLure downloader, credential collector, and clipboard clipper combination",,TLP:WHITE,TLP:WHITE,0f2c6628-e230-48c5-8079-687a1f0816d1,2026-10-09
 MAL_JAVA_JAR_RuneLure_Credential_PIN_Bank,,RuneLure credential/PIN and bank-report plugin package combination,,TLP:WHITE,TLP:WHITE,c5cc128b-cd0a-4661-800b-2ac4cc9d6f59,2026-10-09
 MAL_JAVA_Class_RuneLure_Stealer_Downloader,,"RuneLure text-file archive theft, screenshot upload, Startup persistence, and token collection methods",,TLP:WHITE,TLP:WHITE,91481485-b341-43cf-a07e-6e3ba45fce9a,2026-10-09
@@ -10,12 +19,3 @@ classified,classified,classified,classified,TLP:WHITE,TLP:GREEN,184e9a99-cd6a-40
 classified,classified,classified,classified,TLP:WHITE,TLP:GREEN,3b7a9e02-5d46-4c81-a0f7-e19c2d84b6a3,classified
 classified,classified,classified,classified,TLP:WHITE,TLP:GREEN,d83e5c19-47a2-4b06-8f3d-91c0a6e2b7f5,classified
 classified,classified,classified,classified,TLP:WHITE,TLP:GREEN,a2d94b70-8c15-4f3e-b6a9-2e5f1d7c9b42,classified
-classified,classified,classified,classified,TLP:WHITE,TLP:GREEN,6f1c2a4e-3b7d-4e58-9a21-c4d8e7b05a11,classified
-PHP_SelfExtracting_Marker_Zlib_Webshell_Strict,Aldair Maihuiri,Strict detection of the observed self-extracting PHP loader using marker restoration and zlib decompression,,TLP:WHITE,TLP:WHITE,d496a4b0-d1a2-4303-a609-7a6fe3d67b15,2026-10-08
-PHP_SelfExtracting_Marker_Zlib_Webshell_Hunting,Aldair Maihuiri,Hunting rule for PHP self-extracting loaders that restore custom markers before zlib decompression,,TLP:WHITE,TLP:WHITE,f2e197ea-3a60-4c43-94f2-b4d13e59c7a0,2026-10-08
-PHP_Obfuscated_Multicapability_Webshell_Decoded,Aldair Maihuiri,"Hunting rule for the decoded PHP web shell stage with OS command execution, CMS account manipulation and mass defacement capability",,TLP:WHITE,TLP:WHITE,969b5e25-6c2e-4e25-bb5e-607d780d8f11,2026-10-08
-CobaltStrike_PS_AMSI_Reflection_Obfuscated,Aldair Maihuiri,Obfuscated PowerShell loader that reflectively disables AMSI and invokes AmsiUtils.ScanContent,,TLP:WHITE,TLP:WHITE,f6c0a596-ae2a-43c1-96bd-c05bb94273dc,2026-10-08
-CobaltStrike_PS_Decimal_Base64_XOR_Loader,Aldair Maihuiri,"PowerShell loader that reconstructs a decimal byte array, Base64-decodes it, XOR-decrypts it and executes it with IEX",,TLP:WHITE,TLP:WHITE,64cc4afd-6a10-4406-bd5f-2c130ec081db,2026-10-08
-CobaltStrike_PS_Obfuscated_Memory_PE_Loader,Aldair Maihuiri,High-confidence obfuscated PowerShell memory PE loader with reflective AMSI bypass and decimal Base64 XOR stage,,TLP:WHITE,TLP:WHITE,40732b9e-274f-4cb3-91cf-b842e1745617,2026-10-08
-OSX_Malware_Osascript_Base64_Dropper,Serhii Kocherhan,Detects macOS script files or payloads utilizing osascript to decode and execute base64-encoded command strings (ClickFix / dropper vector).,,TLP:WHITE,TLP:WHITE,433d9dad-f802-4d0d-a665-81898b385f29,2026-10-08
-Hybrid_BatchPS_Hex59_Strict_a85fc7e,Aldair Maihuiri,Detects the observed a85fc7e hybrid Batch/PowerShell loader using NVUNPF hex decoding and dynamic ScriptBlock execution,,TLP:WHITE,TLP:WHITE,3dfc34fd-1c5b-4dcb-a60a-4f9fb0a9b55a,2026-10-08
