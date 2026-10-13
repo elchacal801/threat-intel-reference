@@ -1,4 +1,7 @@
 rule_name,author,description,malpedia_family,matching_tlp,sharing_tlp,yarahub_uuid,date
+AokigaharaStealer_Unpacked_Payload,Daydream,"AokigaharaStealer payload, unpacked or in process memory: gate protocol headers, akg_ working-file names, debug log markers and loot folder names",,TLP:WHITE,TLP:WHITE,d22564da-79c8-4c26-87aa-da7a7be2723f,2026-10-12
+classified,classified,classified,classified,TLP:WHITE,TLP:GREEN,8087cf6b-37a6-4922-b983-0595eaec3b2b,classified
+classified,classified,classified,classified,TLP:WHITE,TLP:GREEN,57bff4a7-b891-42c5-809e-75dcf59fbd94,classified
 classified,classified,classified,classified,TLP:RED,TLP:RED,fed28e3f-7413-4bb7-9ead-11828c46c4d5,classified
 TELEPUZ_Memory_Polygon_DeadDrop,Daydream,"TELEPUZ running in memory (or an unpacked dump): the JSON-RPC eth_call template with function selector 0xc3f909d4 that it sends to public Polygon endpoints to read its C2 address from a smart contract, with the operator contract or the endpoint path seen in October 2026",,TLP:WHITE,TLP:WHITE,1c561b17-532d-4844-88be-d3ea6da4d549,2026-10-12
 TELEPUZ_SessionId_DualHash_Oct2026,Daydream,"TELEPUZ main DLL, build seen October 2026 (ClickFix chain via Everything.exe side-loading). Anchors on the session-ID routine that runs an FNV hash and a rotate-left-5 plus 0x9E3779B9 hash side by side over the computer name, volume serial and install date, together with the family's rdtsc junk-code idiom or its import profile. Elastic's Windows_Trojan_Telepuz_9e2c9a0b does not match this build",,TLP:WHITE,TLP:WHITE,2aa8e8e5-faed-40ab-a1fa-646c1127de60,2026-10-12
@@ -16,6 +19,3 @@ VShell_Implant_VSHCFG_Markers,Daydream,"VShell implant, newer generation (seen a
 Linux_Akuma_Bot,KSI Digital,akuma IoT bot ELF (Mirai-based): plain-text persistence strings for its systemd-network-helper service and init scripts,,TLP:WHITE,TLP:WHITE,307564ea-4fab-48bd-81d3-ae84b836d0a4,2026-10-11
 Akuma_Wget_Loader,KSI Digital,akuma kit loader script (wget.sh) that picks and runs an akuma_<arch> bot from /bins/telnet/,,TLP:WHITE,TLP:WHITE,ec8c9e51-bb28-45af-948e-988fc577daac,2026-10-11
 classified,classified,classified,classified,TLP:WHITE,TLP:GREEN,ed680781-14cd-436c-829d-5df44dcede1b,classified
-MAL_JAVA_JAR_RuneLure_Stealer_Clipper,,"RuneLure downloader, credential collector, and clipboard clipper combination",,TLP:WHITE,TLP:WHITE,0f2c6628-e230-48c5-8079-687a1f0816d1,2026-10-09
-MAL_JAVA_JAR_RuneLure_Credential_PIN_Bank,,RuneLure credential/PIN and bank-report plugin package combination,,TLP:WHITE,TLP:WHITE,c5cc128b-cd0a-4661-800b-2ac4cc9d6f59,2026-10-09
-MAL_JAVA_Class_RuneLure_Stealer_Downloader,,"RuneLure text-file archive theft, screenshot upload, Startup persistence, and token collection methods",,TLP:WHITE,TLP:WHITE,91481485-b341-43cf-a07e-6e3ba45fce9a,2026-10-09
