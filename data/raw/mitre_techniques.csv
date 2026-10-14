@@ -785,6 +785,7 @@ T1608.003,Install Digital Certificate,resource-development
 T1608.004,Drive-by Target,resource-development
 T1608.005,Link Target,resource-development
 T1608.006,SEO Poisoning,resource-development
+T1608.007,AI Result Poisoning,resource-development
 T1609,Container Administration Command,execution
 T1610,Deploy Container,execution
 T1611,Escape to Host,privilege-escalation
@@ -837,6 +838,7 @@ T1685.003,Modify or Spoof Tool UI,defense-impairment
 T1685.004,Disable or Modify Linux Audit System Log,defense-impairment
 T1685.005,Clear Windows Event Logs,defense-impairment
 T1685.006,Clear Linux or Mac System Logs,defense-impairment
+T1685.007,Impair Autonomous Defenses,defense-impairment
 T1686,Disable or Modify System Firewall,defense-impairment
 T1686.001,Cloud Firewall,defense-impairment
 T1686.002,Network Device Firewall,defense-impairment
@@ -845,3 +847,10 @@ T1687,Exploitation for Defense Impairment,defense-impairment
 T1688,Safe Mode Boot,defense-impairment
 T1689,Downgrade Attack,defense-impairment
 T1690,Prevent Command History Logging,defense-impairment
+T1696,Anti-Automation Evasion,stealth
+T1696.001,Automate CAPTCHA Completion,stealth
+T1696.002,Avoid CAPTCHA,stealth
+T1697,Steal Application Specific Passwords,credential-access
+T1698,Indirect Prompt Injection,execution
+T1699,Direct Prompt Injection,execution
+T1700,AI-Enabled Exfiltration,exfiltration

@@ -21,7 +21,7 @@
     "technique_id": "T1001.003",
     "technique_name": "Protocol or Service Impersonation",
     "tactic": "command-and-control",
-    "families": "BADCALL|BOOKWORM|Bankshot|Cobalt Strike|FALLCHILL|FRAMESTING|FakeM|HARDRAIN|InvisiMole|KeyBoy|Ninja|Okrum|PUBLOAD|SUNBURST|StarProxy|TAINTEDSCRIBE|TONESHELL|Uroburos"
+    "families": "BADCALL|BOOKWORM|Bankshot|Cobalt Strike|FALLCHILL|FRAMESTING|FakeM|HARDRAIN|InvisiMole|KeyBoy|LIGHTRAIL|Ninja|Okrum|PUBLOAD|SUNBURST|StarProxy|TAINTEDSCRIBE|TONESHELL|Uroburos"
   },
   {
     "technique_id": "T1003",
@@ -54,6 +54,12 @@
     "families": "Okrum"
   },
   {
+    "technique_id": "T1003.006",
+    "technique_name": "DCSync",
+    "tactic": "credential-access",
+    "families": "DCSYNCER.SLICK"
+  },
+  {
     "technique_id": "T1003.007",
     "technique_name": "Proc Filesystem",
     "tactic": "credential-access",
@@ -63,7 +69,7 @@
     "technique_id": "T1005",
     "technique_name": "Data from Local System",
     "tactic": "collection",
-    "families": "Action RAT|Amadey|AppleSeed|AuTo Stealer|BADFLICK|BADNEWS|BLINDINGCAN|BRICKSTORM|BadPatch|Bandook|Bankshot|Bazar|BeaverTail|Bisonal|BlackMould|BoxCaon|Bumblebee|CASTLETAP|CHIMNEYSWEEP|Calisto|Caterpillar WebShell|CharmPower|China Chopper|Chrommme|Clambling|Cobalt Strike|CookieMiner|CosmicDuke|CreepyDrive|Crimson|Crutch|Cryptoistic|Cyclops Blink|DRATzarus|DUSTTRAP|DanBot|DarkGate|DarkWatchman|DnsSystem|Drovorub|Dtrack|EnvyScout|FLASHFLOOD|FatDuke|Flagpro|FlawedAmmyy|FoggyWeb|FrameworkPOS|FunnyDream|Gelsemium|GlassWorm|Goopy|GravityRAT|Green Lambert|GrimAgent|Havoc|HiddenFace|Hikit|Hydraq|IPsec Helper|IceApple|InvisiMole|InvisibleFerret|Ixeshe|KGH_SPY|KONNI|KOPILUWAK|Kazuar|Kevin|LAMEHUG|LODEINFO|Latrodectus|LightNeuron|Linfo|LoFiSe|MacMa|Machete|Mafalda|MarkiRAT|MgBot|Milan|Mis-Type|Misdat|MobileOrder|Mongall|Nebulae|Neoichor|NightClub|OSX_OCEANLOTUS.D|Octopus|OutSteel|P.A.S. Webshell|POWERSTATS|PUNCHTRACK|Pasam|Pcexter|Pillowmint|PinchDuke|PingPull|PoisonIvy|PowerLess|Proxysvc|QakBot|QuietSieve|RAPIDPULSE|RCSession|ROKRAT|Raccoon Stealer|RainyDay|Ramsay|RawPOS|RedLine Stealer|Rising Sun|Rover|SDBbot|SLIGHTPULSE|SLOTHFULMEDIA|SPAWNCHIMERA|STARWHALE|SUNBURST|SVCReady|Saint Bot|Samurai|Sardonic|Shark|SharpDisco|ShimRat|SideTwist|SombRAT|SpicyOmelette|StealBit|StrifeWater|SysUpdate|Taidoor|TajMahal|ThreatNeedle|TinyTurla|Tomiris|TrickBot|Troll Stealer|UPPERCUT|USBferry|Uroburos|Ursnif|WarzoneRAT|WellMail|WellMess|Woody RAT|XCSSET|Zox|ZxShell|ZxxZ|ccf32|metaMain|njRAT|xCaon|yty"
+    "families": "Action RAT|Amadey|AppleSeed|AuTo Stealer|BADFLICK|BADNEWS|BLINDINGCAN|BRICKSTORM|BadPatch|Bandook|Bankshot|Bazar|BeaverTail|Bisonal|BlackMould|BoxCaon|Bumblebee|CASTLETAP|CHIMNEYSWEEP|Calisto|Caterpillar WebShell|CharmPower|China Chopper|Chrommme|Clambling|Cobalt Strike|CookieMiner|CosmicDuke|CreepyDrive|Crimson|Crutch|Cryptoistic|Cyclops Blink|DCSYNCER.SLICK|DRATzarus|DUSTTRAP|DanBot|DarkGate|DarkWatchman|DnsSystem|Drovorub|Dtrack|EnvyScout|FLASHFLOOD|FatDuke|Flagpro|FlawedAmmyy|FoggyWeb|FrameworkPOS|FunnyDream|Gelsemium|GlassWorm|Goopy|GravityRAT|Green Lambert|GrimAgent|Havoc|HiddenFace|Hikit|Hydraq|IPsec Helper|IceApple|InvisiMole|InvisibleFerret|Ixeshe|KGH_SPY|KONNI|KOPILUWAK|Kazuar|Kevin|LAMEHUG|LODEINFO|Latrodectus|LightNeuron|Linfo|LoFiSe|MacMa|Machete|Mafalda|MarkiRAT|MgBot|Milan|MiniBike|MiniFast|Mis-Type|Misdat|MobileOrder|Mongall|Nebulae|Neoichor|NightClub|OSX_OCEANLOTUS.D|Octopus|OutSteel|P.A.S. Webshell|POWERSTATS|PUNCHTRACK|Pasam|Pcexter|Pillowmint|PinchDuke|PingPull|PoisonIvy|PowerLess|Proxysvc|QakBot|QuietSieve|RAPIDPULSE|RCSession|ROKRAT|Raccoon Stealer|RainyDay|Ramsay|RawPOS|RedLine Stealer|Rising Sun|Rover|SDBbot|SIGHTGRAB|SLIGHTPULSE|SLOTHFULMEDIA|SPAWNCHIMERA|STARWHALE|SUNBURST|SVCReady|Saint Bot|Samurai|Sardonic|Shark|SharpDisco|ShimRat|SideTwist|SombRAT|SpicyOmelette|StealBit|StrifeWater|SysUpdate|Taidoor|TajMahal|ThreatNeedle|TinyTurla|Tomiris|TrickBot|Troll Stealer|UPPERCUT|USBferry|Uroburos|Ursnif|Vidar|WarzoneRAT|WellMail|WellMess|Woody RAT|XCSSET|Zox|ZxShell|ZxxZ|ccf32|metaMain|njRAT|xCaon|yty"
   },
   {
     "technique_id": "T1007",
@@ -75,7 +81,7 @@
     "technique_id": "T1008",
     "technique_name": "Fallback Channels",
     "tactic": "command-and-control",
-    "families": "Anchor|AppleSeed|BISCUIT|Bazar|BlackEnergy|Bumblebee|CHOPSTICK|Cardinal RAT|CharmPower|Crutch|Derusbi|DustySky|Ebury|Exaramel for Linux|FatDuke|Gelsemium|GlassWorm|HOPLIGHT|HiddenFace|InvisiMole|JHUHUGIT|Kazuar|Kevin|Kwampirs|Linfo|Machete|Mini Shai-Hulud|MiniDuke|Mis-Type|NETEAGLE|OilBooster|PipeMon|QUADAGENT|QUIETEXIT|RDAT|RainyDay|S-Type|Shark|ShimRat|SideTwist|SslMM|Stuxnet|TAINTEDSCRIBE|TeamPCP Cloud Stealer|TinyTurla|TrickBot|Uroburos|Valak|WinMM|XTunnel"
+    "families": "Anchor|AppleSeed|BISCUIT|Bazar|BlackEnergy|Bumblebee|CHOPSTICK|Cardinal RAT|CharmPower|Crutch|DEEPROOT|Derusbi|DustySky|Ebury|Exaramel for Linux|FatDuke|Gelsemium|GlassWorm|HOPLIGHT|HiddenFace|InvisiMole|JHUHUGIT|Kazuar|Kevin|Kwampirs|Linfo|Machete|Mini Shai-Hulud|MiniDuke|Mis-Type|NETEAGLE|OilBooster|PipeMon|QUADAGENT|QUIETEXIT|RDAT|RainyDay|S-Type|Shark|ShimRat|SideTwist|SslMM|Stuxnet|TAINTEDSCRIBE|TeamPCP Cloud Stealer|TinyTurla|TrickBot|Uroburos|Valak|WinMM|XTunnel"
   },
   {
     "technique_id": "T1010",
@@ -105,7 +111,7 @@
     "technique_id": "T1016",
     "technique_name": "System Network Configuration Discovery",
     "tactic": "discovery",
-    "families": "Action RAT|Agent Tesla|Agent.btz|Amadey|Anchor|AppleSeed|Aria-body|Astaroth|Avaddon|Avenger|Azorult|BADCALL|BADFLICK|BLINDINGCAN|BLUELIGHT|BOLDMOVE|BabyShark|Backdoor.Oldrea|Bandook|Bazar|Bisonal|BlackEnergy|Bonadan|BoxCaon|Brave Prince|Calisto|CanisterWorm|Carbon|Catchamas|Caterpillar WebShell|CharmPower|Chrommme|Clambling|Cobalt Strike|Comnie|Conti|CreepySnail|Crimson|Cuba|Cyclops Blink|DEADEYE|DUSTTRAP|Denis|Diavol|Dtrack|Duqu|Dyre|EKANS|Elise|Emissary|Epic|Explosive|FALLCHILL|FELIXROOT|FatDuke|Felismus|Flagpro|FunnyDream|GeminiDuke|GoldMax|Gomir|Gootloader|Grandoreiro|GravityRAT|Green Lambert|GrimAgent|Havoc|HexEval Loader|HotCroissant|Hydraq|IceApple|IcedID|Industroyer|InvisiMole|InvisibleFerret|Ixeshe|J-magic|JHUHUGIT|JPIN|KEYMARBLE|KONNI|KOPILUWAK|Kazuar|Kessel|Kevin|KeyBoy|Kobalos|Kwampirs|LAMEHUG|LODEINFO|Latrodectus|LightNeuron|LiteDuke|Lizar|Lokibot|LoudMiner|Lucifer|LunarLoader|LunarWeb|MacMa|Machete|Mafalda|MagicRAT|Manjusaka|Milan|Mini Shai-Hulud|Mis-Type|MoonWind|More_eggs|Mosquito|NETWIRE|NGLite|NOKKI|Naid|NanHaiShu|NanoCore|Neoichor|Nightdoor|Ninja|OSInfo|OSX_OCEANLOTUS.D|OceanSalt|Octopus|Okrum|Olympic Destroyer|Orz|PLAINTEE|POWERSTATS|POWRUNER|PUBLOAD|Pay2Key|Penquin|Pikabot|PingPull|PipeMon|Pisloader|PlugX|PowerDuke|PowerShower|Prikormka|Proxysvc|Pysa|QUADAGENT|QUIETCANARY|QakBot|Qilin|RATANKBA|Ramsay|Reaver|RedLeaves|RedLine Stealer|Remsec|Revenge RAT|Rifdoor|Rising Sun|RogueRobin|Royal|Ryuk|S-Type|SDBbot|SHARPSTATS|STARWHALE|SUNBURST|Sagerunex|Saint Bot|Sardonic|ShadowPad|Shamoon|ShrinkLocker|Sibot|SideTwist|Small Sieve|SocGholish|SoreFang|SpeakUp|SpicyOmelette|Squirrelwaffle|StrongPity|Stuxnet|Sykipot|Sys10|SysUpdate|T9000|TSCookie|Taidoor|TajMahal|TeamPCP Cloud Stealer|Torisma|TrickBot|Trojan.Karagany|Troll Stealer|Turian|UPPERCUT|USBferry|Unknown Logger|VERMIN|Valak|Volgmer|WannaCry|WellMail|WellMess|Woody RAT|XORIndex Loader|Xbash|Zebrocy|ZeroT|cd00r|down_new|iKitten|jRAT|xCaon|yty|zwShell"
+    "families": "Action RAT|Agent Tesla|Agent.btz|Amadey|Anchor|AppleSeed|Aria-body|Astaroth|Avaddon|Avenger|Azorult|BADCALL|BADFLICK|BLINDINGCAN|BLUELIGHT|BOLDMOVE|BabyShark|Backdoor.Oldrea|Bandook|Bazar|Bisonal|BlackEnergy|Bonadan|BoxCaon|Brave Prince|Calisto|CanisterWorm|Carbon|Catchamas|Caterpillar WebShell|CharmPower|Chrommme|Clambling|Cobalt Strike|Comnie|Conti|CreepySnail|Crimson|Cuba|Cyclops Blink|DEADEYE|DUSTTRAP|Denis|Diavol|Dtrack|Duqu|Dyre|EKANS|Elise|Emissary|Epic|Explosive|FALLCHILL|FELIXROOT|FatDuke|Felismus|Flagpro|FunnyDream|GeminiDuke|GoldMax|Gomir|Gootloader|Grandoreiro|GravityRAT|Green Lambert|GrimAgent|Havoc|HexEval Loader|HotCroissant|Hydraq|IceApple|IcedID|Industroyer|InvisiMole|InvisibleFerret|Ixeshe|J-magic|JHUHUGIT|JPIN|KEYMARBLE|KONNI|KOPILUWAK|Kazuar|Kessel|Kevin|KeyBoy|Kobalos|Kwampirs|LAMEHUG|LODEINFO|Latrodectus|LightNeuron|LiteDuke|Lizar|Lokibot|LoudMiner|Lucifer|LunarLoader|LunarWeb|MacMa|Machete|Mafalda|MagicRAT|Manjusaka|Milan|Mini Shai-Hulud|Mis-Type|MoonWind|More_eggs|Mosquito|NETWIRE|NGLite|NOKKI|Naid|NanHaiShu|NanoCore|Neoichor|Nightdoor|Ninja|OSInfo|OSX_OCEANLOTUS.D|OceanSalt|Octopus|Okrum|Olympic Destroyer|Orz|PLAINTEE|POWERSTATS|POWRUNER|PUBLOAD|Pay2Key|Penquin|Pikabot|PingPull|PipeMon|Pisloader|PlugX|PowerDuke|PowerShower|Prikormka|Proxysvc|Pysa|QUADAGENT|QUIETCANARY|QakBot|Qilin|RATANKBA|Ramsay|Reaver|RedLeaves|RedLine Stealer|Remsec|Revenge RAT|Rifdoor|Rising Sun|RogueRobin|Royal|Ryuk|S-Type|SDBbot|SHARPSTATS|STARWHALE|SUNBURST|Sagerunex|Saint Bot|Sardonic|ShadowPad|Shamoon|ShrinkLocker|Sibot|SideTwist|Small Sieve|SocGholish|SoreFang|SpeakUp|SpicyOmelette|Squirrelwaffle|StrongPity|Stuxnet|Sykipot|Sys10|SysUpdate|T9000|TSCookie|Taidoor|TajMahal|TeamPCP Cloud Stealer|Torisma|TrickBot|Trojan.Karagany|Troll Stealer|Turian|UPPERCUT|USBferry|Unknown Logger|VERMIN|Valak|Vidar|Volgmer|WannaCry|WellMail|WellMess|Woody RAT|XORIndex Loader|Xbash|Zebrocy|ZeroT|cd00r|down_new|iKitten|jRAT|xCaon|yty|zwShell"
   },
   {
     "technique_id": "T1016.001",
@@ -123,7 +129,7 @@
     "technique_id": "T1018",
     "technique_name": "Remote System Discovery",
     "tactic": "discovery",
-    "families": "BADHATCH|Backdoor.Oldrea|Bazar|BitPaymer|Black Basta|BlackCat|CanisterWorm|Carbon|Cobalt Strike|Comnie|Conti|DRATzarus|DUSTTRAP|Diavol|Epic|Flagpro|FunnyDream|Gomir|Havoc|HermeticWizard|Industroyer|Kinsing|Kwampirs|LODEINFO|MURKYTOP|MgBot|OSInfo|Olympic Destroyer|PoetRAT|QakBot|Qilin|RATANKBA|RansomHub|Remsec|SHOTPUT|Shamoon|SpicyOmelette|Sykipot|TAINTEDSCRIBE|TrickBot|USBferry|WannaCry|njRAT|yty"
+    "families": "BACKUPOSINT v9.0 APEX PREDATOR|BADHATCH|Backdoor.Oldrea|Bazar|BitPaymer|Black Basta|BlackCat|CanisterWorm|Carbon|Cobalt Strike|Comnie|Conti|DRATzarus|DUSTTRAP|Diavol|Epic|Flagpro|FunnyDream|Gomir|Havoc|HermeticWizard|Industroyer|Kinsing|Kwampirs|LODEINFO|MURKYTOP|MgBot|OSInfo|Olympic Destroyer|PoetRAT|QakBot|Qilin|RATANKBA|RansomHub|Remsec|SHOTPUT|Shamoon|SpicyOmelette|Sykipot|TAINTEDSCRIBE|TrickBot|USBferry|WannaCry|njRAT|yty"
   },
   {
     "technique_id": "T1020",
@@ -141,13 +147,13 @@
     "technique_id": "T1021.001",
     "technique_name": "Remote Desktop Protocol",
     "tactic": "lateral-movement",
-    "families": "Carbanak|Cobalt Strike|DarkComet|Pysa|Revenge RAT|SDBbot|ServHelper|WarzoneRAT|ZxShell|jRAT|njRAT|reGeorg|zwShell"
+    "families": "Carbanak|Cobalt Strike|DarkComet|Pysa|Revenge RAT|SDBbot|ServHelper|The Gentlemen Ransomware|WarzoneRAT|ZxShell|jRAT|njRAT|reGeorg|zwShell"
   },
   {
     "technique_id": "T1021.002",
     "technique_name": "SMB/Windows Admin Shares",
     "tactic": "lateral-movement",
-    "families": "Anchor|BlackByte Ransomware|BlackEnergy|Cobalt Strike|Conficker|Conti|Diavol|Duqu|Emotet|HermeticWizard|Kwampirs|LockBit 2.0|LockBit 3.0|Lucifer|Net Crawler|NotPetya|Olympic Destroyer|Qilin|RansomHub|Regin|Royal|Ryuk|Shamoon|Stuxnet|Zox|reGeorg|zwShell"
+    "families": "Anchor|BlackByte Ransomware|BlackEnergy|Cobalt Strike|Conficker|Conti|Diavol|Duqu|Emotet|HermeticWizard|Kwampirs|LockBit 2.0|LockBit 3.0|Lucifer|Net Crawler|NotPetya|Olympic Destroyer|Qilin|RansomHub|Regin|Royal|Ryuk|Shamoon|Stuxnet|The Gentlemen Ransomware|Zox|reGeorg|zwShell"
   },
   {
     "technique_id": "T1021.003",
@@ -189,19 +195,19 @@
     "technique_id": "T1027",
     "technique_name": "Obfuscated Files or Information",
     "tactic": "stealth",
-    "families": "ADVSTORESHELL|ANELLDR|Action RAT|Agent Tesla|Amadey|Anchor|AppleJeus|AppleSeed|Avaddon|AvosLocker|BOOKWORM|BPFDoor|BRICKSTORM|BUSHWALK|BoomBox|BoxCaon|Bumblebee|Bundlore|CHIMNEYSWEEP|COATHANGER|CORESHELL|Carbanak|Carbon|Clambling|Cobalt Strike|CoinTicker|ComRAT|Comnie|Conficker|Conti|Cuba|DRATzarus|DarkGate|DarkTortilla|Daserf|Denis|Diavol|Dridex|Drovorub|DustySky|ECCENTRICBANDWAGON|EKANS|Ebury|Ecipekac|Epic|FatDuke|FinFisher|Final1stspy|Flagpro|Fooder|Gootloader|Green Lambert|GrimAgent|H1N1|HTTPBrowser|HTTPTroy|Hancitor|Hydraq|ISMInjector|Industroyer|InnaputRAT|InvisiMole|JPIN|Kazuar|KillDisk|Kobalos|LODEINFO|Lizar|Lokibot|Lumma Stealer|Matryoshka|Maze|MiniDuke|NETWIRE|NOKKI|NOOPLDR|NanoCore|NightClub|OLDBAIT|OopsIE|Orz|P.A.S. Webshell|POSHSPY|PUBLOAD|PUNCHBUGGY|PUNCHTRACK|Pillowmint|Pisloader|PlugX|PoetRAT|PoisonIvy|PolyglotDuke|PowerStallion|QakBot|ROKRAT|RTM|Ramsay|Raspberry Robin|RegDuke|RustyWater|Ryuk|SDBbot|SHOTPUT|SLOWPULSE|SUNBURST|SUNSPOT|SVCReady|Saint Bot|Samurai|Sardonic|ShadowPad|Shai-Hulud|Shamoon|Siloscape|Small Sieve|Snip3|SodaMaster|SombRAT|SoreFang|StreamEx|StrelaStealer|SynAck|TEARDROP|TajMahal|TrickBot|Trojan.Karagany|Turian|Valak|XTunnel|jRAT"
+    "families": "ADVSTORESHELL|ANELLDR|Action RAT|Agent Tesla|Amadey|Anchor|AppleJeus|AppleSeed|Avaddon|AvosLocker|BOOKWORM|BPFDoor|BRICKSTORM|BUSHWALK|BoomBox|BoxCaon|Bumblebee|Bundlore|CHIMNEYSWEEP|COATHANGER|CORESHELL|Carbanak|Carbon|Clambling|Cobalt Strike|CoinTicker|ComRAT|Comnie|Conficker|Conti|Cuba|DRATzarus|DarkGate|DarkTortilla|Daserf|Denis|Diavol|Dridex|Drovorub|DustySky|ECCENTRICBANDWAGON|EKANS|Ebury|Ecipekac|Epic|FatDuke|FinFisher|Final1stspy|Flagpro|Fooder|Gootloader|Green Lambert|GrimAgent|H1N1|HTTPBrowser|HTTPTroy|Hancitor|Hydraq|ISMInjector|Industroyer|InnaputRAT|InvisiMole|JPIN|Kazuar|KillDisk|Kobalos|LODEINFO|Lizar|Lokibot|Lumma Stealer|Matryoshka|Maze|MiniBrowse|MiniDuke|MiniJunk|NETWIRE|NOKKI|NOOPLDR|NanoCore|NightClub|OLDBAIT|OopsIE|Orz|P.A.S. Webshell|POSHSPY|PUBLOAD|PUNCHBUGGY|PUNCHTRACK|Pillowmint|Pisloader|PlugX|PoetRAT|PoisonIvy|PolyglotDuke|PowerStallion|QakBot|ROKRAT|RTM|Ramsay|Raspberry Robin|RegDuke|RustyWater|Ryuk|SDBbot|SHOTPUT|SLOWPULSE|SUNBURST|SUNSPOT|SVCReady|Saint Bot|Samurai|Sardonic|ShadowPad|Shai-Hulud|Shamoon|Siloscape|Small Sieve|Snip3|SodaMaster|SombRAT|SoreFang|StreamEx|StrelaStealer|SynAck|TEARDROP|TajMahal|The Gentlemen Ransomware|TrickBot|Trojan.Karagany|Turian|Valak|Vidar|XTunnel|jRAT"
   },
   {
     "technique_id": "T1027.001",
     "technique_name": "Binary Padding",
     "tactic": "stealth",
-    "families": "Bisonal|Black Basta|CHIMNEYSWEEP|Caminho|Comnie|CostaBricks|Emissary|Emotet|Goopy|Grandoreiro|GrimAgent|HeartCrypt|Javali|Kwampirs|Latrodectus|LightSpy|PlugX|QakBot|Rifdoor|Snip3|TAINTEDSCRIBE|TONESHELL"
+    "families": "Bisonal|Black Basta|CHIMNEYSWEEP|Caminho|Comnie|CostaBricks|Emissary|Emotet|Goopy|Grandoreiro|GrimAgent|HeartCrypt|Javali|Kwampirs|Latrodectus|LightSpy|PlugX|QakBot|Rifdoor|Snip3|TAINTEDSCRIBE|TONESHELL|Vidar"
   },
   {
     "technique_id": "T1027.002",
     "technique_name": "Software Packing",
     "tactic": "stealth",
-    "families": "Anchor|AppleSeed|Astaroth|BLINDINGCAN|Babuk|Bazar|Bisonal|COATHANGER|China Chopper|Clop|CostaBricks|Cuba|DRATzarus|DarkComet|Daserf|Dok|Dyre|Egregor|Emotet|FYAnti|FatDuke|FinFisher|GoldMax|GreyEnergy|H1N1|HeartCrypt|Hildegard|HotCroissant|HyperBro|IcedID|KONNI|Latrodectus|LiteDuke|LockBit 3.0|Lokibot|Lucifer|Machete|Melcoz|Metamorfo|Misdat|Mongall|NETWIRE|OSX_OCEANLOTUS.D|OopsIE|QakBot|Raindrop|Raspberry Robin|RedLine Stealer|S-Type|SDBbot|Sagerunex|Saint Bot|SeaDuke|ShimRat|Spark|Squirrelwaffle|StrelaStealer|SysUpdate|Tomiris|Torisma|TrickBot|Trojan.Karagany|Troll Stealer|Uroburos|VERMIN|Valak|XLoader|Zebrocy|ZeroT|jRAT|yty"
+    "families": "Anchor|AppleSeed|Astaroth|BLINDINGCAN|Babuk|Bazar|Bisonal|COATHANGER|China Chopper|Clop|CostaBricks|Cuba|DRATzarus|DarkComet|Daserf|Dok|Dyre|Egregor|Emotet|FYAnti|FatDuke|FinFisher|GoldMax|GreyEnergy|H1N1|HeartCrypt|Hildegard|HotCroissant|HyperBro|IOControl|IcedID|KONNI|Latrodectus|LiteDuke|LockBit 3.0|Lokibot|Lucifer|Machete|Melcoz|Metamorfo|Misdat|Mongall|NETWIRE|OSX_OCEANLOTUS.D|OopsIE|QakBot|Raindrop|Raspberry Robin|RedLine Stealer|S-Type|SDBbot|Sagerunex|Saint Bot|SeaDuke|ShimRat|Spark|Squirrelwaffle|StrelaStealer|SysUpdate|Tomiris|Torisma|TrickBot|Trojan.Karagany|Troll Stealer|Uroburos|VERMIN|Valak|XLoader|Zebrocy|ZeroT|jRAT|yty"
   },
   {
     "technique_id": "T1027.003",
@@ -219,7 +225,7 @@
     "technique_id": "T1027.005",
     "technique_name": "Indicator Removal from Tools",
     "tactic": "stealth",
-    "families": "Cobalt Strike|Daserf|GravityRAT|InvisiMole|Penquin|QakBot|SUNBURST|Waterbear"
+    "families": "Cobalt Strike|Daserf|GravityRAT|InvisiMole|Penquin|QakBot|SUNBURST|Vidar|Waterbear"
   },
   {
     "technique_id": "T1027.006",
@@ -231,7 +237,7 @@
     "technique_id": "T1027.007",
     "technique_name": "Dynamic API Resolution",
     "tactic": "stealth",
-    "families": "AvosLocker|Bazar|CANONSTAGER|CHIMNEYSWEEP|CLAIMLOADER|HTTPTroy|HiddenFace|LODEINFO|LP-Notes|Latrodectus|PlugX|Pteranodon|Raccoon Stealer|Samurai|SplatDropper|TONESHELL"
+    "families": "AvosLocker|Bazar|CANONSTAGER|CHIMNEYSWEEP|CLAIMLOADER|DCSYNCER.SLICK|HTTPTroy|HiddenFace|LODEINFO|LP-Notes|Latrodectus|PlugX|Pteranodon|Raccoon Stealer|Samurai|SplatDropper|TONESHELL"
   },
   {
     "technique_id": "T1027.008",
@@ -249,7 +255,7 @@
     "technique_id": "T1027.010",
     "technique_name": "Command Obfuscation",
     "tactic": "stealth",
-    "families": "Astaroth|BADHATCH|BackConfig|CARROTBAT|ComRAT|CookieMiner|DarkWatchman|Denis|Emotet|FruitFly|Havoc|IceApple|IronWind|KOCTOPUS|LoudMiner|Machete|Netwalker|PHASEJAM|POWERSTATS|PoetRAT|PowerPunch|QUADAGENT|QakBot|RedLine Stealer|RogueRobin|SHARPSTATS|SQLRat|Sardonic|Sibot|Tsundere Botnet|Ursnif|XORIndex Loader|Zeus Panda"
+    "families": "Astaroth|BADHATCH|BackConfig|CARROTBAT|ComRAT|CookieMiner|DarkWatchman|Denis|Emotet|FruitFly|Havoc|IceApple|IronWind|KOCTOPUS|LoudMiner|Machete|Netwalker|PHASEJAM|POWERSTATS|PoetRAT|PowerPunch|QUADAGENT|QakBot|RedLine Stealer|RogueRobin|SHARPSTATS|SQLRat|Sardonic|Sibot|The Gentlemen Ransomware|Tsundere Botnet|Ursnif|XORIndex Loader|Zeus Panda"
   },
   {
     "technique_id": "T1027.011",
@@ -267,7 +273,7 @@
     "technique_id": "T1027.013",
     "technique_name": "Encrypted/Encoded File",
     "tactic": "stealth",
-    "families": "ANELLDR|Aria-body|AshTag|Astaroth|Attor|AuditCred|Avenger|BLINDINGCAN|BLUELIGHT|BOOKWORM|BOOSTWRITE|BRICKSTORM|Bazar|BeaverTail|BendyBear|Bisonal|BitPaymer|BlackByte Ransomware|CARROTBAT|Caminho|Carberp|Cardinal RAT|Chinoxy|Chrommme|CorKLOG|CozyCar|Cuckoo Stealer|DCSrv|DEADEYE|DEADWOOD|DOGCALL|DOWNIISSA|DRYHOOK|DUSTPAN|DUSTTRAP|Dacls|DanBot|DarkGate|Elise|Embargo|Emissary|Emotet|EnvyScout|Exaramel for Linux|FELIXROOT|FIVEHANDS|FlawedGrace|FoggyWeb|FunnyDream|Fysbis|Gazer|GlassWorm|GoldMax|GoldenSpy|Grandoreiro|GravityRAT|GreyEnergy|HAWKBALL|HOMEFRY|HeartCrypt|Helminth|HermeticWizard|HexEval Loader|Heyoka Backdoor|Hi-Zor|HiddenFace|HiddenWasp|Hildegard|HotCroissant|HyperBro|IPsec Helper|IcedID|InvisibleFerret|JHUHUGIT|KEYPLUG|KGH_SPY|KONNI|Kapeka|Kerrdown|Kessel|Kevin|KeyBoy|Kwampirs|LODEINFO|LP-Notes|Latrodectus|LightNeuron|LightSpy|LockBit 3.0|LoudMiner|Lumma Stealer|LunarMail|LunarWeb|MEDUSA|MOPSLED|Mafalda|MagicRAT|Mango|Medusa Ransomware|Metamorfo|Micropsia|Milan|Mini Shai-Hulud|Mispadu|More_eggs|Mosquito|NOOPLDR|NanHaiShu|Ninja|OSX_OCEANLOTUS.D|PAKLOG|PHASEJAM|PHPsert|PS1|Penquin|PipeMon|PlugX|Prikormka|PureCrypter|PyDCrypt|Qilin|RAPIDPULSE|REvil|ROADSWEEP|ROAMINGHOUSE|Raccoon Stealer|Raindrop|RainyDay|RansomHub|Reaver|RedLeaves|RedLine Stealer|Remexi|Remsec|Rifdoor|Rising Sun|RustyWater|SPAWNCHIMERA|STARWHALE|SUPERNOVA|Sagerunex|Sakula|SamSam|Seasalt|Shark|Skidmap|Smoke Loader|SocGholish|SpeakUp|SplatDropper|Squirrelwaffle|StealBit|StoneDrill|StrelaStealer|StrongPity|Stuxnet|SysUpdate|TINYTYPHON|TYPEFRAME|Taidoor|TeamPCP Cloud Stealer|ThreatNeedle|Torisma|TrickBot|Tsundere Botnet|UPSTYLE|USBStealer|Uroburos|Ursnif|VERMIN|VersaMem|Volgmer|WastedLocker|Waterbear|WhisperGate|WindTail|Winnti for Linux|Winnti for Windows|Woody RAT|XCSSET|XLoader|XORIndex Loader|YAHOYAH|ZeroT|Zeus Panda|Zox|ZxxZ|metaMain|njRAT"
+    "families": "ANELLDR|Aria-body|AshTag|Astaroth|Attor|AuditCred|Avenger|BLINDINGCAN|BLUELIGHT|BOOKWORM|BOOSTWRITE|BRICKSTORM|Bazar|BeaverTail|BendyBear|Bisonal|BitPaymer|BlackByte Ransomware|CARROTBAT|Caminho|Carberp|Cardinal RAT|Chinoxy|Chrommme|CorKLOG|CozyCar|Cuckoo Stealer|DCSYNCER.SLICK|DCSrv|DEADEYE|DEADWOOD|DOGCALL|DOWNIISSA|DRYHOOK|DUSTPAN|DUSTTRAP|Dacls|DanBot|DarkGate|Elise|Embargo|Emissary|Emotet|EnvyScout|Exaramel for Linux|FELIXROOT|FIVEHANDS|FlawedGrace|FoggyWeb|FunnyDream|Fysbis|Gazer|GlassWorm|GoldMax|GoldenSpy|Grandoreiro|GravityRAT|GreyEnergy|HAWKBALL|HOMEFRY|HeartCrypt|Helminth|HermeticWizard|HexEval Loader|Heyoka Backdoor|Hi-Zor|HiddenFace|HiddenWasp|Hildegard|HotCroissant|HyperBro|IOControl|IPsec Helper|IcedID|InvisibleFerret|JHUHUGIT|KEYPLUG|KGH_SPY|KONNI|Kapeka|Kerrdown|Kessel|Kevin|KeyBoy|Kwampirs|LODEINFO|LP-Notes|Latrodectus|LightNeuron|LightSpy|LockBit 3.0|LoudMiner|Lumma Stealer|LunarMail|LunarWeb|MEDUSA|MOPSLED|Mafalda|MagicRAT|Mango|Medusa Ransomware|Metamorfo|Micropsia|Milan|Mini Shai-Hulud|MiniBrowse|MiniJunk|Mispadu|More_eggs|Mosquito|NOOPLDR|NanHaiShu|Ninja|OSX_OCEANLOTUS.D|PAKLOG|PHASEJAM|PHPsert|PS1|Penquin|PipeMon|PlugX|Prikormka|PureCrypter|PyDCrypt|Qilin|RAPIDPULSE|REvil|ROADSWEEP|ROAMINGHOUSE|Raccoon Stealer|Raindrop|RainyDay|RansomHub|Reaver|RedLeaves|RedLine Stealer|Remexi|Remsec|Rifdoor|Rising Sun|RustyWater|SIGHTGRAB|SPAWNCHIMERA|STARWHALE|SUPERNOVA|Sagerunex|Sakula|SamSam|Seasalt|Shark|Skidmap|Smoke Loader|SocGholish|SpeakUp|SplatDropper|Squirrelwaffle|StealBit|StoneDrill|StrelaStealer|StrongPity|Stuxnet|SysUpdate|TINYTYPHON|TWOSTROKE|TYPEFRAME|Taidoor|TeamPCP Cloud Stealer|ThreatNeedle|Torisma|TrickBot|Tsundere Botnet|UPSTYLE|USBStealer|Uroburos|Ursnif|VERMIN|VersaMem|Vidar|Volgmer|WastedLocker|Waterbear|WhisperGate|WindTail|Winnti for Linux|Winnti for Windows|Woody RAT|XCSSET|XLoader|XORIndex Loader|YAHOYAH|ZeroT|Zeus Panda|Zox|ZxxZ|metaMain|njRAT"
   },
   {
     "technique_id": "T1027.014",
@@ -279,13 +285,13 @@
     "technique_id": "T1027.015",
     "technique_name": "Compression",
     "tactic": "stealth",
-    "families": "BADHATCH|DarkWatchman|Gelsemium|Hancitor|HermeticWiper|Kerrdown|LODEINFO|Line Runner|Ninja|PUBLOAD|Pandora|Pillowmint|Pony|RCSession|RTM|SUNBURST|Samurai|ShimRat|SocGholish|StrelaStealer|ThreatNeedle|WindTail|Winnti for Windows"
+    "families": "BADHATCH|DarkWatchman|Gelsemium|Hancitor|HermeticWiper|Kerrdown|LODEINFO|Line Runner|MiniBike|MiniFast|MiniJunk|Ninja|PUBLOAD|Pandora|Pillowmint|Pony|RCSession|RTM|SUNBURST|Samurai|ShimRat|SocGholish|StrelaStealer|ThreatNeedle|WindTail|Winnti for Windows"
   },
   {
     "technique_id": "T1027.016",
     "technique_name": "Junk Code Insertion",
     "tactic": "stealth",
-    "families": "ANELLDR|CORESHELL|FatDuke|FinFisher|Gelsemium|Goopy|LODEINFO|Maze|NOOPLDR|POWERSTATS|Pony|PureCrypter|SamSam|StrelaStealer|WastedLocker|XTunnel|ZeroT|yty"
+    "families": "ANELLDR|CORESHELL|FatDuke|FinFisher|Gelsemium|Goopy|LODEINFO|Maze|MiniBrowse|MiniJunk|NOOPLDR|POWERSTATS|Pony|PureCrypter|SamSam|StrelaStealer|WastedLocker|XTunnel|ZeroT|yty"
   },
   {
     "technique_id": "T1027.018",
@@ -309,7 +315,7 @@
     "technique_id": "T1033",
     "technique_name": "System Owner/User Discovery",
     "tactic": "discovery",
-    "families": "Action RAT|Agent Tesla|Agent.btz|Amadey|Aria-body|AuTo Stealer|Azorult|BADHATCH|BISCUIT|BLUELIGHT|BOOKWORM|BabyShark|Backdoor.Oldrea|Bazar|BlackCat|Bonadan|BoomBox|Bumblebee|CHIMNEYSWEEP|CanisterWorm|Cannon|Cardinal RAT|Caterpillar WebShell|Chaes|Chrommme|Clambling|CreepySnail|Crimson|Cryptoistic|Cuckoo Stealer|DRATzarus|DarkComet|DarkWatchman|Denis|Derusbi|Diavol|DnsSystem|DownPaper|Dyre|EVILNUM|Egregor|Emotet|Epic|Exaramel for Linux|Explosive|FELIXROOT|Felismus|Flagpro|FlawedAmmyy|FunnyDream|Gazer|Gelsemium|Get2|Gold Dragon|Goopy|Grandoreiro|GravityRAT|GrimAgent|HAPPYWORK|HAWKBALL|Havoc|HexEval Loader|HiddenFace|HotCroissant|InvisiMole|InvisibleFerret|IronWind|Ixeshe|JPIN|KONNI|KOPILUWAK|Kazuar|Komplex|Kwampirs|LAMEHUG|LODEINFO|Latrodectus|Linux Rabbit|LiteDuke|LitePower|Lizar|Lokibot|Lucifer|LunarWeb|MacMa|Mafalda|Mango|MarkiRAT|MechaFlounder|Metamorfo|MgBot|Micropsia|Milan|Mini Shai-Hulud|MirageFox|Mis-Type|MoonWind|More_eggs|Mosquito|NDiskMonitor|NGLite|NOKKI|NanHaiShu|Neoichor|Nightdoor|ObliqueRAT|Octopus|OilBooster|Okrum|POWERSTATS|POWRUNER|PUBLOAD|PlugX|PoetRAT|PowerDuke|PowerShower|Prikormka|PureCrypter|PyDCrypt|QUADAGENT|QakBot|RATANKBA|RCSession|RGDoor|ROKRAT|RTM|Raccoon Stealer|Raspberry Robin|Reaver|RedLeaves|RedLine Stealer|Remsec|Revenge RAT|Rifdoor|Rising Sun|RogueRobin|RustyWater|S-Type|SDBbot|SHARPSTATS|SLOTHFULMEDIA|SMOKEDHAM|STARWHALE|SUNBURST|SVCReady|Saint Bot|ServHelper|ShadowPad|SideTwist|Small Sieve|SocGholish|SodaMaster|SombRAT|Spark|SpeakUp|Squirrelwaffle|SslMM|StrifeWater|SynAck|Sys10|SysUpdate|T9000|TONESHELL|TeamPCP Cloud Stealer|TrickBot|Trojan.Karagany|Turian|UPPERCUT|Unknown Logger|VERMIN|Valak|WINDSHIELD|WINERACK|WellMail|WellMess|WinMM|Woody RAT|XAgentOSX|XLoader|XORIndex Loader|Zebrocy|ZxShell|ZxxZ|metaMain|njRAT|yty|zwShell"
+    "families": "Action RAT|Agent Tesla|Agent.btz|Amadey|Aria-body|AuTo Stealer|Azorult|BADHATCH|BISCUIT|BLUELIGHT|BOOKWORM|BabyShark|Backdoor.Oldrea|Bazar|BlackCat|Bonadan|BoomBox|Bumblebee|CHIMNEYSWEEP|CanisterWorm|Cannon|Cardinal RAT|Caterpillar WebShell|Chaes|Chrommme|Clambling|CreepySnail|Crimson|Cryptoistic|Cuckoo Stealer|DEEPROOT|DRATzarus|DarkComet|DarkWatchman|Denis|Derusbi|Diavol|DnsSystem|DownPaper|Dyre|EVILNUM|Egregor|Emotet|Epic|Exaramel for Linux|Explosive|FELIXROOT|Felismus|Flagpro|FlawedAmmyy|FunnyDream|Gazer|Gelsemium|Get2|Gold Dragon|Goopy|Grandoreiro|GravityRAT|GrimAgent|HAPPYWORK|HAWKBALL|Havoc|HexEval Loader|HiddenFace|HotCroissant|IOControl|InvisiMole|InvisibleFerret|IronWind|Ixeshe|JPIN|KONNI|KOPILUWAK|Kazuar|Komplex|Kwampirs|LAMEHUG|LODEINFO|Latrodectus|Linux Rabbit|LiteDuke|LitePower|Lizar|Lokibot|Lucifer|LunarWeb|MacMa|Mafalda|Mango|MarkiRAT|MechaFlounder|Metamorfo|MgBot|Micropsia|Milan|Mini Shai-Hulud|MiniBrowse|MiniFast|MiniJunk|MirageFox|Mis-Type|MoonWind|More_eggs|Mosquito|NDiskMonitor|NGLite|NOKKI|NanHaiShu|Neoichor|Nightdoor|ObliqueRAT|Octopus|OilBooster|Okrum|POWERSTATS|POWRUNER|PUBLOAD|PlugX|PoetRAT|PowerDuke|PowerShower|Prikormka|PureCrypter|PyDCrypt|QUADAGENT|QakBot|RATANKBA|RCSession|RGDoor|ROKRAT|RTM|Raccoon Stealer|Raspberry Robin|Reaver|RedLeaves|RedLine Stealer|Remsec|Revenge RAT|Rifdoor|Rising Sun|RogueRobin|RustyWater|S-Type|SDBbot|SHARPSTATS|SLOTHFULMEDIA|SMOKEDHAM|STARWHALE|SUNBURST|SVCReady|Saint Bot|ServHelper|ShadowPad|SideTwist|Small Sieve|SocGholish|SodaMaster|SombRAT|Spark|SpeakUp|Squirrelwaffle|SslMM|StrifeWater|SynAck|Sys10|SysUpdate|T9000|TONESHELL|TWOSTROKE|TeamPCP Cloud Stealer|TrickBot|Trojan.Karagany|Turian|UPPERCUT|Unknown Logger|VERMIN|Valak|WINDSHIELD|WINERACK|WellMail|WellMess|WinMM|Woody RAT|XAgentOSX|XLoader|XORIndex Loader|Zebrocy|ZxShell|ZxxZ|metaMain|njRAT|yty|zwShell"
   },
   {
     "technique_id": "T1036",
@@ -321,7 +327,7 @@
     "technique_id": "T1036.001",
     "technique_name": "Invalid Code Signature",
     "tactic": "stealth",
-    "families": "BADNEWS|Gelsemium|NETWIRE|Regin|SplatCloak|WindTail"
+    "families": "BADNEWS|Gelsemium|NETWIRE|Regin|SplatCloak|Vidar|WindTail"
   },
   {
     "technique_id": "T1036.003",
@@ -333,13 +339,13 @@
     "technique_id": "T1036.004",
     "technique_name": "Masquerade Task or Service",
     "tactic": "stealth",
-    "families": "Attor|BOOKWORM|Bazar|Black Basta|CanisterWorm|Catchamas|ComRAT|Crutch|DCSrv|DEADEYE|DEADWOOD|Egregor|Emotet|Exaramel for Windows|FunnyDream|Fysbis|GoldMax|Green Lambert|Heyoka Backdoor|Hildegard|InnaputRAT|InvisiMole|KONNI|KillDisk|Kwampirs|Machete|Maze|Meteor|Nebulae|Nidiran|NightClub|OSX_OCEANLOTUS.D|Okrum|POWERSTATS|PingPull|PlugX|Qilin|RDAT|RTM|RainyDay|Raspberry Robin|RawPOS|SLOTHFULMEDIA|SUGARDUMP|SVCReady|Seasalt|Shamoon|ShimRat|Spica|StrongPity|SysUpdate|TONESHELL|Tarrask|TinyTurla|Truvasys|Turian|Uroburos|VIRTUALPITA|Volgmer|ZxxZ|build_downer"
+    "families": "Attor|BOOKWORM|Bazar|Black Basta|CanisterWorm|Catchamas|ComRAT|Crutch|DCSrv|DEADEYE|DEADWOOD|Egregor|Emotet|Exaramel for Windows|FunnyDream|Fysbis|GoldMax|Green Lambert|Heyoka Backdoor|Hildegard|InnaputRAT|InvisiMole|KONNI|KillDisk|Kwampirs|Machete|Maze|Meteor|Nebulae|Nidiran|NightClub|OSX_OCEANLOTUS.D|Okrum|POWERSTATS|PingPull|PlugX|Qilin|RDAT|RTM|RainyDay|Raspberry Robin|RawPOS|SLOTHFULMEDIA|SUGARDUMP|SVCReady|Seasalt|Shamoon|ShimRat|Spica|StrongPity|SysUpdate|TONESHELL|Tarrask|The Gentlemen Ransomware|TinyTurla|Truvasys|Turian|Uroburos|VIRTUALPITA|Volgmer|ZxxZ|build_downer"
   },
   {
     "technique_id": "T1036.005",
     "technique_name": "Match Legitimate Resource Name or Location",
     "tactic": "stealth",
-    "families": "ANDROMEDA|AppleSeed|AshTag|BADNEWS|BLINDINGCAN|BRICKSTORM|BackConfig|Bad Rabbit|Bazar|Bisonal|Black Basta|Bumblebee|Bundlore|CANONSTAGER|CLAIMLOADER|Calisto|CanisterWorm|Carberp|ChChes|Chaes|Chinoxy|Cuba|Cuckoo Stealer|Cyclops Blink|DRATzarus|DUSTPAN|DanBot|DarkComet|Daserf|Doki|Dtrack|EKANS|Elise|Felismus|FinFisher|FoggyWeb|Fooder|Fysbis|Gelsemium|GoBear|GoldMax|GoldenSpy|Goopy|Grandoreiro|Green Lambert|HTTPBrowser|HermeticWiper|HermeticWizard|HexEval Loader|IceApple|IcedID|InnaputRAT|InvisiMole|Ixeshe|J-magic|KGH_SPY|KOCTOPUS|KONNI|LAMEHUG|Latrodectus|LightNeuron|LookBack|Machete|MagicRAT|MarkiRAT|MechaFlounder|Metamorfo|Mini Shai-Hulud|Mis-Type|Misdat|NETWIRE|NOKKI|Nebulae|NightClub|Ninja|OLDBAIT|OSX/Shlayer|Octopus|OutSteel|OwaAuth|PUBLOAD|PUNCHBUGGY|Penquin|PipeMon|PlugX|PowGoop|PureCrypter|PyDCrypt|Pysa|QUADAGENT|QUIETEXIT|Qilin|RDAT|REvil|Raindrop|RainyDay|Ramsay|Remsec|RotaJakiro|RustyWater|Ryuk|S-Type|SLOTHFULMEDIA|STATICPLUGIN|SUGARDUMP|SUNBURST|SUNSPOT|SUPERNOVA|Saint Bot|SameCoin|Samurai|Shai-Hulud|Shark|Sibot|Skidmap|Small Sieve|SocGholish|SslMM|Starloader|StrelaStealer|StrifeWater|StrongPity|TAINTEDSCRIBE|TEARDROP|TONESHELL|TRANSLATEXT|Tarrask|TeamPCP Cloud Stealer|ThiefQuest|ThreatNeedle|TinyTurla|Troll Stealer|Tsundere Botnet|USBStealer|Ursnif|VIRTUALPITA|Winnti for Windows|XORIndex Loader|ZLib"
+    "families": "ANDROMEDA|AppleSeed|AshTag|BADNEWS|BLINDINGCAN|BRICKSTORM|BackConfig|Bad Rabbit|Bazar|Bisonal|Black Basta|Bumblebee|Bundlore|CANONSTAGER|CLAIMLOADER|Calisto|CanisterWorm|Carberp|ChChes|Chaes|Chinoxy|Cuba|Cuckoo Stealer|Cyclops Blink|DCSYNCER.SLICK|DRATzarus|DUSTPAN|DanBot|DarkComet|Daserf|Doki|Dtrack|EKANS|Elise|Felismus|FinFisher|FoggyWeb|Fooder|Fysbis|Gelsemium|GoBear|GoldMax|GoldenSpy|Goopy|Grandoreiro|Green Lambert|HTTPBrowser|HermeticWiper|HermeticWizard|HexEval Loader|IceApple|IcedID|InnaputRAT|InvisiMole|Ixeshe|J-magic|KGH_SPY|KOCTOPUS|KONNI|LAMEHUG|Latrodectus|LightNeuron|LookBack|Machete|MagicRAT|MarkiRAT|MechaFlounder|Metamorfo|Mini Shai-Hulud|Mis-Type|Misdat|NETWIRE|NOKKI|Nebulae|NightClub|Ninja|OLDBAIT|OSX/Shlayer|Octopus|OutSteel|OwaAuth|PUBLOAD|PUNCHBUGGY|Penquin|PipeMon|PlugX|PowGoop|PureCrypter|PyDCrypt|Pysa|QUADAGENT|QUIETEXIT|Qilin|RDAT|REvil|Raindrop|RainyDay|Ramsay|Remsec|RotaJakiro|RustyWater|Ryuk|S-Type|SLOTHFULMEDIA|STATICPLUGIN|SUGARDUMP|SUNBURST|SUNSPOT|SUPERNOVA|Saint Bot|SameCoin|Samurai|Shai-Hulud|Shark|Sibot|Skidmap|Small Sieve|SocGholish|SslMM|Starloader|StrelaStealer|StrifeWater|StrongPity|TAINTEDSCRIBE|TEARDROP|TONESHELL|TRANSLATEXT|Tarrask|TeamPCP Cloud Stealer|ThiefQuest|ThreatNeedle|TinyTurla|Troll Stealer|Tsundere Botnet|USBStealer|Ursnif|VIRTUALPITA|Vidar|Winnti for Windows|XORIndex Loader|ZLib"
   },
   {
     "technique_id": "T1036.006",
@@ -381,7 +387,7 @@
     "technique_id": "T1036.012",
     "technique_name": "Browser Fingerprint",
     "tactic": "stealth",
-    "families": "FatDuke"
+    "families": "FatDuke|LIGHTRAIL|MiniFast"
   },
   {
     "technique_id": "T1037",
@@ -396,10 +402,16 @@
     "families": "Attor|JHUHUGIT|KGH_SPY|Zebrocy"
   },
   {
+    "technique_id": "T1037.003",
+    "technique_name": "Network Logon Script",
+    "tactic": "persistence|privilege-escalation",
+    "families": "The Gentlemen Ransomware"
+  },
+  {
     "technique_id": "T1037.004",
     "technique_name": "RC Scripts",
     "tactic": "persistence|privilege-escalation",
-    "families": "Cyclops Blink|Green Lambert|HiddenWasp|iKitten"
+    "families": "Cyclops Blink|Green Lambert|HiddenWasp|IOControl|The Gentlemen Ransomware|iKitten"
   },
   {
     "technique_id": "T1037.005",
@@ -423,19 +435,19 @@
     "technique_id": "T1041",
     "technique_name": "Exfiltration Over C2 Channel",
     "tactic": "exfiltration",
-    "families": "ADVSTORESHELL|Amadey|AppleJeus|AppleSeed|AshTag|Astaroth|Attor|AuTo Stealer|BACKSPACE|BADHATCH|BLINDINGCAN|BLUELIGHT|BRICKSTORM|Bandook|Bankshot|BeaverTail|Bisonal|BoxCaon|Bumblebee|CHIMNEYSWEEP|CallMe|Cannon|Carberp|Caterpillar WebShell|CharmPower|Chrommme|CreepySnail|Crimson|Crutch|Cuckoo Stealer|Cyclops Blink|DUSTTRAP|DarkGate|DnsSystem|Doki|Drovorub|DustySky|Dyre|EVILNUM|Ebury|Emotet|Flagpro|FlawedAmmyy|FoggyWeb|FunnyDream|GoldMax|GoldenSpy|Goopy|Grandoreiro|GrimAgent|HAWKBALL|HOPLIGHT|HTTPTroy|HexEval Loader|HotCroissant|IPsec Helper|IceApple|Industroyer|InvisibleFerret|KGH_SPY|KONNI|KOPILUWAK|Kessel|Kevin|LAMEHUG|LODEINFO|Latrodectus|LightNeuron|LightSpy|Line Dancer|Line Runner|LitePower|Lokibot|Lumma Stealer|LunarMail|MacMa|Machete|Mafalda|MagicRAT|Mango|Manjusaka|MarkiRAT|MechaFlounder|Metamorfo|Mini Shai-Hulud|Mis-Type|Misdat|Mispadu|MobileOrder|Mongall|MuddyViper|NETEAGLE|NightClub|ODAgent|Octopus|OilBooster|Okrum|OopsIE|OutSteel|PHASEJAM|Penquin|Pikabot|PingPull|PlugX|PoetRAT|PowerExchange|PowerShower|Proxysvc|Psylo|Pteranodon|QakBot|RDAT|REvil|ROKRAT|Raccoon Stealer|RedLine Stealer|Remexi|Rising Sun|RotaJakiro|S-Type|SDBbot|SLOTHFULMEDIA|SMOKEDHAM|STARWHALE|SUGARDUMP|SVCReady|Sagerunex|Shai-Hulud|Shark|SharpDisco|ShrinkLocker|SideTwist|Solar|SombRAT|Spark|Squirrelwaffle|StrelaStealer|StrifeWater|StrongPity|Stuxnet|SysUpdate|TRANSLATEXT|TajMahal|TeamPCP Cloud Stealer|ThiefQuest|Tomiris|Torisma|TrickBot|Troll Stealer|Ursnif|Valak|WarzoneRAT|Woody RAT|XCSSET|XORIndex Loader|ZLib|Zebrocy|metaMain|njRAT"
+    "families": "ADVSTORESHELL|Amadey|AppleJeus|AppleSeed|AshTag|Astaroth|Attor|AuTo Stealer|BACKSPACE|BADHATCH|BLINDINGCAN|BLUELIGHT|BRICKSTORM|Bandook|Bankshot|BeaverTail|Bisonal|BoxCaon|Bumblebee|CHIMNEYSWEEP|CallMe|Cannon|Carberp|Caterpillar WebShell|CharmPower|Chrommme|CreepySnail|Crimson|Crutch|Cuckoo Stealer|Cyclops Blink|DEEPROOT|DUSTTRAP|DarkGate|DnsSystem|Doki|Drovorub|DustySky|Dyre|EVILNUM|Ebury|Emotet|Flagpro|FlawedAmmyy|FoggyWeb|FunnyDream|GoldMax|GoldenSpy|Goopy|Grandoreiro|GrimAgent|HAWKBALL|HOPLIGHT|HTTPTroy|HexEval Loader|HotCroissant|IPsec Helper|IceApple|Industroyer|InvisibleFerret|KGH_SPY|KONNI|KOPILUWAK|Kessel|Kevin|LAMEHUG|LODEINFO|Latrodectus|LightNeuron|LightSpy|Line Dancer|Line Runner|LitePower|Lokibot|Lumma Stealer|LunarMail|MacMa|Machete|Mafalda|MagicRAT|Mango|Manjusaka|MarkiRAT|MechaFlounder|Metamorfo|Mini Shai-Hulud|MiniBike|MiniBrowse|MiniFast|Mis-Type|Misdat|Mispadu|MobileOrder|Mongall|MuddyViper|NETEAGLE|NightClub|ODAgent|Octopus|OilBooster|Okrum|OopsIE|OutSteel|PHASEJAM|POLLBLEND|Penquin|Pikabot|PingPull|PlugX|PoetRAT|PowerExchange|PowerShower|Proxysvc|Psylo|Pteranodon|QakBot|RDAT|REvil|ROKRAT|Raccoon Stealer|RedLine Stealer|Remexi|Rising Sun|RotaJakiro|S-Type|SDBbot|SLOTHFULMEDIA|SMOKEDHAM|STARWHALE|SUGARDUMP|SVCReady|Sagerunex|Shai-Hulud|Shark|SharpDisco|ShrinkLocker|SideTwist|Solar|SombRAT|Spark|Squirrelwaffle|StrelaStealer|StrifeWater|StrongPity|Stuxnet|SysUpdate|TRANSLATEXT|TWOSTROKE|TajMahal|TeamPCP Cloud Stealer|ThiefQuest|Tomiris|Torisma|TrickBot|Troll Stealer|Ursnif|Valak|Vidar|WarzoneRAT|Woody RAT|XCSSET|XORIndex Loader|ZLib|Zebrocy|metaMain|njRAT"
   },
   {
     "technique_id": "T1046",
     "technique_name": "Network Service Discovery",
     "tactic": "discovery",
-    "families": "BADHATCH|Backdoor.Oldrea|BlackByte Ransomware|BlackEnergy|Caterpillar WebShell|China Chopper|Cobalt Strike|Conficker|HDoor|HermeticWizard|Hildegard|Industroyer|InvisiMole|LightSpy|Lucifer|MURKYTOP|MgBot|P.A.S. Webshell|Pysa|Ramsay|Remsec|Royal|SpeakUp|XTunnel|Xbash|ZxShell"
+    "families": "BACKUPOSINT v9.0 APEX PREDATOR|BADHATCH|Backdoor.Oldrea|BlackByte Ransomware|BlackEnergy|Caterpillar WebShell|China Chopper|Cobalt Strike|Conficker|HDoor|HermeticWizard|Hildegard|Industroyer|InvisiMole|LightSpy|Lucifer|MURKYTOP|MgBot|P.A.S. Webshell|Pysa|Ramsay|Remsec|Royal|SpeakUp|XTunnel|Xbash|ZxShell"
   },
   {
     "technique_id": "T1047",
     "technique_name": "Windows Management Instrumentation",
     "tactic": "execution",
-    "families": "Action RAT|Agent Tesla|Akira|AshTag|Astaroth|Avaddon|BADHATCH|Bazar|Black Basta|BlackCat|BlackEnergy|Bumblebee|CharmPower|Cobalt Strike|DEATHRANSOM|DarkGate|DarkTortilla|DarkWatchman|DustySky|EKANS|EVILNUM|Emotet|EvilBunny|FELIXROOT|FIVEHANDS|FlawedAmmyy|FunnyDream|GravityRAT|HALFBAKED|HELLOKITTY|HOPLIGHT|HermeticWizard|IMAPLoader|INC Ransomware|IcedID|KOMPROGO|Kazuar|LAMEHUG|LODEINFO|Latrodectus|LockBit 2.0|Lucifer|LunarWeb|Maze|Meteor|Micropsia|MoleNet|Mosquito|Netwalker|NotPetya|Octopus|Olympic Destroyer|OopsIE|POWERSTATS|POWRUNER|PUBLOAD|ProLock|PyDCrypt|QakBot|Qilin|RATANKBA|REvil|ROAMINGHOUSE|Raspberry Robin|Remexi|RogueRobin|SUNBURST|SVCReady|Sardonic|SharpStage|ShrinkLocker|Sibot|Snip3|SocGholish|StoneDrill|Stuxnet|SysUpdate|TAMECAT|TONESHELL|Ursnif|Valak|WannaCry|Zebrocy|jRAT"
+    "families": "Action RAT|Agent Tesla|Akira|AshTag|Astaroth|Avaddon|BADHATCH|Bazar|Black Basta|BlackCat|BlackEnergy|Bumblebee|CharmPower|Cobalt Strike|DEATHRANSOM|DarkGate|DarkTortilla|DarkWatchman|DustySky|EKANS|EVILNUM|Emotet|EvilBunny|FELIXROOT|FIVEHANDS|FlawedAmmyy|FunnyDream|GravityRAT|HALFBAKED|HELLOKITTY|HOPLIGHT|HermeticWizard|IMAPLoader|INC Ransomware|IcedID|KOMPROGO|Kazuar|LAMEHUG|LODEINFO|Latrodectus|LockBit 2.0|Lucifer|LunarWeb|Maze|Meteor|Micropsia|MoleNet|Mosquito|Netwalker|NotPetya|Octopus|Olympic Destroyer|OopsIE|POWERSTATS|POWRUNER|PUBLOAD|ProLock|PyDCrypt|QakBot|Qilin|RATANKBA|REvil|ROAMINGHOUSE|Raspberry Robin|Remexi|RogueRobin|SUNBURST|SVCReady|Sardonic|SharpStage|ShrinkLocker|Sibot|Snip3|SocGholish|StoneDrill|Stuxnet|SysUpdate|TAMECAT|TONESHELL|The Gentlemen Ransomware|Ursnif|Valak|WannaCry|Zebrocy|jRAT"
   },
   {
     "technique_id": "T1048",
@@ -483,13 +495,13 @@
     "technique_id": "T1053.003",
     "technique_name": "Cron",
     "tactic": "execution|persistence|privilege-escalation",
-    "families": "Anchor|Exaramel for Linux|GoldMax|Gomir|Janicab|Kinsing|NETWIRE|NKAbuse|Penquin|Skidmap|SpeakUp|Xbash"
+    "families": "Anchor|BACKUPOSINT v9.0 APEX PREDATOR|Exaramel for Linux|GoldMax|Gomir|Janicab|Kinsing|NETWIRE|NKAbuse|Penquin|Skidmap|SpeakUp|The Gentlemen Ransomware|Xbash"
   },
   {
     "technique_id": "T1053.005",
     "technique_name": "Scheduled Task",
     "tactic": "execution|persistence|privilege-escalation",
-    "families": "Agent Tesla|Anchor|Apostle|AppleJeus|AshTag|Attor|BADHATCH|BADNEWS|BONDUPDATER|BabyShark|BackConfig|Bad Rabbit|Bazar|BlackByte Ransomware|Bumblebee|CHIMNEYSWEEP|CLAIMLOADER|Carbon|ComRAT|CorKLOG|CosmicDuke|CozyCar|Crutch|DanBot|DarkWatchman|Disco|Dridex|Duqu|Dyre|Embargo|Emotet|EvilBunny|GRIFFON|Gazer|GoldMax|Goopy|GravityRAT|GrimAgent|Helminth|HermeticWiper|HiddenFace|HotCroissant|IMAPLoader|ISMInjector|IcedID|InvisiMole|JHUHUGIT|JSS Loader|Kapeka|Latrodectus|LitePower|LockBit 2.0|Lokibot|Lucifer|Machete|MagicRAT|Mango|Matryoshka|Maze|Meteor|Milan|MuddyViper|MultiLayer Wiper|NETWIRE|Nightdoor|NotPetya|Okrum|OopsIE|POWERSTATS|POWRUNER|PUBLOAD|PlugX|Prestige|Pteranodon|PureCrypter|QUADAGENT|QakBot|Qilin|RTM|RainyDay|Ramsay|RedLine Stealer|Remexi|RemoteCMD|Remsec|Revenge RAT|Ryuk|SQLRat|SUGARDUMP|SVCReady|Saint Bot|SameCoin|ServHelper|Shamoon|SharpDisco|SharpStage|Sibot|Smoke Loader|Solar|SoreFang|Spica|StrifeWater|Stuxnet|SystemBC|TONESHELL|Tarrask|Tomiris|TrickBot|Valak|XLoader|Zebrocy|ZxxZ|ccf32|yty|zwShell"
+    "families": "Agent Tesla|Anchor|Apostle|AppleJeus|AshTag|Attor|BADHATCH|BADNEWS|BONDUPDATER|BabyShark|BackConfig|Bad Rabbit|Bazar|BlackByte Ransomware|Bumblebee|CHIMNEYSWEEP|CLAIMLOADER|Carbon|ComRAT|CorKLOG|CosmicDuke|CozyCar|Crutch|DanBot|DarkWatchman|Disco|Dridex|Duqu|Dyre|Embargo|Emotet|EvilBunny|GRIFFON|Gazer|GoldMax|Goopy|GravityRAT|GrimAgent|Helminth|HermeticWiper|HiddenFace|HotCroissant|IMAPLoader|ISMInjector|IcedID|InvisiMole|JHUHUGIT|JSS Loader|Kapeka|Latrodectus|LitePower|LockBit 2.0|Lokibot|Lucifer|Machete|MagicRAT|Mango|Matryoshka|Maze|Meteor|Milan|MiniFast|MuddyViper|MultiLayer Wiper|NETWIRE|Nightdoor|NotPetya|Okrum|OopsIE|POWERSTATS|POWRUNER|PUBLOAD|PlugX|Prestige|Pteranodon|PureCrypter|QUADAGENT|QakBot|Qilin|RTM|RainyDay|Ramsay|RedLine Stealer|Remexi|RemoteCMD|Remsec|Revenge RAT|Ryuk|SQLRat|SUGARDUMP|SVCReady|Saint Bot|SameCoin|ServHelper|Shamoon|SharpDisco|SharpStage|Sibot|Smoke Loader|Solar|SoreFang|Spica|StrifeWater|Stuxnet|SystemBC|TONESHELL|Tarrask|The Gentlemen Ransomware|Tomiris|TrickBot|Valak|XLoader|Zebrocy|ZxxZ|ccf32|yty|zwShell"
   },
   {
     "technique_id": "T1053.006",
@@ -501,7 +513,7 @@
     "technique_id": "T1055",
     "technique_name": "Process Injection",
     "tactic": "stealth|privilege-escalation",
-    "families": "ABK|ANDROMEDA|Agent Tesla|Attor|AuditCred|Avenger|BADHATCH|BBK|Backdoor.Oldrea|Bazar|BlackByte 2.0 Ransomware|Bumblebee|COATHANGER|Cardinal RAT|Clambling|Cobalt Strike|CostaBricks|DOWNIISSA|DUSTTRAP|Dyre|Egregor|Gazer|GuLoader|HOPLIGHT|HiddenFace|HyperBro|InvisiMole|JHUHUGIT|JPIN|LODEINFO|Lizar|Mis-Type|Mispadu|NETWIRE|NOOPLDR|NavRAT|Ninja|Pandora|PureCrypter|QakBot|REvil|ROKRAT|Ryuk|SLOTHFULMEDIA|ShadowPad|Smoke Loader|StoneDrill|TSCookie|TrickBot|WarzoneRAT|Waterbear|Wiarp|Wingbird|Woody RAT|gh0st RAT|metaMain"
+    "families": "ABK|ANDROMEDA|Agent Tesla|Attor|AuditCred|Avenger|BADHATCH|BBK|Backdoor.Oldrea|Bazar|BlackByte 2.0 Ransomware|Bumblebee|COATHANGER|Cardinal RAT|Clambling|Cobalt Strike|CostaBricks|DOWNIISSA|DUSTTRAP|Dyre|Egregor|Gazer|GuLoader|HOPLIGHT|HiddenFace|HyperBro|InvisiMole|JHUHUGIT|JPIN|LODEINFO|Lizar|Mis-Type|Mispadu|NETWIRE|NOOPLDR|NavRAT|Ninja|Pandora|PureCrypter|QakBot|REvil|ROKRAT|Ryuk|SLOTHFULMEDIA|ShadowPad|Smoke Loader|StoneDrill|TSCookie|TrickBot|Vidar|WarzoneRAT|Waterbear|Wiarp|Wingbird|Woody RAT|gh0st RAT|metaMain"
   },
   {
     "technique_id": "T1055.001",
@@ -519,7 +531,7 @@
     "technique_id": "T1055.003",
     "technique_name": "Thread Execution Hijacking",
     "tactic": "stealth|privilege-escalation",
-    "families": "Gazer|Pikabot|Trojan.Karagany|Waterbear"
+    "families": "Gazer|Pikabot|Trojan.Karagany|Vidar|Waterbear"
   },
   {
     "technique_id": "T1055.004",
@@ -549,7 +561,7 @@
     "technique_id": "T1055.012",
     "technique_name": "Process Hollowing",
     "tactic": "stealth|privilege-escalation",
-    "families": "Agent Tesla|Astaroth|Azorult|BADNEWS|BBSRAT|Bandook|Bazar|Caminho|Clambling|Cobalt Strike|DarkGate|Denis|Dtrack|Duqu|Emotet|Gootloader|HeartCrypt|ISMInjector|IcedID|Lokibot|Lumma Stealer|NETWIRE|Orz|QakBot|RCSession|Raspberry Robin|Saint Bot|Smoke Loader|Snip3|TRAILBLAZE|TrickBot|Ursnif|WhisperGate|Woody RAT|XLoader"
+    "families": "Agent Tesla|Astaroth|Azorult|BADNEWS|BBSRAT|Bandook|Bazar|Caminho|Clambling|Cobalt Strike|DarkGate|Denis|Dtrack|Duqu|Emotet|Gootloader|HeartCrypt|ISMInjector|IcedID|Lokibot|Lumma Stealer|NETWIRE|Orz|QakBot|RCSession|Raspberry Robin|Saint Bot|Smoke Loader|Snip3|TRAILBLAZE|TrickBot|Ursnif|Vidar|WhisperGate|Woody RAT|XLoader"
   },
   {
     "technique_id": "T1055.013",
@@ -579,7 +591,7 @@
     "technique_id": "T1056.002",
     "technique_name": "GUI Input Capture",
     "tactic": "collection|credential-access",
-    "families": "Bundlore|Calisto|Cuckoo Stealer|Dok|Keydnap|LP-Notes|Metamorfo|Mispadu|MuddyViper|Proton|XCSSET|iKitten"
+    "families": "Bundlore|Calisto|Cuckoo Stealer|Dok|Keydnap|LP-Notes|Metamorfo|Mispadu|MuddyViper|Proton|TRUSTTRAP|XCSSET|iKitten"
   },
   {
     "technique_id": "T1056.003",
@@ -597,7 +609,7 @@
     "technique_id": "T1057",
     "technique_name": "Process Discovery",
     "tactic": "discovery",
-    "families": "4H RAT|ADVSTORESHELL|Agent Tesla|Akira|Apostle|AppleSeed|Aria-body|AshTag|Astaroth|Avaddon|Avenger|AvosLocker|Azorult|BACKSPACE|BADHATCH|BBSRAT|BISCUIT|BLACKCOFFEE|BLUELIGHT|BRICKSTORM|Babuk|BabyShark|Backdoor.Oldrea|Bad Rabbit|Bankshot|Bazar|Bisonal|BlackEnergy|Bonadan|Brave Prince|Bumblebee|Bundlore|CHIMNEYSWEEP|COATHANGER|CaddyWiper|Cannon|Carbanak|Carberp|Carbon|Cardinal RAT|Caterpillar WebShell|ChChes|CharmPower|Clambling|Clop|Cobalt Strike|Comnie|Conti|Crimson|Cuba|Cuckoo Stealer|Cyclops Blink|DRATzarus|DUSTTRAP|Dacls|DarkComet|DarkGate|DarkTortilla|Derusbi|Diavol|Doki|Dtrack|Duqu|DustySky|EKANS|ELMER|Elise|Embargo|Emotet|Epic|EvilBunny|FELIXROOT|FatDuke|FinFisher|Final1stspy|Flagpro|FoggyWeb|FrameworkPOS|FruitFly|FunnyDream|Fysbis|Gelsemium|GeminiDuke|Get2|Gold Dragon|Goopy|Grandoreiro|GravityRAT|HALFBAKED|HELLOKITTY|HIUPAN|Havoc|Helminth|Heyoka Backdoor|HiddenFace|HotCroissant|Hydraq|INC Ransomware|IPsec Helper|Industroyer2|InvisiMole|InvisibleFerret|Ixeshe|JHUHUGIT|JPIN|Javali|KEYMARBLE|KONNI|KOPILUWAK|Kasidet|Kazuar|KillDisk|Kinsing|Komplex|Kwampirs|LAMEHUG|LODEINFO|LP-Notes|Latrodectus|LightSpy|Linfo|Lizar|LockBit 2.0|LockBit 3.0|LookBack|LoudMiner|Lucifer|LunarWeb|MacMa|Machete|Mafalda|MarkiRAT|Maze|Medusa Ransomware|Megazord|Metamorfo|Meteor|MgBot|Mispadu|MobileOrder|MoonWind|Mosquito|MuddyViper|NETEAGLE|NETWIRE|NKAbuse|NavRAT|Nebulae|NightClub|Nightdoor|Ninja|ObliqueRAT|OceanSalt|Orz|OutSteel|P8RAT|PAKLOG|PLAINTEE|PLEAD|POORAIM|POWERSTATS|POWRUNER|PUBLOAD|Pandora|Pasam|Pillowmint|PipeMon|PlugX|PoetRAT|PowerDuke|PowerShower|PowerStallion|Proxysvc|PureCrypter|QakBot|Qilin|RATANKBA|RCSession|ROKRAT|RTM|RainyDay|Ramsay|RansomHub|Raspberry Robin|Remsec|Rising Sun|RogueRobin|RotaJakiro|Royal|Ryuk|SDBbot|SHOTPUT|SLOTHFULMEDIA|SPAWNCHIMERA|SUNBURST|SUNSPOT|SVCReady|SYSCON|Sagerunex|Saint Bot|Sardonic|Seasalt|ShadowPad|ShrinkLocker|Skidmap|SocGholish|Socksbot|SodaMaster|SombRAT|SoreFang|StreamEx|StrongPity|Sykipot|SynAck|SysUpdate|SystemBC|TAINTEDSCRIBE|TONESHELL|TRAILBLAZE|TSCookie|Taidoor|TajMahal|TeamPCP Cloud Stealer|ThiefQuest|TrickBot|Trojan.Karagany|UBoatRAT|UPSTYLE|USBferry|Uroburos|Ursnif|VERMIN|Valak|Volgmer|WINERACK|WarzoneRAT|Waterbear|WinMM|Winnti for Windows|Woody RAT|XAgentOSX|ZIPLINE|Zebrocy|Zeus Panda|Zox|ZxShell|ZxxZ|down_new|gh0st RAT|iKitten|jRAT|macOS.OSAMiner|metaMain|njRAT|yty"
+    "families": "4H RAT|ADVSTORESHELL|Agent Tesla|Akira|Apostle|AppleSeed|Aria-body|AshTag|Astaroth|Avaddon|Avenger|AvosLocker|Azorult|BACKSPACE|BACKUPOSINT v9.0 APEX PREDATOR|BADHATCH|BBSRAT|BISCUIT|BLACKCOFFEE|BLUELIGHT|BRICKSTORM|Babuk|BabyShark|Backdoor.Oldrea|Bad Rabbit|Bankshot|Bazar|Bisonal|BlackEnergy|Bonadan|Brave Prince|Bumblebee|Bundlore|CHIMNEYSWEEP|COATHANGER|CaddyWiper|Cannon|Carbanak|Carberp|Carbon|Cardinal RAT|Caterpillar WebShell|ChChes|CharmPower|Clambling|Clop|Cobalt Strike|Comnie|Conti|Crimson|Cuba|Cuckoo Stealer|Cyclops Blink|DRATzarus|DUSTTRAP|Dacls|DarkComet|DarkGate|DarkTortilla|Derusbi|Diavol|Doki|Dtrack|Duqu|DustySky|EKANS|ELMER|Elise|Embargo|Emotet|Epic|EvilBunny|FELIXROOT|FatDuke|FinFisher|Final1stspy|Flagpro|FoggyWeb|FrameworkPOS|FruitFly|FunnyDream|Fysbis|Gelsemium|GeminiDuke|Get2|Gold Dragon|Goopy|Grandoreiro|GravityRAT|HALFBAKED|HELLOKITTY|HIUPAN|Havoc|Helminth|Heyoka Backdoor|HiddenFace|HotCroissant|Hydraq|INC Ransomware|IPsec Helper|Industroyer2|InvisiMole|InvisibleFerret|Ixeshe|JHUHUGIT|JPIN|Javali|KEYMARBLE|KONNI|KOPILUWAK|Kasidet|Kazuar|KillDisk|Kinsing|Komplex|Kwampirs|LAMEHUG|LODEINFO|LP-Notes|Latrodectus|LightSpy|Linfo|Lizar|LockBit 2.0|LockBit 3.0|LookBack|LoudMiner|Lucifer|LunarWeb|MacMa|Machete|Mafalda|MarkiRAT|Maze|Medusa Ransomware|Megazord|Metamorfo|Meteor|MgBot|MiniBus|MiniFast|MiniJunk|Mispadu|MobileOrder|MoonWind|Mosquito|MuddyViper|NETEAGLE|NETWIRE|NKAbuse|NavRAT|Nebulae|NightClub|Nightdoor|Ninja|ObliqueRAT|OceanSalt|Orz|OutSteel|P8RAT|PAKLOG|PLAINTEE|PLEAD|POORAIM|POWERSTATS|POWRUNER|PUBLOAD|Pandora|Pasam|Pillowmint|PipeMon|PlugX|PoetRAT|PowerDuke|PowerShower|PowerStallion|Proxysvc|PureCrypter|QakBot|Qilin|RATANKBA|RCSession|ROKRAT|RTM|RainyDay|Ramsay|RansomHub|Raspberry Robin|Remsec|Rising Sun|RogueRobin|RotaJakiro|Royal|Ryuk|SDBbot|SHOTPUT|SLOTHFULMEDIA|SPAWNCHIMERA|SUNBURST|SUNSPOT|SVCReady|SYSCON|Sagerunex|Saint Bot|Sardonic|Seasalt|ShadowPad|ShrinkLocker|Skidmap|SocGholish|Socksbot|SodaMaster|SombRAT|SoreFang|StreamEx|StrongPity|Sykipot|SynAck|SysUpdate|SystemBC|TAINTEDSCRIBE|TONESHELL|TRAILBLAZE|TSCookie|Taidoor|TajMahal|TeamPCP Cloud Stealer|ThiefQuest|TrickBot|Trojan.Karagany|UBoatRAT|UPSTYLE|USBferry|Uroburos|Ursnif|VERMIN|Valak|Vidar|Volgmer|WINERACK|WarzoneRAT|Waterbear|WinMM|Winnti for Windows|Woody RAT|XAgentOSX|ZIPLINE|Zebrocy|Zeus Panda|Zox|ZxShell|ZxxZ|down_new|gh0st RAT|iKitten|jRAT|macOS.OSAMiner|metaMain|njRAT|yty"
   },
   {
     "technique_id": "T1059",
@@ -609,7 +621,7 @@
     "technique_id": "T1059.001",
     "technique_name": "PowerShell",
     "tactic": "execution",
-    "families": "Akira|AppleSeed|AutoIt backdoor|BADHATCH|BONDUPDATER|Bandook|Bazar|Black Basta|Bumblebee|CHIMNEYSWEEP|CharmPower|Clambling|Cobalt Strike|ComRAT|CreepyDrive|CreepySnail|Cuba|DarkGate|DarkWatchman|Denis|DownPaper|Egregor|Emotet|FatDuke|Ferocious|FlawedAmmyy|GLASSTOKEN|GRIFFON|Gootloader|HALFBAKED|HAMMERTOSS|Hancitor|Havoc|Helminth|IPsec Helper|InvisibleFerret|JCry|JSS Loader|KGH_SPY|KOCTOPUS|KONNI|KeyBoy|LP-Notes|LazyWiper|LitePower|Lizar|LockBit 2.0|LockBit 3.0|Lokibot|Lumma Stealer|LunarWeb|Mafalda|Medusa Ransomware|Meteor|MoleNet|Mosquito|MuddyViper|NETWIRE|Netwalker|OSX_OCEANLOTUS.D|POSHSPY|POWERSOURCE|POWERSTATS|POWERTON|POWRUNER|PS1|PUNCHBUGGY|Pillowmint|PowGoop|PowerExchange|PowerLess|PowerPunch|PowerShower|PowerStallion|Prestige|PureCrypter|PyDCrypt|Pysa|QUADAGENT|QakBot|Qilin|RATANKBA|REvil|RansomHub|RegDuke|Revenge RAT|RogueRobin|SHARPSTATS|SMOKEDHAM|SQLRat|Saint Bot|Sardonic|SeaDuke|ServHelper|Shai-Hulud|SharpStage|ShrinkLocker|Snip3|Socksbot|Spica|Squirrelwaffle|StrelaStealer|StrongPity|SystemBC|TAMECAT|TRANSLATEXT|TrickBot|Troll Stealer|Tsundere Botnet|Ursnif|Valak|WarzoneRAT|WellMess|WhisperGate|Woody RAT|Xbash|ZeroCleare|Zeus Panda|njRAT"
+    "families": "Akira|AppleSeed|AutoIt backdoor|BADHATCH|BONDUPDATER|Bandook|Bazar|Black Basta|Bumblebee|CHIMNEYSWEEP|CharmPower|Clambling|Cobalt Strike|ComRAT|CreepyDrive|CreepySnail|Cuba|DarkGate|DarkWatchman|Denis|DownPaper|Egregor|Emotet|FatDuke|Ferocious|FlawedAmmyy|GLASSTOKEN|GRIFFON|Gootloader|HALFBAKED|HAMMERTOSS|Hancitor|Havoc|Helminth|IPsec Helper|InvisibleFerret|JCry|JSS Loader|KGH_SPY|KOCTOPUS|KONNI|KeyBoy|LP-Notes|LazyWiper|LitePower|Lizar|LockBit 2.0|LockBit 3.0|Lokibot|Lumma Stealer|LunarWeb|Mafalda|Medusa Ransomware|Meteor|MoleNet|Mosquito|MuddyViper|NETWIRE|Netwalker|OSX_OCEANLOTUS.D|POSHSPY|POWERSOURCE|POWERSTATS|POWERTON|POWRUNER|PS1|PUNCHBUGGY|Pillowmint|PowGoop|PowerExchange|PowerLess|PowerPunch|PowerShower|PowerStallion|Prestige|PureCrypter|PyDCrypt|Pysa|QUADAGENT|QakBot|Qilin|RATANKBA|REvil|RansomHub|RegDuke|Revenge RAT|RogueRobin|SHARPSTATS|SMOKEDHAM|SQLRat|Saint Bot|Sardonic|SeaDuke|ServHelper|Shai-Hulud|SharpStage|ShrinkLocker|Snip3|Socksbot|Spica|Squirrelwaffle|StrelaStealer|StrongPity|SystemBC|TAMECAT|TRANSLATEXT|The Gentlemen Ransomware|TrickBot|Troll Stealer|Tsundere Botnet|Ursnif|Valak|Vidar|WarzoneRAT|WellMess|WhisperGate|Woody RAT|Xbash|ZeroCleare|Zeus Panda|njRAT"
   },
   {
     "technique_id": "T1059.002",
@@ -621,13 +633,13 @@
     "technique_id": "T1059.003",
     "technique_name": "Windows Command Shell",
     "tactic": "execution",
-    "families": "4H RAT|ABK|ADVSTORESHELL|Action RAT|Akira|Anchor|Astaroth|AuTo Stealer|AuditCred|BACKSPACE|BADHATCH|BADNEWS|BBK|BISCUIT|BLACKCOFFEE|BLINDINGCAN|BONDUPDATER|Babuk|BabyShark|BackConfig|Bandook|Bankshot|Bazar|Bisonal|Black Basta|BlackCat|BlackMould|BoxCaon|Bumblebee|CALENDAR|CARROTBAT|Carbanak|Cardinal RAT|Caterpillar WebShell|Chaes|CharmPower|China Chopper|Clambling|Clop|Cobalt Strike|Cobian RAT|CoinTicker|ComRAT|Comnie|Conti|CozyCar|Crimson|Cuba|DEADEYE|DUSTTRAP|DanBot|DarkComet|DarkGate|DarkTortilla|DarkWatchman|Daserf|DealersChoice|Denis|Dipsind|DnsSystem|DownPaper|DropBook|Dtrack|ECCENTRICBANDWAGON|Egregor|Embargo|Emissary|Emotet|EnvyScout|EvilBunny|Exaramel for Windows|FELIXROOT|Felismus|Flagpro|FlawedAmmyy|FunnyDream|Gelsemium|Gold Dragon|GoldMax|GoldenSpy|Goopy|GravityRAT|GreyEnergy|GrimAgent|H1N1|HARDRAIN|HAWKBALL|HOMEFRY|HOPLIGHT|HTTPBrowser|HTTPTroy|Hannotog|Havoc|HeartCrypt|Helminth|HermeticWiper|HermeticWizard|Hi-Zor|HiddenWasp|Hikit|HotCroissant|IPsec Helper|InnaputRAT|InvisiMole|IronWind|Ixeshe|JCry|JHUHUGIT|JPIN|KEYMARBLE|KGH_SPY|KOCTOPUS|KOMPROGO|KONNI|Kapeka|Kasidet|Kazuar|Kevin|KeyBoy|LAMEHUG|Latrodectus|LightNeuron|Linfo|Lizar|LockBit 2.0|Lokibot|LookBack|LoudMiner|Lucifer|LunarWeb|MURKYTOP|Mafalda|MagicRAT|Manjusaka|MarkiRAT|Maze|MechaFlounder|Medusa Ransomware|MegaCortex|Megazord|Metamorfo|Meteor|Micropsia|Milan|MirageFox|Mis-Type|Misdat|Mivast|MoleNet|MoonWind|More_eggs|Mosquito|MuddyViper|MultiLayer Wiper|NETEAGLE|NETWIRE|NanoCore|NavRAT|Nebulae|Netwalker|Nightdoor|ODAgent|OceanSalt|OilBooster|Okrum|OopsIE|Orz|OutSteel|PHOREAL|PLAINTEE|PLEAD|POWRUNER|PUBLOAD|Peppy|Pikabot|PingPull|Pisloader|PlugX|PoetRAT|PoisonIvy|Pony|PowerDuke|Proxysvc|Pteranodon|PyDCrypt|QUADAGENT|QakBot|Qilin|RATANKBA|RCSession|RDAT|REvil|RGDoor|ROADSWEEP|RTM|Ragnar Locker|RainyDay|RansomHub|Raspberry Robin|RedLeaves|RedLine Stealer|Remexi|Revenge RAT|Rising Sun|RobbinHood|RogueRobin|RunningRAT|Ryuk|S-Type|SDBbot|SEASHARPEE|SLOTHFULMEDIA|SNUGRIDE|SQLRat|STARWHALE|SUGARUSH|SYSCON|Saint Bot|Sakula|SamSam|SampleCheck5000|Samurai|Sardonic|SeaDuke|Seasalt|ServHelper|Seth-Locker|Shark|SharpDisco|SharpStage|ShimRat|SideTwist|Siloscape|Small Sieve|Spark|Squirrelwaffle|StreamEx|StrelaStealer|StrifeWater|SystemBC|TAINTEDSCRIBE|TAMECAT|TDTESS|TEXTMATE|TONESHELL|TSCookie|TURNEDUP|TYPEFRAME|Taidoor|Tarrask|TinyTurla|TinyZBot|TrickBot|Trojan.Karagany|Troll Stealer|Turian|UBoatRAT|UPPERCUT|USBferry|Umbreon|Uroburos|Volgmer|WEBC2|WarzoneRAT|WastedLocker|WellMess|WhisperGate|Wiarp|Woody RAT|XTunnel|ZLib|Zebrocy|Zeus Panda|ZxShell|adbupd|ccf32|hcdLoader|httpclient|jRAT|njRAT|xCaon|zwShell"
+    "families": "4H RAT|ABK|ADVSTORESHELL|Action RAT|Akira|Anchor|Astaroth|AuTo Stealer|AuditCred|BACKSPACE|BADHATCH|BADNEWS|BBK|BISCUIT|BLACKCOFFEE|BLINDINGCAN|BONDUPDATER|Babuk|BabyShark|BackConfig|Bandook|Bankshot|Bazar|Bisonal|Black Basta|BlackCat|BlackMould|BoxCaon|Bumblebee|CALENDAR|CARROTBAT|Carbanak|Cardinal RAT|Caterpillar WebShell|Chaes|CharmPower|China Chopper|Clambling|Clop|Cobalt Strike|Cobian RAT|CoinTicker|ComRAT|Comnie|Conti|CozyCar|Crimson|Cuba|DEADEYE|DUSTTRAP|DanBot|DarkComet|DarkGate|DarkTortilla|DarkWatchman|Daserf|DealersChoice|Denis|Dipsind|DnsSystem|DownPaper|DropBook|Dtrack|ECCENTRICBANDWAGON|Egregor|Embargo|Emissary|Emotet|EnvyScout|EvilBunny|Exaramel for Windows|FELIXROOT|Felismus|Flagpro|FlawedAmmyy|FunnyDream|Gelsemium|Gold Dragon|GoldMax|GoldenSpy|Goopy|GravityRAT|GreyEnergy|GrimAgent|H1N1|HARDRAIN|HAWKBALL|HOMEFRY|HOPLIGHT|HTTPBrowser|HTTPTroy|Hannotog|Havoc|HeartCrypt|Helminth|HermeticWiper|HermeticWizard|Hi-Zor|HiddenWasp|Hikit|HotCroissant|IPsec Helper|InnaputRAT|InvisiMole|IronWind|Ixeshe|JCry|JHUHUGIT|JPIN|KEYMARBLE|KGH_SPY|KOCTOPUS|KOMPROGO|KONNI|Kapeka|Kasidet|Kazuar|Kevin|KeyBoy|LAMEHUG|Latrodectus|LightNeuron|Linfo|Lizar|LockBit 2.0|Lokibot|LookBack|LoudMiner|Lucifer|LunarWeb|MURKYTOP|Mafalda|MagicRAT|Manjusaka|MarkiRAT|Maze|MechaFlounder|Medusa Ransomware|MegaCortex|Megazord|Metamorfo|Meteor|Micropsia|Milan|MiniFast|MirageFox|Mis-Type|Misdat|Mivast|MoleNet|MoonWind|More_eggs|Mosquito|MuddyViper|MultiLayer Wiper|NETEAGLE|NETWIRE|NanoCore|NavRAT|Nebulae|Netwalker|Nightdoor|ODAgent|OceanSalt|OilBooster|Okrum|OopsIE|Orz|OutSteel|PHOREAL|PLAINTEE|PLEAD|POWRUNER|PUBLOAD|Peppy|Pikabot|PingPull|Pisloader|PlugX|PoetRAT|PoisonIvy|Pony|PowerDuke|Proxysvc|Pteranodon|PyDCrypt|QUADAGENT|QakBot|Qilin|RATANKBA|RCSession|RDAT|REvil|RGDoor|ROADSWEEP|RTM|Ragnar Locker|RainyDay|RansomHub|Raspberry Robin|RedLeaves|RedLine Stealer|Remexi|Revenge RAT|Rising Sun|RobbinHood|RogueRobin|RunningRAT|Ryuk|S-Type|SDBbot|SEASHARPEE|SLOTHFULMEDIA|SNUGRIDE|SQLRat|STARWHALE|SUGARUSH|SYSCON|Saint Bot|Sakula|SamSam|SampleCheck5000|Samurai|Sardonic|SeaDuke|Seasalt|ServHelper|Seth-Locker|Shark|SharpDisco|SharpStage|ShimRat|SideTwist|Siloscape|Small Sieve|Spark|Squirrelwaffle|StreamEx|StrelaStealer|StrifeWater|SystemBC|TAINTEDSCRIBE|TAMECAT|TDTESS|TEXTMATE|TONESHELL|TSCookie|TURNEDUP|TWOSTROKE|TYPEFRAME|Taidoor|Tarrask|The Gentlemen Ransomware|TinyTurla|TinyZBot|TrickBot|Trojan.Karagany|Troll Stealer|Turian|UBoatRAT|UPPERCUT|USBferry|Umbreon|Uroburos|Volgmer|WEBC2|WarzoneRAT|WastedLocker|WellMess|WhisperGate|Wiarp|Woody RAT|XTunnel|ZLib|Zebrocy|Zeus Panda|ZxShell|adbupd|ccf32|hcdLoader|httpclient|jRAT|njRAT|xCaon|zwShell"
   },
   {
     "technique_id": "T1059.004",
     "technique_name": "Unix Shell",
     "tactic": "execution",
-    "families": "Anchor|AppleJeus|BOLDMOVE|BPFDoor|BRICKSTORM|Bundlore|CASTLETAP|COATHANGER|CallMe|CanisterWorm|Chaos|CoinTicker|CookieMiner|Cuckoo Stealer|Derusbi|Doki|Drovorub|Ebury|Exaramel for Linux|Fysbis|Gomir|Green Lambert|Hildegard|J-magic|Kazuar|Kinsing|Kobalos|LoudMiner|MacMa|NETWIRE|NKAbuse|OSX/Shlayer|OSX_OCEANLOTUS.D|PACEMAKER|PITSTOP|PULSECHECK|Penquin|Proton|REPTILE|RIFLESPINE|Shai-Hulud|Skidmap|SnappyTCP|TeamPCP Cloud Stealer|Turian|VIRTUALPITA|WindTail|XCSSET|ZIPLINE"
+    "families": "Anchor|AppleJeus|BOLDMOVE|BPFDoor|BRICKSTORM|Bundlore|CASTLETAP|COATHANGER|CallMe|CanisterWorm|Chaos|CoinTicker|CookieMiner|Cuckoo Stealer|DEEPROOT|Derusbi|Doki|Drovorub|Ebury|Exaramel for Linux|Fysbis|Gomir|Green Lambert|Hildegard|J-magic|Kazuar|Kinsing|Kobalos|LoudMiner|MacMa|NETWIRE|NKAbuse|OSX/Shlayer|OSX_OCEANLOTUS.D|PACEMAKER|PITSTOP|PULSECHECK|Penquin|Proton|REPTILE|RIFLESPINE|Shai-Hulud|Skidmap|SnappyTCP|TeamPCP Cloud Stealer|Turian|VIRTUALPITA|WindTail|XCSSET|ZIPLINE"
   },
   {
     "technique_id": "T1059.005",
@@ -645,13 +657,19 @@
     "technique_id": "T1059.007",
     "technique_name": "JavaScript",
     "tactic": "execution",
-    "families": "AppleSeed|AshTag|Astaroth|Avaddon|BeaverTail|BlackByte Ransomware|Bundlore|CanisterWorm|Chaes|Cobalt Strike|DarkWatchman|EnvyScout|GRIFFON|GlassWorm|Gootloader|HexEval Loader|InvisiMole|JSS Loader|KONNI|KOPILUWAK|Kali365|Latrodectus|Metamorfo|Mini Shai-Hulud|NanHaiShu|POWERSTATS|QakBot|Shai-Hulud|SocGholish|SpicyOmelette|StrelaStealer|TeamPCP Cloud Stealer|Tsundere Botnet|Valak|WARPWIRE|XORIndex Loader|Xbash|jRAT"
+    "families": "AppleSeed|AshTag|Astaroth|Avaddon|BeaverTail|BlackByte Ransomware|Bundlore|CanisterWorm|Chaes|Cobalt Strike|DarkWatchman|EnvyScout|GRIFFON|GlassWorm|Gootloader|HexEval Loader|InvisiMole|JSS Loader|KONNI|KOPILUWAK|Kali365|Latrodectus|Metamorfo|Mini Shai-Hulud|MiniBrowse|NanHaiShu|POWERSTATS|QakBot|Shai-Hulud|SocGholish|SpicyOmelette|StrelaStealer|TeamPCP Cloud Stealer|Tsundere Botnet|Valak|WARPWIRE|XORIndex Loader|Xbash|jRAT"
   },
   {
     "technique_id": "T1059.008",
     "technique_name": "Network Device CLI",
     "tactic": "execution",
     "families": "DRYHOOK|Line Dancer|PHASEJAM"
+  },
+  {
+    "technique_id": "T1059.009",
+    "technique_name": "Cloud API",
+    "tactic": "execution",
+    "families": "BACKUPOSINT v9.0 APEX PREDATOR"
   },
   {
     "technique_id": "T1059.010",
@@ -669,7 +687,7 @@
     "technique_id": "T1059.012",
     "technique_name": "Hypervisor CLI",
     "tactic": "execution",
-    "families": "Cheerscrypt|Royal|VIRTUALPIE"
+    "families": "Cheerscrypt|Royal|The Gentlemen Ransomware|VIRTUALPIE"
   },
   {
     "technique_id": "T1059.013",
@@ -699,7 +717,7 @@
     "technique_id": "T1069.002",
     "technique_name": "Domain Groups",
     "tactic": "discovery",
-    "families": "BADHATCH|BlackCat|Cobalt Strike|Egregor|GRIFFON|Gootloader|Helminth|Kwampirs|LAMEHUG|Latrodectus|OSInfo|POWRUNER|Qilin|REvil|SoreFang|WellMess"
+    "families": "BADHATCH|BlackCat|Cobalt Strike|Egregor|GRIFFON|Gootloader|Helminth|Kwampirs|LAMEHUG|Latrodectus|MiniBrowse|OSInfo|POWRUNER|Qilin|REvil|SoreFang|WellMess"
   },
   {
     "technique_id": "T1070",
@@ -711,13 +729,13 @@
     "technique_id": "T1070.003",
     "technique_name": "Clear Command History",
     "tactic": "stealth",
-    "families": "Hildegard|J-magic|Kobalos"
+    "families": "Hildegard|J-magic|Kobalos|The Gentlemen Ransomware"
   },
   {
     "technique_id": "T1070.004",
     "technique_name": "File Deletion",
     "tactic": "stealth",
-    "families": "ADVSTORESHELL|AcidPour|Anchor|Apostle|AppleJeus|AppleSeed|Aria-body|Attor|AuditCred|Azorult|BADHATCH|BBSRAT|BLACKCOFFEE|BLINDINGCAN|BLUELIGHT|BOLDMOVE|BPFDoor|BRICKSTORM|BabyShark|BackConfig|Backdoor.Oldrea|Bandook|Bankshot|Bazar|BeaverTail|Bisonal|BlackByte 2.0 Ransomware|Bumblebee|CARROTBAT|COATHANGER|Calisto|CanisterWorm|Carbanak|Cardinal RAT|CharmPower|Cherry Picker|Crimson|Cryptoistic|Cuba|DOWNIISSA|DanBot|DarkGate|DarkWatchman|Denis|Derusbi|Drovorub|Dtrack|DustySky|ECCENTRICBANDWAGON|Elise|Embargo|Epic|EvilBunny|Exaramel for Linux|Exbyte|FALLCHILL|FELIXROOT|FatDuke|Ferocious|FlawedAmmyy|FruitFly|FunnyDream|Fysbis|Gazer|Gelsemium|Gold Dragon|GoldenSpy|Gomir|Grandoreiro|Green Lambert|GreyEnergy|GrimAgent|GuLoader|HALFBAKED|HAWKBALL|HTTPBrowser|HTTPTroy|Hancitor|HermeticWiper|Heyoka Backdoor|Hi-Zor|Hildegard|HotCroissant|Hydraq|HyperBro|IPsec Helper|IceApple|InnaputRAT|InvisiMole|Ixeshe|JHUHUGIT|JPIN|KEYMARBLE|KONNI|Kazuar|Kevin|KillDisk|Kivars|Komplex|LODEINFO|Latrodectus|LightNeuron|Line Runner|Linfo|LiteDuke|LockBit 2.0|LockBit 3.0|LockerGoga|Lokibot|LookBack|LoudMiner|LunarMail|LunarWeb|MESSAGETAP|MURKYTOP|MacMa|MacSpy|Machete|MagicRAT|Medusa Ransomware|Metamorfo|Meteor|Milan|Mini Shai-Hulud|Misdat|MoonWind|More_eggs|Mori|Mosquito|MultiLayer Wiper|NICECURL|NOKKI|NOOPLDR|NanHaiShu|Nebulae|Nightdoor|ODAgent|OSX_OCEANLOTUS.D|OceanSalt|Okrum|OopsIE|OutSteel|P.A.S. Webshell|PLEAD|POWERSTATS|PUNCHBUGGY|Pasam|Pay2Key|Penquin|Pillowmint|PlugX|PoetRAT|Pony|PowerDuke|PowerShower|Prikormka|ProLock|Proton|Proxysvc|Pteranodon|PureCrypter|PyDCrypt|Pysa|QUADAGENT|QakBot|Qilin|RCSession|RDAT|RDFSNIFFER|REvil|ROADSWEEP|ROKRAT|RTM|Raccoon Stealer|RainyDay|RansomHub|Raspberry Robin|Reaver|RedLeaves|Remsec|Rising Sun|RunningRAT|S-Type|SDBbot|SLOTHFULMEDIA|SPAWNCHIMERA|SQLRat|SUNBURST|SUNSPOT|Saint Bot|Sakula|SamSam|SeaDuke|Seasalt|ServHelper|Shark|ShimRat|ShrinkLocker|Sibot|Solar|SombRAT|SpeakUp|StealBit|StoneDrill|StrifeWater|StrongPity|Stuxnet|SysUpdate|TAINTEDSCRIBE|TDTESS|TONESHELL|TRAILBLAZE|TYPEFRAME|Taidoor|TeamPCP Cloud Stealer|Trojan.Karagany|Troll Stealer|UPSTYLE|USBStealer|Uroburos|Ursnif|VBShower|VERMIN|VersaMem|Volgmer|WINDSHIELD|WhisperGate|WindTail|Wingbird|Winnti for Windows|Woody RAT|XAgentOSX|XLoader|Zebrocy|ZeroCleare|Zeus Panda|ZxShell|ccf32|gh0st RAT|jRAT|metaMain|njRAT|pngdowner|zwShell"
+    "families": "ADVSTORESHELL|AcidPour|Anchor|Apostle|AppleJeus|AppleSeed|Aria-body|Attor|AuditCred|Azorult|BADHATCH|BBSRAT|BLACKCOFFEE|BLINDINGCAN|BLUELIGHT|BOLDMOVE|BPFDoor|BRICKSTORM|BabyShark|BackConfig|Backdoor.Oldrea|Bandook|Bankshot|Bazar|BeaverTail|Bisonal|BlackByte 2.0 Ransomware|Bumblebee|CARROTBAT|COATHANGER|Calisto|CanisterWorm|Carbanak|Cardinal RAT|CharmPower|Cherry Picker|Crimson|Cryptoistic|Cuba|DEEPROOT|DOWNIISSA|DanBot|DarkGate|DarkWatchman|Denis|Derusbi|Drovorub|Dtrack|DustySky|ECCENTRICBANDWAGON|Elise|Embargo|Epic|EvilBunny|Exaramel for Linux|Exbyte|FALLCHILL|FELIXROOT|FatDuke|Ferocious|FlawedAmmyy|FruitFly|FunnyDream|Fysbis|Gazer|Gelsemium|Gold Dragon|GoldenSpy|Gomir|Grandoreiro|Green Lambert|GreyEnergy|GrimAgent|GuLoader|HALFBAKED|HAWKBALL|HTTPBrowser|HTTPTroy|Hancitor|HermeticWiper|Heyoka Backdoor|Hi-Zor|Hildegard|HotCroissant|Hydraq|HyperBro|IOControl|IPsec Helper|IceApple|InnaputRAT|InvisiMole|Ixeshe|JHUHUGIT|JPIN|KEYMARBLE|KONNI|Kazuar|Kevin|KillDisk|Kivars|Komplex|LODEINFO|Latrodectus|LightNeuron|Line Runner|Linfo|LiteDuke|LockBit 2.0|LockBit 3.0|LockerGoga|Lokibot|LookBack|LoudMiner|LunarMail|LunarWeb|MESSAGETAP|MURKYTOP|MacMa|MacSpy|Machete|MagicRAT|Medusa Ransomware|Metamorfo|Meteor|Milan|Mini Shai-Hulud|MiniFast|MiniJunk|Misdat|MoonWind|More_eggs|Mori|Mosquito|MultiLayer Wiper|NICECURL|NOKKI|NOOPLDR|NanHaiShu|Nebulae|Nightdoor|ODAgent|OSX_OCEANLOTUS.D|OceanSalt|Okrum|OopsIE|OutSteel|P.A.S. Webshell|PLEAD|POWERSTATS|PUNCHBUGGY|Pasam|Pay2Key|Penquin|Pillowmint|PlugX|PoetRAT|Pony|PowerDuke|PowerShower|Prikormka|ProLock|Proton|Proxysvc|Pteranodon|PureCrypter|PyDCrypt|Pysa|QUADAGENT|QakBot|Qilin|RCSession|RDAT|RDFSNIFFER|REvil|ROADSWEEP|ROKRAT|RTM|Raccoon Stealer|RainyDay|RansomHub|Raspberry Robin|Reaver|RedLeaves|Remsec|Rising Sun|RunningRAT|S-Type|SDBbot|SLOTHFULMEDIA|SPAWNCHIMERA|SQLRat|SUNBURST|SUNSPOT|Saint Bot|Sakula|SamSam|SeaDuke|Seasalt|ServHelper|Shark|ShimRat|ShrinkLocker|Sibot|Solar|SombRAT|SpeakUp|StealBit|StoneDrill|StrifeWater|StrongPity|Stuxnet|SysUpdate|TAINTEDSCRIBE|TDTESS|TONESHELL|TRAILBLAZE|TWOSTROKE|TYPEFRAME|Taidoor|TeamPCP Cloud Stealer|The Gentlemen Ransomware|Trojan.Karagany|Troll Stealer|UPSTYLE|USBStealer|Uroburos|Ursnif|VBShower|VERMIN|VersaMem|Vidar|Volgmer|WINDSHIELD|WhisperGate|WindTail|Wingbird|Winnti for Windows|Woody RAT|XAgentOSX|XLoader|Zebrocy|ZeroCleare|Zeus Panda|ZxShell|ccf32|gh0st RAT|jRAT|metaMain|njRAT|pngdowner|zwShell"
   },
   {
     "technique_id": "T1070.005",
@@ -735,7 +753,7 @@
     "technique_id": "T1070.007",
     "technique_name": "Clear Network Connection History and Configurations",
     "tactic": "stealth",
-    "families": "SUNBURST"
+    "families": "SUNBURST|The Gentlemen Ransomware"
   },
   {
     "technique_id": "T1070.008",
@@ -747,7 +765,7 @@
     "technique_id": "T1070.009",
     "technique_name": "Clear Persistence",
     "tactic": "stealth",
-    "families": "Bazar|GrimAgent|IPsec Helper|KOCTOPUS|Kapeka|Misdat|Pillowmint|PlugX|RTM|Raspberry Robin|S-Type|SUNBURST|SplatDropper|njRAT"
+    "families": "Bazar|GrimAgent|IOControl|IPsec Helper|KOCTOPUS|Kapeka|Misdat|Pillowmint|PlugX|RTM|Raspberry Robin|S-Type|SUNBURST|SplatDropper|njRAT"
   },
   {
     "technique_id": "T1070.010",
@@ -765,7 +783,7 @@
     "technique_id": "T1071.001",
     "technique_name": "Web Protocols",
     "tactic": "command-and-control",
-    "families": "3PARA RAT|4H RAT|ABK|ADVSTORESHELL|ANDROMEDA|Action RAT|Agent Tesla|Amadey|Anchor|AppleJeus|AppleSeed|Aria-body|AshTag|AuTo Stealer|Avenger|BACKSPACE|BADHATCH|BADNEWS|BBK|BBSRAT|BLINDINGCAN|BLUELIGHT|BOLDMOVE|BOOKWORM|BRICKSTORM|BUBBLEWRAP|BackConfig|BadPatch|Bankshot|Bazar|BeaverTail|Bisonal|BlackEnergy|BlackMould|BoomBox|Bundlore|CHIMNEYSWEEP|CHOPSTICK|COATHANGER|CORESHELL|Carbanak|Carberp|Carbon|Cardinal RAT|ChChes|Chaes|CharmPower|China Chopper|Clambling|CloudDuke|Cobalt Strike|ComRAT|Comnie|CosmicDuke|CozyCar|CreepyDrive|CreepySnail|Crimson|Crutch|Cuckoo Stealer|Cyclops Blink|DEATHRANSOM|DRATzarus|Dacls|DanBot|DarkComet|DarkTortilla|DarkWatchman|Daserf|DealersChoice|Diavol|Dipsind|Doki|DownPaper|Dridex|Drovorub|DustySky|Dyre|ELMER|Egregor|Elise|Emissary|Emotet|Epic|EvilBunny|Exaramel for Linux|Explosive|FELIXROOT|FRAMESTING|FatDuke|Felismus|Final1stspy|Flagpro|FlawedAmmyy|FoggyWeb|Gazer|Gelsemium|GeminiDuke|Get2|GlassWorm|Gold Dragon|GoldFinder|GoldMax|GoldenSpy|Gomir|Goopy|Grandoreiro|GravityRAT|GreyEnergy|GrimAgent|GuLoader|HAMMERTOSS|HAWKBALL|HTTPBrowser|HTTPTroy|Havoc|Helminth|HexEval Loader|Hi-Zor|Hikit|HyperBro|IPsec Helper|IceApple|IcedID|Industroyer|InvisiMole|InvisibleFerret|IronWind|Ixeshe|JHUHUGIT|KEYPLUG|KGH_SPY|KONNI|KOPILUWAK|Kali365|Kapeka|Kazuar|Kevin|Keydnap|Kinsing|Komplex|LAMEHUG|LIGHTWIRE|LOWBALL|Latrodectus|LightSpy|Line Dancer|Line Runner|LiteDuke|LitePower|LockBit 3.0|Lokibot|LookBack|Lumma Stealer|LunarWeb|MOPSLED|MacSpy|Machete|Mafalda|MagicRAT|Mango|Manjusaka|MarkiRAT|Maze|MechaFlounder|Metamorfo|Micropsia|Milan|Mini Shai-Hulud|MiniDuke|Mis-Type|Mongall|More_eggs|Mori|MuddyViper|NETEAGLE|NETWIRE|NGLite|NICECURL|NOKKI|Neo-reGeorg|Neoichor|Ninja|OLDBAIT|OSX_OCEANLOTUS.D|Octopus|OilBooster|Okrum|OnionDuke|OopsIE|OutSteel|OwaAuth|P.A.S. Webshell|PHPsert|PLEAD|POWERTON|POWRUNER|PUBLOAD|PULSECHECK|PUNCHBUGGY|Pandora|Peppy|PinchDuke|PingPull|PlugX|PoetRAT|PolyglotDuke|Pony|PowGoop|PowerShower|Proxysvc|Psylo|Pteranodon|QUADAGENT|QUIETCANARY|QakBot|QuietSieve|RATANKBA|RCSession|RDAT|REvil|RGDoor|RIFLESPINE|RIPTIDE|ROKRAT|RTM|Raccoon Stealer|RainyDay|Ramsay|Raspberry Robin|Reaver|RedLeaves|RedLine Stealer|Regin|Remexi|Remsec|Rising Sun|RustyWater|S-Type|SLIGHTPULSE|SLOTHFULMEDIA|SMOKEDHAM|SNUGRIDE|STARWHALE|STEADYPULSE|SUGARDUMP|SUNBURST|SUPERNOVA|SVCReady|Sagerunex|Saint Bot|Sakula|SampleCheck5000|Samurai|SeaDuke|Seasalt|ServHelper|ShadowPad|Shai-Hulud|Shamoon|Shark|ShimRat|ShrinkLocker|Sibot|SideTwist|Small Sieve|Smoke Loader|SnappyTCP|SoreFang|Spark|SpeakUp|Squirrelwaffle|StealBit|StrelaStealer|StrongPity|Stuxnet|Sys10|TAMECAT|THINCRUST|TONESHELL|TRANSLATEXT|TSCookie|Taidoor|TeamPCP Cloud Stealer|ThiefQuest|TinyTurla|Tomiris|Torisma|TrailBlazer|TrickBot|Trojan.Karagany|Troll Stealer|Tsundere Botnet|Turian|UBoatRAT|UPPERCUT|Uroburos|Ursnif|VBShower|VERMIN|Valak|VaporRage|Vasport|WIREFIRE|WellMess|WhisperGate|WinMM|WindTail|Winnti for Linux|Winnti for Windows|Woody RAT|XLoader|XORIndex Loader|Xbash|YAHOYAH|ZLib|Zebrocy|ZeroT|Zeus Panda|ZxShell|down_new|httpclient|metaMain|njRAT|pngdowner|reGeorg|xCaon"
+    "families": "3PARA RAT|4H RAT|ABK|ADVSTORESHELL|ANDROMEDA|Action RAT|Agent Tesla|Amadey|Anchor|AppleJeus|AppleSeed|Aria-body|AshTag|AuTo Stealer|Avenger|BACKSPACE|BADHATCH|BADNEWS|BBK|BBSRAT|BLINDINGCAN|BLUELIGHT|BOLDMOVE|BOOKWORM|BRICKSTORM|BUBBLEWRAP|BackConfig|BadPatch|Bankshot|Bazar|BeaverTail|Bisonal|BlackEnergy|BlackMould|BoomBox|Bundlore|CHIMNEYSWEEP|CHOPSTICK|COATHANGER|CORESHELL|Carbanak|Carberp|Carbon|Cardinal RAT|ChChes|Chaes|CharmPower|China Chopper|Clambling|CloudDuke|Cobalt Strike|ComRAT|Comnie|CosmicDuke|CozyCar|CreepyDrive|CreepySnail|Crimson|Crutch|Cuckoo Stealer|Cyclops Blink|DEATHRANSOM|DRATzarus|Dacls|DanBot|DarkComet|DarkTortilla|DarkWatchman|Daserf|DealersChoice|Diavol|Dipsind|Doki|DownPaper|Dridex|Drovorub|DustySky|Dyre|ELMER|Egregor|Elise|Emissary|Emotet|Epic|EvilBunny|Exaramel for Linux|Explosive|FELIXROOT|FRAMESTING|FatDuke|Felismus|Final1stspy|Flagpro|FlawedAmmyy|FoggyWeb|Gazer|Gelsemium|GeminiDuke|Get2|GlassWorm|Gold Dragon|GoldFinder|GoldMax|GoldenSpy|Gomir|Goopy|Grandoreiro|GravityRAT|GreyEnergy|GrimAgent|GuLoader|HAMMERTOSS|HAWKBALL|HTTPBrowser|HTTPTroy|Havoc|Helminth|HexEval Loader|Hi-Zor|Hikit|HyperBro|IPsec Helper|IceApple|IcedID|Industroyer|InvisiMole|InvisibleFerret|IronWind|Ixeshe|JHUHUGIT|KEYPLUG|KGH_SPY|KONNI|KOPILUWAK|Kali365|Kapeka|Kazuar|Kevin|Keydnap|Kinsing|Komplex|LAMEHUG|LIGHTRAIL|LIGHTWIRE|LOWBALL|Latrodectus|LightSpy|Line Dancer|Line Runner|LiteDuke|LitePower|LockBit 3.0|Lokibot|LookBack|Lumma Stealer|LunarWeb|MOPSLED|MacSpy|Machete|Mafalda|MagicRAT|Mango|Manjusaka|MarkiRAT|Maze|MechaFlounder|Metamorfo|Micropsia|Milan|Mini Shai-Hulud|MiniBike|MiniBrowse|MiniBus|MiniDuke|MiniFast|MiniJunk|Mis-Type|Mongall|More_eggs|Mori|MuddyViper|NETEAGLE|NETWIRE|NGLite|NICECURL|NOKKI|Neo-reGeorg|Neoichor|Ninja|OLDBAIT|OSX_OCEANLOTUS.D|Octopus|OilBooster|Okrum|OnionDuke|OopsIE|OutSteel|OwaAuth|P.A.S. Webshell|PHPsert|PLEAD|POLLBLEND|POWERTON|POWRUNER|PUBLOAD|PULSECHECK|PUNCHBUGGY|Pandora|Peppy|PinchDuke|PingPull|PlugX|PoetRAT|PolyglotDuke|Pony|PowGoop|PowerShower|Proxysvc|Psylo|Pteranodon|QUADAGENT|QUIETCANARY|QakBot|QuietSieve|RATANKBA|RCSession|RDAT|REvil|RGDoor|RIFLESPINE|RIPTIDE|ROKRAT|RTM|Raccoon Stealer|RainyDay|Ramsay|Raspberry Robin|Reaver|RedLeaves|RedLine Stealer|Regin|Remexi|Remsec|Rising Sun|RustyWater|S-Type|SLIGHTPULSE|SLOTHFULMEDIA|SMOKEDHAM|SNUGRIDE|STARWHALE|STEADYPULSE|SUGARDUMP|SUNBURST|SUPERNOVA|SVCReady|Sagerunex|Saint Bot|Sakula|SampleCheck5000|Samurai|SeaDuke|Seasalt|ServHelper|ShadowPad|Shai-Hulud|Shamoon|Shark|ShimRat|ShrinkLocker|Sibot|SideTwist|Small Sieve|Smoke Loader|SnappyTCP|SoreFang|Spark|SpeakUp|Squirrelwaffle|StealBit|StrelaStealer|StrongPity|Stuxnet|Sys10|TAMECAT|THINCRUST|TONESHELL|TRANSLATEXT|TSCookie|Taidoor|TeamPCP Cloud Stealer|ThiefQuest|TinyTurla|Tomiris|Torisma|TrailBlazer|TrickBot|Trojan.Karagany|Troll Stealer|Tsundere Botnet|Turian|UBoatRAT|UPPERCUT|Uroburos|Ursnif|VBShower|VERMIN|Valak|VaporRage|Vasport|Vidar|WIREFIRE|WellMess|WhisperGate|WinMM|WindTail|Winnti for Linux|Winnti for Windows|Woody RAT|XLoader|XORIndex Loader|Xbash|YAHOYAH|ZLib|Zebrocy|ZeroT|Zeus Panda|ZxShell|down_new|httpclient|metaMain|njRAT|pngdowner|reGeorg|xCaon"
   },
   {
     "technique_id": "T1071.002",
@@ -783,7 +801,7 @@
     "technique_id": "T1071.004",
     "technique_name": "DNS",
     "tactic": "command-and-control",
-    "families": "Anchor|BONDUPDATER|BRICKSTORM|Cobalt Strike|Cobian RAT|DanBot|DarkGate|Denis|DnsSystem|Ebury|Gelsemium|Goopy|Green Lambert|HTTPBrowser|Helminth|Heyoka Backdoor|InvisiMole|Kevin|Matryoshka|Milan|Mori|NanHaiShu|NightClub|POWERSOURCE|POWRUNER|Pisloader|PlugX|QUADAGENT|RDAT|Remsec|SOUNDBITE|SUNBURST|ShadowPad|Shark|SombRAT|SysUpdate|SystemBC|TEXTMATE|Uroburos|WellMess"
+    "families": "Anchor|BONDUPDATER|BRICKSTORM|Cobalt Strike|Cobian RAT|DanBot|DarkGate|Denis|DnsSystem|Ebury|Gelsemium|Goopy|Green Lambert|HTTPBrowser|Helminth|Heyoka Backdoor|InvisiMole|Kevin|Matryoshka|Milan|Mori|NanHaiShu|NightClub|POWERSOURCE|POWRUNER|Pisloader|PlugX|QUADAGENT|RDAT|Remsec|SOUNDBITE|SUNBURST|ShadowPad|Shark|SombRAT|SysUpdate|SystemBC|TEXTMATE|Uroburos|Vidar|WellMess"
   },
   {
     "technique_id": "T1071.005",
@@ -807,7 +825,7 @@
     "technique_id": "T1074.001",
     "technique_name": "Local Data Staging",
     "tactic": "collection",
-    "families": "ADVSTORESHELL|AppleSeed|Astaroth|Attor|AuTo Stealer|BADNEWS|BadPatch|BeaverTail|BoxCaon|CHIMNEYSWEEP|Calisto|Carbon|Catchamas|Chrommme|CorKLOG|Crutch|Cuckoo Stealer|DRYHOOK|DarkWatchman|Dtrack|Duqu|DustySky|Dyre|ECCENTRICBANDWAGON|Elise|Exaramel for Windows|FLASHFLOOD|FrameworkPOS|FunnyDream|GlassWorm|Gold Dragon|Helminth|InvisiMole|InvisibleFerret|KGH_SPY|KOPILUWAK|Kazuar|LAMEHUG|LODEINFO|LP-Notes|LightNeuron|LoFiSe|Lumma Stealer|LunarMail|MESSAGETAP|MacMa|Machete|Mafalda|MarkiRAT|Milan|MirrorStealer|Mis-Type|MoonWind|NETWIRE|NOKKI|NavRAT|NightClub|ObliqueRAT|Octopus|OilBooster|OopsIE|PACEMAKER|PAKLOG|PUNCHBUGGY|PUNCHTRACK|PlugX|PoisonIvy|PowerLess|Prikormka|Pteranodon|QakBot|RIFLESPINE|RainyDay|Ramsay|RawPOS|Rover|SLIGHTPULSE|SLOWPULSE|SPACESHIP|STARWHALE|SUGARDUMP|Sagerunex|SampleCheck5000|SocGholish|SombRAT|TeamPCP Cloud Stealer|Trojan.Karagany|Troll Stealer|Turian|USBStealer|Ursnif|VersaMem|Zebrocy|ccf32|metaMain"
+    "families": "ADVSTORESHELL|AppleSeed|Astaroth|Attor|AuTo Stealer|BADNEWS|BadPatch|BeaverTail|BoxCaon|CHIMNEYSWEEP|Calisto|Carbon|Catchamas|Chrommme|CorKLOG|Crutch|Cuckoo Stealer|DCSYNCER.SLICK|DRYHOOK|DarkWatchman|Dtrack|Duqu|DustySky|Dyre|ECCENTRICBANDWAGON|Elise|Exaramel for Windows|FLASHFLOOD|FrameworkPOS|FunnyDream|GlassWorm|Gold Dragon|Helminth|InvisiMole|InvisibleFerret|KGH_SPY|KOPILUWAK|Kazuar|LAMEHUG|LODEINFO|LP-Notes|LightNeuron|LoFiSe|Lumma Stealer|LunarMail|MESSAGETAP|MacMa|Machete|Mafalda|MarkiRAT|Milan|MiniFast|MiniJunk|MirrorStealer|Mis-Type|MoonWind|NETWIRE|NOKKI|NavRAT|NightClub|ObliqueRAT|Octopus|OilBooster|OopsIE|PACEMAKER|PAKLOG|PUNCHBUGGY|PUNCHTRACK|PlugX|PoisonIvy|PowerLess|Prikormka|Pteranodon|QakBot|RIFLESPINE|RainyDay|Ramsay|RawPOS|Rover|SIGHTGRAB|SLIGHTPULSE|SLOWPULSE|SPACESHIP|STARWHALE|SUGARDUMP|Sagerunex|SampleCheck5000|SocGholish|SombRAT|TRUSTTRAP|TeamPCP Cloud Stealer|The Gentlemen Ransomware|Trojan.Karagany|Troll Stealer|Turian|USBStealer|Ursnif|VersaMem|Vidar|Zebrocy|ccf32|metaMain"
   },
   {
     "technique_id": "T1074.002",
@@ -855,13 +873,13 @@
     "technique_id": "T1082",
     "technique_name": "System Information Discovery",
     "tactic": "discovery",
-    "families": "4H RAT|ADVSTORESHELL|AcidPour|Action RAT|Agent Tesla|Akira|Amadey|Anchor|AppleJeus|AppleSeed|Aria-body|AshTag|Astaroth|AuTo Stealer|Avenger|Azorult|BACKSPACE|BADCALL|BADFLICK|BADHATCH|BISCUIT|BLINDINGCAN|BLUELIGHT|BOLDMOVE|BUBBLEWRAP|BabyShark|BackConfig|Backdoor.Oldrea|BadPatch|Bankshot|Bazar|BeaverTail|Bisonal|Black Basta|BlackByte Ransomware|BlackCat|BlackEnergy|Bonadan|BoomBox|Brave Prince|Bumblebee|Bundlore|CARROTBAT|CORESHELL|CaddyWiper|Cadelspy|Cannon|Carberp|Cardinal RAT|Caterpillar WebShell|ChChes|Chaes|CharmPower|Chrommme|Clambling|Comnie|CozyCar|Crimson|Cuckoo Stealer|Cyclops Blink|DEADEYE|DUSTTRAP|DarkComet|DarkGate|DarkTortilla|DarkWatchman|Denis|Derusbi|Diavol|DownPaper|Dridex|DropBook|Dtrack|DustySky|Dyre|EVILNUM|Egregor|Elise|Emissary|EnvyScout|Epic|Explosive|FALLCHILL|FELIXROOT|FatDuke|Felismus|Ferocious|FinFisher|Final1stspy|FlawedAmmyy|Fysbis|GRIFFON|Gelsemium|Get2|GlassWorm|Gold Dragon|GoldenSpy|Gomir|Gootloader|Grandoreiro|GravityRAT|Green Lambert|GrimAgent|HALFBAKED|HAPPYWORK|HAWKBALL|HOPLIGHT|Havoc|HermeticWiper|HexEval Loader|HiddenFace|Hildegard|HotCroissant|Hydraq|IMAPLoader|IceApple|IcedID|Industroyer|InnaputRAT|InvisiMole|InvisibleFerret|IronWind|Ixeshe|JPIN|KARAE|KEYMARBLE|KOCTOPUS|KOMPROGO|KONNI|Kapeka|Kasidet|Kazuar|Kerrdown|Kessel|Kevin|KeyBoy|Kobalos|Kwampirs|LAMEHUG|LITTLELAMB.WOOLTEA|LODEINFO|Latrodectus|LazyWiper|LightNeuron|LightSpy|Line Dancer|Linfo|LiteDuke|LitePower|Lizar|LockBit 2.0|LockBit 3.0|Lokibot|LoudMiner|Lucifer|Lumma Stealer|LunarMail|LunarWeb|MURKYTOP|MacMa|Machete|Mafalda|MagicRAT|Mango|Manjusaka|MarkiRAT|Maze|Medusa Ransomware|Metamorfo|Meteor|Micropsia|Milan|Mini Shai-Hulud|MiniDuke|MirageFox|Mis-Type|Misdat|Mispadu|MobileOrder|MoleNet|Mongall|MoonWind|More_eggs|NDiskMonitor|NETWIRE|NKAbuse|NOKKI|NOOPLDR|Naid|NanHaiShu|NavRAT|Neoichor|Netwalker|Nightdoor|Ninja|OSInfo|OSX/Shlayer|OSX_OCEANLOTUS.D|ObliqueRAT|OceanSalt|Octopus|OilBooster|Okrum|OopsIE|Orz|PLAINTEE|POORAIM|POWERSTATS|POWRUNER|PUBLOAD|PUNCHBUGGY|Pasam|Pay2Key|Penquin|Pikabot|PinchDuke|PingPull|PipeMon|Pisloader|PlugX|PoetRAT|Pony|PowerDuke|PowerShower|Prikormka|Proxysvc|PureCrypter|QakBot|Qilin|RATANKBA|RCSession|REvil|RIFLESPINE|ROKRAT|RTM|Raccoon Stealer|RansomHub|Raspberry Robin|Reaver|RedLeaves|RedLine Stealer|Remsec|Revenge RAT|Rifdoor|Rising Sun|RogueRobin|RotaJakiro|Royal|RunningRAT|RustyWater|S-Type|SDBbot|SHARPSTATS|SHUTTERSPEED|SLOTHFULMEDIA|SLOWDRIFT|SMOKEDHAM|SOUNDBITE|SPAWNCHIMERA|STARWHALE|SUNBURST|SVCReady|SYSCON|Sagerunex|Saint Bot|SampleCheck5000|Sardonic|ServHelper|ShadowPad|Shai-Hulud|Shamoon|Shark|SharpStage|ShrinkLocker|SideTwist|Skidmap|Snip3|SocGholish|SodaMaster|Solar|SombRAT|SoreFang|Spark|SpeakUp|SpicyOmelette|SplatCloak|Squirrelwaffle|SslMM|StealBit|StoneDrill|StreamEx|StrelaStealer|StrifeWater|Stuxnet|SynAck|Sys10|SysUpdate|SystemBC|T9000|TONESHELL|TURNEDUP|TajMahal|TeamPCP Cloud Stealer|ThreatNeedle|TrickBot|Trojan.Karagany|Troll Stealer|Tsundere Botnet|Turian|UPPERCUT|Unknown Logger|Uroburos|Ursnif|VERMIN|Valak|Volgmer|WINDSHIELD|WINERACK|WarzoneRAT|WellMess|WinMM|Wingbird|Winnti for Windows|Woody RAT|XAgentOSX|XCSSET|XLoader|XORIndex Loader|YAHOYAH|ZLib|Zebrocy|ZeroT|Zeus Panda|ZxShell|ZxxZ|gh0st RAT|jRAT|macOS.OSAMiner|metaMain|njRAT|yty|zwShell"
+    "families": "4H RAT|ADVSTORESHELL|AcidPour|Action RAT|Agent Tesla|Akira|Amadey|Anchor|AppleJeus|AppleSeed|Aria-body|AshTag|Astaroth|AuTo Stealer|Avenger|Azorult|BACKSPACE|BACKUPOSINT v9.0 APEX PREDATOR|BADCALL|BADFLICK|BADHATCH|BISCUIT|BLINDINGCAN|BLUELIGHT|BOLDMOVE|BUBBLEWRAP|BabyShark|BackConfig|Backdoor.Oldrea|BadPatch|Bankshot|Bazar|BeaverTail|Bisonal|Black Basta|BlackByte Ransomware|BlackCat|BlackEnergy|Bonadan|BoomBox|Brave Prince|Bumblebee|Bundlore|CARROTBAT|CORESHELL|CaddyWiper|Cadelspy|Cannon|Carberp|Cardinal RAT|Caterpillar WebShell|ChChes|Chaes|CharmPower|Chrommme|Clambling|Comnie|CozyCar|Crimson|Cuckoo Stealer|Cyclops Blink|DEADEYE|DEEPROOT|DUSTTRAP|DarkComet|DarkGate|DarkTortilla|DarkWatchman|Denis|Derusbi|Diavol|DownPaper|Dridex|DropBook|Dtrack|DustySky|Dyre|EVILNUM|Egregor|Elise|Emissary|EnvyScout|Epic|Explosive|FALLCHILL|FELIXROOT|FatDuke|Felismus|Ferocious|FinFisher|Final1stspy|FlawedAmmyy|Fysbis|GRIFFON|Gelsemium|Get2|GlassWorm|Gold Dragon|GoldenSpy|Gomir|Gootloader|Grandoreiro|GravityRAT|Green Lambert|GrimAgent|HALFBAKED|HAPPYWORK|HAWKBALL|HOPLIGHT|Havoc|HermeticWiper|HexEval Loader|HiddenFace|Hildegard|HotCroissant|Hydraq|IMAPLoader|IOControl|IceApple|IcedID|Industroyer|InnaputRAT|InvisiMole|InvisibleFerret|IronWind|Ixeshe|JPIN|KARAE|KEYMARBLE|KOCTOPUS|KOMPROGO|KONNI|Kapeka|Kasidet|Kazuar|Kerrdown|Kessel|Kevin|KeyBoy|Kobalos|Kwampirs|LAMEHUG|LITTLELAMB.WOOLTEA|LODEINFO|Latrodectus|LazyWiper|LightNeuron|LightSpy|Line Dancer|Linfo|LiteDuke|LitePower|Lizar|LockBit 2.0|LockBit 3.0|Lokibot|LoudMiner|Lucifer|Lumma Stealer|LunarMail|LunarWeb|MURKYTOP|MacMa|Machete|Mafalda|MagicRAT|Mango|Manjusaka|MarkiRAT|Maze|Medusa Ransomware|Metamorfo|Meteor|Micropsia|Milan|Mini Shai-Hulud|MiniBike|MiniDuke|MiniFast|MiniJunk|MirageFox|Mis-Type|Misdat|Mispadu|MobileOrder|MoleNet|Mongall|MoonWind|More_eggs|NDiskMonitor|NETWIRE|NKAbuse|NOKKI|NOOPLDR|Naid|NanHaiShu|NavRAT|Neoichor|Netwalker|Nightdoor|Ninja|OSInfo|OSX/Shlayer|OSX_OCEANLOTUS.D|ObliqueRAT|OceanSalt|Octopus|OilBooster|Okrum|OopsIE|Orz|PLAINTEE|POORAIM|POWERSTATS|POWRUNER|PUBLOAD|PUNCHBUGGY|Pasam|Pay2Key|Penquin|Pikabot|PinchDuke|PingPull|PipeMon|Pisloader|PlugX|PoetRAT|Pony|PowerDuke|PowerShower|Prikormka|Proxysvc|PureCrypter|QakBot|Qilin|RATANKBA|RCSession|REvil|RIFLESPINE|ROKRAT|RTM|Raccoon Stealer|RansomHub|Raspberry Robin|Reaver|RedLeaves|RedLine Stealer|Remsec|Revenge RAT|Rifdoor|Rising Sun|RogueRobin|RotaJakiro|Royal|RunningRAT|RustyWater|S-Type|SDBbot|SHARPSTATS|SHUTTERSPEED|SLOTHFULMEDIA|SLOWDRIFT|SMOKEDHAM|SOUNDBITE|SPAWNCHIMERA|STARWHALE|SUNBURST|SVCReady|SYSCON|Sagerunex|Saint Bot|SampleCheck5000|Sardonic|ServHelper|ShadowPad|Shai-Hulud|Shamoon|Shark|SharpStage|ShrinkLocker|SideTwist|Skidmap|Snip3|SocGholish|SodaMaster|Solar|SombRAT|SoreFang|Spark|SpeakUp|SpicyOmelette|SplatCloak|Squirrelwaffle|SslMM|StealBit|StoneDrill|StreamEx|StrelaStealer|StrifeWater|Stuxnet|SynAck|Sys10|SysUpdate|SystemBC|T9000|TONESHELL|TURNEDUP|TWOSTROKE|TajMahal|TeamPCP Cloud Stealer|ThreatNeedle|TrickBot|Trojan.Karagany|Troll Stealer|Tsundere Botnet|Turian|UPPERCUT|Unknown Logger|Uroburos|Ursnif|VERMIN|Valak|Vidar|Volgmer|WINDSHIELD|WINERACK|WarzoneRAT|WellMess|WinMM|Wingbird|Winnti for Windows|Woody RAT|XAgentOSX|XCSSET|XLoader|XORIndex Loader|YAHOYAH|ZLib|Zebrocy|ZeroT|Zeus Panda|ZxShell|ZxxZ|gh0st RAT|jRAT|macOS.OSAMiner|metaMain|njRAT|yty|zwShell"
   },
   {
     "technique_id": "T1083",
     "technique_name": "File and Directory Discovery",
     "tactic": "discovery",
-    "families": "3PARA RAT|4H RAT|ADVSTORESHELL|ANELLDR|AcidPour|AcidRain|Action RAT|Akira|Akira _v2|Amadey|AppleSeed|Aria-body|AshTag|Attor|AuditCred|AutoIt backdoor|Avaddon|Avenger|AvosLocker|Azorult|BACKSPACE|BADFLICK|BADNEWS|BBSRAT|BLACKCOFFEE|BLINDINGCAN|BLUELIGHT|BOLDMOVE|BRICKSTORM|Babuk|BabyShark|BackConfig|Backdoor.Oldrea|BadPatch|Bandook|Bankshot|Bazar|BeaverTail|Bisonal|Black Basta|BlackCat|BlackEnergy|BlackMould|BoomBox|BoxCaon|Brave Prince|CHIMNEYSWEEP|CHOPSTICK|COATHANGER|CORALDECK|CaddyWiper|CanisterWorm|Cannon|Cardinal RAT|Caterpillar WebShell|ChChes|CharmPower|Cheerscrypt|China Chopper|Clambling|Clop|Cobalt Strike|Conti|CookieMiner|CosmicDuke|CreepyDrive|Crimson|CrossRAT|Cryptoistic|Cuba|Cuckoo Stealer|Cyclops Blink|DDKONG|DEATHRANSOM|DUSTTRAP|Dacls|DarkGate|DarkWatchman|Denis|Derusbi|Diavol|Doki|DropBook|Dtrack|DustySky|DynoWiper|ELMER|Elise|Embargo|Epic|Exbyte|FALLCHILL|FIVEHANDS|FLASHFLOOD|FYAnti|FatDuke|FinFisher|FoggyWeb|FruitFly|FunnyDream|Fysbis|Gelsemium|GeminiDuke|Gold Dragon|GoldenSpy|Gomir|GravityRAT|GrimAgent|HOPLIGHT|HTTPBrowser|Havoc|HermeticWiper|Heyoka Backdoor|HotCroissant|Hydraq|INC Ransomware|IceApple|Industroyer|InnaputRAT|InvisiMole|InvisibleFerret|Ixeshe|JPIN|KEYMARBLE|KGH_SPY|KONNI|Kasidet|Kazuar|KeyBoy|KillDisk|Kinsing|Kivars|Kwampirs|LAMEHUG|LITTLELAMB.WOOLTEA|LODEINFO|Latrodectus|LazyWiper|LightSpy|Linfo|LoFiSe|LockBit 2.0|LockBit 3.0|Lokibot|LookBack|LunarMail|LunarWeb|MESSAGETAP|MacMa|Machete|Mafalda|Mango|Manjusaka|MarkiRAT|Medusa Ransomware|MegaCortex|Megazord|Metamorfo|Micropsia|Mini Shai-Hulud|MiniDuke|Misdat|Mispadu|MobileOrder|MoonWind|MultiLayer Wiper|NDiskMonitor|NETEAGLE|NETWIRE|Nebulae|NightClub|Ninja|NotPetya|ODAgent|OSX/Shlayer|ObliqueRAT|OceanSalt|Octopus|Okrum|Orz|OutSteel|OwaAuth|P.A.S. Webshell|PACEMAKER|PLEAD|POORAIM|POWRUNER|Pasam|Pcexter|Penquin|Peppy|PinchDuke|PingPull|Pisloader|Playcrypt|PlugX|PoetRAT|PowerDuke|Prestige|Prikormka|Proxysvc|Psylo|Pteranodon|QakBot|Qilin|QuietSieve|RARSTONE|REvil|ROADSWEEP|ROKRAT|RTM|Raccoon Stealer|RainyDay|Ramsay|RansomHub|Raspberry Robin|RedLeaves|Remexi|Remsec|Rising Sun|Rover|Royal|Ryuk|SDBbot|SHOTPUT|SLOTHFULMEDIA|SOUNDBITE|SPACESHIP|SUGARDUMP|SUNBURST|SUNSPOT|Saint Bot|SameCoin|Samurai|Seasalt|SharpDisco|ShimRat|SideTwist|Siloscape|Skidmap|Smoke Loader|SombRAT|SoreFang|Spica|SplatCloak|StealBit|StreamEx|StrifeWater|StrongPity|Stuxnet|SynAck|SysUpdate|TAINTEDSCRIBE|TINYTYPHON|TSCookie|TYPEFRAME|Taidoor|TajMahal|TeamPCP Cloud Stealer|ThreatNeedle|TrickBot|Trojan.Karagany|Troll Stealer|Turian|UPPERCUT|USBStealer|USBferry|Uroburos|Volgmer|WINERACK|WannaCry|WarzoneRAT|WastedLocker|WhisperGate|WinMM|WindTail|Winnti for Windows|Woody RAT|XAgentOSX|XCSSET|ZIPLINE|ZLib|Zebrocy|Zeus Panda|Zox|ZxShell|ccf32|down_new|jRAT|metaMain|njRAT|yty|zwShell"
+    "families": "3PARA RAT|4H RAT|ADVSTORESHELL|ANELLDR|AcidPour|AcidRain|Action RAT|Akira|Akira _v2|Amadey|AppleSeed|Aria-body|AshTag|Attor|AuditCred|AutoIt backdoor|Avaddon|Avenger|AvosLocker|Azorult|BACKSPACE|BADFLICK|BADNEWS|BBSRAT|BLACKCOFFEE|BLINDINGCAN|BLUELIGHT|BOLDMOVE|BRICKSTORM|Babuk|BabyShark|BackConfig|Backdoor.Oldrea|BadPatch|Bandook|Bankshot|Bazar|BeaverTail|Bisonal|Black Basta|BlackCat|BlackEnergy|BlackMould|BoomBox|BoxCaon|Brave Prince|CHIMNEYSWEEP|CHOPSTICK|COATHANGER|CORALDECK|CaddyWiper|CanisterWorm|Cannon|Cardinal RAT|Caterpillar WebShell|ChChes|CharmPower|Cheerscrypt|China Chopper|Clambling|Clop|Cobalt Strike|Conti|CookieMiner|CosmicDuke|CreepyDrive|Crimson|CrossRAT|Cryptoistic|Cuba|Cuckoo Stealer|Cyclops Blink|DDKONG|DEATHRANSOM|DEEPROOT|DUSTTRAP|Dacls|DarkGate|DarkWatchman|Denis|Derusbi|Diavol|Doki|DropBook|Dtrack|DustySky|DynoWiper|ELMER|Elise|Embargo|Epic|Exbyte|FALLCHILL|FIVEHANDS|FLASHFLOOD|FYAnti|FatDuke|FinFisher|FoggyWeb|FruitFly|FunnyDream|Fysbis|Gelsemium|GeminiDuke|Gold Dragon|GoldenSpy|Gomir|GravityRAT|GrimAgent|HOPLIGHT|HTTPBrowser|Havoc|HermeticWiper|Heyoka Backdoor|HotCroissant|Hydraq|INC Ransomware|IceApple|Industroyer|InnaputRAT|InvisiMole|InvisibleFerret|Ixeshe|JPIN|KEYMARBLE|KGH_SPY|KONNI|Kasidet|Kazuar|KeyBoy|KillDisk|Kinsing|Kivars|Kwampirs|LAMEHUG|LITTLELAMB.WOOLTEA|LODEINFO|Latrodectus|LazyWiper|LightSpy|Linfo|LoFiSe|LockBit 2.0|LockBit 3.0|Lokibot|LookBack|LunarMail|LunarWeb|MESSAGETAP|MacMa|Machete|Mafalda|Mango|Manjusaka|MarkiRAT|Medusa Ransomware|MegaCortex|Megazord|Metamorfo|Micropsia|Mini Shai-Hulud|MiniBike|MiniDuke|MiniFast|MiniJunk|Misdat|Mispadu|MobileOrder|MoonWind|MultiLayer Wiper|NDiskMonitor|NETEAGLE|NETWIRE|Nebulae|NightClub|Ninja|NotPetya|ODAgent|OSX/Shlayer|ObliqueRAT|OceanSalt|Octopus|Okrum|Orz|OutSteel|OwaAuth|P.A.S. Webshell|PACEMAKER|PLEAD|POORAIM|POWRUNER|Pasam|Pcexter|Penquin|Peppy|PinchDuke|PingPull|Pisloader|Playcrypt|PlugX|PoetRAT|PowerDuke|Prestige|Prikormka|Proxysvc|Psylo|Pteranodon|QakBot|Qilin|QuietSieve|RARSTONE|REvil|ROADSWEEP|ROKRAT|RTM|Raccoon Stealer|RainyDay|Ramsay|RansomHub|Raspberry Robin|RedLeaves|Remexi|Remsec|Rising Sun|Rover|Royal|Ryuk|SDBbot|SHOTPUT|SLOTHFULMEDIA|SOUNDBITE|SPACESHIP|SUGARDUMP|SUNBURST|SUNSPOT|Saint Bot|SameCoin|Samurai|Seasalt|SharpDisco|ShimRat|SideTwist|Siloscape|Skidmap|Smoke Loader|SombRAT|SoreFang|Spica|SplatCloak|StealBit|StreamEx|StrifeWater|StrongPity|Stuxnet|SynAck|SysUpdate|TAINTEDSCRIBE|TINYTYPHON|TSCookie|TWOSTROKE|TYPEFRAME|Taidoor|TajMahal|TeamPCP Cloud Stealer|The Gentlemen Ransomware|ThreatNeedle|TrickBot|Trojan.Karagany|Troll Stealer|Turian|UPPERCUT|USBStealer|USBferry|Uroburos|Vidar|Volgmer|WINERACK|WannaCry|WarzoneRAT|WastedLocker|WhisperGate|WinMM|WindTail|Winnti for Windows|Woody RAT|XAgentOSX|XCSSET|ZIPLINE|ZLib|Zebrocy|Zeus Panda|Zox|ZxShell|ccf32|down_new|jRAT|metaMain|njRAT|yty|zwShell"
   },
   {
     "technique_id": "T1087",
@@ -897,7 +915,7 @@
     "technique_id": "T1090",
     "technique_name": "Proxy",
     "tactic": "command-and-control",
-    "families": "Aria-body|AuditCred|BADCALL|BADHATCH|Bisonal|Cardinal RAT|Dridex|FunnyDream|GoBear|Green Lambert|HARDRAIN|HOPLIGHT|Havoc|KEYPLUG|KOCTOPUS|Kali365|Kapeka|Kessel|LITTLELAMB.WOOLTEA|LunarWeb|NETWIRE|Neo-reGeorg|PLEAD|RainyDay|RansomHub|SDBbot|Sagerunex|Samurai|Socksbot|SombRAT|TSCookie|TYPEFRAME|Ursnif|Vasport|WarzoneRAT|XTunnel|ZIPLINE|ZxShell|jRAT|reGeorg"
+    "families": "Aria-body|AuditCred|BADCALL|BADHATCH|Bisonal|Cardinal RAT|Dridex|FunnyDream|GoBear|Green Lambert|HARDRAIN|HOPLIGHT|Havoc|KEYPLUG|KOCTOPUS|Kali365|Kapeka|Kessel|LITTLELAMB.WOOLTEA|LunarWeb|NETWIRE|Neo-reGeorg|PLEAD|RainyDay|RansomHub|SDBbot|Sagerunex|Samurai|Socksbot|SombRAT|TSCookie|TYPEFRAME|The Gentlemen Ransomware|Ursnif|Vasport|WarzoneRAT|XTunnel|ZIPLINE|ZxShell|jRAT|reGeorg"
   },
   {
     "technique_id": "T1090.001",
@@ -909,7 +927,7 @@
     "technique_id": "T1090.002",
     "technique_name": "External Proxy",
     "tactic": "command-and-control",
-    "families": "InvisiMole|Okrum|POWERSTATS|QUIETEXIT|QakBot|Regin|ShimRat|TrickBot|Winnti for Windows"
+    "families": "BACKUPOSINT v9.0 APEX PREDATOR|InvisiMole|LIGHTRAIL|Okrum|POWERSTATS|QUIETEXIT|QakBot|Regin|ShimRat|TrickBot|Winnti for Windows"
   },
   {
     "technique_id": "T1090.003",
@@ -969,7 +987,7 @@
     "technique_id": "T1102.001",
     "technique_name": "Dead Drop Resolver",
     "tactic": "command-and-control",
-    "families": "Astaroth|BADNEWS|BLACKCOFFEE|CanisterWorm|CharmPower|GlassWorm|Grandoreiro|Javali|KEYPLUG|MOPSLED|Metamorfo|Mini Shai-Hulud|MiniDuke|PlugX|PolyglotDuke|RTM|TRANSLATEXT|Tsundere Botnet|Xbash"
+    "families": "Astaroth|BADNEWS|BLACKCOFFEE|CanisterWorm|CharmPower|GlassWorm|Grandoreiro|Javali|KEYPLUG|MOPSLED|Metamorfo|Mini Shai-Hulud|MiniDuke|PlugX|PolyglotDuke|RTM|TRANSLATEXT|Tsundere Botnet|Vidar|Xbash"
   },
   {
     "technique_id": "T1102.002",
@@ -993,13 +1011,13 @@
     "technique_id": "T1105",
     "technique_name": "Ingress Tool Transfer",
     "tactic": "command-and-control",
-    "families": "ABK|ANDROMEDA|Action RAT|Agent Tesla|Agent.btz|Amadey|Anchor|Aria-body|AshTag|Astaroth|Attor|AuditCred|Avenger|Azorult|BADFLICK|BADHATCH|BADNEWS|BBK|BISCUIT|BLINDINGCAN|BLUELIGHT|BONDUPDATER|BRICKSTORM|BUSHWALK|BabyShark|BackConfig|Backdoor.Oldrea|BadPatch|Bandook|Bankshot|Bazar|BeaverTail|BendyBear|Bisonal|BlackMould|Bonadan|BoomBox|BoxCaon|Briba|Bumblebee|Bundlore|CARROTBAT|CASTLETAP|CHIMNEYSWEEP|CHOPSTICK|CORESHELL|Calisto|CallMe|Caminho|CanisterWorm|Cannon|Carberp|Cardinal RAT|Caterpillar WebShell|ChChes|Chaes|CharmPower|China Chopper|Chrommme|CloudDuke|Cobalt Strike|CoinTicker|Conficker|CookieMiner|CostaBricks|CreepyDrive|Crimson|Cryptoistic|Cuba|Cyclops Blink|DDKONG|DEATHRANSOM|DOGCALL|DOWNIISSA|DRATzarus|DUSTTRAP|Dacls|DanBot|DarkComet|DarkGate|DarkTortilla|Daserf|Denis|Diavol|Dipsind|Disco|DnsSystem|Doki|Downdelph|DropBook|Drovorub|Dtrack|Dyre|EVILNUM|Ecipekac|Egregor|Elise|Emissary|Emotet|EvilBunny|Exaramel for Linux|Explosive|FELIXROOT|FYAnti|Felismus|Flagpro|FlawedAmmyy|FoggyWeb|FunnyDream|Gazer|Gelsemium|GlassWorm|Gold Dragon|GoldMax|GoldenSpy|Gootloader|Grandoreiro|GreyEnergy|GrimAgent|GuLoader|H1N1|HAPPYWORK|HOPLIGHT|HTTPBrowser|HTTPTroy|Hancitor|Hannotog|Havoc|Helminth|HexEval Loader|Hi-Zor|HiddenFace|HiddenWasp|Hikit|Hildegard|HotCroissant|Hydraq|HyperBro|IMAPLoader|IcedID|Industroyer|InvisiMole|InvisibleFerret|Ixeshe|JHUHUGIT|JPIN|JSS Loader|Javali|KARAE|KEYMARBLE|KGH_SPY|KOCTOPUS|KONNI|Kasidet|Kazuar|Kerrdown|Kessel|Kevin|KeyBoy|Kinsing|Kivars|Kwampirs|LODEINFO|LOWBALL|Latrodectus|LightNeuron|LightSpy|Linfo|LiteDuke|LitePower|Lizar|Lokibot|LoudMiner|Lucifer|MacMa|Machete|Mafalda|MagicRAT|MarkiRAT|MechaFlounder|Melcoz|Metamorfo|Meteor|Micropsia|Milan|Mini Shai-Hulud|MiniDuke|Mis-Type|Misdat|Mivast|MobileOrder|MoleNet|Mongall|More_eggs|Mosquito|MuddyViper|NDiskMonitor|NETWIRE|NICECURL|NOKKI|NanHaiShu|NanoCore|NavRAT|Nebulae|Neo-reGeorg|Neoichor|Nerex|Netwalker|Nidiran|NightClub|ODAgent|OSX/Shlayer|OSX_OCEANLOTUS.D|Octopus|OilBooster|OilCheck|Okrum|OopsIE|Orz|OutSteel|P.A.S. Webshell|P8RAT|PHASEJAM|PHPsert|PLAINTEE|PLEAD|POSHSPY|POWERSOURCE|POWERSTATS|POWRUNER|PS1|PUBLOAD|PUNCHBUGGY|Pandora|Pasam|Penquin|Peppy|PipeMon|Pisloader|PlugX|PoetRAT|PoisonIvy|PolyglotDuke|Pony|PowerDuke|PowerExchange|PowerLess|PowerPunch|Psylo|Pteranodon|PureCrypter|QakBot|QuietSieve|RARSTONE|RATANKBA|RCSession|RDAT|REvil|RGDoor|RIFLESPINE|ROKRAT|RTM|Raccoon Stealer|RainyDay|Raspberry Robin|RedLeaves|RedLine Stealer|RegDuke|RemoteCMD|Remsec|Revenge RAT|RogueRobin|S-Type|SDBbot|SEASHARPEE|SHARPSTATS|SHUTTERSPEED|SLIGHTPULSE|SLOTHFULMEDIA|SLOWDRIFT|SMOKEDHAM|SQLRat|STEADYPULSE|SUNBURST|SVCReady|Saint Bot|Sakula|SampleCheck5000|Samurai|Sardonic|SeaDuke|Seasalt|ServHelper|Seth-Locker|ShadowPad|Shai-Hulud|Shamoon|Shark|SharpDisco|SharpStage|ShimRat|Sibot|SideTwist|Skidmap|Small Sieve|Smoke Loader|Snip3|SocGholish|SodaMaster|Solar|SombRAT|SoreFang|SpeakUp|Spica|SpicyOmelette|Squirrelwaffle|StoneDrill|StrelaStealer|StrifeWater|StrongPity|SysUpdate|SystemBC|TAINTEDSCRIBE|TAMECAT|TDTESS|TONESHELL|TSCookie|TURNEDUP|TYPEFRAME|Taidoor|TeamPCP Cloud Stealer|ThiefQuest|ThreatNeedle|TinyTurla|Tomiris|TrickBot|Trojan.Karagany|Tsundere Botnet|Turian|UBoatRAT|UPPERCUT|Unknown Logger|Uroburos|Ursnif|VBShower|VERMIN|VIRTUALPITA|Valak|VaporRage|Vasport|Volgmer|WEBC2|WIREFIRE|WarzoneRAT|Waterbear|WellMail|WellMess|WhisperGate|Wiarp|Winnti for Linux|Winnti for Windows|Woody RAT|XCSSET|XORIndex Loader|Xbash|YAHOYAH|ZIPLINE|ZLib|Zebrocy|ZeroT|Zeus Panda|Zox|ZxShell|ZxxZ|build_downer|down_new|gh0st RAT|jRAT|macOS.OSAMiner|metaMain|njRAT|reGeorg|xCaon"
+    "families": "ABK|ANDROMEDA|Action RAT|Agent Tesla|Agent.btz|Amadey|Anchor|Aria-body|AshTag|Astaroth|Attor|AuditCred|Avenger|Azorult|BADFLICK|BADHATCH|BADNEWS|BBK|BISCUIT|BLINDINGCAN|BLUELIGHT|BONDUPDATER|BRICKSTORM|BUSHWALK|BabyShark|BackConfig|Backdoor.Oldrea|BadPatch|Bandook|Bankshot|Bazar|BeaverTail|BendyBear|Bisonal|BlackMould|Bonadan|BoomBox|BoxCaon|Briba|Bumblebee|Bundlore|CARROTBAT|CASTLETAP|CHIMNEYSWEEP|CHOPSTICK|CORESHELL|Calisto|CallMe|Caminho|CanisterWorm|Cannon|Carberp|Cardinal RAT|Caterpillar WebShell|ChChes|Chaes|CharmPower|China Chopper|Chrommme|CloudDuke|Cobalt Strike|CoinTicker|Conficker|CookieMiner|CostaBricks|CreepyDrive|Crimson|Cryptoistic|Cuba|Cyclops Blink|DDKONG|DEATHRANSOM|DEEPROOT|DOGCALL|DOWNIISSA|DRATzarus|DUSTTRAP|Dacls|DanBot|DarkComet|DarkGate|DarkTortilla|Daserf|Denis|Diavol|Dipsind|Disco|DnsSystem|Doki|Downdelph|DropBook|Drovorub|Dtrack|Dyre|EVILNUM|Ecipekac|Egregor|Elise|Emissary|Emotet|EvilBunny|Exaramel for Linux|Explosive|FELIXROOT|FYAnti|Felismus|Flagpro|FlawedAmmyy|FoggyWeb|FunnyDream|Gazer|Gelsemium|GlassWorm|Gold Dragon|GoldMax|GoldenSpy|Gootloader|Grandoreiro|GreyEnergy|GrimAgent|GuLoader|H1N1|HAPPYWORK|HOPLIGHT|HTTPBrowser|HTTPTroy|Hancitor|Hannotog|Havoc|Helminth|HexEval Loader|Hi-Zor|HiddenFace|HiddenWasp|Hikit|Hildegard|HotCroissant|Hydraq|HyperBro|IMAPLoader|IcedID|Industroyer|InvisiMole|InvisibleFerret|Ixeshe|JHUHUGIT|JPIN|JSS Loader|Javali|KARAE|KEYMARBLE|KGH_SPY|KOCTOPUS|KONNI|Kasidet|Kazuar|Kerrdown|Kessel|Kevin|KeyBoy|Kinsing|Kivars|Kwampirs|LODEINFO|LOWBALL|Latrodectus|LightNeuron|LightSpy|Linfo|LiteDuke|LitePower|Lizar|Lokibot|LoudMiner|Lucifer|MacMa|Machete|Mafalda|MagicRAT|MarkiRAT|MechaFlounder|Melcoz|Metamorfo|Meteor|Micropsia|Milan|Mini Shai-Hulud|MiniBike|MiniBus|MiniDuke|MiniFast|MiniJunk|Mis-Type|Misdat|Mivast|MobileOrder|MoleNet|Mongall|More_eggs|Mosquito|MuddyViper|NDiskMonitor|NETWIRE|NICECURL|NOKKI|NanHaiShu|NanoCore|NavRAT|Nebulae|Neo-reGeorg|Neoichor|Nerex|Netwalker|Nidiran|NightClub|ODAgent|OSX/Shlayer|OSX_OCEANLOTUS.D|Octopus|OilBooster|OilCheck|Okrum|OopsIE|Orz|OutSteel|P.A.S. Webshell|P8RAT|PHASEJAM|PHPsert|PLAINTEE|PLEAD|POLLBLEND|POSHSPY|POWERSOURCE|POWERSTATS|POWRUNER|PS1|PUBLOAD|PUNCHBUGGY|Pandora|Pasam|Penquin|Peppy|PipeMon|Pisloader|PlugX|PoetRAT|PoisonIvy|PolyglotDuke|Pony|PowerDuke|PowerExchange|PowerLess|PowerPunch|Psylo|Pteranodon|PureCrypter|QakBot|QuietSieve|RARSTONE|RATANKBA|RCSession|RDAT|REvil|RGDoor|RIFLESPINE|ROKRAT|RTM|Raccoon Stealer|RainyDay|Raspberry Robin|RedLeaves|RedLine Stealer|RegDuke|RemoteCMD|Remsec|Revenge RAT|RogueRobin|S-Type|SDBbot|SEASHARPEE|SHARPSTATS|SHUTTERSPEED|SLIGHTPULSE|SLOTHFULMEDIA|SLOWDRIFT|SMOKEDHAM|SQLRat|STEADYPULSE|SUNBURST|SVCReady|Saint Bot|Sakula|SampleCheck5000|Samurai|Sardonic|SeaDuke|Seasalt|ServHelper|Seth-Locker|ShadowPad|Shai-Hulud|Shamoon|Shark|SharpDisco|SharpStage|ShimRat|Sibot|SideTwist|Skidmap|Small Sieve|Smoke Loader|Snip3|SocGholish|SodaMaster|Solar|SombRAT|SoreFang|SpeakUp|Spica|SpicyOmelette|Squirrelwaffle|StoneDrill|StrelaStealer|StrifeWater|StrongPity|SysUpdate|SystemBC|TAINTEDSCRIBE|TAMECAT|TDTESS|TONESHELL|TSCookie|TURNEDUP|TWOSTROKE|TYPEFRAME|Taidoor|TeamPCP Cloud Stealer|ThiefQuest|ThreatNeedle|TinyTurla|Tomiris|TrickBot|Trojan.Karagany|Tsundere Botnet|Turian|UBoatRAT|UPPERCUT|Unknown Logger|Uroburos|Ursnif|VBShower|VERMIN|VIRTUALPITA|Valak|VaporRage|Vasport|Vidar|Volgmer|WEBC2|WIREFIRE|WarzoneRAT|Waterbear|WellMail|WellMess|WhisperGate|Wiarp|Winnti for Linux|Winnti for Windows|Woody RAT|XCSSET|XORIndex Loader|Xbash|YAHOYAH|ZIPLINE|ZLib|Zebrocy|ZeroT|Zeus Panda|Zox|ZxShell|ZxxZ|build_downer|down_new|gh0st RAT|jRAT|macOS.OSAMiner|metaMain|njRAT|reGeorg|xCaon"
   },
   {
     "technique_id": "T1106",
     "technique_name": "Native API",
     "tactic": "execution",
-    "families": "ADVSTORESHELL|ANELLDR|Akira|Amadey|AppleSeed|Aria-body|Attor|Avaddon|AvosLocker|BADHATCH|BADNEWS|BBK|BOOKWORM|Babuk|BackConfig|Bad Rabbit|Bandook|Bankshot|Bazar|BendyBear|Bisonal|BitPaymer|Black Basta|BlackByte Ransomware|BoxCaon|Bumblebee|CANONSTAGER|CHIMNEYSWEEP|CLAIMLOADER|CaddyWiper|Caminho|Carberp|Chaes|Chrommme|Clop|Cobalt Strike|ComRAT|Conti|CostaBricks|Cuba|Cyclops Blink|DCSrv|DEADEYE|DOWNIISSA|DRATzarus|DarkGate|DarkTortilla|Denis|Diavol|Dridex|DynoWiper|Egregor|Embargo|Emotet|EvilBunny|Exbyte|Explosive|FatDuke|Flagpro|FoggyWeb|Fooder|FunnyDream|Gelsemium|GoldenSpy|Goopy|Grandoreiro|GrimAgent|GuLoader|HAWKBALL|HTTPTroy|Hancitor|Havoc|HeartCrypt|HermeticWiper|HermeticWizard|HotCroissant|HyperBro|HyperStack|IMAPLoader|INC Ransomware|IcedID|InnaputRAT|InvisiMole|KOCTOPUS|KONNI|Kapeka|Kevin|KillDisk|LODEINFO|LP-Notes|Latrodectus|LightNeuron|LitePower|Lizar|LockBit 3.0|Lokibot|MacMa|Mafalda|Mango|MarkiRAT|Maze|Medusa Ransomware|MegaCortex|Metamorfo|Meteor|Milan|Mis-Type|Misdat|Mispadu|Mosquito|MuddyViper|NETWIRE|NOOPLDR|Nebulae|Netwalker|NightClub|Ninja|ODAgent|OilBooster|PAKLOG|PLEAD|PUBLOAD|Pikabot|Pillowmint|PipeMon|PlugX|PolyglotDuke|Pony|Prestige|Pteranodon|QUIETCANARY|QakBot|Qilin|RCSession|RDFSNIFFER|REvil|ROKRAT|RTM|RainyDay|Ramsay|Rising Sun|RotaJakiro|Royal|RustyWater|Ryuk|S-Type|SUNSPOT|SVCReady|Sagerunex|Saint Bot|Samurai|Sardonic|SharpDisco|ShimRat|SideTwist|Siloscape|SodaMaster|SombRAT|SplatCloak|SplatDropper|StarProxy|StealBit|StrifeWater|Stuxnet|SynAck|SysUpdate|SystemBC|TONESHELL|TRAILBLAZE|Taidoor|ThiefQuest|TinyTurla|Torisma|TrickBot|Uroburos|Ursnif|Volgmer|WarzoneRAT|WastedLocker|Waterbear|WhisperGate|WindTail|Winnti for Windows|Woody RAT|XAgentOSX|XLoader|ZeroCleare|ZxShell|ZxxZ|build_downer|gh0st RAT|metaMain|njRAT|xCaon"
+    "families": "ADVSTORESHELL|ANELLDR|Akira|Amadey|AppleSeed|Aria-body|Attor|Avaddon|AvosLocker|BADHATCH|BADNEWS|BBK|BOOKWORM|Babuk|BackConfig|Bad Rabbit|Bandook|Bankshot|Bazar|BendyBear|Bisonal|BitPaymer|Black Basta|BlackByte Ransomware|BoxCaon|Bumblebee|CANONSTAGER|CHIMNEYSWEEP|CLAIMLOADER|CRASHPAD|CaddyWiper|Caminho|Carberp|Chaes|Chrommme|Clop|Cobalt Strike|ComRAT|Conti|CostaBricks|Cuba|Cyclops Blink|DCSrv|DEADEYE|DOWNIISSA|DRATzarus|DarkGate|DarkTortilla|Denis|Diavol|Dridex|DynoWiper|Egregor|Embargo|Emotet|EvilBunny|Exbyte|Explosive|FatDuke|Flagpro|FoggyWeb|Fooder|FunnyDream|Gelsemium|GoldenSpy|Goopy|Grandoreiro|GrimAgent|GuLoader|HAWKBALL|HTTPTroy|Hancitor|Havoc|HeartCrypt|HermeticWiper|HermeticWizard|HotCroissant|HyperBro|HyperStack|IMAPLoader|INC Ransomware|IcedID|InnaputRAT|InvisiMole|KOCTOPUS|KONNI|Kapeka|Kevin|KillDisk|LIGHTRAIL|LODEINFO|LP-Notes|Latrodectus|LightNeuron|LitePower|Lizar|LockBit 3.0|Lokibot|MacMa|Mafalda|Mango|MarkiRAT|Maze|Medusa Ransomware|MegaCortex|Metamorfo|Meteor|Milan|MiniJunk|Mis-Type|Misdat|Mispadu|Mosquito|MuddyViper|NETWIRE|NOOPLDR|Nebulae|Netwalker|NightClub|Ninja|ODAgent|OilBooster|PAKLOG|PLEAD|PUBLOAD|Pikabot|Pillowmint|PipeMon|PlugX|PolyglotDuke|Pony|Prestige|Pteranodon|QUIETCANARY|QakBot|Qilin|RCSession|RDFSNIFFER|REvil|ROKRAT|RTM|RainyDay|Ramsay|Rising Sun|RotaJakiro|Royal|RustyWater|Ryuk|S-Type|SIGHTGRAB|SUNSPOT|SVCReady|Sagerunex|Saint Bot|Samurai|Sardonic|SharpDisco|ShimRat|SideTwist|Siloscape|SodaMaster|SombRAT|SplatCloak|SplatDropper|StarProxy|StealBit|StrifeWater|Stuxnet|SynAck|SysUpdate|SystemBC|TONESHELL|TRAILBLAZE|TWOSTROKE|Taidoor|The Gentlemen Ransomware|ThiefQuest|TinyTurla|Torisma|TrickBot|Uroburos|Ursnif|Vidar|Volgmer|WarzoneRAT|WastedLocker|Waterbear|WhisperGate|WindTail|Winnti for Windows|Woody RAT|XAgentOSX|XLoader|ZeroCleare|ZxShell|ZxxZ|build_downer|gh0st RAT|metaMain|njRAT|xCaon"
   },
   {
     "technique_id": "T1110",
@@ -1041,13 +1059,13 @@
     "technique_id": "T1112",
     "technique_name": "Modify Registry",
     "tactic": "defense-impairment|persistence",
-    "families": "ADVSTORESHELL|Agent Tesla|Amadey|Attor|Avaddon|BACKSPACE|BADCALL|BOOKWORM|Bankshot|Bisonal|BitPaymer|Black Basta|BlackByte 2.0 Ransomware|BlackByte Ransomware|BlackCat|CHIMNEYSWEEP|CHOPSTICK|Cardinal RAT|Catchamas|Caterpillar WebShell|Chaes|CharmPower|Clambling|Clop|Cobalt Strike|ComRAT|Conficker|Crimson|DCSrv|DarkComet|DarkTortilla|DarkWatchman|EVILNUM|Embargo|Exaramel for Windows|Explosive|FELIXROOT|Ferocious|Gelsemium|Grandoreiro|GreyEnergy|HIUPAN|HOPLIGHT|HermeticWiper|HiddenFace|Hydraq|HyperStack|IPsec Helper|InvisiMole|KEYMARBLE|KOCTOPUS|KONNI|Kapeka|LoJax|LockBit 2.0|LockBit 3.0|Lokibot|Mafalda|MegaCortex|Metamorfo|Mori|Mosquito|MuddyViper|NETWIRE|NOOPLDR|Naid|NanoCore|Neoichor|Nerex|Netwalker|NightClub|Orz|PHOREAL|PLAINTEE|Pandora|Pillowmint|PipeMon|PlugX|PoetRAT|PoisonIvy|PolyglotDuke|PowerShower|Prestige|Pysa|QUADAGENT|QakBot|Qilin|RCSession|REvil|ROKRAT|RTM|RegDuke|Regin|Rover|SLOTHFULMEDIA|SMOKEDHAM|SOUNDBITE|SUNBURST|Samurai|ShadowPad|Shamoon|ShimRat|ShrinkLocker|Sibot|StreamEx|Stuxnet|SynAck|SysUpdate|TEARDROP|TRANSLATEXT|TYPEFRAME|Taidoor|TajMahal|Tarrask|ThreatNeedle|TinyTurla|TrickBot|Uroburos|Ursnif|Valak|Volgmer|WarzoneRAT|WastedLocker|Waterbear|Zeus Panda|ZxShell|gh0st RAT|metaMain|njRAT|zwShell"
+    "families": "ADVSTORESHELL|Agent Tesla|Amadey|Attor|Avaddon|BACKSPACE|BADCALL|BOOKWORM|Bankshot|Bisonal|BitPaymer|Black Basta|BlackByte 2.0 Ransomware|BlackByte Ransomware|BlackCat|CHIMNEYSWEEP|CHOPSTICK|Cardinal RAT|Catchamas|Caterpillar WebShell|Chaes|CharmPower|Clambling|Clop|Cobalt Strike|ComRAT|Conficker|Crimson|DCSrv|DarkComet|DarkTortilla|DarkWatchman|EVILNUM|Embargo|Exaramel for Windows|Explosive|FELIXROOT|Ferocious|Gelsemium|Grandoreiro|GreyEnergy|HIUPAN|HOPLIGHT|HermeticWiper|HiddenFace|Hydraq|HyperStack|IPsec Helper|InvisiMole|KEYMARBLE|KOCTOPUS|KONNI|Kapeka|LoJax|LockBit 2.0|LockBit 3.0|Lokibot|Mafalda|MegaCortex|Metamorfo|Mori|Mosquito|MuddyViper|NETWIRE|NOOPLDR|Naid|NanoCore|Neoichor|Nerex|Netwalker|NightClub|Orz|PHOREAL|PLAINTEE|Pandora|Pillowmint|PipeMon|PlugX|PoetRAT|PoisonIvy|PolyglotDuke|PowerShower|Prestige|Pysa|QUADAGENT|QakBot|Qilin|RCSession|REvil|ROKRAT|RTM|RegDuke|Regin|Rover|SLOTHFULMEDIA|SMOKEDHAM|SOUNDBITE|SUNBURST|Samurai|ShadowPad|Shamoon|ShimRat|ShrinkLocker|Sibot|StreamEx|Stuxnet|SynAck|SysUpdate|TEARDROP|TRANSLATEXT|TYPEFRAME|Taidoor|TajMahal|Tarrask|The Gentlemen Ransomware|ThreatNeedle|TinyTurla|TrickBot|Uroburos|Ursnif|Valak|Vidar|Volgmer|WarzoneRAT|WastedLocker|Waterbear|Zeus Panda|ZxShell|gh0st RAT|metaMain|njRAT|zwShell"
   },
   {
     "technique_id": "T1113",
     "technique_name": "Screen Capture",
     "tactic": "collection",
-    "families": "Agent Tesla|AppleSeed|Aria-body|AshTag|Attor|Azorult|BADHATCH|BADNEWS|BISCUIT|BLUELIGHT|BadPatch|Bandook|BlackEnergy|CHIMNEYSWEEP|CHOPSTICK|Cadelspy|Cannon|Carbanak|Carberp|Cardinal RAT|Catchamas|Chaes|CharmPower|Chrommme|Clambling|Cobalt Strike|Cobian RAT|CosmicDuke|Crimson|CrossRAT|Cuckoo Stealer|DOGCALL|DUSTTRAP|Daserf|Derusbi|DustySky|ECCENTRICBANDWAGON|EvilGrab|FinFisher|Flame|FlawedAmmyy|FruitFly|FunnyDream|GRIFFON|HALFBAKED|HTTPTroy|Havoc|HotCroissant|Hydraq|HyperBro|InvisiMole|JHUHUGIT|Janicab|KEYMARBLE|KONNI|Kasidet|Kazuar|KeyBoy|Kivars|LODEINFO|LightSpy|LitePower|Lizar|LookBack|Lumma Stealer|LunarMail|MacMa|MacSpy|Machete|Mafalda|Manjusaka|MarkiRAT|Matryoshka|Metamorfo|Micropsia|Mispadu|NETWIRE|NKAbuse|NightClub|ObliqueRAT|Octopus|POORAIM|POWERSTATS|POWRUNER|Peppy|PlugX|PoetRAT|Prikormka|Proton|Pteranodon|QuietSieve|RCSession|RDAT|ROKRAT|RTM|Raccoon Stealer|RainyDay|Ramsay|RedLeaves|RedLine Stealer|Remexi|Revenge RAT|RogueRobin|Rover|SHUTTERSPEED|SLOTHFULMEDIA|SMOKEDHAM|SVCReady|SharpStage|Socksbot|StoneDrill|StrifeWater|SysUpdate|T9000|TONESHELL|TRANSLATEXT|TURNEDUP|TajMahal|TinyZBot|Trojan.Karagany|Troll Stealer|Turian|UPPERCUT|Ursnif|VERMIN|Valak|Woody RAT|XAgentOSX|XCSSET|XLoader|ZLib|Zebrocy|Zeus Panda|ZxShell|gh0st RAT|jRAT|metaMain|njRAT|yty"
+    "families": "Agent Tesla|AppleSeed|Aria-body|AshTag|Attor|Azorult|BADHATCH|BADNEWS|BISCUIT|BLUELIGHT|BadPatch|Bandook|BlackEnergy|CHIMNEYSWEEP|CHOPSTICK|Cadelspy|Cannon|Carbanak|Carberp|Cardinal RAT|Catchamas|Chaes|CharmPower|Chrommme|Clambling|Cobalt Strike|Cobian RAT|CosmicDuke|Crimson|CrossRAT|Cuckoo Stealer|DOGCALL|DUSTTRAP|Daserf|Derusbi|DustySky|ECCENTRICBANDWAGON|EvilGrab|FinFisher|Flame|FlawedAmmyy|FruitFly|FunnyDream|GRIFFON|HALFBAKED|HTTPTroy|Havoc|HotCroissant|Hydraq|HyperBro|InvisiMole|JHUHUGIT|Janicab|KEYMARBLE|KONNI|Kasidet|Kazuar|KeyBoy|Kivars|LODEINFO|LightSpy|LitePower|Lizar|LookBack|Lumma Stealer|LunarMail|MacMa|MacSpy|Machete|Mafalda|Manjusaka|MarkiRAT|Matryoshka|Metamorfo|Micropsia|Mispadu|NETWIRE|NKAbuse|NightClub|ObliqueRAT|Octopus|POORAIM|POWERSTATS|POWRUNER|Peppy|PlugX|PoetRAT|Prikormka|Proton|Pteranodon|QuietSieve|RCSession|RDAT|ROKRAT|RTM|Raccoon Stealer|RainyDay|Ramsay|RedLeaves|RedLine Stealer|Remexi|Revenge RAT|RogueRobin|Rover|SHUTTERSPEED|SIGHTGRAB|SLOTHFULMEDIA|SMOKEDHAM|SVCReady|SharpStage|Socksbot|StoneDrill|StrifeWater|SysUpdate|T9000|TONESHELL|TRANSLATEXT|TURNEDUP|TajMahal|TinyZBot|Trojan.Karagany|Troll Stealer|Turian|UPPERCUT|Ursnif|VERMIN|Valak|Woody RAT|XAgentOSX|XCSSET|XLoader|ZLib|Zebrocy|Zeus Panda|ZxShell|gh0st RAT|jRAT|metaMain|njRAT|yty"
   },
   {
     "technique_id": "T1114",
@@ -1077,7 +1095,7 @@
     "technique_id": "T1119",
     "technique_name": "Automated Collection",
     "tactic": "collection",
-    "families": "AppleSeed|Attor|BADNEWS|Bankshot|Comnie|Crutch|DarkGate|FunnyDream|GoldFinder|Helminth|InvisiMole|LAMEHUG|LightNeuron|LoFiSe|Lumma Stealer|MESSAGETAP|Metamorfo|Micropsia|Mini Shai-Hulud|NETWIRE|OutSteel|PACEMAKER|PoetRAT|Proxysvc|RTM|Raccoon Stealer|Ramsay|RotaJakiro|Rover|Shai-Hulud|StrelaStealer|StrongPity|T9000|TajMahal|TeamPCP Cloud Stealer|USBStealer|VERMIN|Valak|WindTail|Zebrocy|ccf32"
+    "families": "AppleSeed|Attor|BADNEWS|Bankshot|Comnie|Crutch|DarkGate|FunnyDream|GoldFinder|Helminth|InvisiMole|LAMEHUG|LightNeuron|LoFiSe|Lumma Stealer|MESSAGETAP|Metamorfo|Micropsia|Mini Shai-Hulud|NETWIRE|OutSteel|PACEMAKER|PoetRAT|Proxysvc|RTM|Raccoon Stealer|Ramsay|RotaJakiro|Rover|SIGHTGRAB|Shai-Hulud|StrelaStealer|StrongPity|T9000|TajMahal|TeamPCP Cloud Stealer|USBStealer|VERMIN|Valak|Vidar|WindTail|Zebrocy|ccf32"
   },
   {
     "technique_id": "T1120",
@@ -1095,7 +1113,7 @@
     "technique_id": "T1124",
     "technique_name": "System Time Discovery",
     "tactic": "discovery",
-    "families": "Agent Tesla|AppleSeed|Astaroth|AvosLocker|Azorult|BADHATCH|BISCUIT|BLUELIGHT|Bazar|BeaverTail|BendyBear|Bisonal|CanisterWorm|Cannon|Carbon|Clambling|ComRAT|Conficker|Crimson|DCSrv|DEADWOOD|DRATzarus|DUSTTRAP|DarkGate|DarkWatchman|Egregor|Epic|EvilBunny|FELIXROOT|FunnyDream|GRIFFON|GlassWorm|GoldMax|Grandoreiro|GravityRAT|Green Lambert|HOPLIGHT|InvisiMole|KEYPLUG|LODEINFO|Medusa Ransomware|Metamorfo|Mini Shai-Hulud|MoonWind|NOKKI|Nightdoor|Okrum|OopsIE|PAKLOG|PUBLOAD|PipeMon|PlugX|PowerDuke|Proxysvc|QakBot|RTM|Raccoon Stealer|SHARPSTATS|SUNBURST|SVCReady|ShadowPad|Shamoon|ShrinkLocker|SombRAT|StarProxy|StoneDrill|StrifeWater|Stuxnet|SystemBC|T9000|TAINTEDSCRIBE|Taidoor|TajMahal|Torisma|UPPERCUT|WindTail|Zebrocy|Zeus Panda|build_downer|ccf32"
+    "families": "Agent Tesla|AppleSeed|Astaroth|AvosLocker|Azorult|BADHATCH|BISCUIT|BLUELIGHT|Bazar|BeaverTail|BendyBear|Bisonal|CanisterWorm|Cannon|Carbon|Clambling|ComRAT|Conficker|Crimson|DCSrv|DEADWOOD|DRATzarus|DUSTTRAP|DarkGate|DarkWatchman|Egregor|Epic|EvilBunny|FELIXROOT|FunnyDream|GRIFFON|GlassWorm|GoldMax|Grandoreiro|GravityRAT|Green Lambert|HOPLIGHT|IOControl|InvisiMole|KEYPLUG|LODEINFO|Medusa Ransomware|Metamorfo|Mini Shai-Hulud|MoonWind|NOKKI|Nightdoor|Okrum|OopsIE|PAKLOG|PUBLOAD|PipeMon|PlugX|PowerDuke|Proxysvc|QakBot|RTM|Raccoon Stealer|SHARPSTATS|SIGHTGRAB|SUNBURST|SVCReady|ShadowPad|Shamoon|ShrinkLocker|SombRAT|StarProxy|StoneDrill|StrifeWater|Stuxnet|SystemBC|T9000|TAINTEDSCRIBE|Taidoor|TajMahal|Torisma|UPPERCUT|Vidar|WindTail|Zebrocy|Zeus Panda|build_downer|ccf32"
   },
   {
     "technique_id": "T1125",
@@ -1113,7 +1131,7 @@
     "technique_id": "T1129",
     "technique_name": "Shared Modules",
     "tactic": "execution",
-    "families": "Astaroth|Attor|BLINDINGCAN|BOOSTWRITE|Bumblebee|DarkWatchman|Dtrack|Ebury|FoggyWeb|Hydraq|KillDisk|LightSpy|Metamorfo|OSX_OCEANLOTUS.D|PUNCHBUGGY|PipeMon|RotaJakiro|Stuxnet|TajMahal|VersaMem|gh0st RAT"
+    "families": "Astaroth|Attor|BLINDINGCAN|BOOSTWRITE|Bumblebee|DarkWatchman|Dtrack|Ebury|FoggyWeb|Hydraq|KillDisk|LightSpy|Metamorfo|OSX_OCEANLOTUS.D|PUNCHBUGGY|PipeMon|RotaJakiro|Stuxnet|TajMahal|VersaMem|Vidar|gh0st RAT"
   },
   {
     "technique_id": "T1132",
@@ -1125,7 +1143,7 @@
     "technique_id": "T1132.001",
     "technique_name": "Standard Encoding",
     "tactic": "command-and-control",
-    "families": "ADVSTORESHELL|Astaroth|AutoIt backdoor|BADNEWS|BLINDINGCAN|BRICKSTORM|BS2005|BabyShark|Backdoor.Oldrea|Bisonal|Bumblebee|CORESHELL|Carbanak|ChChes|Chaes|CharmPower|Cobalt Strike|Cobian RAT|CreepySnail|DarkWatchman|Daserf|Denis|Dipsind|DnsSystem|Ebury|Elise|Emotet|Felismus|Flagpro|Fysbis|GLASSTOKEN|Gomir|Gootloader|GrimAgent|HOPLIGHT|Helminth|Ixeshe|JHUHUGIT|KONNI|Kapeka|Kazuar|Kessel|Kevin|Latrodectus|LockBit 3.0|LunarWeb|Machete|Mafalda|Mango|Manjusaka|MechaFlounder|Mini Shai-Hulud|Mis-Type|Misdat|Mongall|More_eggs|Mori|OSX_OCEANLOTUS.D|Octopus|Okrum|OopsIE|PHPsert|POWERSTATS|POWRUNER|PULSECHECK|Pikabot|PingPull|Pisloader|PowerShower|Prikormka|QUADAGENT|QUIETCANARY|QakBot|RDAT|Ramsay|RedLine Stealer|Revenge RAT|RogueRobin|RotaJakiro|RustyWater|S-Type|SLIGHTPULSE|SMOKEDHAM|STARWHALE|STEADYPULSE|SUNBURST|Saint Bot|Samurai|Sardonic|SeaDuke|SideTwist|Solar|Spark|SpeakUp|Squirrelwaffle|StrelaStealer|Stuxnet|SysUpdate|TAMECAT|Torisma|TrickBot|Troll Stealer|UPPERCUT|Valak|WARPWIRE|WIREFIRE|WellMess|Zebrocy|down_new|gh0st RAT|njRAT|xCaon"
+    "families": "ADVSTORESHELL|Astaroth|AutoIt backdoor|BADNEWS|BLINDINGCAN|BRICKSTORM|BS2005|BabyShark|Backdoor.Oldrea|Bisonal|Bumblebee|CORESHELL|Carbanak|ChChes|Chaes|CharmPower|Cobalt Strike|Cobian RAT|CreepySnail|DEEPROOT|DarkWatchman|Daserf|Denis|Dipsind|DnsSystem|Ebury|Elise|Emotet|Felismus|Flagpro|Fysbis|GLASSTOKEN|Gomir|Gootloader|GrimAgent|HOPLIGHT|Helminth|Ixeshe|JHUHUGIT|KONNI|Kapeka|Kazuar|Kessel|Kevin|Latrodectus|LockBit 3.0|LunarWeb|Machete|Mafalda|Mango|Manjusaka|MechaFlounder|Mini Shai-Hulud|MiniFast|Mis-Type|Misdat|Mongall|More_eggs|Mori|OSX_OCEANLOTUS.D|Octopus|Okrum|OopsIE|PHPsert|POWERSTATS|POWRUNER|PULSECHECK|Pikabot|PingPull|Pisloader|PowerShower|Prikormka|QUADAGENT|QUIETCANARY|QakBot|RDAT|Ramsay|RedLine Stealer|Revenge RAT|RogueRobin|RotaJakiro|RustyWater|S-Type|SLIGHTPULSE|SMOKEDHAM|STARWHALE|STEADYPULSE|SUNBURST|Saint Bot|Samurai|Sardonic|SeaDuke|SideTwist|Solar|Spark|SpeakUp|Squirrelwaffle|StrelaStealer|Stuxnet|SysUpdate|TAMECAT|TWOSTROKE|Torisma|TrickBot|Troll Stealer|UPPERCUT|Valak|WARPWIRE|WIREFIRE|WellMess|Zebrocy|down_new|gh0st RAT|njRAT|xCaon"
   },
   {
     "technique_id": "T1132.002",
@@ -1149,13 +1167,13 @@
     "technique_id": "T1134.001",
     "technique_name": "Token Impersonation/Theft",
     "tactic": "stealth|privilege-escalation",
-    "families": "Aria-body|BADHATCH|BitPaymer|Cobalt Strike|Emotet|FinFisher|Fooder|Havoc|LP-Notes|Okrum|REvil|Shamoon|Siloscape|Stuxnet|Tarrask"
+    "families": "Aria-body|BADHATCH|BitPaymer|CRASHPAD|Cobalt Strike|Emotet|FinFisher|Fooder|Havoc|LP-Notes|Okrum|REvil|Shamoon|Siloscape|Stuxnet|Tarrask"
   },
   {
     "technique_id": "T1134.002",
     "technique_name": "Create Process with Token",
     "tactic": "stealth|privilege-escalation",
-    "families": "Aria-body|Azorult|Bankshot|KONNI|PipeMon|REvil|TONESHELL|WhisperGate|ZxShell"
+    "families": "Aria-body|Azorult|Bankshot|KONNI|MiniFast|PipeMon|REvil|TONESHELL|WhisperGate|ZxShell"
   },
   {
     "technique_id": "T1134.003",
@@ -1173,7 +1191,7 @@
     "technique_id": "T1135",
     "technique_name": "Network Share Discovery",
     "tactic": "discovery",
-    "families": "Akira|Avaddon|AvosLocker|BADHATCH|Babuk|Bad Rabbit|Bazar|BitPaymer|BlackByte 2.0 Ransomware|BlackByte Ransomware|BlackCat|Clambling|Clop|Cobalt Strike|Conti|Cuba|DEATHRANSOM|DUSTTRAP|Diavol|Embargo|Emotet|FIVEHANDS|Flagpro|HELLOKITTY|INC Ransomware|IcedID|InvisiMole|KOPILUWAK|Kwampirs|Latrodectus|LockBit 2.0|LockBit 3.0|LunarWeb|MURKYTOP|Medusa Ransomware|OSInfo|Olympic Destroyer|PlugX|QakBot|Qilin|QuietSieve|Ramsay|RansomHub|Royal|Sardonic|ShimRat|Stuxnet|TrickBot|WastedLocker|WhisperGate|Zebrocy"
+    "families": "Akira|Avaddon|AvosLocker|BACKUPOSINT v9.0 APEX PREDATOR|BADHATCH|Babuk|Bad Rabbit|Bazar|BitPaymer|BlackByte 2.0 Ransomware|BlackByte Ransomware|BlackCat|Clambling|Clop|Cobalt Strike|Conti|Cuba|DEATHRANSOM|DUSTTRAP|Diavol|Embargo|Emotet|FIVEHANDS|Flagpro|HELLOKITTY|INC Ransomware|IcedID|InvisiMole|KOPILUWAK|Kwampirs|Latrodectus|LockBit 2.0|LockBit 3.0|LunarWeb|MURKYTOP|Medusa Ransomware|OSInfo|Olympic Destroyer|PlugX|QakBot|Qilin|QuietSieve|Ramsay|RansomHub|Royal|Sardonic|ShimRat|Stuxnet|The Gentlemen Ransomware|TrickBot|WastedLocker|WhisperGate|Zebrocy"
   },
   {
     "technique_id": "T1136",
@@ -1203,7 +1221,7 @@
     "technique_id": "T1140",
     "technique_name": "Deobfuscate/Decode Files or Information",
     "tactic": "stealth",
-    "families": "ABK|ANELLDR|Action RAT|Agent Tesla|Amadey|Apostle|AppleJeus|AppleSeed|Aria-body|AshTag|Astaroth|AuditCred|Avaddon|Avenger|AvosLocker|Azorult|BADFLICK|BBK|BBSRAT|BLINDINGCAN|BOOKWORM|BOOSTWRITE|BRICKSTORM|BRUSHFIRE|BUSHWALK|Babuk|BabyShark|BackConfig|Bandook|Bankshot|Bazar|BendyBear|Bisonal|BlackByte Ransomware|BoomBox|Bumblebee|Bundlore|CASTLETAP|CHIMNEYSWEEP|CLAIMLOADER|COATHANGER|Caminho|CanisterWorm|Carbon|Cardinal RAT|Chaes|CharmPower|Chinoxy|Chrommme|Clambling|Clop|Cobalt Strike|CoinTicker|ComRAT|Conti|CookieMiner|CorKLOG|CostaBricks|Crimson|Cuckoo Stealer|Cyclops Blink|DDKONG|DEADEYE|DEADWOOD|DOWNIISSA|DUSTPAN|DUSTTRAP|DanBot|DarkGate|DarkTortilla|DarkWatchman|Denis|DropBook|Drovorub|Dtrack|Dyre|Ebury|Ecipekac|Egregor|Embargo|Emotet|EnvyScout|Exaramel for Linux|Exbyte|FIVEHANDS|FRAMESTING|FYAnti|FatDuke|FinFisher|Final1stspy|FoggyWeb|Fooder|GLASSTOKEN|Gelsemium|GlassWorm|GoldMax|Goopy|Gootloader|Grandoreiro|Green Lambert|GrimAgent|HTTPTroy|HUI Loader|Hancitor|HeartCrypt|HermeticWiper|HexEval Loader|Heyoka Backdoor|HiddenFace|HiddenWasp|Hildegard|HyperBro|INC Ransomware|ISMInjector|IceApple|Industroyer|InvisiMole|InvisibleFerret|IronWind|KEYPLUG|KGH_SPY|KOCTOPUS|KONNI|Kapeka|Kerrdown|Kessel|Kobalos|Kwampirs|LAMEHUG|LIGHTWIRE|LP-Notes|Latrodectus|LightNeuron|Line Dancer|LiteDuke|Lizar|LockBit 2.0|LockBit 3.0|Lokibot|LookBack|Lucifer|Lumma Stealer|LunarLoader|LunarMail|LunarWeb|MESSAGETAP|MOPSLED|MacMa|Machete|Mafalda|MagicRAT|Medusa Ransomware|MegaCortex|Metamorfo|Mini Shai-Hulud|MirageFox|Mispadu|Mongall|More_eggs|Mori|MuddyViper|NOKKI|NOOPLDR|NativeZone|Netwalker|Nightdoor|Ninja|ODAgent|OSX/Shlayer|OSX_OCEANLOTUS.D|OilBooster|Okrum|OnionDuke|OopsIE|P.A.S. Webshell|PHASEJAM|PHPsert|PITSTOP|POWERSTATS|PS1|PUBLOAD|PUNCHBUGGY|Pikabot|Pillowmint|PingPull|PipeMon|PlugX|PoetRAT|PolyglotDuke|PowGoop|PowerExchange|PowerLess|Proton|Pteranodon|PureCrypter|PyDCrypt|QUADAGENT|QUIETCANARY|QakBot|RAPIDPULSE|RDAT|REPTILE|REvil|RGDoor|RIFLESPINE|ROADSWEEP|ROAMINGHOUSE|ROKRAT|Raccoon Stealer|Raindrop|RainyDay|Ramsay|RansomHub|Raspberry Robin|RedLine Stealer|RegDuke|Remexi|Rising Sun|RogueRobin|RotaJakiro|RustyWater|SDBbot|SLIGHTPULSE|SPAWNCHIMERA|SQLRat|STEADYPULSE|SUNSPOT|Sagerunex|Saint Bot|SampleCheck5000|Sardonic|ShadowPad|Shamoon|Shark|SharpStage|ShimRat|Sibot|SideTwist|Siloscape|Skidmap|Smoke Loader|Snip3|SombRAT|SoreFang|Spark|Spica|SplatDropper|Squirrelwaffle|StarProxy|Starloader|StealBit|StrelaStealer|Stuxnet|SysUpdate|SystemBC|TEARDROP|THINCRUST|TONESHELL|TSCookie|TYPEFRAME|Taidoor|TeamPCP Cloud Stealer|ThreatNeedle|Torisma|TrickBot|Tsundere Botnet|Turian|UPSTYLE|Uroburos|Ursnif|VERMIN|Valak|VaporRage|Volgmer|WIREFIRE|WarzoneRAT|WastedLocker|Waterbear|WellMail|WellMess|WhisperGate|WindTail|Winnti for Linux|Winnti for Windows|Woody RAT|XLoader|XORIndex Loader|YAHOYAH|Zebrocy|ZeroT|Zeus Panda|ZxxZ|gh0st RAT|metaMain|xCaon"
+    "families": "ABK|ANELLDR|Action RAT|Agent Tesla|Amadey|Apostle|AppleJeus|AppleSeed|Aria-body|AshTag|Astaroth|AuditCred|Avaddon|Avenger|AvosLocker|Azorult|BADFLICK|BBK|BBSRAT|BLINDINGCAN|BOOKWORM|BOOSTWRITE|BRICKSTORM|BRUSHFIRE|BUSHWALK|Babuk|BabyShark|BackConfig|Bandook|Bankshot|Bazar|BendyBear|Bisonal|BlackByte Ransomware|BoomBox|Bumblebee|Bundlore|CASTLETAP|CHIMNEYSWEEP|CLAIMLOADER|COATHANGER|CRASHPAD|Caminho|CanisterWorm|Carbon|Cardinal RAT|Chaes|CharmPower|Chinoxy|Chrommme|Clambling|Clop|Cobalt Strike|CoinTicker|ComRAT|Conti|CookieMiner|CorKLOG|CostaBricks|Crimson|Cuckoo Stealer|Cyclops Blink|DDKONG|DEADEYE|DEADWOOD|DOWNIISSA|DUSTPAN|DUSTTRAP|DanBot|DarkGate|DarkTortilla|DarkWatchman|Denis|DropBook|Drovorub|Dtrack|Dyre|Ebury|Ecipekac|Egregor|Embargo|Emotet|EnvyScout|Exaramel for Linux|Exbyte|FIVEHANDS|FRAMESTING|FYAnti|FatDuke|FinFisher|Final1stspy|FoggyWeb|Fooder|GLASSTOKEN|Gelsemium|GlassWorm|GoldMax|Goopy|Gootloader|Grandoreiro|Green Lambert|GrimAgent|HTTPTroy|HUI Loader|Hancitor|HeartCrypt|HermeticWiper|HexEval Loader|Heyoka Backdoor|HiddenFace|HiddenWasp|Hildegard|HyperBro|INC Ransomware|IOControl|ISMInjector|IceApple|Industroyer|InvisiMole|InvisibleFerret|IronWind|KEYPLUG|KGH_SPY|KOCTOPUS|KONNI|Kapeka|Kerrdown|Kessel|Kobalos|Kwampirs|LAMEHUG|LIGHTWIRE|LP-Notes|Latrodectus|LightNeuron|Line Dancer|LiteDuke|Lizar|LockBit 2.0|LockBit 3.0|Lokibot|LookBack|Lucifer|Lumma Stealer|LunarLoader|LunarMail|LunarWeb|MESSAGETAP|MOPSLED|MacMa|Machete|Mafalda|MagicRAT|Medusa Ransomware|MegaCortex|Metamorfo|Mini Shai-Hulud|MiniFast|MirageFox|Mispadu|Mongall|More_eggs|Mori|MuddyViper|NOKKI|NOOPLDR|NativeZone|Netwalker|Nightdoor|Ninja|ODAgent|OSX/Shlayer|OSX_OCEANLOTUS.D|OilBooster|Okrum|OnionDuke|OopsIE|P.A.S. Webshell|PHASEJAM|PHPsert|PITSTOP|POWERSTATS|PS1|PUBLOAD|PUNCHBUGGY|Pikabot|Pillowmint|PingPull|PipeMon|PlugX|PoetRAT|PolyglotDuke|PowGoop|PowerExchange|PowerLess|Proton|Pteranodon|PureCrypter|PyDCrypt|QUADAGENT|QUIETCANARY|QakBot|RAPIDPULSE|RDAT|REPTILE|REvil|RGDoor|RIFLESPINE|ROADSWEEP|ROAMINGHOUSE|ROKRAT|Raccoon Stealer|Raindrop|RainyDay|Ramsay|RansomHub|Raspberry Robin|RedLine Stealer|RegDuke|Remexi|Rising Sun|RogueRobin|RotaJakiro|RustyWater|SDBbot|SIGHTGRAB|SLIGHTPULSE|SPAWNCHIMERA|SQLRat|STEADYPULSE|SUNSPOT|Sagerunex|Saint Bot|SampleCheck5000|Sardonic|ShadowPad|Shamoon|Shark|SharpStage|ShimRat|Sibot|SideTwist|Siloscape|Skidmap|Smoke Loader|Snip3|SombRAT|SoreFang|Spark|Spica|SplatDropper|Squirrelwaffle|StarProxy|Starloader|StealBit|StrelaStealer|Stuxnet|SysUpdate|SystemBC|TEARDROP|THINCRUST|TONESHELL|TSCookie|TYPEFRAME|Taidoor|TeamPCP Cloud Stealer|ThreatNeedle|Torisma|TrickBot|Tsundere Botnet|Turian|UPSTYLE|Uroburos|Ursnif|VERMIN|Valak|VaporRage|Vidar|Volgmer|WIREFIRE|WarzoneRAT|WastedLocker|Waterbear|WellMail|WellMess|WhisperGate|WindTail|Winnti for Linux|Winnti for Windows|Woody RAT|XLoader|XORIndex Loader|YAHOYAH|Zebrocy|ZeroT|Zeus Panda|ZxxZ|gh0st RAT|metaMain|xCaon"
   },
   {
     "technique_id": "T1176.001",
@@ -1227,7 +1245,7 @@
     "technique_id": "T1189",
     "technique_name": "Drive-by Compromise",
     "tactic": "initial-access",
-    "families": "Bad Rabbit|Bundlore|Grandoreiro|IcedID|KARAE|LoudMiner|POORAIM|REvil|Snip3|SocGholish"
+    "families": "Bad Rabbit|Bundlore|Grandoreiro|IcedID|KARAE|LoudMiner|POORAIM|REvil|Snip3|SocGholish|Vidar"
   },
   {
     "technique_id": "T1190",
@@ -1287,7 +1305,7 @@
     "technique_id": "T1204.001",
     "technique_name": "Malicious Link",
     "tactic": "execution",
-    "families": "AppleJeus|BackConfig|Bazar|Bumblebee|Emotet|Gootloader|Grandoreiro|GuLoader|Hancitor|Javali|KOCTOPUS|Kali365|Kerrdown|Latrodectus|Melcoz|NETWIRE|ObliqueRAT|OutSteel|PLEAD|Pony|QakBot|Qilin|ROAMINGHOUSE|SMOKEDHAM|Saint Bot|Snip3|SocGholish|SpicyOmelette|Squirrelwaffle|TSCookie"
+    "families": "AppleJeus|BackConfig|Bazar|Bumblebee|Emotet|Gootloader|Grandoreiro|GuLoader|Hancitor|Javali|KOCTOPUS|Kali365|Kerrdown|Latrodectus|Melcoz|NETWIRE|ObliqueRAT|OutSteel|PLEAD|Pony|QakBot|Qilin|ROAMINGHOUSE|SMOKEDHAM|Saint Bot|Snip3|SocGholish|SpicyOmelette|Squirrelwaffle|TSCookie|Vidar"
   },
   {
     "technique_id": "T1204.002",
@@ -1299,7 +1317,7 @@
     "technique_id": "T1204.004",
     "technique_name": "Malicious Copy and Paste",
     "tactic": "execution",
-    "families": "Havoc|Kali365"
+    "families": "Havoc|Kali365|Vidar"
   },
   {
     "technique_id": "T1205",
@@ -1347,7 +1365,7 @@
     "technique_id": "T1217",
     "technique_name": "Browser Information Discovery",
     "tactic": "discovery",
-    "families": "BeaverTail|Calisto|Cuckoo Stealer|DarkWatchman|Dtrack|GlassWorm|LightSpy|Lizar|Lumma Stealer|Machete|Mafalda|Mispadu|MobileOrder|PowerLess|RedLine Stealer|SUGARDUMP|Troll Stealer"
+    "families": "BeaverTail|Calisto|Cuckoo Stealer|DarkWatchman|Dtrack|GlassWorm|LightSpy|Lizar|Lumma Stealer|Machete|Mafalda|MiniBrowse|Mispadu|MobileOrder|PowerLess|RedLine Stealer|SUGARDUMP|Troll Stealer|Vidar"
   },
   {
     "technique_id": "T1218.001",
@@ -1461,7 +1479,7 @@
     "technique_id": "T1222.001",
     "technique_name": "Windows Permissions",
     "tactic": "defense-impairment",
-    "families": "BitPaymer|BlackByte Ransomware|BlackCat|CaddyWiper|Grandoreiro|JPIN|Ryuk|WannaCry|WastedLocker"
+    "families": "BitPaymer|BlackByte Ransomware|BlackCat|CaddyWiper|Grandoreiro|JPIN|Ryuk|The Gentlemen Ransomware|Vidar|WannaCry|WastedLocker"
   },
   {
     "technique_id": "T1222.002",
@@ -1473,7 +1491,7 @@
     "technique_id": "T1480",
     "technique_name": "Execution Guardrails",
     "tactic": "stealth",
-    "families": "Akira _v2|Anchor|Apostle|BOLDMOVE|BPFDoor|BitPaymer|BlackByte Ransomware|BoomBox|CHIMNEYSWEEP|CanisterWorm|DEADEYE|DarkGate|EnvyScout|Exbyte|GlassWorm|HiddenFace|LODEINFO|LazyWiper|LightSpy|LockBit 2.0|LockBit 3.0|LunarLoader|Mini Shai-Hulud|NativeZone|PureCrypter|Qilin|ROADSWEEP|ROAMINGHOUSE|RansomHub|Raspberry Robin|RedLine Stealer|SUNSPOT|Sagerunex|ShrinkLocker|Small Sieve|StealBit|StrelaStealer|Stuxnet|SystemBC|TONESHELL|TeamPCP Cloud Stealer|Torisma|Tsundere Botnet|VaporRage"
+    "families": "Akira _v2|Anchor|Apostle|BOLDMOVE|BPFDoor|BitPaymer|BlackByte Ransomware|BoomBox|CHIMNEYSWEEP|CanisterWorm|DEADEYE|DarkGate|EnvyScout|Exbyte|GlassWorm|HiddenFace|LODEINFO|LazyWiper|LightSpy|LockBit 2.0|LockBit 3.0|LunarLoader|Mini Shai-Hulud|NativeZone|PureCrypter|Qilin|ROADSWEEP|ROAMINGHOUSE|RansomHub|Raspberry Robin|RedLine Stealer|SUNSPOT|Sagerunex|ShrinkLocker|Small Sieve|StealBit|StrelaStealer|Stuxnet|SystemBC|TONESHELL|TeamPCP Cloud Stealer|Torisma|Tsundere Botnet|VaporRage|Vidar"
   },
   {
     "technique_id": "T1480.001",
@@ -1491,13 +1509,13 @@
     "technique_id": "T1482",
     "technique_name": "Domain Trust Discovery",
     "tactic": "discovery",
-    "families": "BADHATCH|Bazar|DUSTTRAP|IcedID|LAMEHUG|Latrodectus|MgBot|Pikabot|QakBot|SocGholish|TrickBot"
+    "families": "BADHATCH|Bazar|DUSTTRAP|IcedID|LAMEHUG|Latrodectus|MgBot|Pikabot|QakBot|SocGholish|The Gentlemen Ransomware|TrickBot"
   },
   {
     "technique_id": "T1484.001",
     "technique_name": "Group Policy Modification",
     "tactic": "defense-impairment|privilege-escalation",
-    "families": "Egregor|HermeticWiper|LockBit 2.0|LockBit 3.0|Meteor|Prestige|Qilin"
+    "families": "Egregor|HermeticWiper|LockBit 2.0|LockBit 3.0|Meteor|Prestige|Qilin|The Gentlemen Ransomware"
   },
   {
     "technique_id": "T1485",
@@ -1509,25 +1527,25 @@
     "technique_id": "T1486",
     "technique_name": "Data Encrypted for Impact",
     "tactic": "impact",
-    "families": "Akira|Akira _v2|Apostle|Avaddon|AvosLocker|Babuk|Bad Rabbit|BitPaymer|Black Basta|BlackByte 2.0 Ransomware|BlackByte Ransomware|BlackCat|Cheerscrypt|Clop|Conti|Cuba|DCSrv|DEATHRANSOM|DarkGate|Diavol|EKANS|Egregor|Embargo|FIVEHANDS|HELLOKITTY|INC Ransomware|JCry|KillDisk|LODEINFO|LockBit 2.0|LockBit 3.0|LockerGoga|Maze|Medusa Ransomware|MegaCortex|Megazord|Moneybird|Netwalker|NotPetya|Pay2Key|Playcrypt|Prestige|ProLock|Pysa|Qilin|REvil|ROADSWEEP|Ragnar Locker|RansomHub|RobbinHood|Royal|Ryuk|SamSam|Seth-Locker|Shamoon|ShrinkLocker|SynAck|ThiefQuest|WannaCry|WastedLocker|XCSSET|Xbash"
+    "families": "Akira|Akira _v2|Apostle|Avaddon|AvosLocker|Babuk|Bad Rabbit|BitPaymer|Black Basta|BlackByte 2.0 Ransomware|BlackByte Ransomware|BlackCat|Cheerscrypt|Clop|Conti|Cuba|DCSrv|DEATHRANSOM|DarkGate|Diavol|EKANS|Egregor|Embargo|FIVEHANDS|HELLOKITTY|INC Ransomware|JCry|KillDisk|LODEINFO|LockBit 2.0|LockBit 3.0|LockerGoga|Maze|Medusa Ransomware|MegaCortex|Megazord|Moneybird|Netwalker|NotPetya|Pay2Key|Playcrypt|Prestige|ProLock|Pysa|Qilin|REvil|ROADSWEEP|Ragnar Locker|RansomHub|RobbinHood|Royal|Ryuk|SamSam|Seth-Locker|Shamoon|ShrinkLocker|SynAck|The Gentlemen Ransomware|ThiefQuest|WannaCry|WastedLocker|XCSSET|Xbash"
   },
   {
     "technique_id": "T1489",
     "technique_name": "Service Stop",
     "tactic": "impact",
-    "families": "Akira _v2|Avaddon|AvosLocker|BRICKSTORM|Babuk|BlackByte 2.0 Ransomware|BlackCat|Cheerscrypt|Clop|Conti|Cuba|DRYHOOK|Diavol|EKANS|Embargo|Hannotog|HermeticWiper|HotCroissant|INC Ransomware|Industroyer|InvisibleFerret|KillDisk|LockBit 2.0|LockBit 3.0|LookBack|Maze|Medusa Ransomware|MegaCortex|Megazord|Meteor|Netwalker|Olympic Destroyer|PHASEJAM|Pay2Key|Prestige|Pysa|Qilin|REvil|ROADSWEEP|Ragnar Locker|RansomHub|RobbinHood|Royal|Ryuk|SLOTHFULMEDIA|VIRTUALPITA|WannaCry"
+    "families": "Akira _v2|Avaddon|AvosLocker|BRICKSTORM|Babuk|BlackByte 2.0 Ransomware|BlackCat|Cheerscrypt|Clop|Conti|Cuba|DRYHOOK|Diavol|EKANS|Embargo|Hannotog|HermeticWiper|HotCroissant|INC Ransomware|Industroyer|InvisibleFerret|KillDisk|LockBit 2.0|LockBit 3.0|LookBack|Maze|Medusa Ransomware|MegaCortex|Megazord|Meteor|MiniFast|Netwalker|Olympic Destroyer|PHASEJAM|Pay2Key|Prestige|Pysa|Qilin|REvil|ROADSWEEP|Ragnar Locker|RansomHub|RobbinHood|Royal|Ryuk|SLOTHFULMEDIA|The Gentlemen Ransomware|VIRTUALPITA|Vidar|WannaCry"
   },
   {
     "technique_id": "T1490",
     "technique_name": "Inhibit System Recovery",
     "tactic": "impact",
-    "families": "Akira|Avaddon|BFG Agonizer|Babuk|BitPaymer|Black Basta|BlackByte 2.0 Ransomware|BlackByte Ransomware|BlackCat|Clop|Conficker|Conti|DEATHRANSOM|DarkGate|DarkWatchman|Diavol|EKANS|Embargo|FIVEHANDS|H1N1|HELLOKITTY|HermeticWiper|INC Ransomware|InvisiMole|JCry|LockBit 2.0|LockBit 3.0|Maze|Medusa Ransomware|MegaCortex|Meteor|MultiLayer Wiper|Netwalker|Olympic Destroyer|Playcrypt|Prestige|ProLock|Pysa|Qilin|REvil|ROADSWEEP|Ragnar Locker|RansomHub|RobbinHood|Royal|Ryuk|WannaCry|WastedLocker"
+    "families": "Akira|Avaddon|BFG Agonizer|Babuk|BitPaymer|Black Basta|BlackByte 2.0 Ransomware|BlackByte Ransomware|BlackCat|Clop|Conficker|Conti|DEATHRANSOM|DarkGate|DarkWatchman|Diavol|EKANS|Embargo|FIVEHANDS|H1N1|HELLOKITTY|HermeticWiper|INC Ransomware|InvisiMole|JCry|LockBit 2.0|LockBit 3.0|Maze|Medusa Ransomware|MegaCortex|Meteor|MultiLayer Wiper|Netwalker|Olympic Destroyer|Playcrypt|Prestige|ProLock|Pysa|Qilin|REvil|ROADSWEEP|Ragnar Locker|RansomHub|RobbinHood|Royal|Ryuk|The Gentlemen Ransomware|WannaCry|WastedLocker"
   },
   {
     "technique_id": "T1491.001",
     "technique_name": "Internal Defacement",
     "tactic": "impact",
-    "families": "Black Basta|BlackCat|Diavol|INC Ransomware|Meteor|Qilin|ROADSWEEP|RansomHub|SameCoin|ShrinkLocker"
+    "families": "Black Basta|BlackCat|Diavol|INC Ransomware|Meteor|Qilin|ROADSWEEP|RansomHub|SameCoin|ShrinkLocker|The Gentlemen Ransomware"
   },
   {
     "technique_id": "T1495",
@@ -1551,7 +1569,7 @@
     "technique_id": "T1497.001",
     "technique_name": "System Checks",
     "tactic": "stealth|discovery",
-    "families": "Astaroth|Attor|BLUELIGHT|BadPatch|Black Basta|BlackByte Ransomware|Bumblebee|DUSTTRAP|DarkGate|DarkTortilla|Denis|Dyre|EvilBunny|Exbyte|Ferocious|FinFisher|GoldMax|Grandoreiro|GravityRAT|GuLoader|HeartCrypt|InvisiMole|Latrodectus|Lucifer|Lumma Stealer|MegaCortex|Mini Shai-Hulud|Mispadu|NativeZone|Nightdoor|OSX_OCEANLOTUS.D|ObliqueRAT|Okrum|OopsIE|P8RAT|Pikabot|PlugX|PoetRAT|QakBot|ROKRAT|Raspberry Robin|RogueRobin|SUNBURST|SVCReady|Saint Bot|Shark|Smoke Loader|Snip3|SodaMaster|SynAck|Trojan.Karagany|UBoatRAT|WastedLocker|WhisperGate|XLoader|macOS.OSAMiner|yty"
+    "families": "Astaroth|Attor|BLUELIGHT|BadPatch|Black Basta|BlackByte Ransomware|Bumblebee|DUSTTRAP|DarkGate|DarkTortilla|Denis|Dyre|EvilBunny|Exbyte|Ferocious|FinFisher|GoldMax|Grandoreiro|GravityRAT|GuLoader|HeartCrypt|InvisiMole|Latrodectus|Lucifer|Lumma Stealer|MegaCortex|Mini Shai-Hulud|MiniBus|Mispadu|NativeZone|Nightdoor|OSX_OCEANLOTUS.D|ObliqueRAT|Okrum|OopsIE|P8RAT|Pikabot|PlugX|PoetRAT|QakBot|ROKRAT|Raspberry Robin|RogueRobin|SUNBURST|SVCReady|Saint Bot|Shark|Smoke Loader|Snip3|SodaMaster|SynAck|Trojan.Karagany|UBoatRAT|Vidar|WastedLocker|WhisperGate|XLoader|macOS.OSAMiner|yty"
   },
   {
     "technique_id": "T1497.002",
@@ -1563,7 +1581,7 @@
     "technique_id": "T1497.003",
     "technique_name": "Time Based Checks",
     "tactic": "stealth|discovery",
-    "families": "AppleJeus|BADFLICK|Bazar|BendyBear|Bisonal|Bumblebee|CanisterWorm|Clambling|Clop|Crimson|DRATzarus|DarkTortilla|Egregor|EvilBunny|FatDuke|GoldMax|GoldenSpy|Gootloader|GrimAgent|GuLoader|Havoc|HermeticWiper|HiddenFace|IPsec Helper|LiteDuke|Lokibot|LunarWeb|Okrum|P8RAT|Pony|QakBot|Raindrop|RansomHub|SUNBURST|SVCReady|Saint Bot|Snip3|SodaMaster|StrifeWater|ThiefQuest|Tomiris|TrickBot|Ursnif|WhisperGate|XCSSET|metaMain"
+    "families": "AppleJeus|BADFLICK|Bazar|BendyBear|Bisonal|Bumblebee|CanisterWorm|Clambling|Clop|Crimson|DRATzarus|DarkTortilla|Egregor|EvilBunny|FatDuke|GoldMax|GoldenSpy|Gootloader|GrimAgent|GuLoader|Havoc|HermeticWiper|HiddenFace|IPsec Helper|LiteDuke|Lokibot|LunarWeb|Okrum|P8RAT|Pony|QakBot|Raindrop|RansomHub|SUNBURST|SVCReady|Saint Bot|Snip3|SodaMaster|StrifeWater|ThiefQuest|Tomiris|TrickBot|Ursnif|Vidar|WhisperGate|XCSSET|metaMain"
   },
   {
     "technique_id": "T1498",
@@ -1623,7 +1641,7 @@
     "technique_id": "T1518.001",
     "technique_name": "Security Software Discovery",
     "tactic": "discovery",
-    "families": "ABK|Action RAT|Amadey|Astaroth|AuTo Stealer|Avenger|BLUELIGHT|BadPatch|Bazar|BlackByte Ransomware|Bumblebee|CHIMNEYSWEEP|CHOPSTICK|Carberp|Clop|Comnie|CookieMiner|CozyCar|Crimson|DUSTTRAP|DarkGate|DarkTortilla|DarkWatchman|DustySky|EVILNUM|Epic|EvilBunny|Exbyte|FELIXROOT|Felismus|Ferocious|FinFisher|Flame|FlawedAmmyy|FunnyDream|Gelsemium|Gold Dragon|Grandoreiro|HiddenFace|IcedID|InvisiMole|JPIN|Kasidet|Latrodectus|LiteDuke|LitePower|Lizar|Lumma Stealer|LunarWeb|Mafalda|MarkiRAT|Medusa Ransomware|Metamorfo|Meteor|Micropsia|Mispadu|MoleNet|More_eggs|Mosquito|MuddyViper|Netwalker|NotPetya|POWERSTATS|POWRUNER|PUBLOAD|PUNCHBUGGY|PipeMon|Prikormka|PureCrypter|QakBot|ROAMINGHOUSE|RTM|Raspberry Robin|RedLine Stealer|Remsec|RogueRobin|RustyWater|SPAWNCHIMERA|SUNBURST|Skidmap|SpicyOmelette|SplatCloak|StoneDrill|StreamEx|StrongPity|Stuxnet|T9000|TAMECAT|TONESHELL|TajMahal|ThiefQuest|VERMIN|Valak|Waterbear|WhisperGate|Wingbird|Woody RAT|XCSSET|YAHOYAH|Zeus Panda|ZxxZ|build_downer|down_new|jRAT|xCaon"
+    "families": "ABK|Action RAT|Amadey|Astaroth|AuTo Stealer|Avenger|BLUELIGHT|BadPatch|Bazar|BlackByte Ransomware|Bumblebee|CHIMNEYSWEEP|CHOPSTICK|Carberp|Clop|Comnie|CookieMiner|CozyCar|Crimson|DUSTTRAP|DarkGate|DarkTortilla|DarkWatchman|DustySky|EVILNUM|Epic|EvilBunny|Exbyte|FELIXROOT|Felismus|Ferocious|FinFisher|Flame|FlawedAmmyy|FunnyDream|Gelsemium|Gold Dragon|Grandoreiro|HiddenFace|IcedID|InvisiMole|JPIN|Kasidet|Latrodectus|LiteDuke|LitePower|Lizar|Lumma Stealer|LunarWeb|Mafalda|MarkiRAT|Medusa Ransomware|Metamorfo|Meteor|Micropsia|MiniBus|Mispadu|MoleNet|More_eggs|Mosquito|MuddyViper|Netwalker|NotPetya|POWERSTATS|POWRUNER|PUBLOAD|PUNCHBUGGY|PipeMon|Prikormka|PureCrypter|QakBot|ROAMINGHOUSE|RTM|Raspberry Robin|RedLine Stealer|Remsec|RogueRobin|RustyWater|SPAWNCHIMERA|SUNBURST|Skidmap|SpicyOmelette|SplatCloak|StoneDrill|StreamEx|StrongPity|Stuxnet|T9000|TAMECAT|TONESHELL|TajMahal|ThiefQuest|VERMIN|Valak|Waterbear|WhisperGate|Wingbird|Woody RAT|XCSSET|YAHOYAH|Zeus Panda|ZxxZ|build_downer|down_new|jRAT|xCaon"
   },
   {
     "technique_id": "T1526",
@@ -1635,13 +1653,13 @@
     "technique_id": "T1528",
     "technique_name": "Steal Application Access Token",
     "tactic": "credential-access",
-    "families": "CanisterWorm|Kali365|Mini Shai-Hulud|Shai-Hulud|TeamPCP Cloud Stealer"
+    "families": "BACKUPOSINT v9.0 APEX PREDATOR|CanisterWorm|Kali365|Mini Shai-Hulud|Shai-Hulud|TeamPCP Cloud Stealer"
   },
   {
     "technique_id": "T1529",
     "technique_name": "System Shutdown/Reboot",
     "tactic": "impact",
-    "families": "AcidPour|AcidRain|Apostle|AvosLocker|BFG Agonizer|Black Basta|CHIMNEYSWEEP|CanisterWorm|DCSrv|DarkGate|DynoWiper|HermeticWiper|KillDisk|Latrodectus|LockerGoga|LookBack|Maze|MultiLayer Wiper|NotPetya|Olympic Destroyer|Qilin|Shamoon|ShrinkLocker|WhisperGate|XLoader"
+    "families": "AcidPour|AcidRain|Apostle|AvosLocker|BFG Agonizer|Black Basta|CHIMNEYSWEEP|CanisterWorm|DCSrv|DarkGate|DynoWiper|HermeticWiper|KillDisk|Latrodectus|LockerGoga|LookBack|Maze|MultiLayer Wiper|NotPetya|Olympic Destroyer|Qilin|Shamoon|ShrinkLocker|The Gentlemen Ransomware|WhisperGate|XLoader"
   },
   {
     "technique_id": "T1531",
@@ -1659,7 +1677,7 @@
     "technique_id": "T1539",
     "technique_name": "Steal Web Session Cookie",
     "tactic": "credential-access",
-    "families": "BLUELIGHT|Chaes|CookieMiner|DarkGate|EVILNUM|GlassWorm|Grandoreiro|Kali365|LODEINFO|Lumma Stealer|MgBot|QakBot|Raccoon Stealer|RedLine Stealer|Spica|TRANSLATEXT|TajMahal|XCSSET|XLoader"
+    "families": "BLUELIGHT|Chaes|CookieMiner|DarkGate|EVILNUM|GlassWorm|Grandoreiro|Kali365|LODEINFO|Lumma Stealer|MgBot|QakBot|Raccoon Stealer|RedLine Stealer|Spica|TRANSLATEXT|TajMahal|Vidar|XCSSET|XLoader"
   },
   {
     "technique_id": "T1542.001",
@@ -1683,7 +1701,7 @@
     "technique_id": "T1543",
     "technique_name": "Create or Modify System Process",
     "tactic": "persistence|privilege-escalation",
-    "families": "Akira _v2|BOLDMOVE|BRICKSTORM|CanisterWorm|Exaramel for Linux|IMAPLoader|LITTLELAMB.WOOLTEA|LunarMail"
+    "families": "Akira _v2|BOLDMOVE|BRICKSTORM|CanisterWorm|Exaramel for Linux|IMAPLoader|LITTLELAMB.WOOLTEA|LunarMail|Vidar"
   },
   {
     "technique_id": "T1543.001",
@@ -1701,7 +1719,7 @@
     "technique_id": "T1543.003",
     "technique_name": "Windows Service",
     "tactic": "persistence|privilege-escalation",
-    "families": "Anchor|AppleJeus|Attor|AuditCred|BBSRAT|BOOKWORM|Bankshot|Bisonal|BitPaymer|Black Basta|BlackEnergy|Briba|Carbon|Catchamas|Clambling|Cobalt Strike|Conficker|CorKLOG|CosmicDuke|CozyCar|Cuba|DCSrv|DUSTPAN|Dtrack|Duqu|Dyre|Elise|Embargo|Emissary|Emotet|Exaramel for Windows|FALLCHILL|FinFisher|FunnyDream|Gelsemium|GoldenSpy|GreyEnergy|Hannotog|HermeticWiper|Hydraq|Industroyer|InnaputRAT|InvisiMole|JHUHUGIT|KONNI|Kazuar|KeyBoy|Kwampirs|LockBit 3.0|LoudMiner|Medusa Ransomware|MoonWind|Naid|Nebulae|Nerex|Nidiran|NightClub|Ninja|Okrum|Pandora|PingPull|PipeMon|PlugX|PoisonIvy|QakBot|RDAT|Ragnar Locker|RainyDay|RawPOS|Reaver|SLOTHFULMEDIA|STARWHALE|SUGARUSH|Sakula|Samurai|Seasalt|Shamoon|ShimRat|SplatDropper|StreamEx|StrongPity|Stuxnet|SysUpdate|TDTESS|TEARDROP|TONESHELL|TYPEFRAME|ThreatNeedle|TinyZBot|TrickBot|Uroburos|Ursnif|Volgmer|WannaCry|WastedLocker|Wiarp|Wingbird|Winnti for Windows|ZLib|ZeroT|ZxShell|gh0st RAT|hcdLoader|zwShell"
+    "families": "Anchor|AppleJeus|Attor|AuditCred|BBSRAT|BOOKWORM|Bankshot|Bisonal|BitPaymer|Black Basta|BlackEnergy|Briba|Carbon|Catchamas|Clambling|Cobalt Strike|Conficker|CorKLOG|CosmicDuke|CozyCar|Cuba|DCSrv|DUSTPAN|Dtrack|Duqu|Dyre|Elise|Embargo|Emissary|Emotet|Exaramel for Windows|FALLCHILL|FinFisher|FunnyDream|Gelsemium|GoldenSpy|GreyEnergy|Hannotog|HermeticWiper|Hydraq|Industroyer|InnaputRAT|InvisiMole|JHUHUGIT|KONNI|Kazuar|KeyBoy|Kwampirs|LockBit 3.0|LoudMiner|Medusa Ransomware|MoonWind|Naid|Nebulae|Nerex|Nidiran|NightClub|Ninja|Okrum|Pandora|PingPull|PipeMon|PlugX|PoisonIvy|QakBot|RDAT|Ragnar Locker|RainyDay|RawPOS|Reaver|SLOTHFULMEDIA|STARWHALE|SUGARUSH|Sakula|Samurai|Seasalt|Shamoon|ShimRat|SplatDropper|StreamEx|StrongPity|Stuxnet|SysUpdate|TDTESS|TEARDROP|TONESHELL|TYPEFRAME|The Gentlemen Ransomware|ThreatNeedle|TinyZBot|TrickBot|Uroburos|Ursnif|Volgmer|WannaCry|WastedLocker|Wiarp|Wingbird|Winnti for Windows|ZLib|ZeroT|ZxShell|gh0st RAT|hcdLoader|zwShell"
   },
   {
     "technique_id": "T1543.004",
@@ -1791,7 +1809,7 @@
     "technique_id": "T1547.001",
     "technique_name": "Registry Run Keys / Startup Folder",
     "tactic": "persistence|privilege-escalation",
-    "families": "ADVSTORESHELL|ANDROMEDA|Agent Tesla|Amadey|AppleSeed|Aria-body|Astaroth|AuTo Stealer|Avaddon|AvosLocker|BACKSPACE|BADNEWS|BBSRAT|BabyShark|Backdoor.Oldrea|BadPatch|Bazar|Bisonal|BitPaymer|BlackEnergy|BoomBox|Briba|CLAIMLOADER|CORESHELL|Carbanak|Carberp|Cardinal RAT|ChChes|Chaes|Chinoxy|Clambling|Cobian RAT|Comnie|Conficker|CozyCar|Crimson|CrossRAT|DarkComet|DarkGate|DarkTortilla|DnsSystem|DownPaper|DustySky|EVILNUM|Elise|Embargo|Emissary|Emotet|EvilBunny|EvilGrab|FELIXROOT|FLASHFLOOD|FatDuke|FinFisher|Final1stspy|Flagpro|FlawedAmmyy|FunnyDream|GRIFFON|Gazer|Gelsemium|GlassWorm|Gold Dragon|Gootloader|Grandoreiro|GrimAgent|GuLoader|HIUPAN|HTTPBrowser|Hancitor|HeartCrypt|Helminth|Heyoka Backdoor|Hi-Zor|IcedID|InnaputRAT|InvisiMole|InvisibleFerret|Ixeshe|JCry|JHUHUGIT|KOCTOPUS|KONNI|Kasidet|Kazuar|LODEINFO|Latrodectus|LiteDuke|LoJax|LockBit 2.0|LookBack|Lucifer|Lumma Stealer|Machete|MagicRAT|MarkiRAT|Matryoshka|Maze|Metamorfo|Mispadu|Mivast|MoleNet|Mongall|Mosquito|MuddyViper|NETEAGLE|NETWIRE|NOKKI|NanHaiShu|NanoCore|NavRAT|Nebulae|ObliqueRAT|Octopus|Okrum|PLAINTEE|POWERSOURCE|POWERTON|PUBLOAD|PUNCHBUGGY|Pikabot|Pisloader|PlugX|PoetRAT|PoisonIvy|PowerDuke|PowerShower|Prikormka|Pteranodon|PureCrypter|QakBot|Qilin|RCSession|ROADSWEEP|RTM|Ramsay|RansomHub|Raspberry Robin|Reaver|RedLeaves|Remexi|Rifdoor|RogueRobin|Rover|RunningRAT|RustyWater|Ryuk|S-Type|SDBbot|SHIPSHAPE|SMOKEDHAM|SNUGRIDE|SPACESHIP|STARWHALE|Saint Bot|Sakula|SeaDuke|Seasalt|ServHelper|SharpStage|ShimRat|Small Sieve|Smoke Loader|Snip3|SslMM|StrongPity|Sykipot|SysUpdate|TAINTEDSCRIBE|TINYTYPHON|TONESHELL|TURNEDUP|Taidoor|ThreatNeedle|TinyZBot|TrickBot|Trojan.Karagany|Truvasys|Tsundere Botnet|Turian|USBStealer|Ursnif|VBShower|Vasport|WarzoneRAT|Winnti for Windows|XLoader|Xbash|Zebrocy|Zeus Panda|build_downer|gh0st RAT|njRAT"
+    "families": "ADVSTORESHELL|ANDROMEDA|Agent Tesla|Amadey|AppleSeed|Aria-body|Astaroth|AuTo Stealer|Avaddon|AvosLocker|BACKSPACE|BADNEWS|BBSRAT|BabyShark|Backdoor.Oldrea|BadPatch|Bazar|Bisonal|BitPaymer|BlackEnergy|BoomBox|Briba|CLAIMLOADER|CORESHELL|Carbanak|Carberp|Cardinal RAT|ChChes|Chaes|Chinoxy|Clambling|Cobian RAT|Comnie|Conficker|CozyCar|Crimson|CrossRAT|DarkComet|DarkGate|DarkTortilla|DnsSystem|DownPaper|DustySky|EVILNUM|Elise|Embargo|Emissary|Emotet|EvilBunny|EvilGrab|FELIXROOT|FLASHFLOOD|FatDuke|FinFisher|Final1stspy|Flagpro|FlawedAmmyy|FunnyDream|GRIFFON|Gazer|Gelsemium|GlassWorm|Gold Dragon|Gootloader|Grandoreiro|GrimAgent|GuLoader|HIUPAN|HTTPBrowser|Hancitor|HeartCrypt|Helminth|Heyoka Backdoor|Hi-Zor|IcedID|InnaputRAT|InvisiMole|InvisibleFerret|Ixeshe|JCry|JHUHUGIT|KOCTOPUS|KONNI|Kasidet|Kazuar|LODEINFO|Latrodectus|LiteDuke|LoJax|LockBit 2.0|LookBack|Lucifer|Lumma Stealer|Machete|MagicRAT|MarkiRAT|Matryoshka|Maze|Metamorfo|MiniBike|MiniBus|MiniJunk|Mispadu|Mivast|MoleNet|Mongall|Mosquito|MuddyViper|NETEAGLE|NETWIRE|NOKKI|NanHaiShu|NanoCore|NavRAT|Nebulae|ObliqueRAT|Octopus|Okrum|PLAINTEE|POWERSOURCE|POWERTON|PUBLOAD|PUNCHBUGGY|Pikabot|Pisloader|PlugX|PoetRAT|PoisonIvy|PowerDuke|PowerShower|Prikormka|Pteranodon|PureCrypter|QakBot|Qilin|RCSession|ROADSWEEP|RTM|Ramsay|RansomHub|Raspberry Robin|Reaver|RedLeaves|Remexi|Rifdoor|RogueRobin|Rover|RunningRAT|RustyWater|Ryuk|S-Type|SDBbot|SHIPSHAPE|SMOKEDHAM|SNUGRIDE|SPACESHIP|STARWHALE|Saint Bot|Sakula|SeaDuke|Seasalt|ServHelper|SharpStage|ShimRat|Small Sieve|Smoke Loader|Snip3|SslMM|StrongPity|Sykipot|SysUpdate|TAINTEDSCRIBE|TINYTYPHON|TONESHELL|TURNEDUP|Taidoor|The Gentlemen Ransomware|ThreatNeedle|TinyZBot|TrickBot|Trojan.Karagany|Truvasys|Tsundere Botnet|Turian|USBStealer|Ursnif|VBShower|Vasport|WarzoneRAT|Winnti for Windows|XLoader|Xbash|Zebrocy|Zeus Panda|build_downer|gh0st RAT|njRAT"
   },
   {
     "technique_id": "T1547.002",
@@ -1863,13 +1881,13 @@
     "technique_id": "T1548.002",
     "technique_name": "Bypass User Account Control",
     "tactic": "privilege-escalation",
-    "families": "AppleJeus|AutoIt backdoor|Avaddon|BADHATCH|Bad Rabbit|BitPaymer|BlackCat|BlackEnergy|Bumblebee|CHIMNEYSWEEP|Clambling|Cobalt Strike|DarkGate|Downdelph|FinFisher|Gelsemium|Grandoreiro|H1N1|HTTPTroy|InvisiMole|KOCTOPUS|KONNI|LockBit 2.0|LockBit 3.0|Lokibot|PLAINTEE|PipeMon|Qilin|RCSession|RTM|Ramsay|Raspberry Robin|Saint Bot|Sakula|Shamoon|ShimRat|UPPERCUT|WarzoneRAT|WastedLocker|Winnti for Windows|ZeroT"
+    "families": "AppleJeus|AutoIt backdoor|Avaddon|BADHATCH|Bad Rabbit|BitPaymer|BlackCat|BlackEnergy|Bumblebee|CHIMNEYSWEEP|Clambling|Cobalt Strike|DarkGate|Downdelph|FinFisher|Gelsemium|Grandoreiro|H1N1|HTTPTroy|InvisiMole|KOCTOPUS|KONNI|LockBit 2.0|LockBit 3.0|Lokibot|PLAINTEE|PipeMon|Qilin|RCSession|RTM|Ramsay|Raspberry Robin|Saint Bot|Sakula|Shamoon|ShimRat|UPPERCUT|Vidar|WarzoneRAT|WastedLocker|Winnti for Windows|ZeroT"
   },
   {
     "technique_id": "T1548.003",
     "technique_name": "Sudo and Sudo Caching",
     "tactic": "privilege-escalation",
-    "families": "CanisterWorm|Cobalt Strike|Dok|Proton|Shai-Hulud|TeamPCP Cloud Stealer"
+    "families": "BACKUPOSINT v9.0 APEX PREDATOR|CanisterWorm|Cobalt Strike|Dok|Proton|Shai-Hulud|TeamPCP Cloud Stealer"
   },
   {
     "technique_id": "T1548.004",
@@ -1917,7 +1935,7 @@
     "technique_id": "T1552.001",
     "technique_name": "Credentials In Files",
     "tactic": "credential-access",
-    "families": "Agent Tesla|Azorult|BlackEnergy|Emotet|Hildegard|Kali365|Mini Shai-Hulud|Pysa|Shai-Hulud|Smoke Loader|StrelaStealer|TeamPCP Cloud Stealer|TrickBot|XTunnel|jRAT|pngdowner"
+    "families": "Agent Tesla|Azorult|BACKUPOSINT v9.0 APEX PREDATOR|BlackEnergy|Emotet|Hildegard|Kali365|Mini Shai-Hulud|Pysa|Shai-Hulud|Smoke Loader|StrelaStealer|TeamPCP Cloud Stealer|TrickBot|Vidar|XTunnel|jRAT|pngdowner"
   },
   {
     "technique_id": "T1552.002",
@@ -1929,7 +1947,7 @@
     "technique_id": "T1552.003",
     "technique_name": "Shell History",
     "tactic": "credential-access",
-    "families": "Kinsing|TeamPCP Cloud Stealer"
+    "families": "BACKUPOSINT v9.0 APEX PREDATOR|Kinsing|TeamPCP Cloud Stealer"
   },
   {
     "technique_id": "T1552.004",
@@ -1941,7 +1959,7 @@
     "technique_id": "T1552.005",
     "technique_name": "Cloud Instance Metadata API",
     "tactic": "credential-access",
-    "families": "Hildegard|Mini Shai-Hulud|Shai-Hulud"
+    "families": "BACKUPOSINT v9.0 APEX PREDATOR|Hildegard|Mini Shai-Hulud|Shai-Hulud"
   },
   {
     "technique_id": "T1552.006",
@@ -1971,7 +1989,7 @@
     "technique_id": "T1553.002",
     "technique_name": "Code Signing",
     "tactic": "defense-impairment",
-    "families": "Anchor|AppleJeus|BLINDINGCAN|BOOKWORM|BOOSTWRITE|BackConfig|Bandook|Bazar|Black Basta|CHIMNEYSWEEP|ChChes|Clop|Cobalt Strike|CorKLOG|Daserf|Ebury|Ecipekac|Epic|Gazer|GoBear|GreyEnergy|Helminth|HermeticWiper|HermeticWizard|Janicab|LockerGoga|Lumma Stealer|MacMa|Metamorfo|More_eggs|Nerex|PAKLOG|PUBLOAD|PipeMon|QakBot|ROADSWEEP|RTM|RedLine Stealer|SPAWNCHIMERA|STATICPLUGIN|SUNBURST|SpicyOmelette|SplatDropper|StrelaStealer|StrongPity|Stuxnet|SysUpdate|TONESHELL|TrickBot|Troll Stealer|ZeroCleare"
+    "families": "Anchor|AppleJeus|BLINDINGCAN|BOOKWORM|BOOSTWRITE|BackConfig|Bandook|Bazar|Black Basta|CHIMNEYSWEEP|ChChes|Clop|Cobalt Strike|CorKLOG|Daserf|Ebury|Ecipekac|Epic|Gazer|GoBear|GreyEnergy|Helminth|HermeticWiper|HermeticWizard|Janicab|LockerGoga|Lumma Stealer|MacMa|Metamorfo|MiniFast|MiniJunk|More_eggs|Nerex|PAKLOG|POLLBLEND|PUBLOAD|PipeMon|QakBot|ROADSWEEP|RTM|RedLine Stealer|SPAWNCHIMERA|STATICPLUGIN|SUNBURST|SpicyOmelette|SplatDropper|StrelaStealer|StrongPity|Stuxnet|SysUpdate|TONESHELL|TWOSTROKE|TrickBot|Troll Stealer|ZeroCleare"
   },
   {
     "technique_id": "T1553.004",
@@ -2019,7 +2037,7 @@
     "technique_id": "T1555.003",
     "technique_name": "Credentials from Web Browsers",
     "tactic": "credential-access",
-    "families": "Agent Tesla|Azorult|BLUELIGHT|Backdoor.Oldrea|BeaverTail|BlackEnergy|Carberp|ChChes|Chaes|CookieMiner|CosmicDuke|Crimson|Emotet|GlassWorm|Grandoreiro|H1N1|InvisibleFerret|Javali|KGH_SPY|KONNI|KeyBoy|Lizar|Lokibot|Lumma Stealer|Machete|Manjusaka|Melcoz|MgBot|MirrorStealer|Mispadu|NETWIRE|OLDBAIT|Olympic Destroyer|PLEAD|PinchDuke|PoetRAT|Prikormka|Proton|QakBot|ROKRAT|Raccoon Stealer|RainyDay|RedLeaves|RedLine Stealer|SUGARDUMP|Smoke Loader|TRANSLATEXT|TSCookie|TrickBot|Trojan.Karagany|Unknown Logger|WarzoneRAT|XAgentOSX|XLoader|Zebrocy|jRAT|njRAT"
+    "families": "Agent Tesla|Azorult|BLUELIGHT|Backdoor.Oldrea|BeaverTail|BlackEnergy|CRASHPAD|Carberp|ChChes|Chaes|CookieMiner|CosmicDuke|Crimson|Emotet|GlassWorm|Grandoreiro|H1N1|InvisibleFerret|Javali|KGH_SPY|KONNI|KeyBoy|Lizar|Lokibot|Lumma Stealer|Machete|Manjusaka|Melcoz|MgBot|MiniBrowse|MirrorStealer|Mispadu|NETWIRE|OLDBAIT|Olympic Destroyer|PLEAD|PinchDuke|PoetRAT|Prikormka|Proton|QakBot|ROKRAT|Raccoon Stealer|RainyDay|RedLeaves|RedLine Stealer|SUGARDUMP|Smoke Loader|TRANSLATEXT|TSCookie|TrickBot|Trojan.Karagany|Unknown Logger|Vidar|WarzoneRAT|XAgentOSX|XLoader|Zebrocy|jRAT|njRAT"
   },
   {
     "technique_id": "T1555.004",
@@ -2037,7 +2055,7 @@
     "technique_id": "T1555.006",
     "technique_name": "Cloud Secrets Management Stores",
     "tactic": "credential-access",
-    "families": "CanisterWorm|Mini Shai-Hulud|Shai-Hulud|TeamPCP Cloud Stealer"
+    "families": "BACKUPOSINT v9.0 APEX PREDATOR|CanisterWorm|Mini Shai-Hulud|Shai-Hulud|TeamPCP Cloud Stealer"
   },
   {
     "technique_id": "T1556",
@@ -2085,7 +2103,7 @@
     "technique_id": "T1559",
     "technique_name": "Inter-Process Communication",
     "tactic": "execution",
-    "families": "Cyclops Blink|Havoc|HyperStack|LunarWeb|Medusa Ransomware|Mini Shai-Hulud|Ninja|OilBooster|PITSTOP|ROADSWEEP|Raspberry Robin|RotaJakiro|SPAWNCHIMERA|StealBit|TONESHELL|Uroburos"
+    "families": "Cyclops Blink|Havoc|HyperStack|LunarWeb|Medusa Ransomware|Mini Shai-Hulud|MiniBrowse|Ninja|OilBooster|PITSTOP|ROADSWEEP|Raspberry Robin|RotaJakiro|SPAWNCHIMERA|StealBit|TONESHELL|Uroburos"
   },
   {
     "technique_id": "T1559.001",
@@ -2109,7 +2127,7 @@
     "technique_id": "T1560.001",
     "technique_name": "Archive via Utility",
     "tactic": "collection",
-    "families": "AppleSeed|BeaverTail|CORALDECK|Calisto|Crutch|Daserf|DustySky|GlassWorm|IceApple|InvisiMole|InvisibleFerret|LAMEHUG|LunarWeb|Micropsia|Mini Shai-Hulud|Octopus|Okrum|OopsIE|PUBLOAD|PUNCHBUGGY|PoetRAT|PowerShower|Ramsay|Sagerunex|SampleCheck5000|TONESHELL|TeamPCP Cloud Stealer|Turian|WindTail|ccf32|iKitten"
+    "families": "AppleSeed|BeaverTail|CORALDECK|Calisto|Crutch|Daserf|DustySky|GlassWorm|IceApple|InvisiMole|InvisibleFerret|LAMEHUG|LunarWeb|Micropsia|Mini Shai-Hulud|MiniFast|Octopus|Okrum|OopsIE|PUBLOAD|PUNCHBUGGY|PoetRAT|PowerShower|Ramsay|Sagerunex|SampleCheck5000|TONESHELL|TeamPCP Cloud Stealer|Turian|Vidar|WindTail|ccf32|iKitten"
   },
   {
     "technique_id": "T1560.002",
@@ -2127,7 +2145,7 @@
     "technique_id": "T1561.001",
     "technique_name": "Disk Content Wipe",
     "tactic": "impact",
-    "families": "AcidPour|AcidRain|Apostle|BlackCat|DEADWOOD|DarkGate|HermeticWiper|MegaCortex|StoneDrill|VPNFilter|WhisperGate"
+    "families": "AcidPour|AcidRain|Apostle|BlackCat|DEADWOOD|DarkGate|HermeticWiper|MegaCortex|StoneDrill|The Gentlemen Ransomware|VPNFilter|WhisperGate"
   },
   {
     "technique_id": "T1561.002",
@@ -2157,7 +2175,7 @@
     "technique_id": "T1564.001",
     "technique_name": "Hidden Files and Directories",
     "tactic": "stealth",
-    "families": "Agent Tesla|AppleJeus|Attor|BackConfig|CLAIMLOADER|COATHANGER|Calisto|Carberp|Clambling|CoinTicker|Cuckoo Stealer|Dacls|DarkGate|EnvyScout|Explosive|FruitFly|HIUPAN|InvisiMole|Ixeshe|Komplex|Lokibot|LoudMiner|MacSpy|Machete|Micropsia|NETWIRE|OSX/Shlayer|OSX_OCEANLOTUS.D|Okrum|PlugX|PoetRAT|QakBot|REPTILE|Rising Sun|SLOTHFULMEDIA|SysUpdate|TeamPCP Cloud Stealer|ThiefQuest|WannaCry|WastedLocker|XCSSET|ccf32|iKitten"
+    "families": "Agent Tesla|AppleJeus|Attor|BackConfig|CLAIMLOADER|COATHANGER|Calisto|Carberp|Clambling|CoinTicker|Cuckoo Stealer|Dacls|DarkGate|EnvyScout|Explosive|FruitFly|HIUPAN|InvisiMole|Ixeshe|Komplex|Lokibot|LoudMiner|MacSpy|Machete|Micropsia|NETWIRE|OSX/Shlayer|OSX_OCEANLOTUS.D|Okrum|PlugX|PoetRAT|QakBot|REPTILE|Rising Sun|SLOTHFULMEDIA|SysUpdate|TeamPCP Cloud Stealer|The Gentlemen Ransomware|ThiefQuest|Vidar|WannaCry|WastedLocker|XCSSET|ccf32|iKitten"
   },
   {
     "technique_id": "T1564.002",
@@ -2214,6 +2232,12 @@
     "families": "BOLDMOVE|BPFDoor|GoldMax|Mini Shai-Hulud|OSX/Shlayer|Shai-Hulud"
   },
   {
+    "technique_id": "T1564.012",
+    "technique_name": "File/Path Exclusions",
+    "tactic": "stealth",
+    "families": "The Gentlemen Ransomware"
+  },
+  {
     "technique_id": "T1565",
     "technique_name": "Data Manipulation",
     "tactic": "impact",
@@ -2241,13 +2265,13 @@
     "technique_id": "T1566.001",
     "technique_name": "Spearphishing Attachment",
     "tactic": "initial-access",
-    "families": "Agent Tesla|AppleSeed|Astaroth|BADFLICK|BLINDINGCAN|Bandook|Bisonal|Bumblebee|Chaes|Clambling|DanBot|DarkGate|DarkTortilla|DarkWatchman|Emotet|EnvyScout|Flagpro|Hancitor|IcedID|JSS Loader|Javali|KOCTOPUS|KONNI|KOPILUWAK|Kali365|Kerrdown|LAMEHUG|LODEINFO|Latrodectus|Lokibot|Lumma Stealer|Metamorfo|NETWIRE|OceanSalt|Octopus|OutSteel|PoetRAT|Pony|QakBot|Qilin|REvil|ROKRAT|RTM|Ramsay|Rifdoor|RustyWater|SVCReady|Saint Bot|Snip3|Squirrelwaffle|StrelaStealer|Taidoor|ThreatNeedle|TrickBot|Valak|WarzoneRAT|Woody RAT|XLoader|ZxxZ"
+    "families": "Agent Tesla|AppleSeed|Astaroth|BADFLICK|BLINDINGCAN|Bandook|Bisonal|Bumblebee|Chaes|Clambling|DanBot|DarkGate|DarkTortilla|DarkWatchman|Emotet|EnvyScout|Flagpro|Hancitor|IcedID|JSS Loader|Javali|KOCTOPUS|KONNI|KOPILUWAK|Kali365|Kerrdown|LAMEHUG|LODEINFO|Latrodectus|Lokibot|Lumma Stealer|Metamorfo|NETWIRE|OceanSalt|Octopus|OutSteel|PoetRAT|Pony|QakBot|Qilin|REvil|ROKRAT|RTM|Ramsay|Rifdoor|RustyWater|SVCReady|Saint Bot|Snip3|Squirrelwaffle|StrelaStealer|Taidoor|ThreatNeedle|TrickBot|Valak|Vidar|WarzoneRAT|Woody RAT|XLoader|ZxxZ"
   },
   {
     "technique_id": "T1566.002",
     "technique_name": "Spearphishing Link",
     "tactic": "initial-access",
-    "families": "AppleJeus|Bazar|Bumblebee|DarkGate|Emotet|Grandoreiro|GuLoader|Hancitor|Havoc|Javali|KOCTOPUS|Kali365|Kerrdown|Latrodectus|Lumma Stealer|Melcoz|Mispadu|NETWIRE|OutSteel|Pony|QakBot|Qilin|ROAMINGHOUSE|Saint Bot|Snip3|SocGholish|SpicyOmelette|Squirrelwaffle|TrickBot|Valak"
+    "families": "AppleJeus|Bazar|Bumblebee|DarkGate|Emotet|Grandoreiro|GuLoader|Hancitor|Havoc|Javali|KOCTOPUS|Kali365|Kerrdown|Latrodectus|Lumma Stealer|Melcoz|Mispadu|NETWIRE|OutSteel|Pony|QakBot|Qilin|ROAMINGHOUSE|Saint Bot|Snip3|SocGholish|SpicyOmelette|Squirrelwaffle|TrickBot|Valak|Vidar"
   },
   {
     "technique_id": "T1566.003",
@@ -2259,7 +2283,7 @@
     "technique_id": "T1567",
     "technique_name": "Exfiltration Over Web Service",
     "tactic": "exfiltration",
-    "families": "AppleSeed|DropBook|Exbyte|InvisibleFerret|OilCheck|SampleCheck5000"
+    "families": "AppleSeed|BACKUPOSINT v9.0 APEX PREDATOR|DropBook|Exbyte|InvisibleFerret|OilCheck|SampleCheck5000"
   },
   {
     "technique_id": "T1567.001",
@@ -2307,7 +2331,7 @@
     "technique_id": "T1569.002",
     "technique_name": "Service Execution",
     "tactic": "execution",
-    "families": "Anchor|Attor|BBSRAT|Bad Rabbit|BlackByte 2.0 Ransomware|Clambling|Cobalt Strike|DEADWOOD|DarkGate|Embargo|HOPLIGHT|HermeticWiper|HermeticWizard|Hydraq|HyperBro|IPsec Helper|InvisiMole|LockBit 3.0|LoudMiner|Mafalda|Net Crawler|Netwalker|NotPetya|Okrum|Olympic Destroyer|Pandora|Proxysvc|Pysa|Ragnar Locker|RemoteCMD|SLOTHFULMEDIA|Shamoon|StrongPity|SysUpdate|TinyTurla|WastedLocker|WhisperGate|Wingbird|Winnti for Windows|ZxShell|gh0st RAT"
+    "families": "Anchor|Attor|BBSRAT|Bad Rabbit|BlackByte 2.0 Ransomware|Clambling|Cobalt Strike|DEADWOOD|DarkGate|Embargo|HOPLIGHT|HermeticWiper|HermeticWizard|Hydraq|HyperBro|IPsec Helper|InvisiMole|LockBit 3.0|LoudMiner|Mafalda|Net Crawler|Netwalker|NotPetya|Okrum|Olympic Destroyer|Pandora|Proxysvc|Pysa|Ragnar Locker|RemoteCMD|SLOTHFULMEDIA|Shamoon|StrongPity|SysUpdate|The Gentlemen Ransomware|TinyTurla|Vidar|WastedLocker|WhisperGate|Wingbird|Winnti for Windows|ZxShell|gh0st RAT"
   },
   {
     "technique_id": "T1569.003",
@@ -2331,7 +2355,7 @@
     "technique_id": "T1572",
     "technique_name": "Protocol Tunneling",
     "tactic": "command-and-control",
-    "families": "BRICKSTORM|Cobalt Strike|Cyclops Blink|Duqu|FLIPSIDE|FunnyDream|Heyoka Backdoor|HiddenFace|Industroyer|Kevin|LunarWeb|Milan|Neo-reGeorg|QakBot|SPAWNCHIMERA|Uroburos|reGeorg"
+    "families": "BRICKSTORM|Cobalt Strike|Cyclops Blink|Duqu|FLIPSIDE|FunnyDream|Heyoka Backdoor|HiddenFace|Industroyer|Kevin|LIGHTRAIL|LunarWeb|Milan|Neo-reGeorg|QakBot|SPAWNCHIMERA|Uroburos|reGeorg"
   },
   {
     "technique_id": "T1573",
@@ -2349,7 +2373,7 @@
     "technique_id": "T1573.002",
     "technique_name": "Asymmetric Cryptography",
     "tactic": "command-and-control",
-    "families": "ADVSTORESHELL|Attor|BADHATCH|BISCUIT|BOLDMOVE|BRICKSTORM|Bazar|CASTLETAP|CHOPSTICK|COATHANGER|Carbon|Cobalt Strike|ComRAT|Cyclops Blink|DarkWatchman|Doki|Dridex|Gazer|GoldMax|Gomir|Grandoreiro|GreyEnergy|GrimAgent|Hi-Zor|HiddenFace|IcedID|J-magic|KEYPLUG|Kobalos|LAMEHUG|LITTLELAMB.WOOLTEA|Lumma Stealer|LunarWeb|Machete|Mango|Metamorfo|Mispadu|NICECURL|OilBooster|PITSTOP|POSHSPY|POWERSTATS|Pay2Key|Penquin|PoetRAT|PureCrypter|REPTILE|REvil|Rising Sun|Sagerunex|Sardonic|ServHelper|Small Sieve|SnappyTCP|SodaMaster|SombRAT|StrongPity|Sykipot|TeamPCP Cloud Stealer|TinyTurla|Trojan.Karagany|Uroburos|Volgmer|WannaCry|WellMail|WellMess|Woody RAT|XTunnel|Zebrocy|adbupd"
+    "families": "ADVSTORESHELL|Attor|BADHATCH|BISCUIT|BOLDMOVE|BRICKSTORM|Bazar|CASTLETAP|CHOPSTICK|COATHANGER|Carbon|Cobalt Strike|ComRAT|Cyclops Blink|DarkWatchman|Doki|Dridex|Gazer|GoldMax|Gomir|Grandoreiro|GreyEnergy|GrimAgent|Hi-Zor|HiddenFace|IcedID|J-magic|KEYPLUG|Kobalos|LAMEHUG|LITTLELAMB.WOOLTEA|Lumma Stealer|LunarWeb|Machete|Mango|Metamorfo|Mispadu|NICECURL|OilBooster|PITSTOP|POSHSPY|POWERSTATS|Pay2Key|Penquin|PoetRAT|PureCrypter|REPTILE|REvil|Rising Sun|Sagerunex|Sardonic|ServHelper|Small Sieve|SnappyTCP|SodaMaster|SombRAT|StrongPity|Sykipot|TWOSTROKE|TeamPCP Cloud Stealer|TinyTurla|Trojan.Karagany|Uroburos|Vidar|Volgmer|WannaCry|WellMail|WellMess|Woody RAT|XTunnel|Zebrocy|adbupd"
   },
   {
     "technique_id": "T1574",
@@ -2361,7 +2385,7 @@
     "technique_id": "T1574.001",
     "technique_name": "DLL",
     "tactic": "stealth|execution",
-    "families": "ANELLDR|AshTag|Astaroth|BADNEWS|BBSRAT|BOOKWORM|BOOSTWRITE|CANONSTAGER|CLAIMLOADER|Chaes|Chinoxy|Clambling|CorKLOG|Crutch|DarkGate|Denis|Downdelph|Dridex|Ecipekac|Egregor|FinFisher|FoggyWeb|Goopy|HIUPAN|HTTPBrowser|HUI Loader|Havoc|Hikit|HyperBro|InvisiMole|IronWind|Javali|Kerrdown|LODEINFO|LoFiSe|LookBack|Lumma Stealer|Melcoz|Metamorfo|MirageFox|NOOPLDR|Nebulae|Ninja|PAKLOG|PUBLOAD|Pandora|Pcexter|PlugX|PowGoop|Prikormka|QakBot|RCSession|ROAMINGHOUSE|RainyDay|Ramsay|Raspberry Robin|RedLeaves|Sakula|SplatDropper|StarProxy|StrelaStealer|SysUpdate|T9000|TONESHELL|UPPERCUT|WEBC2|WastedLocker|Waterbear|Wingbird|ZeroT|gh0st RAT|metaMain"
+    "families": "ANELLDR|AshTag|Astaroth|BADNEWS|BBSRAT|BOOKWORM|BOOSTWRITE|CANONSTAGER|CLAIMLOADER|Chaes|Chinoxy|Clambling|CorKLOG|Crutch|DCSYNCER.SLICK|DarkGate|Denis|Downdelph|Dridex|Ecipekac|Egregor|FinFisher|FoggyWeb|Goopy|HIUPAN|HTTPBrowser|HUI Loader|Havoc|Hikit|HyperBro|InvisiMole|IronWind|Javali|Kerrdown|LIGHTRAIL|LODEINFO|LoFiSe|LookBack|Lumma Stealer|Melcoz|Metamorfo|MiniBike|MiniBus|MirageFox|NOOPLDR|Nebulae|Ninja|PAKLOG|POLLBLEND|PUBLOAD|Pandora|Pcexter|PlugX|PowGoop|Prikormka|QakBot|RCSession|ROAMINGHOUSE|RainyDay|Ramsay|Raspberry Robin|RedLeaves|Sakula|SplatDropper|StarProxy|StrelaStealer|SysUpdate|T9000|TONESHELL|TWOSTROKE|UPPERCUT|Vidar|WEBC2|WastedLocker|Waterbear|Wingbird|ZeroT|gh0st RAT|metaMain"
   },
   {
     "technique_id": "T1574.006",
@@ -2487,13 +2511,13 @@
     "technique_id": "T1609",
     "technique_name": "Container Administration Command",
     "tactic": "execution",
-    "families": "CanisterWorm|Hildegard|Kinsing|Mini Shai-Hulud|Siloscape|TeamPCP Cloud Stealer"
+    "families": "BACKUPOSINT v9.0 APEX PREDATOR|CanisterWorm|Hildegard|Kinsing|Mini Shai-Hulud|Siloscape|TeamPCP Cloud Stealer"
   },
   {
     "technique_id": "T1610",
     "technique_name": "Deploy Container",
     "tactic": "execution",
-    "families": "Doki|Kinsing"
+    "families": "Doki|Kinsing|TeamPCP Cloud Stealer"
   },
   {
     "technique_id": "T1611",
@@ -2511,7 +2535,7 @@
     "technique_id": "T1614",
     "technique_name": "System Location Discovery",
     "tactic": "discovery",
-    "families": "Amadey|AshTag|Crimson|Cuckoo Stealer|DarkGate|DarkWatchman|GlassWorm|Gootloader|GrimAgent|HexEval Loader|InvisibleFerret|Mini Shai-Hulud|PlugX|PureCrypter|Raccoon Stealer|Ragnar Locker|RedLine Stealer|SDBbot|Saint Bot|SameCoin|SocGholish|Tsundere Botnet|XORIndex Loader"
+    "families": "Amadey|AshTag|Crimson|Cuckoo Stealer|DarkGate|DarkWatchman|GlassWorm|Gootloader|GrimAgent|HexEval Loader|InvisibleFerret|Mini Shai-Hulud|PlugX|PureCrypter|Raccoon Stealer|Ragnar Locker|RedLine Stealer|SDBbot|Saint Bot|SameCoin|SocGholish|Tsundere Botnet|Vidar|XORIndex Loader"
   },
   {
     "technique_id": "T1614.001",
@@ -2535,7 +2559,7 @@
     "technique_id": "T1622",
     "technique_name": "Debugger Evasion",
     "tactic": "stealth|discovery",
-    "families": "ANELLDR|Black Basta|Bumblebee|DRATzarus|DarkGate|DarkTortilla|Latrodectus|LockBit 3.0|Lumma Stealer|Mafalda|PUBLOAD|Pikabot|PlugX|PureCrypter|ROKRAT|Raspberry Robin|RustyWater|Saint Bot|StealBit|StrelaStealer|TONESHELL|ThiefQuest|XLoader"
+    "families": "ANELLDR|Black Basta|Bumblebee|DRATzarus|DarkGate|DarkTortilla|Latrodectus|LockBit 3.0|Lumma Stealer|Mafalda|PUBLOAD|Pikabot|PlugX|PureCrypter|ROKRAT|Raspberry Robin|RustyWater|Saint Bot|StealBit|StrelaStealer|TONESHELL|ThiefQuest|Vidar|XLoader"
   },
   {
     "technique_id": "T1647",
@@ -2589,13 +2613,13 @@
     "technique_id": "T1673",
     "technique_name": "Virtual Machine Discovery",
     "tactic": "discovery",
-    "families": "Cheerscrypt|PureCrypter|Qilin|VIRTUALPITA"
+    "families": "Cheerscrypt|MiniBus|PureCrypter|Qilin|VIRTUALPITA"
   },
   {
     "technique_id": "T1675",
     "technique_name": "ESXi Administration Command",
     "tactic": "execution",
-    "families": "VIRTUALPITA"
+    "families": "The Gentlemen Ransomware|VIRTUALPITA"
   },
   {
     "technique_id": "T1677",
@@ -2607,19 +2631,25 @@
     "technique_id": "T1678",
     "technique_name": "Delay Execution",
     "tactic": "stealth",
-    "families": "AshTag|BRICKSTORM|DynoWiper|Fooder|GlassWorm|HIUPAN|MuddyViper|PHASEJAM|PureCrypter|Qilin|RustyWater|SPAWNCHIMERA|Shai-Hulud|SystemBC|TONESHELL|TeamPCP Cloud Stealer|UPPERCUT"
+    "families": "AshTag|BRICKSTORM|DEEPROOT|DynoWiper|Fooder|GlassWorm|HIUPAN|MuddyViper|PHASEJAM|PureCrypter|Qilin|RustyWater|SPAWNCHIMERA|Shai-Hulud|SystemBC|TONESHELL|TeamPCP Cloud Stealer|The Gentlemen Ransomware|UPPERCUT|Vidar"
   },
   {
     "technique_id": "T1679",
     "technique_name": "Selective Exclusion",
     "tactic": "stealth",
-    "families": "DynoWiper|Embargo|InvisibleFerret|LazyWiper|Medusa Ransomware|SameCoin"
+    "families": "DynoWiper|Embargo|InvisibleFerret|LazyWiper|Medusa Ransomware|SameCoin|The Gentlemen Ransomware"
   },
   {
     "technique_id": "T1680",
     "technique_name": "Local Storage Discovery",
     "tactic": "discovery",
-    "families": "Aria-body|AshTag|Attor|Avenger|BLINDINGCAN|Babuk|Bandook|Bankshot|Black Basta|BlackCat|BlackMould|CORESHELL|Cannon|Chrommme|Crimson|Cuba|DEATHRANSOM|DarkGate|DynoWiper|Epic|FALLCHILL|FELIXROOT|FunnyDream|HELLOKITTY|HOPLIGHT|HermeticWiper|Heyoka Backdoor|INC Ransomware|InnaputRAT|InvisiMole|JHUHUGIT|KEYMARBLE|KGH_SPY|KONNI|KOPILUWAK|Kazuar|KillDisk|LitePower|LockBit 2.0|LockBit 3.0|MacMa|Mafalda|Medusa Ransomware|Mongall|NOKKI|Nebulae|Nightdoor|Ninja|Octopus|PUBLOAD|Pasam|Penquin|PlugX|Proxysvc|Qilin|REvil|ROADSWEEP|Ramsay|Reaver|Rising Sun|Royal|RunningRAT|Ryuk|SLOTHFULMEDIA|SUGARUSH|SampleCheck5000|Sardonic|ShadowPad|SharpDisco|SoreFang|StrongPity|SysUpdate|TAINTEDSCRIBE|TONESHELL|TYPEFRAME|Torisma|WhisperGate|Woody RAT|Zebrocy|ZeroCleare|Zox|build_downer|down_new|macOS.OSAMiner|yty"
+    "families": "Aria-body|AshTag|Attor|Avenger|BLINDINGCAN|Babuk|Bandook|Bankshot|Black Basta|BlackCat|BlackMould|CORESHELL|Cannon|Chrommme|Crimson|Cuba|DEATHRANSOM|DarkGate|DynoWiper|Epic|FALLCHILL|FELIXROOT|FunnyDream|HELLOKITTY|HOPLIGHT|HermeticWiper|Heyoka Backdoor|INC Ransomware|InnaputRAT|InvisiMole|JHUHUGIT|KEYMARBLE|KGH_SPY|KONNI|KOPILUWAK|Kazuar|KillDisk|LitePower|LockBit 2.0|LockBit 3.0|MacMa|Mafalda|Medusa Ransomware|MiniFast|Mongall|NOKKI|Nebulae|Nightdoor|Ninja|Octopus|PUBLOAD|Pasam|Penquin|PlugX|Proxysvc|Qilin|REvil|ROADSWEEP|Ramsay|Reaver|Rising Sun|Royal|RunningRAT|Ryuk|SLOTHFULMEDIA|SUGARUSH|SampleCheck5000|Sardonic|ShadowPad|SharpDisco|SoreFang|StrongPity|SysUpdate|TAINTEDSCRIBE|TONESHELL|TYPEFRAME|The Gentlemen Ransomware|Torisma|WhisperGate|Woody RAT|Zebrocy|ZeroCleare|Zox|build_downer|down_new|macOS.OSAMiner|yty"
+  },
+  {
+    "technique_id": "T1683",
+    "technique_name": "Generate Content",
+    "tactic": "resource-development",
+    "families": "BACKUPOSINT v9.0 APEX PREDATOR"
   },
   {
     "technique_id": "T1683.001",
@@ -2631,13 +2661,13 @@
     "technique_id": "T1684.001",
     "technique_name": "Impersonation",
     "tactic": "stealth",
-    "families": "RustyWater"
+    "families": "RustyWater|TRUSTTRAP"
   },
   {
     "technique_id": "T1685",
     "technique_name": "Disable or Modify Tools",
     "tactic": "defense-impairment",
-    "families": "Agent Tesla|Avaddon|BOLDMOVE|Babuk|Bazar|BlackByte Ransomware|Brave Prince|Bundlore|Carberp|ChChes|Clop|Cobalt Strike|Conficker|DRYHOOK|DarkComet|DarkGate|Diavol|EKANS|Ebury|Egregor|Gold Dragon|Goopy|Grandoreiro|H1N1|HDoor|HUI Loader|HermeticWiper|Hildegard|JPIN|JumbledPath|KOCTOPUS|LazyWiper|LockBit 2.0|LockBit 3.0|LockerGoga|Lumma Stealer|Mango|Maze|Medusa Ransomware|MegaCortex|Metamorfo|Meteor|MultiLayer Wiper|NanHaiShu|NanoCore|Netwalker|PHASEJAM|POWERSTATS|Proton|PureCrypter|Pysa|QakBot|Qilin|REvil|Ragnar Locker|Raspberry Robin|RedLine Stealer|RobbinHood|RunningRAT|Ryuk|SPAWNCHIMERA|SUNBURST|Shai-Hulud|ShrinkLocker|Skidmap|SplatCloak|SslMM|StealBit|StrongPity|Stuxnet|ThiefQuest|TinyZBot|TrickBot|Unknown Logger|WarzoneRAT|Waterbear|WhisperGate|Woody RAT|XLoader|ZIPLINE|ZxShell|macOS.OSAMiner"
+    "families": "Agent Tesla|Avaddon|BOLDMOVE|Babuk|Bazar|BlackByte Ransomware|Brave Prince|Bundlore|Carberp|ChChes|Clop|Cobalt Strike|Conficker|DRYHOOK|DarkComet|DarkGate|Diavol|EKANS|Ebury|Egregor|Gold Dragon|Goopy|Grandoreiro|H1N1|HDoor|HUI Loader|HermeticWiper|Hildegard|JPIN|JumbledPath|KOCTOPUS|LazyWiper|LockBit 2.0|LockBit 3.0|LockerGoga|Lumma Stealer|Mango|Maze|Medusa Ransomware|MegaCortex|Metamorfo|Meteor|MultiLayer Wiper|NanHaiShu|NanoCore|Netwalker|PHASEJAM|POWERSTATS|Proton|PureCrypter|Pysa|QakBot|Qilin|REvil|Ragnar Locker|Raspberry Robin|RedLine Stealer|RobbinHood|RunningRAT|Ryuk|SPAWNCHIMERA|SUNBURST|Shai-Hulud|ShrinkLocker|Skidmap|SplatCloak|SslMM|StealBit|StrongPity|Stuxnet|The Gentlemen Ransomware|ThiefQuest|TinyZBot|TrickBot|Unknown Logger|Vidar|WarzoneRAT|Waterbear|WhisperGate|Woody RAT|XLoader|ZIPLINE|ZxShell|macOS.OSAMiner"
   },
   {
     "technique_id": "T1685.003",
@@ -2655,7 +2685,7 @@
     "technique_id": "T1685.005",
     "technique_name": "Clear Windows Event Logs",
     "tactic": "defense-impairment",
-    "families": "Apostle|BlackCat|BlackEnergy|DUSTTRAP|FinFisher|HermeticWiper|HermeticWizard|Hydraq|KillDisk|LockBit 2.0|LockBit 3.0|Lucifer|Mafalda|Meteor|MultiLayer Wiper|NotPetya|Olympic Destroyer|Qilin|RansomHub|RunningRAT|ShrinkLocker|SynAck|ZxShell|gh0st RAT"
+    "families": "Apostle|BlackCat|BlackEnergy|DUSTTRAP|FinFisher|HermeticWiper|HermeticWizard|Hydraq|KillDisk|LockBit 2.0|LockBit 3.0|Lucifer|Mafalda|Meteor|MultiLayer Wiper|NotPetya|Olympic Destroyer|Qilin|RansomHub|RunningRAT|ShrinkLocker|SynAck|The Gentlemen Ransomware|ZxShell|gh0st RAT"
   },
   {
     "technique_id": "T1685.006",
@@ -2679,7 +2709,7 @@
     "technique_id": "T1686.003",
     "technique_name": "Windows Host Firewall",
     "tactic": "defense-impairment",
-    "families": "BADCALL|BlackByte 2.0 Ransomware|DarkComet|H1N1|HARDRAIN|HiddenFace|Remsec|TYPEFRAME|njRAT"
+    "families": "BADCALL|BlackByte 2.0 Ransomware|DarkComet|H1N1|HARDRAIN|HiddenFace|Remsec|TYPEFRAME|The Gentlemen Ransomware|njRAT"
   },
   {
     "technique_id": "T1688",
@@ -2691,12 +2721,12 @@
     "technique_id": "T1689",
     "technique_name": "Downgrade Attack",
     "tactic": "defense-impairment",
-    "families": "BlackByte Ransomware"
+    "families": "BlackByte Ransomware|The Gentlemen Ransomware"
   },
   {
     "technique_id": "T1690",
     "technique_name": "Prevent Command History Logging",
     "tactic": "defense-impairment",
-    "families": "BPFDoor|BRICKSTORM|Line Dancer|SPAWNCHIMERA|VIRTUALPITA"
+    "families": "BPFDoor|BRICKSTORM|Line Dancer|SPAWNCHIMERA|The Gentlemen Ransomware|VIRTUALPITA"
   }
 ]
