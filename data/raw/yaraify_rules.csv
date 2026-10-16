@@ -1,4 +1,8 @@
 rule_name,author,description,malpedia_family,matching_tlp,sharing_tlp,yarahub_uuid,date
+JP_Lure_Content_Hunt,sumeshi,Hunts for files containing Japanese kana text or common Japanese lure terminology,,TLP:WHITE,TLP:WHITE,58ad533c-211a-4d7f-b701-91af65acfc63,2026-10-16
+Social_Engineering_Twitter_Bot_Dialogue,Serhii Kocherhan,"Detects X (Twitter) bot scripts, automation tools, or binaries containing specific social engineering or engagement dialogue strings.",,TLP:WHITE,TLP:WHITE,30fd36ea-93bb-4a91-a5f1-97827b2d5356,2026-10-15
+Foxveil_Loader_TaskInfo_Variant,,"Foxveil macOS loader (ClickFix -> AMOS), quill generation with run-time settings back inside the payload script (no constructor settings file): fat x86_64+arm64 linking CoreFoundation+libSystem+libc++ but importing nothing from CoreFoundation or objc, with the task_info/mach_task_self_ resolver core in both slices inside a per-build random libc decoy import set",,TLP:WHITE,TLP:WHITE,d061268d-d8a5-4216-95b2-02c6a51f1ee6,2026-09-29
+classified,classified,classified,classified,TLP:WHITE,TLP:GREEN,b3a83844-2304-475e-b427-637c380f0253,classified
 CLOUDHAZE_Kit_RustSlint_20261014,Blackfish Security LLC,CLOUDHAZE/UNC7072 rebrandable Rust+Slint trojanized-app kit (Paperline/QuartzLine/CAIRA),,TLP:WHITE,TLP:WHITE,e026b907-c90e-40d1-8acf-a4b562f54af9,2026-10-14
 classified,classified,classified,classified,TLP:WHITE,TLP:GREEN,17361039-798a-4d45-8d16-8a1e9aae7a1c,classified
 classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,92ff3330-e29a-4065-b788-dbb295e98691,classified
@@ -15,7 +19,3 @@ classified,classified,classified,classified,TLP:RED,TLP:RED,66fbb90f-7188-434b-9
 classified,classified,classified,classified,TLP:RED,TLP:RED,cba092f5-ace6-4563-9117-7e7353b4561c,classified
 AokigaharaStealer_Unpacked_Payload,Daydream,"AokigaharaStealer payload, unpacked or in process memory: gate protocol headers, akg_ working-file names, debug log markers and loot folder names",,TLP:WHITE,TLP:WHITE,d22564da-79c8-4c26-87aa-da7a7be2723f,2026-10-12
 classified,classified,classified,classified,TLP:WHITE,TLP:GREEN,8087cf6b-37a6-4922-b983-0595eaec3b2b,classified
-classified,classified,classified,classified,TLP:WHITE,TLP:GREEN,57bff4a7-b891-42c5-809e-75dcf59fbd94,classified
-classified,classified,classified,classified,TLP:RED,TLP:RED,fed28e3f-7413-4bb7-9ead-11828c46c4d5,classified
-TELEPUZ_Memory_Polygon_DeadDrop,Daydream,"TELEPUZ running in memory (or an unpacked dump): the JSON-RPC eth_call template with function selector 0xc3f909d4 that it sends to public Polygon endpoints to read its C2 address from a smart contract, with the operator contract or the endpoint path seen in October 2026",,TLP:WHITE,TLP:WHITE,1c561b17-532d-4844-88be-d3ea6da4d549,2026-10-12
-TELEPUZ_SessionId_DualHash_Oct2026,Daydream,"TELEPUZ main DLL, build seen October 2026 (ClickFix chain via Everything.exe side-loading). Anchors on the session-ID routine that runs an FNV hash and a rotate-left-5 plus 0x9E3779B9 hash side by side over the computer name, volume serial and install date, together with the family's rdtsc junk-code idiom or its import profile. Elastic's Windows_Trojan_Telepuz_9e2c9a0b does not match this build",,TLP:WHITE,TLP:WHITE,2aa8e8e5-faed-40ab-a1fa-646c1127de60,2026-10-12
