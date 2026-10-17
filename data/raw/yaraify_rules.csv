@@ -1,4 +1,6 @@
 rule_name,author,description,malpedia_family,matching_tlp,sharing_tlp,yarahub_uuid,date
+WardenStealer_DvnX_Alphabet_Decoder,Daydream,Warden Stealer (YapStealer) Oct 2026 DvnX loader and unpacked stealer: 88-symbol printable ASCII alphabet generator with exclusion bitmask 0x4400000008002201,,TLP:WHITE,TLP:WHITE,e391b04f-82c1-4e7a-a519-07d3c812f94b,2026-10-16
+WardenStealer_Unpacked_AntiVM_CPUID_SMBIOS,Daydream,"Warden Stealer (YapStealer) unpacked x64 payload or memory image: inline-asm CPUID hypervisor/CPU checks (0x40000000, 0x40000100, 0x80000004), GetSystemFirmwareTable RSMB SMBIOS cache check, exfil frame magic, and anti-VM bail string",,TLP:WHITE,TLP:WHITE,a84e7c12-59b4-4d8e-9b23-61f09c44e812,2026-10-16
 JP_Lure_Content_Hunt,sumeshi,Hunts for files containing Japanese kana text or common Japanese lure terminology,,TLP:WHITE,TLP:WHITE,58ad533c-211a-4d7f-b701-91af65acfc63,2026-10-16
 Social_Engineering_Twitter_Bot_Dialogue,Serhii Kocherhan,"Detects X (Twitter) bot scripts, automation tools, or binaries containing specific social engineering or engagement dialogue strings.",,TLP:WHITE,TLP:WHITE,30fd36ea-93bb-4a91-a5f1-97827b2d5356,2026-10-15
 Foxveil_Loader_TaskInfo_Variant,,"Foxveil macOS loader (ClickFix -> AMOS), quill generation with run-time settings back inside the payload script (no constructor settings file): fat x86_64+arm64 linking CoreFoundation+libSystem+libc++ but importing nothing from CoreFoundation or objc, with the task_info/mach_task_self_ resolver core in both slices inside a per-build random libc decoy import set",,TLP:WHITE,TLP:WHITE,d061268d-d8a5-4216-95b2-02c6a51f1ee6,2026-09-29
@@ -17,5 +19,3 @@ classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,c731626d-f6dd-4f
 classified,classified,classified,classified,TLP:AMBER,TLP:AMBER,4d4a96ab-d59b-4395-995e-d3d49da85f45,classified
 classified,classified,classified,classified,TLP:RED,TLP:RED,66fbb90f-7188-434b-99c3-3bfc4653c8ee,classified
 classified,classified,classified,classified,TLP:RED,TLP:RED,cba092f5-ace6-4563-9117-7e7353b4561c,classified
-AokigaharaStealer_Unpacked_Payload,Daydream,"AokigaharaStealer payload, unpacked or in process memory: gate protocol headers, akg_ working-file names, debug log markers and loot folder names",,TLP:WHITE,TLP:WHITE,d22564da-79c8-4c26-87aa-da7a7be2723f,2026-10-12
-classified,classified,classified,classified,TLP:WHITE,TLP:GREEN,8087cf6b-37a6-4922-b983-0595eaec3b2b,classified
