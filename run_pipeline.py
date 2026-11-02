@@ -5,7 +5,7 @@ import argparse
 import sys
 import os
 
-ALL_COLLECTORS = ["malwarebazaar", "threatfox", "yaraify", "mitre_attack", "misp_galaxy", "urlhaus", "otx"]
+ALL_COLLECTORS = ["malwarebazaar", "threatfox", "yaraify", "mitre_attack", "misp_galaxy", "urlhaus", "otx", 'virusshare']
 ALL_ENRICHERS = ["hybrid_analysis", "virustotal"]
 
 
@@ -45,6 +45,7 @@ def main():
     from collectors.otx import OTXCollector
     from collectors.hybrid_analysis import HybridAnalysisEnricher
     from collectors.virustotal import VirusTotalEnricher
+    from collectors.virusshare import VirusShareCollector
 
     collector_map = {
         "malwarebazaar": MalwareBazaarCollector,
@@ -54,6 +55,7 @@ def main():
         "misp_galaxy": MispGalaxyCollector,
         "urlhaus": URLhausCollector,
         "otx": OTXCollector,
+        'virusshare': VirusShareCollector
     }
 
     enricher_map = {
